@@ -1,0 +1,23345 @@
+DROP DATABASE IF EXISTS CompanyDatabase;
+CREATE DATABASE CompanyDatabase;
+USE CompanyDatabase;
+
+
+CREATE TABLE CompleteCompanyInfo (
+    RecordID BIGINT PRIMARY KEY,
+    Name VARCHAR(255),
+    Email VARCHAR(255),
+    PhoneNumber VARCHAR(50),
+    CompanyName VARCHAR(255),
+    CompanyDomainName VARCHAR(255),
+    LinkedInCompanyPage VARCHAR(255),
+    IndustryCategory VARCHAR(255),
+    Description TEXT,
+    RevenueCategory VARCHAR(255),
+    EmployeeSizeCategory VARCHAR(255),
+    IsPublic BOOLEAN,
+    StreetAddress VARCHAR(255),
+    City VARCHAR(255),
+    State VARCHAR(50),
+    PostalCode VARCHAR(50),
+    Country VARCHAR(255),
+    TimeZone VARCHAR(50),
+    FirstContactDate DATE,
+    YearFounded YEAR
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19499904089, 'Mark from Hotjar', 'mark.jack@hello.hotjar.com', 'None', 
+    'hotjar', 'hello.hotjar.com', 
+    'https://www.linkedin.com/company/hotjar', 
+    'Industrial and Manufacturing', 'Hotjar is a company that provides website heatmaps and behavior analytics tools. Their tools allow you to see where users click, ask for their feedback, and understand why they drop off. They offer product experience insights that show how users behave...', 'Large',
+    'Large', 
+    0, 'None', 
+    'Saint Julian's', 'None', 
+    'STJ3141', 
+    'Malta', 
+    'Europe/Malta', 
+    '2024-03-13', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19487060522, 'HUGO HAMMER via Miro', 'invites@notifications.miro.com', 'None', 
+    'RealtimeBoard Inc', 'notifications.miro.com', 
+    'https://www.linkedin.com/company/mirohq', 
+    'Technology', 'Miro is a visual collaboration platform designed to unlock creativity and accelerate innovation among teams of all kinds. The platform’s infinite canvas enables teams to lead engaging workshops and meetings, design products, brainstorm ideas, and more....', 'Large',
+    'Enterprise', 
+    0, '201 Spear Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2024-03-12', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19052741028, 'Unknown', 'unknown1@invalid.com', 'None', 
+    'MY SITE', 'cardenasvideo.com', 
+    'None', 
+    'Other', 'Cardenas Video is a leading provider of video production services. We specialize in creating high-quality videos for businesses, events, and personal use. Our team of experienced videographers and editors work closely with clients to bring their vision...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2024-02-11', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19023745036, 'Unknown', 'cooperke@msi.com', 'None', 
+    'Micro-Star International Co., Ltd', 'msi.com', 
+    'https://www.linkedin.com/company/msi-micro-star-international-co-ltd.', 
+    'Technology', 'MSI is a Taiwanese multinational information technology corporation that designs, develops, and provides computer hardware, related products, and services. They offer a comprehensive lineup of laptops, desktops, motherboards, graphics cards, monitors, ...', 'Large',
+    'Enterprise', 
+    1, '69 Lide Street', 
+    'None', 'None', 
+    '235', 
+    'Taiwan, Province of China', 
+    'Asia/Taipei', 
+    '2024-02-08', 
+    1986
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19015104835, 'Steven Wales', 'steven@fogsenddistillery.com', 'None', 
+    'Fog's End Distillery', 'fogsenddistillery.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Fog's End Distillery is an award-winning specialty spirits distillery located in Gonzales, California. They are known for their exceptional products, including the Monterey Rye, California Moonshine, and Hand Craft Your Flavor. The distillery takes pri...', 'Small',
+    'None', 
+    0, '425 Alta Street', 
+    'Gonzales', 'CA', 
+    '93926', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2024-02-07', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    19012425796, 'Unknown', 'unknown2@invalid.com', '8316451200.0', 
+    'mpusd_now', 'student.mpusd.k12.ca.us', 
+    'https://www.linkedin.com/company/monterey-peninsula-unified-school-district', 
+    'Education', 'Monterey Peninsula Unified School District (MPUSD) serves K-12th grade students and is located in Monterey, CA. We serve 9,000+ students from preschool to 12th grade, as well as adults on the Monterey Central Coast. Our services include educational pro...', 'Large',
+    'Large', 
+    0, '700 Pacific Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2024-02-07', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18808426801, 'Unknown', 'unknown3@invalid.com', 'None', 
+    'Uplift Central Coast', 'upliftcentralcoast.org', 
+    'https://www.linkedin.com/company/reachcentralcoast', 
+    'Technology', 'Uplift Central Coast is a six county coalition that aims to attract investment and expand opportunities for Central Coast residents. They are focused on creating a forward-thinking development plan under California's Community Economic Resilience Fund....', 'Large',
+    'Micro', 
+    0, 'None', 
+    'San Luis Obispo', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2024-01-22', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18779217433, 'Judicael from Hotjar', 'dpo@mail.hotjar.com', 'None', 
+    'hotjar', 'mail.hotjar.com', 
+    'https://www.linkedin.com/company/hotjar', 
+    'Industrial and Manufacturing', 'Hotjar is a company that provides website heatmaps and behavior analytics tools. Their tools allow you to see where users click, ask for their feedback, and understand why they drop off. They offer product experience insights that show how users behave...', 'Large',
+    'Large', 
+    0, 'None', 
+    'Saint Julian's', 'None', 
+    'STJ3141', 
+    'Malta', 
+    'Europe/Malta', 
+    '2024-01-19', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18652650352, 'Unknown', 'unknown4@invalid.com', 'None', 
+    'The Insight Marketers', 'theinsightmarketers.com', 
+    'https://www.linkedin.com/company/the-insight-marketers', 
+    'Education', 'The Insight Marketers is a digital marketing agency that specializes in data-driven insights. They offer comprehensive digital solutions including content creation, social advertising, marketing, data analysis, audience-focused design, and versatile pr...', 'Large',
+    'Micro', 
+    0, '15970 West State Road 84', 
+    'Sunrise', 'FL', 
+    '33326', 
+    'United States', 
+    'America/New_York', 
+    '2024-01-09', 
+    2023
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18647724689, 'Unknown', 'unknown5@invalid.com', 'None', 
+    'sorama.us', 'sorama.us', 
+    'https://www.linkedin.com/company/sorama', 
+    'Other', 'Easily find noise & vibration problems by visualizing sound. See sound & vibrations in Far Field, Near Field or use the other analysis tools in the Sorama Portal.', 'Small',
+    'Small', 
+    0, '117 Beukenlaan', 
+    'Eindhoven', 'None', 
+    '5616VC', 
+    'Netherlands', 
+    'Europe/Amsterdam', 
+    '2024-01-08', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18643412326, 'Unknown', 'unknown6@invalid.com', 'None', 
+    'Volare Aerial Imaging', 'volareaerial.com', 
+    'https://www.linkedin.com/company/volare-aerial-imaging-llc', 
+    'Other', 'Volare Aerial Imaging is a FAA licensed and insured drone service provider that specializes in serving the agriculture, construction, and environmental industries. They offer a range of services including aerial imaging, precision agriculture, electric...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Ukiah', 'CA', 
+    '95482', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2024-01-08', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18643187579, 'Unknown', 'unknown7@invalid.com', 'None', 
+    'Mitchell Friedman', 'mitchellfriedman.com', 
+    'None', 
+    'Other', 'A blog about leadership development, strategic communication, organizational effectiveness, ethics, public relations, and career development. Dr. Mitchell Friedman, APR (Accredited in Public Relations) writes about individual and organizational effecti...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'Canada', 
+    'None', 
+    '2024-01-08', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18607073401, 'Unknown', 'unknown8@invalid.com', 'None', 
+    'Zing Drone Solutions', 'zingdrones.com', 
+    'https://www.linkedin.com/company/zingdrones', 
+    'Hospitality and Travel', 'Zing Drone Solutions is a company that provides turnkey drone delivery solutions. They aim to reduce operational risk and complexity for businesses looking to start drone delivery operations. Their services include providing an Enterprise Starter Kit t...', 'Medium',
+    'Micro', 
+    0, '433 Central Avenue North', 
+    'St. Petersburg', 'FL', 
+    '94043', 
+    'United States', 
+    'America/New_York', 
+    '2024-01-03', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18524550160, 'Alisa Result Story', 'hi@resultstoryco.com', 'None', 
+    'resultstoryco.com', 'resultstoryco.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-12-26', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18430921777, 'Jack Westerfield', 'jack@westerfield.net', 'None', 
+    'westerfield.net', 'westerfield.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-12-14', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18428126977, 'Gabriel Mendez', 'mendez.33992@sbhsd.k12.ca.us', '8316375831.0', 
+    'San Benito High School District', 'sbhsd.k12.ca.us', 
+    'None', 
+    'Education', 'Our mission at SBHS is to educate all students to their highest potential so they will have the greatest range of personal options upon graduation.', 'Large',
+    'Medium', 
+    0, '1220 Monterey Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-12-14', 
+    1987
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18413666872, 'Unknown', 'unknown9@invalid.com', '19173198472.0', 
+    'Transact Holdings', 'transactcampus.com', 
+    'https://www.linkedin.com/company/transact-campus-inc', 
+    'Finance and Legal', 'Transact Campus is a company that provides mobile-centric campus solutions for smart tuition payment plans, campus payments, one card campus IDs, and college commerce. They partner with institutions to enhance the student and family experience through ...', 'Large',
+    'Large', 
+    0, '18700 North Hayden Road', 
+    'Phoenix', 'AZ', 
+    '47906', 
+    'United States', 
+    'America/Phoenix', 
+    '2023-12-13', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18301892777, 'Danny Bernstein', 'danny@hawktower.com', 'None', 
+    'HawkTower', 'hawktower.com', 
+    'https://www.linkedin.com/company/undeveloped-nl', 
+    'Finance and Legal', 'HawkTower is a venture capital firm based in Monterey, California. We specialize in backing pre-seed and seed stage startups that are applying software and artificial intelligence solutions to industries such as agriculture, mobility, and dual use. We ...', 'Small',
+    'Small', 
+    0, 'None', 
+    'Amsterdam', 'None', 
+    '1016CS', 
+    'Netherlands', 
+    'Europe/Amsterdam', 
+    '2023-12-02', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18186711175, 'Victoria Valencia', 'victoria.valencia@cityofgilroy.org', 'None', 
+    'City of Gilroy', 'cityofgilroy.org', 
+    'https://www.linkedin.com/company/city-of-gilroy', 
+    'Finance and Legal', 'The City of Gilroy is a government administration organization located in Gilroy, California. It is centrally located at the southern gateway to Silicon Valley and is known as the 'Garlic Capital of the World.' The city offers a range of services to it...', 'Medium',
+    'Large', 
+    0, '7351 Rosanna Street', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-11-22', 
+    1870
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    18003361926, 'Kaitlin Mc Andrews', 'katie.mcandrews@ventanabigsur.com', '18006286500.0', 
+    'Ventana Big Sur', 'ventanabigsur.com', 
+    'https://www.linkedin.com/company/ventana-big-sur-an-alila-resort', 
+    'Other', 'Ventana Big Sur, a luxury coastal CA resort near Monterey, offers luxury accommodations and unique experiences along the dramatic California coastline in Big Sur.', 'Small',
+    'Medium', 
+    0, '48123 California 1', 
+    'Big Sur', 'CA', 
+    '93920', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-11-08', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17975227691, 'Alison Baguio', 'alison@illusionsofgrandeur.com', '8318995488.0', 
+    'Illusions of Grandeur', 'illusionsofgrandeur.com', 
+    'https://www.linkedin.com/company/illusions-of-grandeur', 
+    'Education', 'Illusions of Grandeur is an event planning and rental company based in Monterey, Carmel, and Seaside. With over 30 years of experience, we specialize in designing and producing spectacular events on any scale. Our team works in partnership with clients...', 'Large',
+    'Micro', 
+    0, '479 ELDER AVE', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93922', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-11-07', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17926882582, 'Alina Diez', 'alinaisabel.diez@ehu.eus', '34946012000.0', 
+    'UPV/EHU', 'ehu.eus', 
+    'http://www.linkedin.com/company/1497295', 
+    'Education', 'The University of the Basque Country (UPV/EHU) is a renowned educational institution that offers a wide range of academic programs and funding opportunities. It provides practical information for exchange visiting students and is known for its research...', 'Large',
+    'Enterprise', 
+    0, 'PARQUE DE SARRIKO', 
+    'Vizcaya', 'None', 
+    '33142', 
+    'Spain', 
+    'Europe/Madrid', 
+    '2023-11-02', 
+    1968
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17874768553, 'Chris Sommers', 'abaltzegar@montereyplazahotel.com', '8316461700.0', 
+    'Monterey Plaza Hotel & Spa', 'montereyplazahotel.com', 
+    'https://www.linkedin.com/company/monterey-plaza-hotel-&-spa', 
+    'Hospitality and Travel', 'Monterey Plaza Hotel & Spa is a luxury resort located on Cannery Row in Monterey, California. The hotel offers elegant European architecture, sweeping coastal views, and sophisticated style. Guests can enjoy the gentle sounds of the surf, the fresh sce...', 'Large',
+    'Medium', 
+    0, '400 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-30', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17871974241, 'Kimberly Schnader', 'kschnader@bernarduslodge.com', '8316583400.0', 
+    'Bernardus Lodge & Spa', 'bernarduslodge.com', 
+    'https://www.linkedin.com/company/bernardus-lodge', 
+    'Hospitality and Travel', 'Carmel Valley Hotels | Bernardus Lodge | Official Website Savor the gracious intimacy of a resort and spa with an epicurean flair. Experience an unforgettable five course dinner expertly paired with acclaimed wines from Quintessa, renowned for producin...', 'Large',
+    'Medium', 
+    0, '415 West Carmel Valley Road', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17840837181, 'Jessica Guerra', 'jessica@postranchinn.com', '8316672200.0', 
+    'Post Ranch Inn', 'postranchinn.com', 
+    'https://www.linkedin.com/company/postranchinn', 
+    'Hospitality and Travel', 'Post Ranch Inn is a luxury resort located in Big Sur, California. It offers the ultimate accommodations for a romantic getaway, including honeymoon, anniversary, wedding, and relaxing spa packages. The resort is fully accessible by car and provides stu...', 'Large',
+    'Medium', 
+    0, '219 PO Box', 
+    'Big Sur', 'CA', 
+    '93920', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-27', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17790125203, 'Wen Zhang', 'wen@innw-atx.com', 'None', 
+    'Innw Atx', 'innw-atx.com', 
+    'https://www.linkedin.com/company/innw-institute', 
+    'Technology', 'Innw Atx is a company that provides a range of services to help entrepreneurs and executives with investment readiness, GTM marketing strategy, and global expansion. They offer customized entrepreneurship programming to cultivate a thriving startup cul...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Austin', 'TX', 
+    'None', 
+    'United States', 
+    'America/Chicago', 
+    '2023-10-24', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17789714490, 'Michelle Childs ', 'vgutierrez2@salinasvalleyhealth.com', 'None', 
+    'Salinas Valley Health', 'salinasvalleyhealth.com', 
+    'https://www.linkedin.com/company/salinas-valley-memorial-healthcare-system', 
+    'Healthcare', 'Salinas Valley Health is a trusted provider of high quality healthcare for patients of all ages. We provide specialized care and general services, with our primary goal being to improve the health and well-being of our community.', 'Large',
+    'Enterprise', 
+    0, '450 East Romie Lane', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-24', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17788351320, 'Mando Levett', 'mando@mando.surf', 'None', 
+    'Mando Surf Crafts', 'mando.surf', 
+    'None', 
+    'Other', 'Mando Surf Crafts is a company that specializes in creating custom surfboards. They provide floats, shape, style, and performance to meet the individual needs of surfers. Whether you are looking for a thruster or a twinner, Mando Surf Crafts can create...', 'Medium',
+    'Micro', 
+    0, '7212 5th Avenue', 
+    'New York', 'NY', 
+    '10022', 
+    'United States', 
+    'America/New_York', 
+    '2023-10-24', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17775208736, 'Megan Phillips', 'mphillips@everspringpartners.com', '18472784287.0', 
+    'Everspring', 'everspringpartners.com', 
+    'https://www.linkedin.com/company/everspring-inc-', 
+    'Technology', 'Everspring is a leading provider of full-service, customized online educational solutions. They partner with universities to design and deliver innovative online programs that meet the changing needs of students, faculty, and programs. Everspring combi...', 'Large',
+    'Medium', 
+    0, '200 W Jackson Blvd', 
+    'Chicago', 'IL', 
+    '60606', 
+    'United States', 
+    'America/Chicago', 
+    '2023-10-23', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17733846884, 'Michelle Slade', 'michelle@myc4strategist.com', 'None', 
+    'C4 CONSULTING', 'myc4strategist.com', 
+    'None', 
+    'Education', 'C4 Consulting is a strategic consulting and coaching company that helps mission-driven change leaders accelerate their ability to achieve results that matter. With over 20 years of experience, Michelle Slade and her associates provide services such as ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-19', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17666935943, 'Kathy Martinez', 'kathy.martinez@ottersoft.com', 'None', 
+    'OtterSoft', 'ottersoft.com', 
+    'https://www.linkedin.com/company/ottersoft-usa', 
+    'Technology', 'OtterSoft is a team of innovators and visionaries with an eye not only for big picture solutions, but for long term growth and productivity. Our passion lies in bringing value and expediting digital transformation to our clients. We are a group of engi...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Modesto', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-13', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17633267810, 'powell moneyfloworg', 'powell@moneyflow.org', '15304777734.0', 
+    'Moneyflow Organization', 'moneyflow.org', 
+    'https://www.linkedin.com/company/moneyflow', 
+    'Finance and Legal', 'The Moneyflow Organization is a company that provides the Moneyflow Money Management System, a software development solution for personal finance. Their system allows users to track and control their finances in a simple and inspiring way. The company'...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-10', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17610436631, 'Paige Phipps', 'pphipps@flexcarestaff.com', '14048464100.0', 
+    'FlexCare LLC', 'flexcarestaff.com', 
+    'https://www.linkedin.com/company/flexcare-medical-staffing', 
+    'Other', 'FlexCare Medical Staffing is a nationwide leader in travel nursing, therapy, and allied staffing services. They provide staffing services for the top acute care facilities and healthcare systems in the country. FlexCare offers programs like SinglePoint...', 'Large',
+    'Enterprise', 
+    0, '532 Gibson Drive', 
+    'Roseville', 'CA', 
+    '95678', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-08', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17563404089, 'Jesus Ruvalcaba', 'jesus@papertacos.com', 'None', 
+    'Paper TacosTM', 'papertacos.com', 
+    'https://www.linkedin.com/company/paper-tacos', 
+    'Other', 'Paper Tacos is a Spanish greeting cards shop that offers a collection of Spanish language greeting cards influenced by Hispanic culture. They also have a compact calendar featuring their popular illustrations. The company's designs are rooted in Mexica...', 'Medium',
+    'Micro', 
+    0, '1325 Abbott Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-03', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17536703501, 'Brandon Engholm', 'brandon@interphasic.com', '8313920708.0', 
+    'Interphasic LLC', 'interphasic.com', 
+    'https://www.linkedin.com/company/interphasic-llc', 
+    'Real Estate and Development', 'Interphasic LLC is a company that specializes in control systems. They provide control designs for hydraulic, pneumatic, and mechanical systems using advanced micro controller technology. Their control systems are known for their accuracy, repeatabilit...', 'Medium',
+    'Micro', 
+    0, '1621 Plumas Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-10-01', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17530809410, 'Shabina Singh', 'singh.shab@northeastern.edu', '6173732000.0', 
+    'Northeastern University', 'northeastern.edu', 
+    'https://www.linkedin.com/school/northeastern-university', 
+    'Education', 'Northeastern University is a global, experiential, research university founded in 1898. The university offers a comprehensive range of undergraduate and graduate programs leading to degrees through the doctorate in nine colleges and schools. It has gra...', 'Large',
+    'Enterprise', 
+    0, '401 Terry Ave N #103', 
+    'Boston', 'MA', 
+    '02115', 
+    'United States', 
+    'America/New_York', 
+    '2023-09-30', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17528088461, 'Hadrien Le Hodey', 'hadrien@waterlemon.vc', 'None', 
+    'Waterlemon', 'waterlemon.vc', 
+    'None', 
+    'Finance and Legal', 'Waterlemon Ventures is a family-backed fund that empowers ambitious entrepreneurs in the AgTech, FoodTech, and ClimateTech spaces. They provide funding ranging from €300k to €1.5m from Pre Seed to Series A. Their mission is to support promising startup...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-30', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17513013392, 'Romain Thibaux ', 'nhan.nguyen@verdantrobotics.com', '14045433754.0', 
+    'Verdant Robotics', 'verdantrobotics.com', 
+    'https://www.linkedin.com/company/verdant-robotics-inc', 
+    'Industrial and Manufacturing', 'Verdant Robotics brings high fidelity farming to achieve precision at massive scale. Weed and thin high density, conventional, organic and no till crops with the pinpoint precision of the Model B Smart Sprayer. 96% less input usage 50%+ decrease in w...', 'Large',
+    'Small', 
+    0, '26062 EDEN LANDING RD', 
+    'Hayward', 'CA', 
+    '93635', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-28', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17513871765, 'Lee Vetsch', 'lee.vetsch@ospraie.com', '2126025000.0', 
+    'Ospraie Management, LLC', 'ospraie.com', 
+    'https://www.linkedin.com/company/106024', 
+    'Education', 'Ospraie Management is an investment management firm that specializes in commodity and basic industry investing. The company manages funds that invest in a wide range of commodities, including energy, agriculture, and metals. Ospraie Management also pro...', 'Large',
+    'Micro', 
+    0, '437 Madison Avenue', 
+    'New York', 'NY', 
+    '10022', 
+    'United States', 
+    'America/New_York', 
+    '2023-09-28', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17512851840, 'Kevin Piffero', 'kpiffero@mantisag-tech.com', '19287503684.0', 
+    'mantisag-tech.com', 'mantisag-tech.com', 
+    'None', 
+    'Other', 'Mantis Automated Thinners are available for lease or purchase. Built with your needs in mind, they provide an application tailored to your farming operation.', 'Small',
+    'None', 
+    0, '151 Gonzales River Road', 
+    'Gonzales', 'CA', 
+    '93926', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-28', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17510368356, 'Juana Gomez', 'juana.gomez@fruturaproduce.com', 'None', 
+    'Frutura', 'fruturaproduce.com', 
+    'https://www.linkedin.com/company/frutura-produce', 
+    'Other', 'Frutura is a sales and marketing network committed to supplying global customers with premium fruit, 365 days a year. The company’s growers and marketers consistently deliver produce of the highest quality, demonstrate operational excellence and share ...', 'Large',
+    'Medium', 
+    0, '42874 Road 64', 
+    'Reedley', 'CA', 
+    '93654', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-28', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17501889908, 'Lisa Dobbins ', 'amy@growershipperfoundation.org', '8314229007.0', 
+    'GROWER-SHIPPER FOUNDATION', 'growershipperfoundation.org', 
+    'https://www.linkedin.com/company/grower-shipper-association-foundation', 
+    'Other', 'Grower Shipper Association Foundation is a community-based program that organizes and partners with local growers and shippers to bring volunteers out to glean the fields and deliver the produce to local food banks. They also offer AgKnowledge, a 9-mon...', 'Medium',
+    'Micro', 
+    0, '512 Pajaro Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-27', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17423028405, 'Jack Michael', 'jmichael@santacruzcoe.org', '18314665600.0', 
+    'Santa Cruz County Office of Education', 'santacruzcoe.org', 
+    'https://www.linkedin.com/company/santa-cruz-coe', 
+    'Education', 'The Santa Cruz County Office of Education provides student programs, supports school districts, and provides curricular and fiscal oversight to schools and students in Santa Cruz County.', 'Large',
+    'Large', 
+    0, '400 Encinal Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-22', 
+    1861
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17414313027, 'Salvador Ornelas Reynoso', 'salvador@churchbrothers.com', '8317961000.0', 
+    'Church Brothers Farms', 'churchbrothers.com', 
+    'https://www.linkedin.com/company/church-brothers-farms', 
+    'Consumer Goods and Retail', 'Church Brothers Farms is a vertically integrated family owned and operated company that produces a full line of fresh vegetables year round with an in house farming/harvest program and state of the art processing plant, True Leaf Farms. We are a grower...', 'Large',
+    'Large', 
+    0, '19065 Portola Drive', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-21', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17412364584, 'Lynsey Mercier', 'lynsey.mercier@bd.com', '12018476800.0', 
+    'Becton, Dickinson and Company', 'bd.com', 
+    'https://www.linkedin.com/company/bd1', 
+    'Healthcare', 'BD is a medical technology company that serves healthcare institutions, life science researchers, clinical laboratories, and the industry. BD is one of the largest global medical technology companies in the world and is advancing the world of health by...', 'Large',
+    'Enterprise', 
+    1, '1 Becton Drive', 
+    'Franklin Lakes', 'NJ', 
+    '07417', 
+    'United States', 
+    'America/New_York', 
+    '2023-09-21', 
+    1897
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17383949425, 'Kate Fisher', 'kate@katefisher.co', 'None', 
+    'Katefisher', 'katefisher.co', 
+    'None', 
+    'Other', 'Kate Fisher Sustainable Fashion consulting for emerging and established brands. Sustainable Product development, Sustainable Sourcing, Sustainable Supply chain management, and sustainable business strategy. Product Development, Supply Chain Management...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-19', 
+    1897
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17371351155, 'Ruth YOung LOaeza', 'ruth@makeitneet.com', 'None', 
+    'Genius on Development Website by Buchanan Brand+Design', 'makeitneet.com', 
+    'None', 
+    'Other', 'Cut bedmaking time down by 50% with an invention so simple, you’ll wonder why you hadn’t thought of it. With flaps that allow for ease of application and uniformity in fit, this design element frees the user from having to move about the bed to ensure an even and smooth fit.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    '92126', 
+    'None', 
+    'None', 
+    '2023-09-18', 
+    1897
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17305258065, 'Alia Elyas', 'aelyas@mpeb.biz', 'None', 
+    'mpeb.biz', 'mpeb.biz', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-12', 
+    1897
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17302722333, 'Andy Kaufman', 'andy@andykaufman.net', 'None', 
+    'AndyKaufman.net', 'andykaufman.net', 
+    'https://www.linkedin.com/company/carrot-health', 
+    'Real Estate and Development', 'AndyKaufman.net is a real estate investment company based in Santa Cruz, CA. They specialize in buying and selling properties as well as providing brokerage services. With their expertise in the real estate market, they help clients make informed decis...', 'Medium',
+    'Micro', 
+    0, '950 SE Oak Ave', 
+    'Roseburg', 'OR', 
+    '97470', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-12', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17302676613, 'Vincent Powell', 'vincent.powell@swagelok.com', '14402484600.0', 
+    'Swagelok Company', 'swagelok.com', 
+    'https://www.linkedin.com/company/swagelok', 
+    'Industrial and Manufacturing', 'Swagelok.com the source for tube fittings, valves, and other fluid system components | Swagelok A $1.8 billion, privately held company, Swagelok Company designs, manufactures, and delivers an expanding range of the highest quality fluid system products...', 'Large',
+    'Enterprise', 
+    0, '29500 Solon Road', 
+    'Solon', 'OH', 
+    '44139', 
+    'United States', 
+    'America/New_York', 
+    '2023-09-12', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17302038050, 'Bill OBanion', 'bill@sabinetechnology.com', 'None', 
+    'Sabinetechnology', 'sabinetechnology.com', 
+    'None', 
+    'Other', 'Sabine Technology is a company that specializes in cutting edge solutions utilizing state of the art acoustic sensing technology. They offer advanced sensor and monitoring instruments for crack/structural health, leak detection, dynamic balance, and pr...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-12', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17293097774, 'Mary Jo Zenk', 'laura@workingsolutions.org', '14157801217.0', 
+    'Working Solutions CDFI', 'workingsolutions.org', 
+    'https://www.linkedin.com/company/workingsolutionsmicroloans', 
+    'Finance and Legal', 'Working Solutions CDFI is a company that provides affordable capital and free business consulting to diverse entrepreneurs in Northern California. They specialize in start-up and early-stage financing for businesses in the region. Their services includ...', 'Large',
+    'Small', 
+    0, '930 Montgomery St', 
+    'San Francisco', 'CA', 
+    '94133', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-11', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17290676311, 'Jill Irwin', 'jirwin@chipotle.com', '19495244000.0', 
+    'Chipotle Mexican Grill, Inc.', 'chipotle.com', 
+    'https://www.linkedin.com/company/chipotle-mexican-grill', 
+    'Consumer Goods and Retail', 'Chipotle Mexican Grill is a chain of restaurants specializing in burritos and tacos. They offer a focused menu of burritos, tacos, burrito bowls, and salads made from fresh, high-quality ingredients. Their food is prepared using classic cooking methods...', 'Large',
+    'Corporate', 
+    1, '610 Newport Center Dr', 
+    'Newport Beach', 'CA', 
+    '92660', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-11', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17280695689, 'Robert Gardiner', 'fanjam@mcn.org', '17079371444.0', 
+    'Mendocino Community Network', 'mcn.org', 
+    'http://www.linkedin.com/company/298443', 
+    'Other', 'Mendocino Community Network (MCN) is an Internet Service Provider owned and operated by the Mendocino Unified School District. They provide connectivity and other services in rural Northern California. MCN is currently hiring for various positions.', 'Large',
+    'Medium', 
+    0, '10700 Ford Street', 
+    'Mendocino', 'CA', 
+    '95460', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-10', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17276089452, 'Leslie August', 'leslie.august@fremontpeakcapital.com', 'None', 
+    'Fremont Peak Capital', 'fremontpeakcapital.com', 
+    'https://www.linkedin.com/company/fremont-peak-capital-llc', 
+    'Finance and Legal', 'Fremont Peak Capital is a company that helps business owners achieve growth using strategic, innovative, and practical methods. They offer a range of services including business consulting, marketing strategy, digital marketing, investing, partnerships...', 'Medium',
+    'Micro', 
+    0, '310 The Alameda', 
+    'San Juan Bautista', 'CA', 
+    '95045', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-09', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17271206767, 'Daryl Bouie', 'daryl@financialhealth.org', 'None', 
+    'financialhealth.org', 'financialhealth.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-08', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17254930456, 'James OConnor', 'james@innovationwithin.com', '18314193830.0', 
+    'Innovation Within', 'innovationwithin.com', 
+    'https://www.linkedin.com/company/innovation-within', 
+    'Technology', 'Innovation Within is a company that provides simple to use software for streamlining teaching, learning, and implementing innovation, entrepreneurship, and customer discovery. Their software is comprehensively designed to facilitate the Lean LaunchPad ...', 'Medium',
+    'Micro', 
+    0, '463 Isbel Drive', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17255922856, 'EDWARD BLESS', 'ed@h2solutions.com', '9253728150.0', 
+    'H2 Solutions', 'h2solutions.com', 
+    'None', 
+    'Other', 'H₂ Solutions Inc. is a company that specializes in providing sustainable solutions for environmental restoration and conservation. We offer a wide range of services including water and soil remediation, habitat restoration, and renewable energy solutio...', 'Large',
+    'Medium', 
+    0, '1087 HILLSIDE DR', 
+    'Martinez', 'CA', 
+    '94553', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17241165120, 'Barbara Phalen', 'barbara.phalen@greaterzuricharea.com', 'None', 
+    'Greater Zurich Area', 'greaterzuricharea.com', 
+    'https://www.linkedin.com/company/greater-zurich-area', 
+    'Education', 'Greater Zurich Area Ltd (GZA) is the official investment promotion agency of the economic region of Zurich, Switzerland. GZA is a reliable Swiss business concierge for companies looking to grow internationally. We act as an intermediary, door opener an...', 'Large',
+    'Small', 
+    0, '122 Limmatquai', 
+    'Zürich', 'None', 
+    '8001', 
+    'Switzerland', 
+    'Europe/Zurich', 
+    '2023-09-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17241138194, 'Jennifer Wang', 'jpwang@slippytoad.com', 'None', 
+    'slippytoad.com', 'slippytoad.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17220726096, 'Kristina Mc Millan', 'kristina@argyleearth.com', 'None', 
+    'Argyleearth', 'argyleearth.com', 
+    'https://www.linkedin.com/company/argyle-earth', 
+    'Other', 'Argyle Earth is a company that specializes in converting low-grade waste heat into electricity. Their smart electric generator actively collects heat and converts it to clean, renewable power. The generator can be grid-tied for supplemental power witho...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'San Jose', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-09-05', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17208525218, 'Alisa Rapajic', 'hi@theresultstory.com', 'None', 
+    'theresultstory.com', 'theresultstory.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-09-04', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17175479562, 'Bodil Jorgensen', 'bodil@jorgensen.com', 'None', 
+    'RealNames', 'jorgensen.com', 
+    'https://www.linkedin.com/company/d-jorgensen.com', 
+    'Technology', 'RealNames (jorgensen.com) provides ad-free and reliable email services based on your own name. With RealNames, your email address is your name, allowing for a more meaningful and professional email address. The company offers email services that work w...', 'Small',
+    'None', 
+    0, '4 KAMMAVEJ', 
+    'Middelfart', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-31', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17168716815, 'Line Sand Austnes', 'line.austnes@indykite.com', 'None', 
+    'Indykite', 'indykite.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-08-31', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17128799549, 'Hillary Talbot', 'hillary@etrevc.com', 'None', 
+    'être', 'etrevc.com', 
+    'https://www.linkedin.com/company/%C3%AAtre', 
+    'Finance and Legal', 'être Venture Capital is a women-led venture capital firm that supports and promotes female entrepreneurs. We find great ideas hiding in plain sight among underserved entrepreneurs across the US, including women, minorities, and those not well networked...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-27', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17103122718, 'Amanda Elam', 'aelam@babson.edu', '17812394128.0', 
+    'Babson College', 'babson.edu', 
+    'None', 
+    'Education', 'Babson College is a top school of business and the best college for entrepreneurship, with campuses in Wellesley, Boston, and Miami. Babson College, located in Wellesley, Massachusetts, is recognized internationally for its entrepreneurial leadership i...', 'Large',
+    'Enterprise', 
+    0, '231 FOREST ST', 
+    'Wellesley', 'MA', 
+    '02457', 
+    'United States', 
+    'America/New_York', 
+    '2023-08-25', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17103178666, 'Julie Castro Adams', 'julie@howwomeninvest.com', 'None', 
+    'How Women Invest', 'howwomeninvest.com', 
+    'https://www.linkedin.com/company/howwomenlead', 
+    'Other', 'How Women Invest is a venture capital firm that leverages its professional network of 20,000 women to identify high potential female founders and provide the starter fuel and access to propel these fearless women founders to success. How Women Lead is ...', 'Small',
+    'Medium', 
+    0, 'None', 
+    'San Rafael', 'CA', 
+    '94903', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-25', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17091112041, 'Jiovanni Sierra', 'js@currentwavemedia.com', '18313330100.0', 
+    'Current Wave', 'currentwavemedia.com', 
+    'https://www.linkedin.com/company/current-wave-media', 
+    'Other', 'Current Wave Media is a Monterey-based advertising agency that specializes in rich media content and media placement on digital and traditional mediums. They offer in-house media production services including video production, 8K, drone, photography, a...', 'Medium',
+    'Micro', 
+    0, '651 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-24', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17088965287, 'Karen Law', 'klaw@sandhillangels.com', '6509480286.0', 
+    'Sand Hill Angels', 'sandhillangels.com', 
+    'https://www.linkedin.com/company/sand-hill-angels', 
+    'Finance and Legal', 'Sand Hill Angels is a group of successful Silicon Valley executives and accredited investors that are passionate about entrepreneurialism and the commercialization of disruptive new technologies. Sand Hill Angels is a group of professionals dedicated t...', 'Medium',
+    'Medium', 
+    0, '169 University Ave', 
+    'Mountain View', 'CA', 
+    '94043', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-24', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17066872725, 'May Roen', 'may@westcliffops.com', 'None', 
+    'westcliffops.com', 'westcliffops.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-08-22', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17065101164, 'Monterey Gardiner ', 'paul.owen@zeroavia.com', 'None', 
+    'ZeroAvia', 'zeroavia.com', 
+    'https://www.linkedin.com/company/zeroavia', 
+    'Other', 'ZeroAvia is a company that is revolutionizing the aviation industry by developing hydrogen electric powertrains for airplanes. They aim to replace conventional engines with zero-emission powertrains, starting with 20-seat airplanes. ZeroAvia's mission ...', 'Large',
+    'Medium', 
+    0, '90 Skylane Drive', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-22', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    17007776313, 'Maeve Katherine Bergman ', 'lgwyn@foundationccc.org', '9163251863.0', 
+    'Foundation for California Community Colleges', 'foundationccc.org', 
+    'https://www.linkedin.com/company/foundationccc', 
+    'Non-Profit', 'The Foundation for California Community Colleges is the official foundation supporting the Board of Governors, Chancellor’s Office, and the entire California Community College system. They develop programs and services that save millions of dollars for...', 'Large',
+    'Large', 
+    0, '1102 Q Street', 
+    'Sacramento', 'CA', 
+    '95811', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-08-18', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    16983184683, 'Frank Onyemauwa', 'fo@verdantsustainability.com', 'None', 
+    'edited', 'verdantsustainability.com', 
+    'None', 
+    'Industrial and Manufacturing', 'At Verdant Sustainability we understand the process and have the know-how to design functional barrier chemistries that reduce or eliminate the use or generation of hazardous substances to suit your needs. Our chemistries are either plant based or from...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-08-16', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    16939726744, 'Steven Sablan', 'kato@specializedsec.com', 'None', 
+    'specializedsec.com', 'specializedsec.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-08-13', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    16778448668, 'Matt Beatty', 'matt.beatty@advancedaviationalignment.com', 'None', 
+    'Advanced Aviation Alignment', 'advancedaviationalignment.com', 
+    'None', 
+    'Education', 'Advanced Aviation Alignment (A3) is a company that specializes in providing consulting services and solutions for the integration of unmanned aircraft systems (UAS or Drones) and air taxis (EVTOLs) into the airspace. They work with communities and busi...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-07-31', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    16224761221, 'Daryl Bouie', 'daryl@financialhealthed.com', 'None', 
+    'Financialhealthed', 'financialhealthed.com', 
+    'None', 
+    'Education', 'Financial and Health Ed Foundation is a non-profit organization that focuses on providing underserved and at-risk youths and adults in our community with basic financial education, health education, self-help counseling, and job training skills. We off...', 'Small',
+    'None', 
+    0, '100 West Alisal Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-06-25', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    16057644400, 'Zapier Notifications', 'notifications@mail.zapier.com', '18773818743.0', 
+    'Zapier', 'mail.zapier.com', 
+    'https://www.linkedin.com/company/zapier', 
+    'Technology', 'Zapier (YC S12) gives people internet superpowers by letting them easily connect and automate the apps they use. Partners, including Salesforce, Intuit, Google, and Dropbox, utilize Zapier to offer their customers integrations with over 750 apps. The Zapier Developer Platform enables developers to add APIs for private or public use. Our growing, remote team has members around the world. We are on a mission to make work easier. We face formidable technical hurdles, unique marketing challenges, and exciting brand and design opportunities that come with serving a vast multi-sided audience. We are hiring.', 'Large',
+    'Large', 
+    0, '548 Market Street', 
+    'San Francisco', 'CA', 
+    '18044', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-06-13', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15979448692, 'Alisa Rapajic', 'start@the-result-story.com', 'None', 
+    'the-result-story.com', 'the-result-story.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-06-06', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15961315340, 'Linda Downey', 'lindadowney06@gmail.com', 'None', 
+    'Point Loma Nazarene University', 'pointloma.edu', 
+    'https://www.linkedin.com/company/point-loma-nazarene-university-school-of-education', 
+    'Education', 'Point Loma Nazarene University is a Christian liberal arts college. Its main campus is located on the oceanfront in San Diego, California, United States. PLNU is a selective Christian liberal arts university located in San Diego, CA, and sits on a 90 a...', 'Large',
+    'Enterprise', 
+    0, '3900 Lomaland Dr', 
+    'San Diego', 'CA', 
+    '92106', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-06-04', 
+    1902
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15944676753, 'David Olsen', 'david@olsen-insurance.com', 'None', 
+    'Olsen Insurance', 'olsen-insurance.com', 
+    'https://www.linkedin.com/company/olsen-olsen-insurance-services', 
+    'Finance and Legal', 'Olsen & Olsen Insurance Services is a local, family owned boutique insurance brokerage. We provide our clients with the best insurance coverage, at the best price. As a member of AmWins, we have national buying power and access to over 150 carriers. We...', 'Medium',
+    'Micro', 
+    0, '1491 Cypress Drive', 
+    'Del Monte Forest', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-06-02', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15881363844, 'Isabella Smith', 'isabella@manastechy2.online', 'None', 
+    'manastechy2.online', 'manastechy2.online', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-05-27', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15787173001, 'Lisa  Lopes', 'lsnodgra@cisco.com', '14085264000.0', 
+    'Cisco Systems, Inc.', 'cisco.com', 
+    'https://www.linkedin.com/company/cisco', 
+    'Technology', 'Cisco Systems, Inc. designs and sells a range of products, provides services and delivers integrated solutions to develop and connect networks around the world. The Company operates through three geographic segments: Americas; Europe, the Middle East a...', 'Large',
+    'Corporate', 
+    1, '170 West Tasman Drive', 
+    'San Jose', 'CA', 
+    '95134', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-18', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15786836799, 'Robert Freiri', 'rfreiri@gatewaycenter.org', '8313728002.0', 
+    'Gateway Center of Monterey County', 'gatewaycenter.org', 
+    'https://www.linkedin.com/company/gateway-center-of-monterey-county-inc', 
+    'Education', 'Gateway Center of Monterey is a non-profit organization that has been providing support services for adults living with developmental disabilities for over 50 years. Our mission is to create a caring and stimulating environment where individuals with i...', 'Large',
+    'Small', 
+    0, '850 Congress Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-18', 
+    1954
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15777363465, 'Moe Melhart', 'moe@youthoncourse.org', '18316254653.0', 
+    'Youth on Course', 'youthoncourse.org', 
+    'https://www.linkedin.com/company/youth-on-course', 
+    'Other', 'Youth on Course is a non-profit organization that provides youth with access to affordable golf, youth employment opportunities, and college scholarships. Members can play at more than 550 golf courses for $5 or less. In addition to golf access, Youth ...', 'Large',
+    'Small', 
+    0, '3200 Lopez Road', 
+    'Del Monte Forest', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-17', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15708053067, 'Lorena Perez ', 'alicia.blanco@brighterbites.org', '2146706530.0', 
+    'Brighter Bites', 'brighterbites.org', 
+    'https://www.linkedin.com/company/brighterbites', 
+    'Other', 'Brighter Bites is a national nonprofit founded in 2012 that delivers fresh fruits and vegetables directly into families’ hands, while teaching them how to use and choose a different kind of fast food. The mission of Brighter Bites is to create communit...', 'Large',
+    'Medium', 
+    0, '535 Portwall Street', 
+    'Houston', 'TX', 
+    '77029', 
+    'United States', 
+    'America/Chicago', 
+    '2023-05-10', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15676155936, 'Erin Faverty', 'erin@sempervirensvc.com', 'None', 
+    'SemperVirens Ventures LLC', 'sempervirensvc.com', 
+    'https://www.linkedin.com/company/sempervirensvc', 
+    'Finance and Legal', 'SemperVirensVC is an early stage venture capital fund investing in technology transforming work, health, and financial wellness.', 'Small',
+    'Medium', 
+    0, '1850 Gateway Dr', 
+    'San Mateo', 'CA', 
+    '94404', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-06', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15675532880, 'Unknown', 'steph@heroeventservices.com', 'None', 
+    'Heroeventservices', 'heroeventservices.com', 
+    'None', 
+    'Other', 'H.E.R.O. Event Services is a certified and accredited boutique agency that offers professional and personalized event planning support. They specialize in planning events on the Monterey Peninsula, a popular destination on the California Central Coast....', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-05-06', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15655554575, 'Conor Quigley', 'conor.quigley@pitchbook.com', '12062577844.0', 
+    'PitchBook Data', 'pitchbook.com', 
+    'https://www.linkedin.com/company/pitchbook', 
+    'Finance and Legal', 'PitchBook is a leading data software provider for professionals in the venture capital, private equity, and mergers and acquisitions industries. They offer a suite of award-winning software applications called the PitchBook Platform, which provides acc...', 'Large',
+    'Enterprise', 
+    0, '901 5th Ave', 
+    'Seattle', 'WA', 
+    '98164', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-04', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15628034448, 'Stacy Mc Millan', 'stacy@remote.com', '13102812046.0', 
+    'Remote', 'remote.com', 
+    'https://www.linkedin.com/company/remote.com', 
+    'Other', 'Remote is a global HR solutions and employment tools company that provides disruptive payroll, tax, HR, and compliance solutions for distributed teams. They offer a platform to hire international talent in minutes and handle compliance, payroll, benefi...', 'Large',
+    'Large', 
+    0, 'PENGHUA INDUSTRY PARK 2#, LONGHUA TOWN, BAOAN DISTRICT, SHENZHEN, GUANGDONG', 
+    'San Francisco', 'CA', 
+    '94133', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-05-01', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15620096396, 'Clarita Portillo', 'clarita.portillo@bigradiopro.com', 'None', 
+    'BIG RADIO PRO INC', 'bigradiopro.com', 
+    'https://www.linkedin.com/company/big-radio-pro-inc', 
+    'Education', 'Big Radio Pro is a Creative Studio dedicated to excellence in each and every one of our projects. We are a family of creatives dedicated to bringing the best out of BRP for all of our projects. We act as both a strategic and creative resource to our cl...', 'Large',
+    'Micro', 
+    0, '1030 H Street', 
+    'Bakersfield', 'CA', 
+    '93304', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15611836057, 'Megan Cassamas', 'megan@moja.yoga', 'None', 
+    'MOJA', 'moja.yoga', 
+    'None', 
+    'Education', 'MOJA is an online yoga studio that serves the community safely through virtual and in person yoga classes, workshops and events. Founder and Monterey Bay native, Megan Cassamas offers a holistic and nurturing approach to supporting women and families. ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-28', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15609483123, 'kevin broom', 'kev@oceanbayadu.com', 'None', 
+    'Oceanbayadu', 'oceanbayadu.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-28', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15608236122, 'Alyxandrea Gomez Chandler', 'aly@rallycryunlimited.com', 'None', 
+    'rallycryunlimited.com', 'rallycryunlimited.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-28', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15582065487, 'Jennifer Kuyper', 'jennifer.kuyper@pinnaclebank.com', '3076820089.0', 
+    'Pinnacle Bank', 'pinnaclebank.com', 
+    'https://www.linkedin.com/company/pinnacle-bank_2', 
+    'Finance and Legal', 'Pinnacle Bank has been a locally owned, community bank since 1934. We specialize in meeting our customers' financial needs, both now and into the future. Local decisions, quick responses and numerous locations are just a few of the reasons to choose Pi...', 'Large',
+    'Large', 
+    0, '430 PO Box', 
+    'Elberton', 'GA', 
+    '30635', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-26', 
+    1934
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15581042022, 'Martha  Mattson ', 'cove@matsonbritton.com', '18778773797.0', 
+    'Matson Britton Architects', 'matsonbritton.com', 
+    'https://www.linkedin.com/company/matson-britton-architects', 
+    'Real Estate and Development', 'Matson Britton Architects is a Santa Cruz, California-based architectural firm that specializes in providing architectural services for coastal homes, residential properties, remodeling and renovation projects, and energy-efficient green homes. They ha...', 'Large',
+    'Micro', 
+    0, '728 North Branciforte Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-26', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15580939341, 'Andrew Sachs', 'andrews@nobelexplorers.com', 'None', 
+    'Nobel Explorers', 'nobelexplorers.com', 
+    'https://www.linkedin.com/company/nobel-explorers', 
+    'Education', 'Nobel Explorers is a global learning community making learners into leaders. They provide programs that help individuals develop both soft and hard skills, collaborate with like-minded individuals, and grow as leaders in their respective fields. Nobel ...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Washington', 'DC', 
+    '20007', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-26', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15578159130, 'Patricio Guerrero', 'patricio@rideswellcycle.com', 'None', 
+    'rideswellcycle.com', 'rideswellcycle.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-25', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15548296554, 'Phill Carter', 'phill@philist.org', 'None', 
+    'Philist', 'philist.org', 
+    'None', 
+    'Technology', 'Philist.org is a technology company that specializes in developing innovative software solutions for businesses. We offer a wide range of products and services, including custom software development, mobile app development, web design and development, ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Philadelphia', 'PA', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-24', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15529590944, 'Jennifer Willls', 'jwills@wplusw.com', '8314251140.0', 
+    'W+W Design', 'wplusw.com', 
+    'https://www.linkedin.com/company/w-w-design-inc.', 
+    'Creative and Media', 'W+W Design is a small agency with over 15 years of experience in website and application design. They focus on creating beautiful responsive websites and iOS apps that prioritize design, content, and a great user experience. They consider the customer ...', 'Medium',
+    'Micro', 
+    0, '735 Chestnut Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-21', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15511184155, 'Eric Johnsen', 'eric@rthree.org', 'None', 
+    'R3', 'rthree.org', 
+    'None', 
+    'Other', 'It’s time for R3 to establish and maintain a nationwide network of passionate individuals motivated to support those who have sacrificed their lives for our freedom. It’s time to ride, raise & renovate – how many lives can we positively impact through R3?', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-19', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15486066461, 'Al Sambar', 'al@xrcventures.com', 'None', 
+    'XRC Ventures', 'xrcventures.com', 
+    'None', 
+    'Other', 'XRC Ventures is a venture firm driving innovation in retail tech, consumer healthtech, and consumer goods.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-17', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15440728752, 'Flo Zeuthan', 'info@gibcutter.com', 'None', 
+    'gibcutter.com', 'gibcutter.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-11', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15429539910, 'Rhandal Sayat', 'rhandal@featherdynamics.com', 'None', 
+    'Feather Dynamics', 'featherdynamics.com', 
+    'None', 
+    'Other', 'Feather Dynamics is a leading provider of innovative aerospace solutions. Based in Monterey, California, United States, we specialize in the design and manufacturing of advanced feathering systems for the aviation industry. Our cutting-edge technology ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-04-10', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15404116271, 'HISAKI FUJITA', 'hisaki.fujita@kyocera.com', '81756043500.0', 
+    'KYOCERA Corporation', 'kyocera.com', 
+    'https://www.linkedin.com/company/kyocera-north-america', 
+    'Consumer Goods and Retail', 'Kyocera Corporation is a global company engaged in various fields, including fine ceramic components, electronic devices, equipment, services, and networks. They operate through seven segments: Fine Ceramic Parts Group, Semiconductor Parts Group, Appli...', 'Large',
+    'Enterprise', 
+    1, 'HAMMFELDDAMM 6', 
+    'Neuss', 'CA', 
+    '612-8501', 
+    'Japan', 
+    'Asia/Tokyo', 
+    '2023-04-06', 
+    1959
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15397339677, 'Achim Koeddermann', 'koeddea@oneonta.edu', '6074363500.0', 
+    'SUNY Oneonta', 'oneonta.edu', 
+    'https://www.linkedin.com/company/suny-oneonta', 
+    'Education', 'SUNY Oneonta is a college that provides bachelor's and master's degrees, as well as certificates, in over 60 academic programs. Located in the City of Oneonta, it is known for its exemplary residential campus that values inclusion, service, and sustain...', 'Large',
+    'Enterprise', 
+    0, '108 Ravine Parkway', 
+    'Oneonta', 'NY', 
+    '13820', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-05', 
+    1889
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15397346676, 'Mitch Ferguson', 'mitch@accelg2m.com', 'None', 
+    'AccelG2M', 'accelg2m.com', 
+    'https://www.linkedin.com/company/accelg2m', 
+    'Education', 'AccelG2M is a company that specializes in helping start-ups strategize and execute successful go-to-market (GTM) strategies. They understand that traditional strategic planning processes are not enough to navigate the fast-paced and disruptive markets ...', 'Medium',
+    'Micro', 
+    0, '1325 Howard Avenue', 
+    'Burlingame', 'CA', 
+    '94010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-05', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15396741131, 'John Romel Uy', 'juy@alumni.harvard.edu', '6174951000.0', 
+    'Harvard University', 'alumni.harvard.edu', 
+    'https://www.linkedin.com/company/harvard-university', 
+    'Education', 'Harvard Biodesign Lab brings together researchers from the engineering, industrial design, apparel, and more to develop new technologies.', 'Large',
+    'Enterprise', 
+    0, '86 Brattle St', 
+    'Cambridge', 'MA', 
+    '02138', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-05', 
+    1636
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15393788789, 'Jorge Avila', 'jorge.avila@us.af.mil', '7036145746.0', 
+    'United States Air Force', 'us.af.mil', 
+    'https://www.linkedin.com/company/united-states-air-force', 
+    'Public and Government Services', 'The United States Air Force is the air service branch of the United States Armed Forces, and is one of the eight US uniformed services.', 'Large',
+    'Enterprise', 
+    0, '550 D Street East', 
+    'Universal City', 'TX', 
+    '78150', 
+    'United States', 
+    'America/Chicago', 
+    '2023-04-05', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15392939264, 'Niell Hough', 'niell@humanitix.com', '61871501149.0', 
+    'Humanitix', 'humanitix.com', 
+    'https://www.linkedin.com/company/humanitix', 
+    'Other', 'Humanitix is an Australian social enterprise ticketing platform. We donate all our profits to partner charities - no strings attached. The best part is, event organisers get to pick the charity. We partner with some of the most impressive charities in ...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Sydney', 'None', 
+    'None', 
+    'Australia', 
+    'Australia/Sydney', 
+    '2023-04-05', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15390779830, 'Rita  Morales', 'rmoralesgarza@kcusd.org', '8313851144.0', 
+    'King City Union School District', 'kcusd.org', 
+    'https://www.linkedin.com/company/del-rey-elementary-school', 
+    'Education', 'King City Union School District is a TK 8 public school district with an enrollment of approximately 2650 students. Currently we have one TK 5, and two K 5 elementary schools: Del Rey, Santa Lucia and King City Arts Magnet. Chalone Peaks is our middle ...', 'Large',
+    'Medium', 
+    0, '104 South Vanderhurst Avenue', 
+    'King City', 'CA', 
+    '93930', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-05', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15384636540, 'Jeff Jorgenson', 'jjorgenson@missioncity.com', '6058562340.0', 
+    'Mission City Software', 'missioncity.com', 
+    'https://www.linkedin.com/company/mission-city-software', 
+    'Technology', 'Mission City Software is a leading provider of IT services and IT consulting. We offer a variety of internet-related business offerings, including original domain name registration and reservation services. Our team is quick, dependable, and reliable, ...', 'Medium',
+    'Micro', 
+    0, '879 Frederick Commons', 
+    'San Jose', 'CA', 
+    '95126', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-04', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15383733780, 'sebastian gomez', 'sebastiangomez@remax.net', '13037705531.0', 
+    'REMAX NET', 'remax.net', 
+    'https://www.linkedin.com/company/remax-of-kc', 
+    'Real Estate and Development', 'REMAX NET is a real estate company that provides comprehensive real estate consulting services through their MAX/Center RE/MAX Company Portal. They are committed to delivering transparent and reliable solutions to their clients, ensuring that their pro...', 'Large',
+    'Small', 
+    0, '3673 Parker Blvd #100', 
+    'None', 'NJ', 
+    '47906', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-04', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15378579633, 'Heidi Hamalainen', 'heidi.hamalainen@loihdeadvisory.com', 'None', 
+    'Loihde Advisory', 'loihdeadvisory.com', 
+    'https://www.linkedin.com/company/loihdeadvisory', 
+    'Education', 'Loihde Advisory is a professional services company. We combine data, technology, processes, and organisational change capability.', 'Large',
+    'Medium', 
+    0, '4 Metsänneidonkuja', 
+    'Espoo', 'None', 
+    '02130', 
+    'Finland', 
+    'Europe/Helsinki', 
+    '2023-04-04', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15372103983, 'Christina Morris', 'christina@valleyfitness.com', '2122659400.0', 
+    'Valley Fitness CA', 'valleyfitness.com', 
+    'https://www.linkedin.com/company/valley-fitness-ca', 
+    'Hospitality and Travel', 'Valley Fitness CA is a leading provider of wellness and fitness services. We offer a wide range of products and services to help individuals achieve their health and fitness goals. Our state-of-the-art facilities are equipped with the latest exercise e...', 'Large',
+    'Small', 
+    0, '350 W 50th Saint C3 #', 
+    'New York', 'NY', 
+    '10019', 
+    'United States', 
+    'America/New_York', 
+    '2023-04-03', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15366485164, 'Sheer SEO Sales', 'blogs@mail.sheerseo.com', 'None', 
+    'SheerSEO', 'mail.sheerseo.com', 
+    'None', 
+    'Technology', 'We help you track your Google Search Engine Rankings for critical keywords. PageRank, Back Links and more', 'Large',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'Israel', 
+    'None', 
+    '2023-04-03', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15355329675, 'SURA FADHEL ', 'todd.mizis@dliflc.edu', '8312425119.0', 
+    'DLIFLC', 'dliflc.edu', 
+    'https://www.linkedin.com/company/d-l-i', 
+    'Education', 'The Defense Language Institute Foreign Language Center is a school for foreign language instruction that provides culturally based foreign language education and training.', 'Medium',
+    'Micro', 
+    0, '614 Lewis Road', 
+    'Monterey', 'CA', 
+    '93944', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-31', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15351037760, 'Nancy Samuelson', 'nsarpasamuelson@paloaltou.edu', '6508148376.0', 
+    'Palo Alto University', 'paloaltou.edu', 
+    'https://www.linkedin.com/school/pacific-graduate-school-of-psychology-palo-alto-university', 
+    'Education', 'Palo Alto University is a private, nonprofit educational institution in the San Francisco Bay Area that offers bachelor’s, master’s, and doctoral degree programs in psychology, clinical psychology, counseling, and related fields in the behavioral and s...', 'Large',
+    'Medium', 
+    0, '1791 Arastradero Rd', 
+    'Palo Alto', 'CA', 
+    '94304', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-31', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15346328065, 'Sara Mc Clellan', 'mcclellan@virginia.edu', '4349824848.0', 
+    'University of Virginia', 'virginia.edu', 
+    'https://www.linkedin.com/school/university-of-virginia', 
+    'Education', 'The University of Virginia is an educational institution that offers undergraduate, graduate, postgraduate, and professional degree programs.', 'Large',
+    'Enterprise', 
+    0, '1404 University Ave', 
+    'Charlottesville', 'VA', 
+    '22904', 
+    'United States', 
+    'America/New_York', 
+    '2023-03-30', 
+    1819
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15308490646, 'Stacy Frank', 'info@stacyfrank.com', '14154972203.0', 
+    'Stacy's Studio', 'stacyfrank.com', 
+    'None', 
+    'Other', 'Stacy Frank is a Santa Cruz based artist who creates unique original works on paper and teaches printmaking workshops. Her subjects are colorful and mainly botanical in nature. Stacy's Studio offers a variety of prints for sale on her Etsy site.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-27', 
+    1819
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15308228123, 'Martin Boliek', 'boliek@ieee.org', '17325626343.0', 
+    'The Institute of Electrical and Electronics Engineers, Inc.', 'ieee.org', 
+    'https://www.linkedin.com/company/ieee', 
+    'Healthcare', 'IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. IEEE has offices in China, India, Japan, Singapore, and in the United States (California, New Jersey, New York, Washington, D...', 'Large',
+    'Enterprise', 
+    0, '3 Park Ave', 
+    'New York', 'NY', 
+    '10016', 
+    'United States', 
+    'America/New_York', 
+    '2023-03-27', 
+    1884
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15293070672, 'Brenda Payne', 'bpayne@cainventionconvention.org', 'None', 
+    'California Invention Convention', 'cainventionconvention.org', 
+    'https://www.linkedin.com/company/cainventionconvention', 
+    'Education', 'The California Invention Convention (CAIC) is an organization that works with students to teach invention education in schools and through adjunct programs. They hold annual competitions in Northern/Central California and Southern California, where stu...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-25', 
+    1884
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15286969760, 'Cate Miller', 'cate.miller@cpa-summit.com', '8314623238.0', 
+    'Summit Accountancy Group', 'cpa-summit.com', 
+    'https://www.linkedin.com/company/summit-accountancy-group-inc-', 
+    'Other', 'Summit Accountancy Group, Inc. is a full service tax, accounting and business consulting firm located in San Jose, CA. We value relationships and are dedicated to excellence. We are committed to supporting the community and take pride in giving back. W...', 'Medium',
+    'Micro', 
+    0, '2425 Porter Street', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-24', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15286846261, 'Stephanie Rodriguez ', 'joshua.label@claconnect.com', '16123764500.0', 
+    'CliftonLarsonAllen LLP', 'claconnect.com', 
+    'https://www.linkedin.com/company/cliftonlarsonallen', 
+    'Other', 'CLA (CliftonLarsonAllen) is a professional services firm delivering integrated wealth advisory, outsourcing, and public accounting capabilities to help clients succeed professionally and personally. With more than 5,000 people, more than 100 U.S. locat...', 'Large',
+    'Enterprise', 
+    0, '220 S 6th St', 
+    'Minneapolis', 'MN', 
+    '55402', 
+    'United States', 
+    'America/Chicago', 
+    '2023-03-24', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15273624858, 'Tyler Chavez', 'tychavez@student.edu', 'None', 
+    'student.edu', 'student.edu', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2023-03-23', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15251011120, 'Demetri Snow', 'demetri.snow@bankofthewest.com', '19258438318.0', 
+    'Bank of the West', 'bankofthewest.com', 
+    'https://www.linkedin.com/company/bank-of-the-west', 
+    'Other', 'Bank of the West is a regional financial services company that offers a variety of personal, commercial, wealth management and international banking services through hundreds of locations in 23 states and digital channels.', 'Large',
+    'Enterprise', 
+    0, '180 Montgomery St', 
+    'San Francisco', 'CA', 
+    '94104', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-21', 
+    1874
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15250869258, 'Khrystyna Layman', 'khrystyna@mayoncapital.com', 'None', 
+    'Mayon Capital', 'mayoncapital.com', 
+    'https://www.linkedin.com/company/mayoncapital', 
+    'Finance and Legal', 'Mayon Capital is a private equity diversified real estate investment firm that provides opportunities for investors to invest in a diversified portfolio of real properties companies around the globe. The Mayon Capital Investment Fund has stable, ration...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Del Monte Forest', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-21', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15231645991, 'Unknown', 'unknown10@invalid.com', 'None', 
+    'NTTデータ経営研究所', 'nttdata-strategy.com', 
+    'None', 
+    'Education', '株式会社NTTデータ経営研究所 | 新しい社会の姿を構想し、ともに情報未来を築く。 株式会社NTTデータ経営研究所は、IT活用に関する幅広い知見を基に、お客様の戦略とIT、プロセスとITの課題解決に、トータルなソリューションを提供するコンサルティング会社です。 新しい社会の姿を構想し、ともに「情報未来」を築くコンサルティング会社、NTTデータ経営研究所の公式Twitterアカウントです。 株式会社NTTデータ経営研究所 NTT DATA INSTITUTE OF MANAGEMENT CONSULT...', 'Large',
+    'Medium', 
+    0, 'None', 
+    'Tokyo', 'None', 
+    'None', 
+    'Japan', 
+    'Asia/Tokyo', 
+    '2023-03-19', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15133022333, 'Shalini Gopalkrishnan', 'sgopalkrishnan@blueprintfellows.org', 'None', 
+    'blueprintfellows.org', 'blueprintfellows.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2023-03-14', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15066923412, 'Stephanie Perkins ', 'unknown11@invalid.com', '5592247656.0', 
+    'ACTION Council of Monterey County', 'actioncouncil.org', 
+    'https://www.linkedin.com/company/action-council-of-monterey-county', 
+    'Other', 'Action Inspiring Change is a catalyst for positive change in the community. We create public/private partnerships to promote economic and social justice, initiate dialogue and action on critical issues, and provide resources for community transformatio...', 'Large',
+    'Small', 
+    0, '295 Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-10', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15063798450, 'Sarah Lindley', 'sarah@coreless.tech', 'None', 
+    'coreless.tech', 'coreless.tech', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-10', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15036162597, 'Angie Prada', 'angie@expresstextmessagingapp.com', 'None', 
+    'expresstextmessagingapp.com', 'expresstextmessagingapp.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-09', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15025561376, 'Unknown', 'unknown12@invalid.com', '8003459117.0', 
+    'CMTC', 'cmtc.org', 
+    'None', 
+    'Other', 'CMTC Recognized as the Nation’s Leader on Management of Churches and Tax Exempt Organizations, We are on Your side and stand ready to help You defend Yourself. To create business entrepreneur's, promote women owned businesses. Provide funding for new ...', 'Medium',
+    'Micro', 
+    0, 'SUITE 500', 
+    'Chattanooga', 'TN', 
+    '37411', 
+    'United States', 
+    'America/New_York', 
+    'None', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15025875308, 'Unknown', 'unknown13@invalid.com', 'None', 
+    'powersassociates.com', 'powersassociates.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    'None', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15025947664, 'Zach Brooksher', 'zach@theheinrichteam.com', '18316262434.0', 
+    'The Heinrich Team', 'theheinrichteam.com', 
+    'https://www.linkedin.com/company/the-heinrich-team', 
+    'Real Estate and Development', 'The Heinrich Team is a dedicated family of Realtors serving present and future Monterey Peninsula residents since 1977. They have been a trusted name in the real estate industry for over 30 years. The Heinrich Team is continually recognized as real est...', 'Medium',
+    'Micro', 
+    0, '126 Clock Tower Place', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-09', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15027201422, 'Colton Bollinger', 'colton@jumpermedia.com', '8312387376.0', 
+    'Jumper Media', 'jumpermedia.com', 
+    'https://www.linkedin.com/company/jumper-media', 
+    'Technology', 'Grow your brand with Jumper Media - the #1 Instagram Marketing Agency. Up-to-date, 2020 approved growth-hacks, services, & tools for your IG.', 'Large',
+    'Medium', 
+    0, '4666 Cass Street', 
+    'San Diego', 'CA', 
+    '92109', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-09', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15025981706, 'Unknown', 'unknown14@invalid.com', '13109246500.0', 
+    'CalCoastal', 'calcoastal.com', 
+    'https://www.linkedin.com/company/breakwater-villas', 
+    'Other', 'Luxury Real Estate Sales & Marketing, Acquisition | Expansive Estate Management Programs + Fractional & Scaled Ownership Income | Exclusive Membership Opportunities Real Estate luxury real estate sales & acquisition estate management marketing property...', 'Medium',
+    'Micro', 
+    0, '9647 Brighton Way', 
+    'Beverly Hills', 'CA', 
+    '90210', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    15001651619, 'Deborah Lindsay', 'deborah@deborahlindsay.com', 'None', 
+    'DL Consulting', 'deborahlindsay.com', 
+    'https://www.linkedin.com/company/deborahlindsayconsulting', 
+    'Education', 'Deborah Lindsay Co. is a company that specializes in providing fractional COO services. With 30 years of operational leadership and multisector experience, Deborah Lindsay works closely with businesses to improve their daily operations and systems. By ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-08', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993749544, 'MARK ANGEL', 'markcangel@att.net', 'None', 
+    'Getupandmove', 'getupandmove.net', 
+    'None', 
+    'Other', 'This domain is registered at Namecheap This domain was recently registered at Namecheap. Please check back later!.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993804172, 'Julie Chon', 'team@chonchomps.com', 'None', 
+    'Chonchomps', 'chonchomps.com', 
+    'None', 
+    'Other', 'Chon Chomps provides one ingredient slow dehydrated pet treats for your furry friend!', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993245191, 'John Foster', 'johnnywickscandles@gmail.com', 'None', 
+    'Johnny Wicks Candle Company    Get Lit! It Just Makes Scents', 'johnnywicks.com', 
+    'None', 
+    'Other', 'Johnny Wicks Candle Company is a leading provider of high-quality scented candles. With a wide range of fragrances to choose from, our candles are designed to create a warm and inviting atmosphere in any space. Whether you're looking for a relaxing sce...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-06', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993638512, 'Dean Miskell', 'deanmiskell94@gmail.com', 'None', 
+    'BrewjeeCoffeeCo', 'brewjeecoffeeco.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993688121, 'Jan  Lemas', 'hopeforpeacenow@gmail.com', 'None', 
+    'mysite', 'akproductions.tv', 
+    'None', 
+    'Consumer Goods and Retail', 'nan', 'Small',
+    'None', 
+    0, '343 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-02', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993693306, 'Mona Lualemana', 'mona@centralcoastmedicaltransportation.com', 'None', 
+    'centralcoastmedicaltransportation.com', 'centralcoastmedicaltransportation.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993274378, 'Olivia Sanchez', 'chezzajewelry@gmail.com', 'None', 
+    'Chezzajewelry', 'chezzajewelry.com', 
+    'https://www.linkedin.com/company/chezza-jewelry', 
+    'Consumer Goods and Retail', 'Chezzajewelry is a local brand based in the Central Coast of CA. We specialize in creating quality jewelry using 14 K Gold Filled, Sterling Silver, Freshwater Pearls, and Semi precious stones. Our products include earrings that provide an eye-catching ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Salinas', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-02', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993682180, 'Pilar Mendoza', 'manzisvenezuelancuisine@yahoo.com', 'None', 
+    'Manzi's Venezuelan Cuisine', 'manzisvenezuelancuisine.com', 
+    'None', 
+    'Hospitality and Travel', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-02-28', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993602328, 'Khrystyna Layman', 'khrystyna@knowz.app', 'None', 
+    'knowz.app', 'knowz.app', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993574532, 'Jeanette Bent', 'jeanettebent@gmail.com', 'None', 
+    'stellariacreativecompany.com', 'stellariacreativecompany.com', 
+    'https://www.linkedin.com/company/stellaria-creative-company', 
+    'Other', 'Welcome to Stellaria.Company! Learn about our innovative approach to storytelling through visceral publishing and production.', 'Small',
+    'Small', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-09', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993735307, 'Damjan Zabovnik', 'unknown15@invalid.com', '6505210718.0', 
+    'flivie.com', 'flivie.com', 
+    'None', 
+    'Other', 'nan', 'Large',
+    'Small', 
+    0, '3422 JANICE WAY', 
+    'PALO ALTO', 'CA', 
+    '94303', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-14', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993551135, 'Zack Seifert', 'zack.tech9999@gmail.com', 'None', 
+    'Nexus Electronics', 'nexuselectronics.tech', 
+    'https://www.linkedin.com/company/nexuselectronics', 
+    'Technology', 'Nexus Electronics is a leading company in the field of computers and electronics manufacturing. We specialize in designing and producing high-quality computer hardware and electronic devices. Our product range includes desktop computers, laptops, table...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-20', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14993633043, 'Toni Bowles', 'playbrightly.org@gmail.com', 'None', 
+    'PlayBrightly', 'playbrightly.org', 
+    'None', 
+    'Education', 'PlayBrightly Basketball supports and advances young girls in the game of basketball from entry to elite level. They introduce them to knowledge, people, and resources that can be difficult to navigate during the early years. Their efforts are concentra...', 'Small',
+    'None', 
+    0, '7365 Monterey Street', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-01', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14987365648, 'Julie Chon', 'team@chonchomp.com', 'None', 
+    'chonchomp.com', 'chonchomp.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-07', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14974065543, 'dewey cheatham', 'boop@beep.com', '49447930427218.0', 
+    'Beepworld', 'beep.com', 
+    'https://www.linkedin.com/company/2882030', 
+    'Technology', 'Beepworld is a website that allows users to easily create their own personal homepage for free, without any prior knowledge or technical skills required. With a user-friendly interface, Beepworld makes it simple for anyone to design and customize their...', 'Medium',
+    'Micro', 
+    0, '9 Mündelheimer Weg', 
+    'Düsseldorf', 'None', 
+    '40472', 
+    'Germany', 
+    'Europe/Berlin', 
+    '2023-03-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14945264915, 'TAPIWA GAVAZA', 'tapiwa@wateroffsets.co.uk', 'None', 
+    'Wateroffsets', 'wateroffsets.co.uk', 
+    'https://www.linkedin.com/company/water-offsets-ltd', 
+    'Education', 'Water Offsets is a WaterTech company offering tangible solutions that facilitate the delivery of water neutrality, water resilience, reduction of water supply demand & infrastructure costs. Through engineering and innovation, we are addressing challeng...', 'Small',
+    'Micro', 
+    0, '2 Falcon Gate', 
+    'Welwyn Garden City', 'None', 
+    'AL7 1TW', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2023-03-04', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14941570726, 'Ritika Kumar', 'ritika@artabilities.org', 'None', 
+    'Art Abilities', 'artabilities.org', 
+    'None', 
+    'Other', 'Art Abilities is a non-profit organization dedicated to empowering intellectually disadvantaged individuals by supporting their creative expression through art. We believe that art has the power to transform lives and provide a platform for self-expres...', 'Small',
+    'None', 
+    0, '667 Lighthouse Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-03', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14934064528, 'Stephen Barela', 'sgbarela1@hmail.com', '44988884.0', 
+    'hmail.com', 'hmail.com', 
+    'None', 
+    'Other', 'hmail.com is your first and best source for all of the information youâ€™re looking for. From general topics to more of what you would expect to find here, hmail.com has it all. We hope you find what you are searching for!', 'Small',
+    'None', 
+    0, '3 MELLEMVANG', 
+    'Hørsholm', 'None', 
+    '2970', 
+    'Denmark', 
+    'Europe/Copenhagen', 
+    '2023-03-02', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14931968677, 'Ana Segovia ', 'jon@redrider.llc', 'None', 
+    'redrider.llc', 'redrider.llc', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-02', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14922001532, 'Sid  Noonari', 'sid@indusproduct.us', 'None', 
+    'Indusproduct', 'indusproduct.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-03-01', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14920276125, 'Courtney Kramer', 'courtney@hellohaskap.com', 'None', 
+    'hellohaskap.com', 'hellohaskap.com', 
+    'None', 
+    'Other', 'Hello Haskap is a company that specializes in growing and selling Haskap berries. We offer a wide range of Haskap products, including fresh berries, jams, syrups, and skincare products. Our Haskap berries are grown using sustainable farming practices, ...', 'Small',
+    'None', 
+    0, '56B 5th Avenue', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-03-01', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14861268632, 'Ryan Kaplan', 'rjkaplan@pm.me', 'None', 
+    'Proton Technologies AG', 'pm.me', 
+    'https://www.linkedin.com/company/protonprivacy', 
+    'Other', 'ProtonMail is an end-to-end encrypted email service that uses client-side encryption to protect email content and user data before they are sent to ProtonMail servers.', 'Large',
+    'Large', 
+    0, '32 Route de la Galaise', 
+    'Plan-les-Ouates', 'CA', 
+    '1228', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-26', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14811308915, 'Jackson Retzer', 'jackson.retzer@implan.com', '16514394421.0', 
+    'Implan', 'implan.com', 
+    'https://www.linkedin.com/company/implan', 
+    'Technology', 'IMPLAN is the leading provider of economic impact data and analytical software. They offer software development tools and services for economic impact analysis, consulting and training for economic impact analysis, and access to local, regional, and na...', 'Large',
+    'Small', 
+    0, '16905 Northcross Drive', 
+    'Huntersville', 'NC', 
+    '28078', 
+    'United States', 
+    'America/New_York', 
+    '2023-02-24', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    14786232454, 'Priscilla Jones', 'priscilla@mmmchurros.com', 'None', 
+    'Mmm Churros!', 'mmmchurros.com', 
+    'None', 
+    'Hospitality and Travel', 'Welcome to mmm Churros! Our fresh, hand crafted churros and cotton candy are made to order. We offer churros that can be tossed in 6 different flavors, and 2 flavors of cotton candy. As our storefront on San Benito street is under construction, we are ...', 'Small',
+    'None', 
+    0, '1521 Lily Court', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-23', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    13304264523, 'Shawn Herrera', 'shawn@sbcdistrict1.com', 'None', 
+    'Sbcdistrict1', 'sbcdistrict1.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-02-14', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    12841059409, 'Andy De Master', 'andy@comestaag.com', 'None', 
+    'comestaag.com', 'comestaag.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-02-12', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    12077476631, 'Todd Bressler', 'todd@carbonfree.energy', 'None', 
+    'CarbonFree.Energy', 'carbonfree.energy', 
+    'None', 
+    'Other', 'CarbonFree.Energy is a company that provides renewable energy solutions to reduce carbon emissions and promote sustainability. We offer clean electricity generated from renewable sources such as solar, wind, and hydro power. Our goal is to help individ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2023-02-07', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    11583610445, 'Eric Johnsen', 'ejohnsen@equiasalliance.com', '19017540144.0', 
+    'Equias Alliance LLC', 'equiasalliance.com', 
+    'https://www.linkedin.com/company/equias-alliance-llc', 
+    'Other', 'One of the largest insurance brokerage and consulting firms, NFP offers commercial insurance, corporate benefits and private client resources.', 'Large',
+    'Small', 
+    0, '8000 Centerview Parkway', 
+    'Memphis', 'TN', 
+    '38018', 
+    'United States', 
+    'America/Chicago', 
+    '2023-02-02', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    11053007674, 'Peter Scudder', 'pete@scudderroofing.com', '8313737212.0', 
+    'Scudder Roofing', 'scudderroofing.com', 
+    'https://www.linkedin.com/company/scudder-roofing', 
+    'Industrial and Manufacturing', 'Scudder Roofing Company is a full service, professional roofing installation, replacement and roof repair contractor serving Monterey, Santa Cruz and San Benito County since 1982. Scudder Roofing Company specializes in all types of roofing as well as w...', 'Large',
+    'Small', 
+    0, '3342 Paul Davis Drive', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-26', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    11053855580, 'Unknown', 'unknown16@invalid.com', '8316431900.0', 
+    'Hayward Lumber', 'haywardlumber.com', 
+    'https://www.linkedin.com/company/haywardlumber', 
+    'Real Estate and Development', 'Beyond full-service lumberyards, Hayward Lumber has window, door & cabinet design centers, pro-oriented hardware stores & building solutions', 'Large',
+    'Large', 
+    0, '16009 PO Box', 
+    'Monterey', 'CA', 
+    '93942', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-26', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    11051735722, 'Eric Johnsen', 'eric@r-three.org', 'None', 
+    'R-Three', 'r-three.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    '25560', 
+    'None', 
+    'None', 
+    '2023-01-26', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10928051117, 'Mehdi El Azhari', 'me@hyper-crunch.com', '442070315426.0', 
+    'Hyper Crunch', 'hyper-crunch.com', 
+    'https://www.linkedin.com/company/hypercrunch', 
+    'Other', 'We are a next-gen digital marketing company combining social media, online reviews & email marketing to help businesses grow online.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'London', 'None', 
+    'EC2A 4NE', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2023-01-24', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10926282082, 'Unknown', 'unknown17@invalid.com', '18002036755.0', 
+    'Canvaslms', 'notifications.canvaslms.com', 
+    'https://www.linkedin.com/company/instructure-inc-', 
+    'Education', 'Canvas is the trusted, open-source learning management system (LMS) that's revolutionizing the way we educate. See for yourself how Canvas can make your teaching and learning experience even easier. Try Canvas with our free, two-week trial account. Sign up now! Call 800-203-6755.', 'Large',
+    'Enterprise', 
+    0, '6330 South 3000 East', 
+    'Salt Lake City', 'UT', 
+    '84121', 
+    'United States', 
+    'America/Denver', 
+    '2023-01-24', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10807004712, 'Rosie Buenrostro ', 'christina.richardson@carmelvalleyranch.com', '8316259500.0', 
+    'Carmel Valley Ranch', 'carmelvalleyranch.com', 
+    'https://www.linkedin.com/company/carmel-valley-ranch', 
+    'Hospitality and Travel', 'Carmel Valley Ranch is a sophisticated playground for all ages. It is a place for people to rekindle romances, rethink companies, reunite with others, and revive spirits. The resort offers a range of amenities and activities, including 18 holes of worl...', 'Large',
+    'Large', 
+    0, '1 Old Ranch Road', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-16', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10609314393, 'Kristin Coates', 'kristin.coates@secondmuse.com', '9524869062.0', 
+    'Secondmuse', 'secondmuse.com', 
+    'https://www.linkedin.com/company/secondmuse', 
+    'Other', 'SecondMuse is an impact and innovation company that works with communities focused on climate, equity, and tech. An impact & innovation company building resilient economies.', 'Large',
+    'Medium', 
+    0, '1002 PASEO DE LA CUMA', 
+    'Santa Fe', 'NM', 
+    '87501', 
+    'United States', 
+    'America/Chicago', 
+    '2023-01-10', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10606806588, 'Justine Ramirez ', 'ccjobs@slingshotconnections.com', '4082478233.0', 
+    'SlingShot connectionS', 'slingshotconnections.com', 
+    'https://www.linkedin.com/company/slingshot-connections', 
+    'Other', 'SlingShot Connections is a provider of contract staffing, executive search, payroll services, and staffing solutions for numerous industries. They are committed to talent, solutions, and success. Their goal is to make the business of recruiting and man...', 'Large',
+    'Small', 
+    0, '4340 Stevens Creek Boulevard', 
+    'San Jose', 'CA', 
+    '95129', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-10', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10609326914, 'Jon Cabrera', 'jcabrer5@uwyo.edu', 'None', 
+    'University of Wyoming', 'uwyo.edu', 
+    'https://www.linkedin.com/school/university-of-wyoming-college-of-engineering-and-physical-sciences', 
+    'Education', 'The University of Wyoming is a nationally recognized educational and research institution that offers 80+ majors for undergraduate students. It is a land grant university located in Laramie, Wyoming, and has approximately 13,000 students and over 700 f...', 'Large',
+    'Enterprise', 
+    0, '365 N 9th St', 
+    'Laramie', 'WY', 
+    '82071', 
+    'United States', 
+    'America/Denver', 
+    '2023-01-10', 
+    1886
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10608766044, 'Deborah Shepard', 'dshepard@sbwib.org', '13109707700.0', 
+    'South Bay Workforce Investment Board', 'sbwib.org', 
+    'https://www.linkedin.com/company/south-bay-workforce-investment-board', 
+    'Other', 'SouthBay WIB (sbwib.org) is a workforce development board that serves 11 cities in the South Bay region. They provide workforce planning to help people find jobs and assist businesses in hiring candidates. They also offer resources, services, and suppo...', 'Medium',
+    'Micro', 
+    0, '11539 HAWTHORNE BLVD', 
+    'Hawthorne', 'CA', 
+    '90250', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-10', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10549389319, 'Dan Limesand', 'dan.limesand@chomp.org', '8316254990.0', 
+    'Community Hospital of the Monterey Peninsula', 'chomp.org', 
+    'https://www.linkedin.com/company/community-hospital-of-the-monterey-peninsula', 
+    'Healthcare', 'Community Hospital of the Monterey Peninsula is a nonprofit healthcare provider with 248 licensed hospital beds and 28 skilled nursing beds. Community Hospital of the Monterey Peninsula, founded in 1934 and located at 23625 Holman Highway in Monterey, ...', 'Large',
+    'Enterprise', 
+    0, '23625 Holman Highway', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-05', 
+    1934
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10460250036, 'Arlene Espiritu', 'arlene@shesgotgoals.com', 'None', 
+    'She's Got Goals', 'shesgotgoals.com', 
+    'https://www.linkedin.com/company/she-s-got-goals', 
+    'Education', 'She's Got Goals LLC is a one-stop resource and connection for small business entrepreneurs. Founded by Karwanna Dyson, the CEO, She's Got Goals provides services such as transformational business coaching, government contracts expertise, and authorship...', 'Medium',
+    'Micro', 
+    0, '1390 Market Street', 
+    'San Francisco', 'CA', 
+    '94102', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-12-26', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10457505652, 'Mave Arcillas', 'media@electricbikeparadise.com', '13074290021.0', 
+    'Electric Bike Paradise', 'electricbikeparadise.com', 
+    'None', 
+    'Other', 'Electric Bike Paradise is a leading provider of electric bikes for sale. We offer a wide selection of name brand electric bikes that are known for their quality and uniqueness. Our goal is to redefine the commuting experience by providing our customers...', 'Small',
+    'None', 
+    0, '9783 East 116th Street', 
+    'Fishers', 'IN', 
+    '82801', 
+    'United States', 
+    'America/Indiana/Indianapolis', 
+    '2022-12-26', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10365832733, 'Mike  Result Story', 'video@resultstory.net', 'None', 
+    'resultstory.net', 'resultstory.net', 
+    'None', 
+    'Other', 'This domain is registered at Namecheap This domain was recently registered at Namecheap. Please check back later!.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-12-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10333999033, 'Peter Ebert', 'peter.ebert@vtricity.com', '6504853115.0', 
+    'vtricity', 'vtricity.com', 
+    'https://www.linkedin.com/company/vtricity-llc', 
+    'Technology', 'vtricity is a company based in Menlo Park, California, in the heart of Silicon Valley. We specialize in business consulting and services, with a focus on real-time in-memory cloud technology. Our core values are empathy, integrity, and excellence, and ...', 'Medium',
+    'Micro', 
+    0, '325 Sharon Park Drive', 
+    'Menlo Park', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-12-12', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10292853920, 'Kael Rhoades', 'kael@revisalmarketing.com', 'None', 
+    'revisalmarketing.com', 'revisalmarketing.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-12-09', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10287582796, 'Michelle de la Fuente', 'michelle@montereyfuelcompany.com', 'None', 
+    'montereyfuelcompany.com', 'montereyfuelcompany.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-12-08', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10263260066, 'Astra Apsitis', 'astra@astrasomatics.com', 'None', 
+    'Somatic Healing by Astra', 'astrasomatics.com', 
+    'None', 
+    'Healthcare', 'Somatic Healing by Astra offers personalized therapies to end your pain, calm your mind, and improve your overall well being. Discover your path to a better life today through Clinical Somatics, Ayurveda, and Yoga. Somatic Healing by Astra offers perso...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-12-06', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10214735938, 'Don Howard', 'dhoward@irvine.org', '4157772244.0', 
+    'The James Irvine Foundation', 'irvine.org', 
+    'https://www.linkedin.com/company/the-james-irvine-foundation/', 
+    'Non-Profit', 'The James Irvine Foundation is a private, nonprofit grantmaking foundation dedicated to expanding opportunity for the people of California. The Foundation’s current focus is a California where all low-income workers have the power to advance economically. Since 1937 the Foundation has provided more than $2.2 billion in grants to organizations throughout California. The Foundation ended 2021 with more than $3.8 billion in assets and provided $128.9 million in grants. ', 'Large',
+    'Medium', 
+    0, 'One Bush Street, Suite 800, San Francisco, CA, 94104, US', 
+    'San Francisco', 'CA', 
+    '94104', 
+    'USA', 
+    'America/Los_Angeles', 
+    '2022-11-30', 
+    1937
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10212756850, 'Bert Cool', 'bcool@bobhooveracademy.org', 'None', 
+    'Bob Hoover Academy', 'bobhooveracademy.org', 
+    'None', 
+    'Education', 'Bob Hoover Academy (BHA) is a non-profit organization founded by Sean D. Tucker and his son Eric. They provide flight training to Salinas teens and have partnered with the Monterey County Office of Education (MCOE) to create the SAFE Flight program.', 'Small',
+    'None', 
+    0, '265 San Benancio Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-30', 
+    1937
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10212756565, 'Chris Bley', 'chris@montereybaydart.org', 'None', 
+    'Island Conservation', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1937
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10214754618, 'Mary Jo Zenk', 'mzenk@csumb.edu', 'None', 
+    'Institute for Innovation & Economic Dev.', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2019-03-26', 
+    1937
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10213923924, 'Sharon Mikesell', 'sharonmikesell209@gmail.com', 'None', 
+    'Cal Coastal SBDC', 'calcoastalsbdc.com', 
+    'https://www.linkedin.com/company/cal-coastal-sbdc/', 
+    'Education', 'Whether you want to launch, grow, transition or innovate your business, we can provide expert consulting, training, market research, access to capital and other tools at low to no cost for the assistance. We help entrepreneurs launch companies, create and retain jobs, and attract capital investment.
+
+Find out how we can help you to start, grow and succeed!', 'Medium',
+    'Micro', 
+    0, '221 Main St, Suite 301, Salinas, CA, 93901, US', 
+    'Salinas', 'CA', 
+    '93901', 
+    'USA', 
+    'America/Los_Angeles', 
+    '2022-11-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10204313466, 'Salvador Chavez', 'schavez282@gmail.com', '16506217700.0', 
+    'BILL', 'bill.com', 
+    'https://www.linkedin.com/company/bill/', 
+    'Finance and Legal', 'BILL (NYSE: BILL) is a leader in financial automation software for small and midsize businesses (SMBs). As a champion of SMBs, we are dedicated to automating the future of finance so businesses can flourish. Hundreds of thousands of businesses trust BILL solutions to manage financial workflows, including payables, receivables, and spend and expense management. With BILL, businesses are connected to a network of millions of members, so they can pay or get paid faster. Through our automated solutions, we help SMBs simplify and control their finances, so they can confidently manage their businesses, and succeed on their terms. BILL is a trusted partner of leading U.S. financial institutions, accounting firms, and accounting software providers. BILL is headquartered in San Jose, California. For more information, visit bill.com.', 'Large',
+    'Enterprise', 
+    0, '6220 America Center Drive, Suite 100, San Jose, CA, 95002, US', 
+    'San Jose', 'CA', 
+    '95002', 
+    'USA', 
+    'America/Los_Angeles', 
+    '2022-11-29', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10204153374, 'Bud Colligan', 'bud@colligans.com', 'None', 
+    'Foundation of California State University Monterey Bay', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10204099392, 'Christopher Thornberg', 'chris@beaconecon.com', 'None', 
+    'Beacon Economics', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2019-02-04', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10204031580, 'Helle Petersen', 'hellep@csufresno.edu', 'None', 
+    '(WET Center) Water, Energy and Technology Center', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10203454871, 'Bruce Stenslie', 'bruce@edcollaborative.com', 'None', 
+    'EDC-VC', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-11-29', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10203334444, 'Maria Gallegos Herrera', 'maria.herera@usda.gov', '3867761242.0', 
+    'USDA Rural Development', 'rd.usda.gov', 
+    'https://www.linkedin.com/company/usda-rural-development/', 
+    'Public and Government Services', 'USDA Rural Development is helping to improve the economy and quality of life in rural America. We provide home loans, award grants, and provide loan guarantees to promote small business development, loans to build community facilities, provide technical assistance to utilities, link rural America to the world through high speed internet, and so much more. We value a highly-skilled, service-oriented, and diverse workforce. Therefore, we invest in our employees to ensure a technically competent and knowledgeable workforce. Together, America Prospers!
+', 'Large',
+    'Enterprise', 
+    0, '1400 Independence Ave SW, Washington, District of Columbia, 20024, US', 
+    'Washington', 'DC', 
+    '20250', 
+    'USA', 
+    'America/New_York', 
+    '2022-11-29', 
+    1990
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10202850363, 'Andy Myrick CEc D EDFP', 'kimbleycraig@hotmail.com', 'None', 
+    'City of Salinas', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1990
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10202859311, 'Zo Carter', 'zoe.griffoul@gmail.com', 'None', 
+    'Santa Cruz County Business Council', 'sccbusinesscouncil.com', 
+    'https://www.linkedin.com/company/santa-cruz-county-business-council/', 
+    'Non-Profit', 'The Santa Cruz County Business Council (SCCBC) would like to announce its search for a new Executive Director to serve as the principal advocate and spokesperson for the SCCBC and the local business community at large. The SCCBC is a 501(c)6 nonprofit organization that is supported by private businesses across the County. Our advocacy and community engagement is fully funded by members that range from locally owned restaurants to the biggest tech organizations in the country. 
+
+The SCCBC is highly dynamic, people-oriented, and dedicated to our community. Our work is based in beautiful Santa Cruz County (although sometimes engages in state-level affairs) and has been a cornerstone of local economic development since 1996. Our scope of work is shaped by the collective will of the members, the needs of the business community, and the interest and expertise of the staff which includes the Executive Directors and at times a part-time staff person and/or interns.
+Our mission is to support solutions that make Santa Cruz County a better and more sustainable place to live, work and do business.', 'Medium',
+    'Micro', 
+    0, '877 Cedar Street, Suite 150, Santa Cruz, CA, 95060, US', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'USA', 
+    'America/Los_Angeles', 
+    '2022-11-29', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10192986986, 'Patricia Greenway', 'vintageauto@mail.com', 'None', 
+    'Santa Cruz City Schools', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-11-28', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10184460403, 'Heidi Daunt', 'hdaunt@treehousemortgage.com', 'None', 
+    'The Pearl Works', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-01-24', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10184433709, 'Kim Stemler', 'kim@montereywines.org', 'None', 
+    'Monterey County Vintners & Growers Association', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10184262680, 'Danna Stroud', 'dfs1205@yahoo.com', 'None', 
+    'Cuesta College', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-01-11', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10184541996, 'Martha Watson', 'martha.watson@gmail.com', 'None', 
+    'Watson Consulting', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-05', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10181120658, 'Jim Downing', 'jim@downinghome.net', 'None', 
+    'downinghome.net', 'downinghome.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2022-11-25', 
+    0
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10124657207, 'Hannah Moore', 'hannah@testing.com', '18663892727.0', 
+    'OneCare Media', 'testing.com', 
+    'https://www.linkedin.com/company/satiate', 
+    'Technology', 'Order Lab Tests and Blood Tests Online | Testing.com Testing.com is a trusted health resource designed to help patients and caregivers easily order and understand the many lab tests that are a vital part of medical care. Empowering you to take control ...', 'Large',
+    'Medium', 
+    0, '1414 NE 42nd St', 
+    'None', 'None', 
+    '02116', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-18', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10085793366, 'Marzena Wisniewska', 'monterey@mathnasium.com', '13234218009.0', 
+    'Mathnasium', 'mathnasium.com', 
+    'https://www.linkedin.com/company/mathnasium--the-math-learning-center', 
+    'Education', 'At Mathnasium, we teach math in a way that makes sense to kids. We have over 700 centers worldwide; visit www.mathnasium.com & find the center nearest you! Mathnasium is your neighborhood math learning center for students in 2nd through 12th grade. We ...', 'Large',
+    'Enterprise', 
+    0, '5120 Goldleaf Circle', 
+    'Los Angeles', 'CA', 
+    '90056', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-15', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10083183709, 'Gary Tsifrin', 'gary@gravvy.com', 'None', 
+    'gravvy', 'gravvy.com', 
+    'https://www.linkedin.com/company/gravvy', 
+    'Other', 'Gravvy is a platform that simplifies and organizes your giving. It allows you to discover, share, and donate to your favorite causes all in one place. With Gravvy, you can keep track of the organizations your family supports, easily share your causes w...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    '94109', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-15', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10022343240, 'Annee Martin', 'annee@sanctuaryvacationrentals.com', '18312336340.0', 
+    'sanctuaryvacationrentals', 'sanctuaryvacationrentals.com', 
+    'https://www.linkedin.com/company/sanctuary-vacation-rentals-inc.', 
+    'Real Estate and Development', 'Sanctuary Vacation Rentals offers unique vacation homes in the scenic Monterey Peninsula. Our properties are located in various communities, each with its own charm and personality. We provide accommodations for various needs, including romantic getawa...', 'Large',
+    'Small', 
+    0, '888 Munras Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-07', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10022467464, 'Chris Colip ', 'jocelynm@merge4.com', 'None', 
+    'MERGE4', 'merge4.com', 
+    'https://www.linkedin.com/company/merge4', 
+    'Consumer Goods and Retail', 'MERGE4 is a sock company that offers sustainable socks built to last. They are a Certified B Corporation and use high-quality materials. They collaborate with legendary artists, athletes, and musicians and have a mission to give back. MERGE4 empowers a...', 'Large',
+    'Small', 
+    0, '4768 Soquel Drive', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-07', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    10020357472, 'Scot Herbst', 'scot@herbstprodukt.com', 'None', 
+    'Herbst Produkt', 'herbstprodukt.com', 
+    'https://www.linkedin.com/company/herbst-produkt-llc', 
+    'Creative and Media', 'Herbst Produkt is a design agency that provides multi-disciplinary consultancy services in product design for startups and large corporations. They specialize in various industries such as technology, healthcare, and home goods. Their expertise ranges ...', 'Large',
+    'Micro', 
+    0, '303 Potrero Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-07', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9954895525, 'Emily from All Events', 'emily@allevents.in', 'None', 
+    'AllEvents.in', 'allevents.in', 
+    'https://www.linkedin.com/company/allevents-in', 
+    'Technology', 'AllEvents is a platform that helps people discover events happening in their city. With over 30,000 cities, 420,000 monthly events, and 3 million unique monthly users, AllEvents is the go-to destination for event discovery. The platform enables users t...', 'Large',
+    'Small', 
+    0, 'A707, PREMIUM HOUSE', 
+    'Ahmedabad', 'None', 
+    '380006', 
+    'India', 
+    'Asia/Kolkata', 
+    '2022-12-13', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9939995987, 'Alexi Sevastopoulos', 'alexi@santaclaraventures.com', 'None', 
+    'Santaclaraventures', 'santaclaraventures.com', 
+    'https://www.linkedin.com/company/santa-clara-ventures', 
+    'Other', 'Santa Clara Ventures is a venture capital firm that focuses on supporting founders from Santa Clara University. They invest with a mission to help Santa Clara entrepreneurs and earn superior venture capital returns. They welcome investors from the Sant...', 'Small',
+    'Small', 
+    0, '3230 The Alameda', 
+    'Santa Clara', 'CA', 
+    '95050', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-31', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9886675202, 'Nicholas De Luca', 'nicholas.deluca@oasdesigngroup.com', '17025541906.0', 
+    'OAS Design Group', 'oasdesigngroup.com', 
+    'https://www.linkedin.com/company/oas-design-group-inc', 
+    'Other', 'At OAS Design Group Inc., we are committed to establishing successful long-term relationships with our client companies and our candidates. We are dedicated to providing you with excellent service and high-quality options, matching the needs of our client companies with the skills of our candidates. Our motto is to lead the staffing industry by setting the standards for professional integrity and excellence!', 'Medium',
+    'Micro', 
+    0, '1 SANSOME ST', 
+    'San Francisco', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-24', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9857424672, 'Toni Bowles', 'tonibowles@theneonexchange.com', 'None', 
+    'The Neon Exchange', 'theneonexchange.com', 
+    'https://www.linkedin.com/company/the-neon-exchange-inc', 
+    'Real Estate and Development', 'The Neon Exchange is a co-working space and events center that aims to provide inspiration and support to individuals in reaching their personal and professional goals. They offer a collaborative workspace where people can work together, as well as var...', 'Medium',
+    'Micro', 
+    0, '7365 Monterey Road', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-20', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9848023306, 'Unknown', 'unknown18@invalid.com', '18313354780.0', 
+    'globalmbita.com', 'globalmbita.com', 
+    'None', 
+    'Other', 'Monterey Bay International Trade Association (MBITA) is a non profit organization dedicated to providing trade promotion services across the globe.', 'Medium',
+    'Micro', 
+    0, '523 PO Box', 
+    'Santa Cruz', 'CA', 
+    '95061', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-19', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9791077793, 'Amy Gross', 'amy.gross@l3harris.com', '13217279100.0', 
+    'L3Harris Technologies, Inc.', 'l3harris.com', 
+    'https://www.linkedin.com/company/l3harris-technologies', 
+    'Other', 'L3Harris Technologies is an agile global aerospace and defense technology innovator, delivering end to end solutions that meet customers’ mission critical needs. The company provides advanced defense and commercial technologies across space, air, land,...', 'Large',
+    'Corporate', 
+    1, '1025 West NASA Boulevard', 
+    'Melbourne', 'FL', 
+    '32901', 
+    'United States', 
+    'America/New_York', 
+    '2022-10-12', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9785483355, 'Ryan Henderson', 'ryan.henderson@flatworld.com', '8772579243.0', 
+    'Flat World Education', 'flatworld.com', 
+    'https://www.linkedin.com/company/flatworldtextbooks', 
+    'Other', 'FlatWorld is a publisher of college-level textbooks and educational supplements for a worldwide audience founded in 2007 as Flat World Knowledge by Eric Frank and Jeff Shelstad.', 'Large',
+    'Small', 
+    0, '1111 19th Street Northwest', 
+    'None', 'None', 
+    '02114', 
+    'United States', 
+    'America/New_York', 
+    '2022-10-11', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9779136861, 'Doug Atkinson', 'doug.atkinson@bondopartners.com', 'None', 
+    'Doug Atkinson', 'bondopartners.com', 
+    'None', 
+    'Education', 'Welcome to Doug Atkinson Business Consulting. Regardless of the reasons behind selling a business, it is essential to engage with an experienced business sales company, like Bondo Partners. Our expertise in handling various types of transactions ensur...', 'Small',
+    'None', 
+    0, '115 El Porton', 
+    'Los Gatos', 'CA', 
+    '95032', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-10', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9736810118, 'Joe Fletcher ', 'bshevlin@mavericks-renewables.com', 'None', 
+    'Mavericks Renewable Energy', 'mavericks-renewables.com', 
+    'https://www.linkedin.com/company/mavericks-renewable-energy', 
+    'Other', 'On Site Microgrid Energy Powering the future of the grid Controlled Environment Agriculture EV Charging Microgrids Virtual Power Plants Power Purchase Agreement Energy Service Agreement No Up Front Capital Required', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-04', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9717570443, 'Estelle Ye ', 'mz9pnhshv9@privaterelay.appleid.com', '14089961010.0', 
+    'Appleid', 'privaterelay.appleid.com', 
+    'https://www.linkedin.com/company/apple', 
+    'Other', '0090 Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software and online services.', 'Large',
+    'Enterprise', 
+    1, '1 Apple Park Way', 
+    'Cupertino', 'CA', 
+    '95014', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-02', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9685393191, 'Brad Cox', 'brad@sfspas.com', '5106517286.0', 
+    'Paradise Valley Spas', 'sfspas.com', 
+    'https://www.linkedin.com/company/paradise-valley-spas', 
+    'Consumer Goods and Retail', 'Paradise Valley Spas has been providing customers in the San Francisco Bay Area with an exceptional line of hot tub products since 1985. They sell, install, and service retail Spas and Hot Tubs in 8 locations across 7 Bay Area counties. Their mission i...', 'Medium',
+    'Small', 
+    0, '1872 Rollins Road', 
+    'None', 'CA', 
+    '95010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-09-28', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9668084630, 'Samantha Diaz', 'sammy@2077chem.com', 'None', 
+    '2077Chem', '2077chem.com', 
+    'None', 
+    'Industrial and Manufacturing', '2077Chem is a company that specializes in car products and car detailing. They offer a one-stop solution for car products, car detailing, and training to open your own detail service. They service a wide range of vehicles, from luxury vehicles to big v...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-09-26', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9646835063, 'David Blume', 'farmerdave@permaculture.com', '18314719164.0', 
+    'permaculture.com', 'permaculture.com', 
+    'None', 
+    'Other', 'The Permaculture Credit Union is a unique credit union chartered in 2000, that is membership owned, and dedicated to the Ethics of Permaculture: Care of the Earth, Care of People, and Re-investment of surplus to benefit the Earth and its inhabitants. It is rated one of the ten best green banking and investing firms in the U.S. by Co-op America and the Social Investment Forum's Community Investing Campaign in 2003. The Permaculture Credit Union has pioneered a Sustainable Loan Discount Program that covers home energy efficiency upgrades, loans for fuel efficient cars, mortgages for non-toxic, sustainable houses, solar installations, and permaculture landscapes. The credit union is based in Santa Fe, New Mexico, but operates in California and all other states in the USA, has 615 members, and has total assets of $2,546,000. Why do I need Permaculture Certification? Permaculture is a copyrighted word. Only course graduates are permitted to advertise their goods or services with the word Permaculture. If you wish to use this word in pursuing a livelihood you must successfully complete the two week course. Then you may use the term Permaculture legally on your business cards, your brochures, and in your advertising. The copyright is owned by the graduates of the Permaculture Design Certification courses.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2022-09-22', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9623889952, 'Word Press', 'wordpress@staging-startupmontereybay.kinsta.cloud', '18004463114.0', 
+    'Kinsta', 'staging-startupmontereybay.kinsta.cloud', 
+    'https://www.linkedin.com/company/kinsta', 
+    'Other', 'Join 21,000+ companies who made the switch to better, faster WordPress hosting. Powered by Google Cloud, lightning-fast load times & 24/7 expert support.', 'Small',
+    'Medium', 
+    0, '10880 Wilshire Boulevard', 
+    'Los Angeles', 'CA', 
+    '20171', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-16', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9589130398, 'Todd Benson', 'todd@leadspicker.io', '420775686470.0', 
+    'leadspicker.io', 'leadspicker.io', 
+    'https://www.linkedin.com/company/domena-cz', 
+    'Creative and Media', 'Pořiďte si doménu rychle a spolehlivě. U firmy s 18letou zkušeností. Vyberete si z koncovek jako .cz, .com nebo nových .cool, .fit, .cafe a dalších. Ke každé doméně získáte web zdarma.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'Czech Republic', 
+    'None', 
+    '2022-09-14', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9587867153, 'Elizabeth Beck', 'elizabeth@specialservicegroup.us', 'None', 
+    'specialservicegroup.us', 'specialservicegroup.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-09-13', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9586156398, 'Adam Pawlowski', 'adam@falconeyedrones.com', 'None', 
+    'FalconEyeDrones', 'falconeyedrones.com', 
+    'https://www.linkedin.com/company/falcon-eye-drones-llc', 
+    'Other', 'Certified Insured Veteran-Owned Level 2 Aerial Inspections, Photography & Videography Services My fascination with aviation started at a very young age. I often frequented the local airport restaurant to watch planes take off, I went to every local air...', 'Small',
+    'Micro', 
+    0, '1234 Grove Street', 
+    'New York', 'NY', 
+    '11385', 
+    'United States', 
+    'America/New_York', 
+    '2022-09-13', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9578350652, 'Chad Caldwell', 'ccaldwell@ecubed.ai', 'None', 
+    'ecubed.ai', 'ecubed.ai', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-09-12', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9555992934, 'Basel Alderi ', 'sharonc@lflcs.org', 'None', 
+    'Learning For Life Charter School', 'lflcs.org', 
+    'https://www.linkedin.com/school/learning-for-life-charter', 
+    'Education', 'Learning for Life Charter School (LFCS) is a highly rated charter school that serves students in the Monterey, San Benito, and Santa Cruz school districts. We offer a comprehensive and personalized education program for students in grades K-12. Our cur...', 'Medium',
+    'Micro', 
+    0, '3180 Imjin Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-09-08', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9555619696, 'Dana Sandoval Hernandez', 'dsandoval-hernandez@girlscoutsccc.org', '8058804217.0', 
+    'Girl Scouts of California's Central Coast', 'girlscoutsccc.org', 
+    'https://www.linkedin.com/company/girl-scouts-of-california%27s-central-coast', 
+    'Other', 'Girl Scouts of California's Central Coast serves girls throughout Santa Cruz, San Benito, Monterey, San Luis Obispo, Santa Barbara, and Ventura counties. Girl Scouts is the world’s preeminent organization dedicated solely to girls—all girls—where, in a...', 'Medium',
+    'Small', 
+    0, '1500 Palma Drive', 
+    'Ventura', 'CA', 
+    '93003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-09-08', 
+    1964
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9545041568, 'Nathan Dorn ', 'claire@farm-ng.com', 'None', 
+    'farm-ng', 'farm-ng.com', 
+    'https://www.linkedin.com/company/farm-ng', 
+    'Industrial and Manufacturing', 'Farm ng is a robotics company making general purpose farm robots that can be used to implement sustainable farming practices. Farm ng works with small and medium farms, organic growers, research institutions, academia and industry groups who innovate a...', 'Large',
+    'Small', 
+    0, '17 Hangar Way', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-09-07', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9537870682, 'Startup Launchpad Monterey Bay ', 'unknown19@invalid.com', 'None', 
+    'outreachsystems.net', 'outreachsystems.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-09-06', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9494786688, 'Unknown', 'unknown20@invalid.com', 'None', 
+    'Macarera', 'macarera.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-08-30', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9485996134, 'Oliver Brown', 'oliver@globalgrowthbusiness.com', 'None', 
+    'Global Growth Business', 'globalgrowthbusiness.com', 
+    'https://www.linkedin.com/company/global-growth-business', 
+    'Education', 'Global Growth Business is a company that provides opportunities for executives to meet like-minded experts, uncover new business opportunities, and locate the best-in-class solutions providers across North America, Europe, and Asia. They offer a range ...', 'Medium',
+    'Micro', 
+    0, '199 Bishopsgate', 
+    'London', 'None', 
+    'EC2M 3TY', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2022-08-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9457821338, 'Robert Hicks ', 'nstork@stevensonschool.org', '8316258300.0', 
+    'Stevenson School', 'stevensonschool.org', 
+    'https://www.linkedin.com/school/stevenson-school', 
+    'Education', 'Stevenson School is an independent day and boarding school located in Monterey Peninsula, CA. Founded in 1952, the school serves 240 day students in Pre Kindergarten through Grade 8 at the Carmel campus and 510 boarding and day students in grades nine ...', 'Large',
+    'Medium', 
+    0, '3152 Forest Lake Road', 
+    'Del Monte Forest', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-08-25', 
+    1952
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9442509361, 'Dan Swaigen', 'dan@pmconnect.com', '8316489165.0', 
+    'PM Connect', 'pmconnect.com', 
+    'https://www.linkedin.com/company/pm-connect', 
+    'Other', 'PM Connect is a Project Management consulting, training, and software development company based in Monterey, CA. Founded in 1985, we have served a diverse group of clients including Analog Devices, AT&T, Chevron, Dell, Fremont Bank, Genentech, Google, Hewlett-Packard, Hitachi Data Systems, Motorola, Pacific Gas & Electric, Roche, SC Johnson, Sealed Air, Space Systems/Loral, Stanford Telecom, TRW, U.S. District Court, and Wells Fargo Bank. We have participated in every beta cycle for Microsoft Project and Project Server since the first release of Microsoft Project for Windows. We have also been involved with the development of several successful add-ins to Microsoft Project including WBS Chart Pro and PERT Chart Expert. Our recent partnership with VersionOne and our relationship with the Silicon Valley Agile Leadership Network, means you have experts on your side in the Agile world as well as in traditional project management. Our program managers and schedulers have worked on commercial and government programs from small startups to $300M mega-projects.', 'Medium',
+    'Small', 
+    0, '663 Lighthouse Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-08-23', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9402113894, 'Unknown', 'unknown21@invalid.com', 'None', 
+    'pas.farm', 'pas.farm', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-08-17', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9394095940, 'Joshua Metz', 'josh@montereybaydart.org', 'None', 
+    'Central Coast Marketing Team', 'selectcentralcoast.org', 
+    'https://www.linkedin.com/company/centralcoastmt', 
+    'Education', 'Central Coast Marketing Team is a business recruitment and site location information hub representing business-friendly communities along California's Central Coast. They provide assistance in finding the best fit for new and relocating businesses, whe...', 'Medium',
+    'Micro', 
+    0, '3180 Imjin Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9370460756, 'Rameses Wilson', 'rameses@vr360action.com', 'None', 
+    'VR360Action', 'vr360action.com', 
+    'https://www.linkedin.com/company/vr-360-action', 
+    'Industrial and Manufacturing', 'VR360Action is a company that specializes in designing and manufacturing high-quality virtual reality machines and simulators. They are the #1 supplier of VR arcade machines and offer a wide range of products in their store. Their award-winning technol...', 'Large',
+    'Small', 
+    0, '2442 Ocean Avenue', 
+    'BROOKLYN', 'NY', 
+    '11229', 
+    'United States', 
+    'America/New_York', 
+    '2022-08-12', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9350792070, 'Andrew Astiworth', 'elizabeth@specialservicesgroup.us', '12096329938.0', 
+    'Special Services Group LLC', 'specialservicesgroup.us', 
+    'https://www.linkedin.com/company/special-services-group-llc', 
+    'Technology', 'Special Services Group provides technical solutions to law enforcement and military customers. Government Relations Services surveillance intelligence gathering tactical gear', 'Large',
+    'Small', 
+    0, '4733 Main Street', 
+    'Denair', 'CA', 
+    '95316', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-08-09', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9330912671, 'Suzan Briganti', 'suzan@swarmvision.com', 'None', 
+    'Swarm Vision, Inc', 'swarmvision.com', 
+    'https://www.linkedin.com/company/swarmvision', 
+    'Other', 'Swarm Vision is an innovation system that drives rapid growth with your current workforce. They help uncover the hidden innovation talent in your workforce by identifying and engaging more innovation talent, forming stronger innovation teams, and hyper...', 'Medium',
+    'Micro', 
+    0, '221 Main Street', 
+    'Los Altos', 'CA', 
+    '94023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-08-06', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9313072040, 'Merle Meeuws', 'merle.meeuws@pon.com', 'None', 
+    'Pon', 'pon.com', 
+    'https://www.linkedin.com/company/pon', 
+    'Industrial and Manufacturing', 'Pon is a leading family multinational with an annual turnover of over €10 billion. They are an international trade and service organization in the field of mobility. They provide a wide range of products and services including automotive transportation...', 'Medium',
+    'Enterprise', 
+    0, '28 Stadionplein', 
+    'Amsterdam', 'None', 
+    '1076CM', 
+    'Netherlands', 
+    'Europe/Amsterdam', 
+    '2022-08-04', 
+    1980
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9290265866, 'Word Press', 'wordpress@startupchallengemb.com', 'None', 
+    'Startup Monterey Bay', 'startupchallengemb.com', 
+    'https://www.linkedin.com/company/startup-monterey-bay', 
+    'Education', 'Startup Challenge Monterey Bay is a project of the CSU Monterey Bay Institute for Innovation and Economic Development. It supports entrepreneurs and the entrepreneurial ecosystem in the Monterey Bay Region. The company organizes various events and comp...', 'Medium',
+    'Micro', 
+    0, '100 Campus Center', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-23', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9290211089, 'Michael Gelbman ', 'newsletters@californialocal.com', 'None', 
+    'californialocal.com', 'californialocal.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-08-02', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    9284433189, 'Unknown', 'unknown22@invalid.com', '8002946800.0', 
+    'CASHNet', 'cashnet.com', 
+    'https://www.linkedin.com/company/cashnet', 
+    'Finance and Legal', 'College Campus Payment Platform', 'Large',
+    'Small', 
+    0, '1301 Marina Village Parkway', 
+    'Alameda', 'CA', 
+    '94501', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-23', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8973463686, 'Kurt Overmeyer', 'kurtovermeyer@barrierstructures360.com', 'None', 
+    'Paneltekadu', 'paneltekadu.com', 
+    'https://www.linkedin.com/company/paneltekadu', 
+    'Industrial and Manufacturing', 'PanelTekADU is a company that specializes in providing kits to build accessory dwelling units (ADUs), emergency housing, apartments, and rowhouses. Their kits can be built in a day and finished in as little as a week, offering a fast and affordable sol...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8973446025, 'Ashley Chesney', 'garret@setfreemonteereybay.org', 'None', 
+    'setfreemonteereybay.org', 'setfreemonteereybay.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-06-23', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8918357663, 'Zach Prater ', 'taylor@taylored-tech.com', 'None', 
+    'Taylored Technology', 'taylored-tech.com', 
+    'https://www.linkedin.com/company/taylored-technology-inc', 
+    'Technology', 'Taylored Technology Inc is a technology consulting and installation company that specializes in providing internet and Wi-Fi solutions, security cameras, custom conference room setups, Apple devices, Lutron, and Starlink installs and support. With a ba...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Salinas', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-06-14', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8918158732, 'Ariel Johnson', 'ariel@altmovement.org', 'None', 
+    'altmovement.org', 'altmovement.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    '93923', 
+    'None', 
+    'None', 
+    '2022-06-14', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8918101171, 'Philip Daunt', 'alora@thepearlworks.com', 'None', 
+    'The Pearl Works', 'thepearlworks.com', 
+    'https://www.linkedin.com/company/the-pearlworks', 
+    'Real Estate and Development', 'The Pearl Works is a welcoming coworking space in the heart of Monterey, CA. Flexible workspaces, meeting rooms, virtual mail, and membership options. Community driven flexible workspace, meeting rooms, and virtual mail. Drop in for a day, book a meeti...', 'Medium',
+    'Micro', 
+    0, '288 Pearl Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-06-14', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8916234424, 'Tammi Suber Duell', 'tammi@stickysituations.net', 'None', 
+    'Sticky Situations', 'stickysituations.net', 
+    'None', 
+    'Technology', 'Sticky Situations is a company powered by Squarespace. They provide a range of products and services to help businesses create and manage their online presence. Their offerings include website design and development, e-commerce solutions, digital marke...', 'Medium',
+    'Micro', 
+    0, '63 Peddlers Village', 
+    'Lahaska', 'PA', 
+    '18931', 
+    'United States', 
+    'America/New_York', 
+    '2022-06-14', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8909442125, 'Kelsea Richmond ', 'tyler@captainandstoker.com', 'None', 
+    'Captain + Stoker', 'captainandstoker.com', 
+    'https://www.linkedin.com/company/captainandstoker', 
+    'Hospitality and Travel', 'Captain + Stoker is a company that offers a range of high-quality coffee products. They provide a variety of coffee blends, including the La Joya Washed Guatemala and The Jewel Pineapple Natural Guatemala. Additionally, they offer the Son of a Nutcrack...', 'Large',
+    'Micro', 
+    0, '398 East Franklin Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-06-13', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8907953261, 'Matt Gourley', 'mgourley@sbcglobal.net', 'None', 
+    'Daaz.com', 'cbcglobal.net', 
+    'https://www.linkedin.com/company/daaz-com', 
+    'Creative and Media', 'Start buy domains and sell domains at Daaz. Largest domain name marketplace with simple, secure, lowest fees and 24*7 support. Buy perfect domain now!', 'Medium',
+    'Micro', 
+    0, '14 Tom Nolan Close', 
+    'London', 'None', 
+    'E15 3AU', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2022-06-13', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8907487800, 'Brianna Lackey ', 'nile@haciendacv.com', 'None', 
+    'Haciendacv', 'haciendacv.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-06-13', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8889040523, 'Scott Seeley', 'scott@playbigdigital.com', '2567143844.0', 
+    'PlayBig Digital', 'playbigdigital.com', 
+    'https://www.linkedin.com/company/playbigdigital', 
+    'Technology', 'PlayBig Digital is a digital media, publishing, and information services company that connects audiences to the best in print, digital, and video content. They offer web development, digital marketing, and advertising services. They specialize in engag...', 'Medium',
+    'Micro', 
+    0, '288 Pearl Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-06-09', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8886660762, 'Derek Thomas ', 'allison@polygonmarket.com', '14083178825.0', 
+    'Polygonmarket', 'polygonmarket.com', 
+    'https://www.linkedin.com/company/polygon-market', 
+    'Other', 'Polygon Market is a one-stop marketplace specializing in brand identity, social marketing, and design. They help brands of all sizes build an online community through organic social media growth strategies and human-centered marketing. Their services i...', 'Medium',
+    'Micro', 
+    0, '396 MARTIN AVE', 
+    'Santa Clara', 'CA', 
+    '95032', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-06-09', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8869447481, 'Steve Stein', 'steve.stein@infospectrumllc.com', 'None', 
+    'infospectrumllc.com', 'infospectrumllc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-06-07', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8727966383, 'Joel Gambord', 'jg@jg13.com', 'None', 
+    'jg13.com', 'jg13.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-18', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8706848131, 'Unknown', 'gustavo@hyrecar.com', '18886886769.0', 
+    'HyreCar', 'hyrecar.com', 
+    'https://www.linkedin.com/company/hyrecar', 
+    'Technology', 'HyreCar is a carsharing marketplace that is powering the gig economy. Using the HyreCar platform, drivers who need vehicles for rideshare and other gig work are able to connect with owners and fleet operators who have vehicles to rent. By providing dri...', 'Large',
+    'Medium', 
+    1, '915 Wilshire Boulevard', 
+    'Los Angeles', 'CA', 
+    '90017', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-05-16', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8646430531, 'Jerome Martin', 'jerome@planterraadvisors.com', 'None', 
+    'Planterra Advisors', 'planterraadvisors.com', 
+    'None', 
+    'Education', 'Planterra Advisors is a company that provides advisory services in renewable energy and engages in project development.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-10', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8645726393, 'John Louie', 'john@greenvalleyfloral.com', '8314247691.0', 
+    'Green Valley Floral', 'greenvalleyfloral.com', 
+    'https://www.linkedin.com/company/green-valley-floral', 
+    'Other', 'Green Valley Florist is a facilities services company based out of 510 W Main St, Sanford, North Carolina, United States.', 'Large',
+    'Small', 
+    0, '24999 Potter Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-05-10', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8640451901, 'Douglas Mc Knight', 'doug@mcknightplace.net', 'None', 
+    'mcknightplace.net', 'mcknightplace.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-09', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8640327074, 'Unknown', 'unknown23@invalid.com', 'None', 
+    'confstool.info', 'confstool.info', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    'None', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8600227715, 'Pete Noto', 'pete@thenotogroup.com', 'None', 
+    'thenotogroup.com', 'thenotogroup.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-04', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8593893416, 'Rajesh Kanungo', 'rajesh@talasecure.com', '14084313035.0', 
+    'Talasecure', 'talasecure.com', 
+    'https://www.linkedin.com/company/talasecure', 
+    'Other', 'Tala Secure is a cybersecurity company that specializes in providing security solutions for connected medical devices. They develop best-in-class, easy-to-apply solutions for cloud ransomware, compliance, and overall security. Their services include co...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Mountain View', 'CA', 
+    '94043', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-05-03', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8592049823, 'Lawrence Jen', 'lawrence.jen@30northgroup.com', 'None', 
+    '30northgroup.com', '30northgroup.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-03', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8591247107, 'Jade Vucina', 'jade@terrasuperfoods.com', 'None', 
+    'terrasuperfoods.com', 'terrasuperfoods.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-05-03', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8579882031, 'Al Sambar', 'al@xrclabs.com', 'None', 
+    'XRC Labs', 'xrclabs.com', 
+    'https://www.linkedin.com/company/xrclabs', 
+    'Finance and Legal', 'XRC Labs is a startup accelerator focused on innovation in retail and consumer goods. Our vision is to be at the forefront of change, disrupting the conventional system of supply chain, promoting the best experience for consumers and producers, and cre...', 'Medium',
+    'Small', 
+    0, '68 5th Avenue', 
+    'New York', 'NY', 
+    '10011', 
+    'United States', 
+    'America/New_York', 
+    '2022-05-02', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8572047630, 'Lid Sodbinow', 'lsodbinow@sonic.net', '18887664233.0', 
+    'Sonic.net, Inc', 'sonic.net', 
+    'https://www.linkedin.com/company/sonicnet-inc', 
+    'Technology', 'Sonic is a telecommunications company and internet service provider based in Santa Rosa, California, acting as a competitive local exchange carrier in the San Francisco Bay Area, Sacramento, and Los Angeles. Financial Services', 'Medium',
+    'Micro', 
+    0, '2260 Apollo Way', 
+    'Santa Rosa', 'CA', 
+    '16402', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8558725715, 'Colton Bollinger', 'colton@jumpermedia.co', '18582637058.0', 
+    'Jumper Media', 'jumpermedia.co', 
+    'https://www.linkedin.com/company/jumper-media', 
+    'Education', 'Jumper Media is the #1 Instagram Marketing Agency that helps businesses grow their brand on Instagram. They provide up-to-date growth hacks, services, and tools for Instagram. Their headquarters is in San Diego, CA. Jumper Media has helped over 500 com...', 'Large',
+    'Small', 
+    0, '4666 Cass Street', 
+    'San Diego', 'CA', 
+    '92117', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-29', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8554124374, 'Unknown', 'unknown24@invalid.com', 'None', 
+    'Mejuri', 'mejuri.com', 
+    'https://www.linkedin.com/company/mejuri', 
+    'Consumer Goods and Retail', 'Make Luxury A Habit. Forget occasions. We create fine jewelry that you can wear every day. Basically, you don't have to choose between high quality or accessible prices. Choose both. Fine jewelry for being your damn self. At Mejuri, we're redefining lu...', 'Large',
+    'Large', 
+    0, '10 Dundas Street East', 
+    'Toronto', 'None', 
+    'M6K 3E8', 
+    'Canada', 
+    'America/Toronto', 
+    '2022-04-28', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8546833759, 'Unknown', 'unknown25@invalid.com', '8316461401.0', 
+    'Shankle Properties', 'shanklerealestate.com', 
+    'https://www.linkedin.com/company/shankle-properties', 
+    'Real Estate and Development', 'Shankle Properties is a family-owned real estate company that has been operating since 1956. They are part of the Sotheby's International Realty network and have a team of highly professional and experienced agents. The company operates on a team conce...', 'Large',
+    'Small', 
+    0, '261 Webster Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8545441033, 'Justin Noseworthy', 'jnoseworthy@allthingsnew.church', 'None', 
+    'ATN Website', 'allthingsnew.church', 
+    'https://www.linkedin.com/company/all-things-new-church', 
+    'Other', 'All Things New Church is a welcoming Christ centered community in Monterey, California. Come join us at the Monterey High School Cafeteria; services start every Sunday at 10AM. Find renewal with the God who renews Every Sunday at 10 am Every Sunday Mor...', 'Medium',
+    'Micro', 
+    0, '101 Herrmann Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-27', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8544748211, 'Tori Downham', 'tori.downham@skyepack.com', '18557593722.0', 
+    'Skyepack', 'skyepack.com', 
+    'https://www.linkedin.com/company/skyepack', 
+    'Other', 'Skyepack provides instructional design services, affordable textbooks, and connects K 12 students with employers. Skyepack operates mobile platforms for publishing interactive learning. Skyepack has partnered with universities nationwide to create affo...', 'Large',
+    'Small', 
+    0, '3000 Kent Avenue', 
+    'West Lafayette', 'IN', 
+    '47906', 
+    'United States', 
+    'America/Indiana/Indianapolis', 
+    '2022-04-27', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8512863012, 'Teresa Vick', 'vick.t@monet.k12.ca.us', '2095764709.0', 
+    'Modesto City Schools', 'monet.k12.ca.us', 
+    'None', 
+    'Other', 'Fred C. Beyer High School is a public high school located in Modesto, California. It is part of the Modesto City Schools district. The school offers a comprehensive academic program, including a wide range of courses in various subjects. In addition to...', 'Large',
+    'Medium', 
+    0, '426 Locust Street', 
+    'Modesto', 'CA', 
+    '95351', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-22', 
+    1871
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8507139702, 'Sam Spadoni', 'sam@creatorsforhire.com', 'None', 
+    'We Create Content', 'creatorsforhire.com', 
+    'https://www.linkedin.com/company/creatorsforhire', 
+    'Education', 'We Create Content is a digital marketing company dedicated to developing engaging video, photo, and design content, web consulting, client training, web advertising, and client education. We Create Content collaborates with our clients to bring their v...', 'Medium',
+    'Micro', 
+    0, '655 Elm Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-21', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8500822347, 'Irosha de Silva', 'irosha@creativehub.global', '94776675877.0', 
+    'CreativeHub', 'creativehub.global', 
+    'https://www.linkedin.com/company/creativehubglobal', 
+    'Technology', 'CreativeHub Global is a full force marketing technology agency based in Sri Lanka, US and Canada. They provide integrated marketing technology solutions and strategies for businesses worldwide. Their expertise lies in data-driven digital marketing, web...', 'Large',
+    'Medium', 
+    0, '584 Castro Street', 
+    'San Francisco', 'CA', 
+    '94114', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-20', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8496788579, 'Luigi De Luca', 'ldeluca@jhsph.edu', '4109556964.0', 
+    'Johns Hopkins Bloomberg School of Public Health', 'jhsph.edu', 
+    'https://www.linkedin.com/school/johns-hopkins-university', 
+    'Education', 'The Johns Hopkins Bloomberg School of Public Health is a leading institution dedicated to protecting health and saving lives. Since its founding in 1916, the Bloomberg School has been at the forefront of research, education, and practice in public heal...', 'Large',
+    'Enterprise', 
+    0, '615 North Wolfe Street', 
+    'Baltimore', 'MD', 
+    '21205', 
+    'United States', 
+    'America/New_York', 
+    '2022-04-20', 
+    1916
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8450692909, 'Xiao Xiao', 'xiaoxiao@friendlyrobots.co', 'None', 
+    'Friendly Robots Company', 'friendlyrobots.co', 
+    'https://www.linkedin.com/company/friendly-robots-company', 
+    'Other', 'Friendly Robots is a company that provides robotics as a service. They offer robotic vacuum cleaners for commercial buildings and robots for inspecting and sealing air ducts. Their AI-driven robot vacuums can cover 8,000 sq ft per hour at a low cost. T...', 'Small',
+    'Micro', 
+    0, '8000 Edgewater Drive', 
+    'Oakland', 'CA', 
+    '94621', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-12', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8428274034, 'John Eberhardt', 'jeberhardt@ata-llc.com', '17034599993.0', 
+    'ATA LLC', 'ata-llc.com', 
+    'https://www.linkedin.com/company/ata-llc', 
+    'Technology', 'ATA is a company that focuses on Full Stack Data Solutions. They help organizations build a sustainable capability to improve performance, optimize investments, manage risk, and gain competitive advantage. Their team of data scientists, data engineers,...', 'Large',
+    'Small', 
+    0, '752 Walker Road', 
+    'Great Falls', 'VA', 
+    '22066', 
+    'United States', 
+    'America/New_York', 
+    '2022-04-08', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8424657525, 'Unknown', 'michael@immergolabs.com', 'None', 
+    'Immergo Labs Inc', 'immergolabs.com', 
+    'https://www.linkedin.com/company/immergo-labs', 
+    'Healthcare', 'Immergo Labs is a startup that creates an immersive physical rehabilitation telehealth platform for off-the-shelf virtual reality headsets.', 'Large',
+    'Micro', 
+    0, '250 Natural Bridges Drive', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-08', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8419979297, 'Eleanor Haglund', 'eleanor@allianse.com', 'None', 
+    'Allianse', 'allianse.com', 
+    'https://www.linkedin.com/company/startupallianse', 
+    'Other', 'Allianse connects pre seed to Series A startups and investors. The Allianse platform connects investors to vetted startups in an unbiased way both through search and tailored recommendations. Entrepreneurs get introductions to capital aligned with thei...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Austin', 'TX', 
+    'None', 
+    'United States', 
+    'America/Chicago', 
+    '2022-04-07', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8410075159, 'Jim Mc Creight', 'jmccreight@yahoo.com', '9712234660.0', 
+    'OTBC', 'otbc.org', 
+    'https://www.linkedin.com/company/oregon-technology-business-center', 
+    'Technology', 'OTBC (Oregon Technology Business Center) is a non-profit tech startup incubator located in Beaverton, Oregon. We provide coaching, networking events, workshops, and other resources to help entrepreneurs and startups build and grow their companies. Our ...', 'Medium',
+    'Micro', 
+    0, '3800 Southwest Cedar Hills Boulevard', 
+    'Beaverton', 'OR', 
+    '97005', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-06', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8353285696, 'Ryan Cassano', 'ryan@fanmood.com', 'None', 
+    'Fanmood', 'fanmood.com', 
+    'https://www.linkedin.com/company/fanmoodapp', 
+    'Other', 'Fanmood is a continuous fan engagement platform that captures and maintains fandom state over time. IT Services and IT Consulting', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8342221390, 'Tom Harvey', 'tharvey@blumedistillation.com', 'None', 
+    'blumeindustries.com', 'blumeindustries.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    'None', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8305869722, 'Unknown', 'unknown26@invalid.com', 'None', 
+    'Mikem-Cpa', 'mikem-cpa.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-23', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8231314974, 'James Willingham ', 'frankalbanese@snapbrillia.com', 'None', 
+    'Snapbrillia', 'snapbrillia.com', 
+    'https://www.linkedin.com/company/snapbrillia', 
+    'Other', 'Snapbrillia is a gig marketplace that helps businesses grow by connecting them with the right people quickly and within their budget. It is a flexible hiring and crowdfunding platform that allows self-taught and underrepresented professionals and found...', 'Large',
+    'Medium', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-05-03', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8227439177, 'Jennifer Gessner', 'jgessner@stthomas.edu', '6519625000.0', 
+    'University of St. Thomas', 'stthomas.edu', 
+    'https://www.linkedin.com/school/universityofstthomas', 
+    'Education', 'The University of St. Thomas in St. Paul, Minnesota offers 150+ undergraduate majors and minors, plus graduate programs in business, engineering, law, education, social work, and arts and humanities. Located in Minnesota's vibrant Twin Cities area, St....', 'Large',
+    'Enterprise', 
+    0, '2115 Summit Ave', 
+    'Saint Paul', 'MN', 
+    '55105', 
+    'United States', 
+    'America/Chicago', 
+    '2022-03-18', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8200657935, 'Alec Cortez', 'unknown27@invalid.com', 'None', 
+    'playvgl.com', 'playvgl.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-16', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8126637592, 'Molly Lorenzi ', 'ashley@setfreemontereybay.org', 'None', 
+    'Set Free Monterey Bay', 'setfreemontereybay.org', 
+    'None', 
+    'Other', 'Set Free Monterey Bay is an anti trafficking organization that provides assistance to adult women who are survivors of sex trafficking. Our main goal is to help these women find healing in a Christ-centered restoration home. Additionally, we are dedica...', 'Medium',
+    'Micro', 
+    0, '2511 Garden Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-27', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8126165025, 'Steve Martin ', 'ryan.garcia@littlefeetpackaging.com', 'None', 
+    'Little Feet Packaging', 'littlefeetpackaging.com', 
+    'None', 
+    'Other', 'No products in the cart.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-08', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8126236323, 'Tamara Carver', 'tamara@ladysomm.com', 'None', 
+    'LadySomm', 'ladysomm.com', 
+    'None', 
+    'Other', 'LadySomm is a company that specializes in providing wine edutainment events for VIP clients, board retreats, pre-conference dinners, client appreciation, and special celebrations. They offer these events at various locations including wineries, resorts...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-08', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8126649166, 'Myriah Hopkins ', 'ryan@lavendercreekcompany.com', 'None', 
+    'Lavender Creek Co.', 'lavendercreekcompany.com', 
+    'https://www.linkedin.com/company/lavender-creek-co', 
+    'Consumer Goods and Retail', 'Lavender Creek Co. is a woman and veteran-owned wellness brand and lavender farm that brings natural wellness lavender products from their family farm in Monterey County, CA. They offer a wide range of lavender-based products, including food and bevera...', 'Medium',
+    'Micro', 
+    0, '45217 East Carmel Valley Road', 
+    'Greenfield', 'CA', 
+    '93927', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-08', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8126554175, 'Jim Himelic', 'jhimelic@firstprinciples.run', 'None', 
+    'First Principles', 'firstprinciples.run', 
+    'None', 
+    'Education', 'First Principles Advisory is a consulting firm that provides modeling and technical support to the electric power industry. They offer capacity expansion and production cost modeling, asset valuation, and other analytical services. Their primary focus ...', 'Small',
+    'None', 
+    0, '1401 21st Street', 
+    'Sacramento', 'CA', 
+    '95811', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-08', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8118959793, 'Kevin Bell', 'kevinb@sustainablesystemsfoundation.org', 'None', 
+    'Sustainable Systems Research Foundation', 'sustainablesystemsfoundation.org', 
+    'https://www.linkedin.com/company/sustainable-systems-research-foundation', 
+    'Other', 'The Sustainable Systems Research Foundation is a 501(c)3 non profit green think tank based in Santa Cruz, California. SSRF seeks to address complex and wicked environmental and sustainability problems that confound communities, defy singular technical ...', 'Medium',
+    'Micro', 
+    0, '2861 Mission Street', 
+    'Scotts Valley', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8096879942, 'Jacob Segal', 'jsegal@investorsresearchgroup.com', 'None', 
+    'Investorsresearchgroup', 'investorsresearchgroup.com', 
+    'None', 
+    'Other', 'Investors Research Group is a leading financial research and consulting firm. We provide comprehensive analysis and insights to help investors make informed decisions. Our team of experienced analysts and researchers conduct in-depth research on variou...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2022-03-05', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8088964647, 'Stan Mc Kee', 'stan@esmckee.com', 'None', 
+    'esmckee.com', 'esmckee.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-03-04', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8088232353, 'Unknown', 'unknown28@invalid.com', '14159351697.0', 
+    'SupplyShift', 'supplyshift.net', 
+    'https://www.linkedin.com/company/supplyshift', 
+    'Education', 'SupplyShift is a supply chain transparency and responsibility software company that helps businesses mitigate risk and improve supplier performance. Their platform enables companies to build more transparent, sustainable, and resilient supply chains by...', 'Large',
+    'Medium', 
+    0, '215 River Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-04', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8076585987, 'Tom Radcliffe', 'tomr@muridaepet.com', 'None', 
+    'muridaepet.com', 'muridaepet.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Muridae Pet is a company that specializes in making pet food from the natural prey of pets. Their philosophy is to provide food that is appropriate for pets to eat, rather than what is convenient to make. Their initial line of food, Mouser, is the only...', 'Small',
+    'None', 
+    0, '316 Mid Valley Center', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-03', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8065696182, 'Jondi Gumz', 'jondigumz@yahoo.com', '8316610679.0', 
+    'Cyber-Times', 'cyber-times.com', 
+    'None', 
+    'Other', 'Cruzon Daily Deal program offers 50 to 90 percent off local businesses', 'Large',
+    'Medium', 
+    0, '9601 Soquel Dr', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-02', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8064979053, 'Mitch Barlas', 'mitch@weuse.eco', '18315364160.0', 
+    'Bagito', 'bagito.co', 
+    'https://www.linkedin.com/company/bagito', 
+    'Consumer Goods and Retail', 'Premium, easy-to-reuse products made from responsibly sourced materials, including storage bags made from reclaimed plastic, tote bags made from organic cotton, and cutlery made from bamboo! Bagito is a certified B Corp and we use our profits to educat...', 'Medium',
+    'Micro', 
+    0, '312 Locust Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-03-02', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8061205781, 'Ahmet Karatas', 'karatas@deeploai.com', '31610023153.0', 
+    'Deeplo AI', 'deeploai.com', 
+    'https://www.linkedin.com/company/deeplo-ai', 
+    'Education', 'Deeplo AI is a job simulation platform that allows users to experience what it's like to work at top companies before applying. Users can showcase their skills through immersive tasks and assessments, and get hired on the go. The platform goes beyond t...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Amsterdam', 'None', 
+    'None', 
+    'Netherlands', 
+    'Europe/Amsterdam', 
+    '2022-03-02', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    8034727980, 'Jaime Eltit ', 'pauline.canteneur@farmwise.io', '16502834177.0', 
+    'FarmWise Labs, Inc.', 'farmwise.io', 
+    'https://www.linkedin.com/company/farmwise', 
+    'Industrial and Manufacturing', 'FarmWise is an American agricultural technology and robotics company based in California. They specialize in building innovative systems and processes that help farmers streamline farm operations and increase food production efficiency. Their first pro...', 'Large',
+    'Medium', 
+    0, '1231 Connecticut Street', 
+    'San Francisco', 'CA', 
+    '94107', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-28', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7998381922, 'Emily Lippe', 'emily@misslippes.com', '16505332772.0', 
+    'Miss Lippe's Dumpling Party', 'misslippes.com', 
+    'https://www.linkedin.com/company/miss-lippe-s-dumpling-party', 
+    'Hospitality and Travel', 'Miss Lippe's Dumpling Party is a unique event service that brings people together to connect over the timeless activity of handcrafted dumplings from all over the world. Based in Los Angeles, we provide a fun and interactive experience where we make th...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Culver City', 'CA', 
+    '90232', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-23', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7983594296, 'Edie Wiltsee', 'ediewiltsee@atreasuredtree.com', 'None', 
+    'Atreasuredtree', 'atreasuredtree.com', 
+    'None', 
+    'Consumer Goods and Retail', 'A Treasured Tree manufactures wooden and acrylic holiday trees with shelves for holidays and family celebrations. Commercial uses include in store display, impactful corporate thank you gifts, weddings, and corporate events and more. Our clients are Ch...', 'Small',
+    'None', 
+    0, 'None', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7948441926, 'Lamont Wiltsee', 'llamontwiltsee@comcast.net', 'None', 
+    'atreasuretree.com', 'atreasuretree.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-01-08', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7931734017, 'Amir nasiri shehni ', 'abbasgh@cropfleet.com', 'None', 
+    'Cropfleet AgTech', 'cropfleet.com', 
+    'https://www.linkedin.com/company/cropfleet', 
+    'Consumer Goods and Retail', 'Cropfleet AgTech is a startup that is developing a robotic system to provide autonomous operation of a fleet of pesticide and microfertilizers spraying agrodrones. Their goal is to increase productivity per one operator up to 3 times, reduce cost up to...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Minsk', 'None', 
+    'None', 
+    'Belarus', 
+    'Europe/Minsk', 
+    '2022-02-16', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7926249068, 'Colette Williams', 'colw@outreachsystems.com', '8059671280.0', 
+    'OutreachSystems', 'outreachsystems.com', 
+    'https://www.linkedin.com/company/outreachsystems', 
+    'Technology', 'OutreachSystems is a company that provides CRM (customer relationship management) software designed specifically for economic development organizations. With 30 years of experience in this market, OutreachSystems offers hosted customer resource managem...', 'Large',
+    'Micro', 
+    0, '911 Olive Street', 
+    'Santa Barbara', 'CA', 
+    '93101', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-15', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7922491939, 'Muhammad Ahmad', 'rector@udfoc.org', 'None', 
+    'udfoc.org', 'udfoc.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-02-15', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7896723628, 'Lorenna Feliz Santos', 'lorenna@diamlife.com', 'None', 
+    'Diamlife', 'diamlife.com', 
+    'https://www.linkedin.com/company/diamlife', 
+    'Other', 'DiaM Life is a private clinically moderated community for people with Diabetes. It is a social health community and a go-to destination for everything diabetes. DiaM offers a connected approach to care that empowers and supports people with diabetes, p...', 'Large',
+    'Micro', 
+    0, '6950 Cypress Road', 
+    'Delray Beach', 'FL', 
+    '33317', 
+    'United States', 
+    'America/New_York', 
+    '2022-02-10', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7812349697, 'Lalit Mathur', 'lalit.mathur@dcirrus.com', '919313353317.0', 
+    'DCirrus Inc', 'dcirrus.com', 
+    'https://www.linkedin.com/company/dcirrus', 
+    'Technology', 'DCirrus is a virtual data room (VDR) services provider that offers a cost-effective and secure cloud-based solution for storing and sharing data. Our platform is designed for businesses and professionals involved in M&A, QIP, IPO, and other fundraising...', 'Large',
+    'Small', 
+    0, 'None', 
+    'New Delhi', 'None', 
+    '110019', 
+    'India', 
+    'Asia/Kolkata', 
+    '2022-02-02', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7809921341, 'Christine Damm', 'chris.damm@trade.gov', '12024821255.0', 
+    'international trade administration', 'trade.gov', 
+    'https://www.linkedin.com/company/international-trade-administration', 
+    'Other', 'International Trade Administration (ITA) strengthens the competitiveness of U.S. industry, promotes trade and investment, and ensures fair trade through our trade laws and agreements. ITA works to improve the global business environment and helps U.S. ...', 'Large',
+    'Enterprise', 
+    0, '1401 CONSTITUTION AVE NW', 
+    'Washington', 'DC', 
+    '20230', 
+    'United States', 
+    'America/New_York', 
+    '2022-02-02', 
+    1980
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7774147444, 'Brandon Fleming ', 'akuan@porticocare.com', 'None', 
+    'Portico Wellness', 'porticocare.com', 
+    'https://www.linkedin.com/company/porticowellness', 
+    'Other', 'Portico Wellness is an end-to-end platform that connects companies, employees, and mental health providers. It addresses the increasing investments in mental health and wellness tools by companies to tackle issues like absenteeism and turnover. The pla...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Seattle', 'WA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-27', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7773259444, 'Craig Colson', 'craig@converge.vc', 'None', 
+    'Converge', 'converge.vc', 
+    'https://www.linkedin.com/company/converge-venture-partners', 
+    'Finance and Legal', 'Converge is an early stage VC fund that provides committed capital to B2B tech entrepreneurs. They focus on software, internet, cloud, mobile, and other cutting-edge information technology ventures. With a team of experienced investment professionals a...', 'Medium',
+    'Medium', 
+    0, '101 Main Street', 
+    'Cambridge', 'MA', 
+    '02142', 
+    'United States', 
+    'America/New_York', 
+    '2022-01-27', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7740099753, 'Soyeon Park', 'beanwhite@daum.net', 'None', 
+    'Kakao Corp.', 'daum.net', 
+    'https://www.linkedin.com/company/kakaocorp', 
+    'Technology', 'Daum Communications is a web portal in South Korea that provides internet services to web users. It offers a wide range of products and services including news, search engine, and personalized content. Daum aims to connect people with the world's infor...', 'Large',
+    'Small', 
+    0, 'Seochodong', 
+    'Cheonan-si', 'None', 
+    '90032', 
+    'Korea, Republic of', 
+    'Asia/Seoul', 
+    '2022-01-25', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7737516073, 'Yasmeen Soin', 'ysoin@ohiopainclinic.com', '19374342226.0', 
+    'Soin Amol MD', 'ohiopainclinic.com', 
+    'https://www.linkedin.com/company/ohio-pain-management-center', 
+    'Healthcare', 'Ohio Pain Clinic is a trusted pain management center located in Centerville, OH. Led by Dr. Amol Soin, the medical director, the clinic provides comprehensive care for managing chronic pain and a variety of pain conditions. Dr. Soin is known for his co...', 'Large',
+    'Micro', 
+    0, '8934 Kingsridge Drive', 
+    'Dayton', 'OH', 
+    '45459', 
+    'United States', 
+    'America/New_York', 
+    '2022-01-25', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7733569174, 'Hirofumi Yamashita', 'yamashita@keio-innovation.co.jp', 'None', 
+    '慶應イノベーション・イニシアティブ / KII', 'keio-innovation.co.jp', 
+    'https://www.linkedin.com/company/keio-innovation-initiative-inc', 
+    'Finance and Legal', '慶應イノベーション・イニシアティブ / Keio Innovation Initiative / KII is a venture capital firm that nurtures startup companies utilizing the research achievements of Keio University and other universities and research institutions to create innovative new businesses. ...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'Minato-ku', 'None', 
+    '108-0073', 
+    'Japan', 
+    'Asia/Tokyo', 
+    '2022-01-24', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7730854069, 'Agustin Rodriguez', 'agustinbrodriguez@student.hartnell.edu', 'None', 
+    'hartnell.education', 'student.hartnell.education', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    'None', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7722407854, 'Travis Linderman', 'travis@avx.io', 'None', 
+    'AVX', 'avx.io', 
+    'https://www.linkedin.com/company/avx', 
+    'Education', 'AVX is a cooperative pool of talent and ventures sourced from the technology transfer offices of leading research institutions in the United States. Their mission is to connect high impact entrepreneurs to new ventures emerging from university research...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7719384912, 'Don Chapin', 'dchapin@donchapin.com', '8314490700.0', 
+    'Don Chapin', 'donchapin.com', 
+    'https://www.linkedin.com/company/don-chapin-co--inc', 
+    'Industrial and Manufacturing', 'The Don Chapin Company is a full service general engineering construction company serving the larger Tri County Area, headquartered in Salinas, California.', 'Large',
+    'Medium', 
+    0, '560 Crazy Horse Canyon Road', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-21', 
+    1978
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7719016710, 'Rebecca van Hoeve', 'rebecca.vanhoeve@ucalgary.ca', '4032205038.0', 
+    'University of Calgary', 'ucalgary.ca', 
+    'https://www.linkedin.com/company/university-of-calgary-continuing-education', 
+    'Education', 'The University of Calgary is Canada's leading next generation university - a living, growing and youthful institution that embraces change. The University of Calgary is a place to start something - a career, a company, a new cure, or a new skill. We're...', 'Large',
+    'Medium', 
+    0, '180 Physical Education', 
+    'Calgary', 'AB', 
+    'T2N 1N4', 
+    'Canada', 
+    'America/Edmonton', 
+    '2022-01-21', 
+    1945
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7713027752, 'Ken Sugai', 'kenichi.sugai@myspeckle.com', 'None', 
+    'Myspeckle', 'myspeckle.com', 
+    'https://www.linkedin.com/company/myspeckle', 
+    'Other', 'Speckle is developing a mobile application designed to improve public speaking skills. Our mission is to empower people by helping improve communication skills with technology, knowledge, and community. Many people lack confidence and fear public speak...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Irvine', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-20', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7676504954, 'Rafael Davila', 'rafael@visveg.com', 'None', 
+    'visveg.com', 'visveg.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-01-14', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7676511135, 'Sharon Lin', 'sl5073@columbia.edu', '15738757255.0', 
+    'Columbia University', 'columbia.edu', 
+    'https://www.linkedin.com/school/columbia-university', 
+    'Education', 'Columbia University is a leader in higher education, offering a wide range of academic programs and research opportunities. With a commitment to attracting and engaging the best minds, Columbia strives to advance human understanding and make groundbrea...', 'Large',
+    'Enterprise', 
+    0, '880 3rd Ave #200', 
+    'New York', 'NY', 
+    '10027', 
+    'United States', 
+    'America/New_York', 
+    '2022-01-14', 
+    1754
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7676433790, 'alice liu', 'alice@k5vp.com', 'None', 
+    'K5 Ventures', 'k5vp.com', 
+    'None', 
+    'Finance and Legal', 'K5 Ventures is an early stage venture fund that partners with and invests in technology driven businesses led by visionary founders. K5 hosts, invests, and accelerates early stage game changing, technology driven businesses led by visionary founders.', 'Medium',
+    'Micro', 
+    0, '4590 Macarthur Boulevard', 
+    'Newport Beach', 'CA', 
+    '92660', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-14', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7652257921, 'David Snell', 'snelly@fingerprinthospitality.com', '12149847840.0', 
+    'Fingerprint Hospitality', 'fingerprinthospitality.com', 
+    'https://www.linkedin.com/company/fingerprint-hospitality-llc', 
+    'Hospitality and Travel', 'Fingerprint Hospitality LLC is a boutique consultancy firm specializing in hospitality transaction advisory services. With over $8 billion of experience in hospitality acquisitions and development, Fingerprint offers proven expertise in operating partn...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Dallas', 'TX', 
+    'None', 
+    'United States', 
+    'America/Chicago', 
+    '2022-01-11', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7649933439, 'Stacy Dickinson', 'stacy.m.dickinson@chase.com', '12122706000.0', 
+    'JPMorgan Chase & Co.', 'jpmchase.com', 
+    'https://www.linkedin.com/company/jpmorganchase', 
+    'Technology', 'JPMorgan Chase & Co. is an American multinational investment bank and financial services holding company headquartered in New York City and incorporated in Delaware.', 'Large',
+    'Corporate', 
+    1, '383 Madison Avenue', 
+    'New York', 'NY', 
+    '10017', 
+    'United States', 
+    'America/New_York', 
+    '2022-05-06', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7649955994, 'Earle Hager', 'ehager@neutrinodonut.com', '15124313940.0', 
+    'NeutrinoDonut', 'neutrinodonut.com', 
+    'https://www.linkedin.com/company/the-neutrino-donut-llc', 
+    'Education', 'The Neutrino Donut is a consultancy focused on the management and commercialization of science. They work with startups to navigate the commercialization process and reach the VC stage. They provide services such as grant and licensing opportunities, a...', 'Small',
+    'Micro', 
+    0, '495 South Main Street', 
+    'Las Vegas', 'NV', 
+    '89101', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-11', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7647206525, 'Raducu Roman', 'raducu@softbinator.com', '40314377727.0', 
+    'Softbinator Technologies', 'softbinator.com', 
+    'https://www.linkedin.com/company/softbinator-technologies', 
+    'Technology', 'Softbinator Technologies is a full stack product development company based in Bucharest, Romania. We specialize in building scalable, safe, and reliable software solutions. Our team of high-performing and dedicated professionals is committed to cutting...', 'Large',
+    'Medium', 
+    0, '1383 Rosewood Avenue', 
+    'San Carlos', 'CA', 
+    '94070', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-11', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7589276757, 'Jian Pang', 'jpo0022@gmail.com', '6174956000.0', 
+    'Harvard Business School', 'mail.analytics.hbs.edu', 
+    'https://www.linkedin.com/company/harvard-business-school', 
+    'Education', 'Harvard Business School is the graduate business school of Harvard University in Boston, Massachusetts.', 'Large',
+    'Enterprise', 
+    0, '1 Western Ave #1', 
+    'Boston', 'MA', 
+    '02163', 
+    'United States', 
+    'America/New_York', 
+    '2022-01-04', 
+    1908
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7584607579, 'Elizabeth Suro', 'elizabeth@dxdca.com', 'None', 
+    'Destination x Design California', 'dxdca.com', 
+    'https://www.linkedin.com/company/destination-x-design-california', 
+    'Other', 'Destination x Design California is a Monterey peninsula company that provides full service event planning and destination management expertise for companies and corporate groups hosting events or travel experiences throughout California. They offer unr...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-01-03', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7582353176, 'Oludare Olarewaju', 'olarewaju.oludare@raoatech.com', 'None', 
+    'Raoatech IT-Electromech Limited', 'raoatech.com', 
+    'https://www.linkedin.com/company/raoatech-it-electromech-limited', 
+    'Technology', 'RAOATECH IT-ELECTROMECH LIMITED is a company that provides a wide range of IT and STEM training technologies. They offer an all-inclusive marketplace for the sales of digital contents and a learning platform. Their products include LEARNERKIA, which is...', 'Large',
+    'Small', 
+    0, '1a Hughes Avenue', 
+    'Lagos', 'None', 
+    '101245', 
+    'Nigeria', 
+    'Africa/Lagos', 
+    '2022-01-03', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7495830303, 'Jeffrey Mrizek', 'jmrizek@globalurbannomads.org', 'None', 
+    'Global Urban Nomads', 'globalurbannomads.org', 
+    'https://www.linkedin.com/company/global-urban-nomads', 
+    'Non-Profit', 'Global Urban Nomads is a non-profit organization that cultivates a distributed global community of creative compassionate leaders. We catalyze transformative change for humanity through experiential learning, cross-cultural exchange, and social entrepr...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Roseville', 'CA', 
+    '95661', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-12-16', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7438253374, 'Adele Negro', 'a.negro@ecopa.org', 'None', 
+    'Ecopa', 'ecopa.org', 
+    'https://www.linkedin.com/company/copa-intersections-for-sustainable-living', 
+    'Other', 'ECOPA is an international organization that connects human needs with human skills for resilient community transformation. They focus on ecological stewardship, economic well-being, community empowerment, organizational capacity, professional developme...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'El Cerrito', 'CA', 
+    '94530', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-12-08', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7366460785, 'James Renfro', 'james@renfrocivil.com', 'None', 
+    'renfrocivil.com', 'renfrocivil.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-11-26', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7281954884, 'Javier Bihouet ', 'ljameson@caumb.edu', 'None', 
+    'caumb.edu', 'caumb.edu', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-11-08', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7236656561, 'Reid Lerner', 'reid@reidlerner.com', '4088429942.0', 
+    'Lerner, Reid', 'reidlerner.com', 
+    'None', 
+    'Real Estate and Development', 'Reid Lerner Architects is a company that specializes in architecture, design, and engineering. They are located at 7680 Monterey Road, Gilroy, CA 95020. They provide services in the civic sector and have worked on projects such as SeaLaunch in Long Bea...', 'Small',
+    'None', 
+    0, '7680 Monterey St', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-08', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7228584766, 'JC Hill', 'jc@asb.beer', 'None', 
+    'Alvarado Street Brewery', 'asb.beer', 
+    'https://www.linkedin.com/company/alvarado-street-brewery', 
+    'Hospitality and Travel', 'Alvarado Street Brewery is an award-winning craft beer company that offers a variety of hop-centric IPAs, crisp lagers, and innovative flavors. They are ranked as the #3 Best Brewery in America for 2023. In addition to their exceptional craft beer, Alv...', 'Medium',
+    'Micro', 
+    0, '426 Alvarado Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-11-04', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7174419542, 'Rahul Singh ', 'komal.anand@airmeet.com', '15417458254.0', 
+    'Airmeet Inc', 'airmeet.com', 
+    'https://www.linkedin.com/company/airmeetcom', 
+    'Technology', 'Airmeet is a virtual and hybrid event platform that allows users to host highly customizable events and deliver immersive and interactive experiences to their audience. With Airmeet, users can seamlessly connect and engage with attendees anywhere, crea...', 'Large',
+    'Large', 
+    0, '440 North Barranca Avenue', 
+    'Covina', 'CA', 
+    '91723', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-10-26', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7163107419, 'Leon Bax', 'leonbax@2mynds.com', 'None', 
+    '2Mynds', '2mynds.com', 
+    'https://www.linkedin.com/company/2mynds', 
+    'Education', 'Mental Fitness Training for Athletes | 2Mynds Train your mental skills like you train your physical skills: with workouts that let you push your boundaries further. Start a Free Trial with 2Mynds today. Get ready to train your mental fitness like you t...', 'Small',
+    'Micro', 
+    0, '213 San Benancio Road', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-10-24', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7100427395, 'Michael Sadetsky', 'mnsad@sadetsky.com', 'None', 
+    'sadetsky.com', 'sadetsky.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-10-12', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7095322140, 'kevin bell', 'kevinbell@converger.com', 'None', 
+    'converger.com', 'converger.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-10-11', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7093953123, 'Itchung Cheung', 'itchung.cheung@oregonstate.edu', '18006671465.0', 
+    'Oregon State University', 'oregonstate.edu', 
+    'https://www.linkedin.com/school/oregon-state-university', 
+    'Education', 'Oregon State University is Oregon's largest and only statewide public research university. It was founded over 150 years ago as a land grant institution with the mission to provide access to a high-quality education. Oregon State University offers a wi...', 'Large',
+    'Enterprise', 
+    0, '1500 SW Jefferson Ave', 
+    'Corvallis', 'OR', 
+    '97331', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-10-11', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7089006132, 'Luis Garcia', 'luisdgarcia.mi@gmail.com', 'None', 
+    'aleeas.com', 'aleeas.com', 
+    'https://www.linkedin.com/company/simple-login', 
+    'Consumer Goods and Retail', 'Aleeas.com is an all-in-one online marketplace for fashion and lifestyle products. They specialize in affordable, high-quality fashion items such as clothing, accessories, and beauty products. They also offer a wide range of household items, home décor...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Suresnes', 'None', 
+    '92150', 
+    'France', 
+    'Europe/Paris', 
+    '2021-10-10', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7035331921, 'Eleanor Britter', 'estjohn7@gmail.com', 'None', 
+    'Ekidspower', 'ekidspower.com', 
+    'https://www.linkedin.com/company/ekidspower', 
+    'Other', 'This is a demo course with a few sample activities', 'Small',
+    'Micro', 
+    0, '1098 Foster City Boulevard', 
+    'Foster City', 'CA', 
+    '94404', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-09', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    7001857412, 'Lori Van Meter', 'lori@artingways.com', 'None', 
+    'Arting Ways', 'artingways.com', 
+    'None', 
+    'Other', 'Arting Ways is a company that offers informative and entertaining live presentations called Art Twistory. They curate these presentations for both large and small audiences. Additionally, they lead workshops where individuals and groups can create memo...', 'Small',
+    'None', 
+    0, '240 Westgate Drive', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-24', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6995259290, 'Genevieve Le Blanc', 'genevieve.leblanc@sharecare.com', '12128127702.0', 
+    'Sharecare Inc', 'sharecare.com', 
+    'https://www.linkedin.com/company/sharecare-inc', 
+    'Healthcare', 'Sharecare is a health and wellness engagement platform that provides personalized resources to help people live their healthiest lives. It allows users to access all of their health resources in one place and connect with knowledge, evidence-based prog...', 'Medium',
+    'Enterprise', 
+    1, '660 Madison Avenue', 
+    'New York', 'NY', 
+    '10065', 
+    'United States', 
+    'America/New_York', 
+    '2021-09-23', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6992557350, 'Andrea Fernandez ', 'guillermo.sala@udem.edu', '528182151000.0', 
+    'Udem', 'udem.edu', 
+    'None', 
+    'Education', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    '30033', 
+    'Mexico', 
+    'None', 
+    '2021-09-23', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6989669305, 'Mayuran Yogarajah', 'mayuran.yogarajah@indexexchange.com', 'None', 
+    'Index Exchange Inc', 'indexexchange.com', 
+    'https://www.linkedin.com/company/index-platform', 
+    'Other', 'Index Exchange is a global advertising marketplace enabling media owners to grow revenue by helping marketers reach consumers on any screen, through any ad format. We’re a proud industry pioneer with nearly 20 years of experience accelerating the evolu...', 'Large',
+    'Large', 
+    0, '20 West 22nd Street', 
+    'New York', 'NY', 
+    '10010', 
+    'United States', 
+    'America/New_York', 
+    '2021-09-22', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6988718399, 'Marquis Cabrera', 'marquis@statzero.io', 'None', 
+    'Statistical Zero Group LLC', 'statzero.io', 
+    'https://www.linkedin.com/company/stat-zero', 
+    'Technology', 'Stat Zero is a digital venture platform that enables accredited investors to co-invest with governments into startup projects that solve global grand challenges. Stat Zero Marketplace is a one-stop-shop for public sector innovators to gain global marke...', 'Medium',
+    'Micro', 
+    0, '555 California Street', 
+    'San Francisco', 'CA', 
+    '94104', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-22', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6989280115, 'Matthew Stone', 'matthew@stoneexpeditions.com', '18777177447.0', 
+    'Boonoob', 'boonoob.com', 
+    'https://www.linkedin.com/company/boonoob-web', 
+    'Technology', 'Boonoob is a social network platform that aims to connect people for daily life activities, promote happiness and well-being, and make a positive impact on the world. The platform allows like-minded individuals to connect, share common values and inter...', 'Large',
+    'Small', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6987862130, 'Steve Marshall', 'steve@gibiru.com', 'None', 
+    'gibiru.com', 'gibiru.com', 
+    'https://www.linkedin.com/company/gibiru-anonymous-search-engine', 
+    'Technology', 'Gibiru is an uncensored anonymous search engine that prioritizes user privacy. They do not sell or store user data, as they do not need to rely on user data for revenue. Instead, they crowdsource their scraping through an app that thousands of people h...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Ladonia', 'TX', 
+    'None', 
+    'United States', 
+    'America/Chicago', 
+    '2021-09-22', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6977749363, 'Tina Williams', 'assistant@qtbizsolutions.com', '12484161755.0', 
+    'QT Business Solutions', 'qtbizsolutions.com', 
+    'https://www.linkedin.com/company/qt-business-solutions-inc', 
+    'Education', 'QT Business Solutions provides training and consulting services to 501(c)(3) non profit organizations and for profit small businesses that need grant funding or capital of up to $50,000 or more to start, grow, and/or expand. Our training and consulting...', 'Large',
+    'Micro', 
+    0, '24901 Northwestern Highway', 
+    'Southfield', 'MI', 
+    '48075', 
+    'United States', 
+    'America/Detroit', 
+    '2021-09-21', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6961353601, 'Astra Apsitis', 'astra@brokentuskwellness.com', 'None', 
+    'brokentuskwellness.com', 'brokentuskwellness.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-09-18', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6959859368, 'Desiree Peterkin Bell', 'dpbell@desireepeterkinbell.com', 'None', 
+    'Desireepeterkinbell', 'desireepeterkinbell.com', 
+    'None', 
+    'Other', 'Mom. Wife. Global Impact Maker. Executive Producer. #PurposeNotPosition #TBTM #WinWithBlackWomen', 'Small',
+    'None', 
+    0, '4219 Woodward Avenue', 
+    'Detroit', 'MI', 
+    '48201', 
+    'United States', 
+    'America/Detroit', 
+    '2021-09-17', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6959293719, 'Eleanor Haglund', 'eleanor@aspire360.io', '13023131396.0', 
+    'Aspire360', 'aspire360.io', 
+    'https://www.linkedin.com/company/aspire360ceo', 
+    'Technology', 'Aspire360 is a platform for CEOs and startup investors to get feedback and connect with each other. CEOs utilize the Aspire360 input tool to get an unbiased look at themselves, their team, and their company. The platform also connects investors to vett...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'New York', 'NY', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2021-09-17', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6958768211, 'Jaden Risner', 'jaden@familyproud.com', 'None', 
+    'Family Proud', 'familyproud.com', 
+    'https://www.linkedin.com/company/familyproud', 
+    'Other', 'Family Proud is the first social platform designed for care, making it simple to give and receive support through persistent digital communities. Family Proud creates circles of care around people in need. It allows users to download the app, invite th...', 'Large',
+    'Small', 
+    0, '1041 Market Street', 
+    'San Diego', 'CA', 
+    '92101', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6942511520, 'Robert Ekrem', 'robert@volur.no', '4795708019.0', 
+    'Völur AS Template made by Colorlib', 'volur.no', 
+    'https://www.linkedin.com/company/v%C3%B6lur', 
+    'Consumer Goods and Retail', 'Völur is a company that develops innovative solutions for the meat industry. They combine industrial knowledge with disruptive AI technology to create a greener future. Their focus is on optimizing the meat value chain by using new technological soluti...', 'Large',
+    'Small', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'Norway', 
+    'Europe/Oslo', 
+    '2021-09-15', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6938050856, 'Shiv Sikand', 'shiv@drakomotors.com', '13137755333.0', 
+    'Drako Motors', 'drakomotors.com', 
+    'https://www.linkedin.com/company/drako-motors-inc-', 
+    'Other', 'Drako Motors is a company that specializes in the manufacturing of high-performance electric supercars. Their flagship model, the Drako Dragon, is a 5-passenger luxury hypercar with a quad motor that delivers 2000 horsepower and can accelerate from 0 t...', 'Large',
+    'Small', 
+    0, '1923 Hartog Drive', 
+    'San Jose', 'CA', 
+    '95131', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-14', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6938084880, 'Eustquio Freire Diniz ', 'bruno.diniz@spiralem.com', 'None', 
+    'Spiralem', 'spiralem.com', 
+    'https://www.linkedin.com/company/spiralem', 
+    'Education', 'Spiralem is an innovation consultancy firm, event producer, and training company focused on Fintech. Located in São Paulo, Brazil, Spiralem works with financial institutions and government organizations to bring them closer to new solutions and technol...', 'Medium',
+    'Micro', 
+    0, '538 Rua Funchal', 
+    'None', 'None', 
+    '04551-060', 
+    'Brazil', 
+    'America/Sao_Paulo', 
+    '2021-09-14', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6934328116, 'Gwen Edwards', 'gwen@gwenedwards.com', '15104951600.0', 
+    'Gwen Edwards', 'gwenedwards.com', 
+    'None', 
+    'Education', 'Gwen C. Edwards brings over 30 years of experience building products, services, and profitable business units in high technology sectors. From Stanford Research Institute to Fortune 50 executive (SBC, Nortel Networks, Bell Canada, to Venture Capital ba...', 'Medium',
+    'Micro', 
+    0, 'PO BOX 7596', 
+    'Berkeley', 'CA', 
+    '94707', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-13', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6934038312, 'Diane Cozian', 'diane.cozian@edhec.com', 'None', 
+    'Edhec Business School', 'edhec.com', 
+    'https://www.linkedin.com/company/edhec-business-school', 
+    'Education', 'EDHEC Business School is a French grandes écoles business school with campus locations in Lille, Nice, Paris, London, and Singapore. It offers a range of graduate and undergraduate programs, including Master in Management, MSc International Finance, MB...', 'Large',
+    'Large', 
+    0, '24 Avenue Gustave Delory', 
+    'Roubaix', 'None', 
+    '59100', 
+    'France', 
+    'Europe/Paris', 
+    '2021-09-13', 
+    1906
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6921218099, 'Kate Fisher', 'kate@synergyclothing.com', '8313314014.0', 
+    'Synergy Organic Clothing', 'synergyclothing.com', 
+    'https://www.linkedin.com/company/synergy-organic-clothing', 
+    'Consumer Goods and Retail', 'Synergy Organic Clothing is a fashion-forward clothing and yoga apparel brand for women. They specialize in creating sustainable clothing that combines modern yet timeless design. Their clothing is made from GOTS certified organic cotton from India, dy...', 'Large',
+    'Small', 
+    0, '2151 Delaware Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-14', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6916808752, 'Alfredo Mathew', 'alfredo@eso-ventures.com', 'None', 
+    'ESO Ventures', 'eso-ventures.com', 
+    'https://www.linkedin.com/company/eso-ventures', 
+    'Education', 'ESO Ventures is an entrepreneurial support organization that provides community, education, coaching, and financial products to support Black and Brown entrepreneurs. They aim to empower these entrepreneurs with the confidence, competence, and capital ...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Oakland', 'CA', 
+    '94605', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-09', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6916874101, 'Ryan Micheletti', 'ryan@fi.co', '6504944252.0', 
+    'Founder Institute', 'fi.co', 
+    'https://www.linkedin.com/school/the-founder-institute', 
+    'Education', 'Founder Institute is the world's largest pre-seed startup accelerator. Since 2009, it has helped the world's fastest growing startups raise funding, get into seed accelerators, generate traction, and more. Founder Institute is the premier idea stage ac...', 'Large',
+    'Small', 
+    0, '548 Market Street', 
+    'San Francisco', 'CA', 
+    '94306', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-09', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6916685616, 'Nick Sramek', 'nick@dooninsights.com', 'None', 
+    'Doon Insights', 'dooninsights.com', 
+    'https://www.linkedin.com/company/doon-insights', 
+    'Education', 'Doon Insights is a company based in Santa Cruz, California that specializes in showcasing compelling new startups and key technology trends. They are dedicated to building a community around their startups and connecting them with investors and corpora...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Bonny Doon', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-09', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6909646892, 'Woodrow Boyer', 'woodrow@usbusinessfundingsolutions.com', '8008581052.0', 
+    'US Business Funding Solutions', 'usbusinessfundingsolutions.com', 
+    'None', 
+    'Education', 'U.S. Business Funding Solutions is a company that specializes in business funding education and one-on-one training. They help aspiring business owners achieve their funding goals by providing guidance and support. Whether it's funding for their busine...', 'Large',
+    'Medium', 
+    0, '1031 S BLUFF ST', 
+    'Saint George', 'UT', 
+    '84770', 
+    'United States', 
+    'America/Denver', 
+    '2021-09-08', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6863384238, 'Dr Raj Nihalani', 'rnihalani@reshapelifesci.com', '19494296680.0', 
+    'reshapelifesci.com', 'reshapelifesci.com', 
+    'https://www.linkedin.com/company/reshape-lifesciences-inc.', 
+    'Healthcare', 'ReShape Lifesciences, Inc. is a developer of minimally invasive medical devices to treat obesity and metabolic diseases. Our current portfolio includes the LAP-BAND® Adjustable Gastric Banding System and the ReShape Vest.', 'Large',
+    'Small', 
+    0, '1001 Calle Amanecer', 
+    'San Clemente', 'CA', 
+    '92673', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-01', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6818164068, 'David Boyle', 'david@sherpacpg.com', 'None', 
+    'Sherpa Cpg', 'sherpacpg.com', 
+    'https://www.linkedin.com/company/sherpacpg', 
+    'Consumer Goods and Retail', 'SHERPA CPG is a company that specializes in food and beverage services. They help food and beverage brands define their target consumer, competitive landscape, and market opportunity. They also assist in establishing product positioning aligned with br...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Los Angeles', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-26', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6810532223, 'Linda Calhoun', 'linda@careergirls.org', 'None', 
+    'Career Girls', 'careergirls.org', 
+    'https://www.linkedin.com/company/career-girls', 
+    'Education', 'Career Girls is a free, noncommercial, online platform which showcases video clips of diverse women role models sharing career and educational advice to inspire young girls to expand their horizons, improve their academic performance, and dream big abo...', 'Large',
+    'Micro', 
+    0, '2522 BROADWAY ST', 
+    'San Francisco', 'CA', 
+    '94115', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-25', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6807471916, 'Kenneth Goodwin Jr', 'kennethgoodwin@jeanensis.net', 'None', 
+    'jeanensis.net', 'jeanensis.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-08-25', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6805455530, 'Laura Wilkinson ', 'pleroemunoz@svlg.org', '14085017864.0', 
+    'Silicon Valley Leadership Group', 'svlg.org', 
+    'https://www.linkedin.com/company/silicon-valley-leadership-group', 
+    'Other', 'The Silicon Valley Leadership Group is a non-profit advocacy group in Silicon Valley, California, in the United States.', 'Large',
+    'Small', 
+    0, '2001 Gateway Place', 
+    'San Jose', 'CA', 
+    '95110', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-25', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6790192261, 'Sergio Soler', 'sbarberan@realseqbiosciences.com', 'None', 
+    'RealSeq Biosciences Inc', 'realseqbiosciences.com', 
+    'https://www.linkedin.com/company/realseq-biosciences', 
+    'Healthcare', 'RealSeq Biosciences is a biotechnology research company that specializes in innovative proprietary technologies for bias-free small RNA/miRNA NGS library construction, targeted NGS tools, and cf RNA analysis (liquid biopsy). Their expertise in these ar...', 'Large',
+    'Micro', 
+    0, '2161 Delaware Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-23', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6739473005, 'Katherine Fisher ', 'henry@shopwvn.com', 'None', 
+    'WVN', 'shopwvn.com', 
+    'None', 
+    'Other', 'WVN is an online retail store that offers a wide range of trendy and fashionable clothing and accessories for women. They provide high-quality products at affordable prices, ensuring that customers can stay stylish without breaking the bank. With a foc...', 'Small',
+    'None', 
+    0, '2151 Delaware Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-15', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6709794135, 'Chuck Jehle ', 'lauraharvest@gmail.com', '8778319377.0', 
+    'Mission Community Services', 'mcscorp.org', 
+    'https://www.linkedin.com/company/mission-community-services-corporation', 
+    'Education', 'Mission Community Services Corporation is dedicated to enhancing opportunities for potential entrepreneurs and small business owners to become self-sustaining, successful contributors to their communities, with special assistance for low-income, minori...', 'Medium',
+    'Micro', 
+    0, '71 Zaca Lane', 
+    'San Luis Obispo', 'CA', 
+    '93401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-08-09', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6682010985, 'Rafael Perez ', 'michaelg@investpr.org', 'None', 
+    'Invest Puerto Rico Inc', 'investpr.org', 
+    'https://www.linkedin.com/company/investpr', 
+    'Education', 'Invest Puerto Rico (InvestPR) is a public-private partnership that aims to drive economic development in Puerto Rico by promoting the island as a competitive destination for business and investment. They work with private, public, and nonprofit organiz...', 'Large',
+    'Small', 
+    0, '200 Boulevard Centro de Convenciones', 
+    'San Juan', 'None', 
+    '00907', 
+    'Puerto Rico', 
+    'America/Puerto_Rico', 
+    '2021-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6656098117, 'Daniel Hernandez ', 'daniel@theapptopus.com', 'None', 
+    'The Apptopus', 'theapptopus.com', 
+    'https://www.linkedin.com/company/the-apptopus', 
+    'Hospitality and Travel', 'The Apptopus is an all-in-one online services and technology management platform for restaurants struggling to adopt online services. We are partnered with DoorDash, Uber Eats, Grubhub, and their subsidiaries, allowing us to be the point of contact bet...', 'Large',
+    'Small', 
+    0, '400 R Street', 
+    'Santa Cruz', 'CA', 
+    '95811', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-09', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6649943851, 'Marissa Castro ', 'rodrigo@macawbusiness.com', 'None', 
+    'Macaw Business', 'macawbusiness.com', 
+    'https://www.linkedin.com/company/macawbusiness', 
+    'Other', 'Macaw Business is a business internationalization boutique located in Aguascalientes, Mexico and Joinville, Brazil. We are strategically positioned in one of the most developed parts of Brazil, allowing us to efficiently manage projects in the south an...', 'Small',
+    'Micro', 
+    0, '11 Rua Expedicionário Holz', 
+    'None', 'None', 
+    '89201-740', 
+    'Brazil', 
+    'America/Sao_Paulo', 
+    '2021-07-28', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6649942311, 'Tushar Kansal', 'tk@kansaltancy.com', '919811112144.0', 
+    'Tushar Kansal', 'kansaltancy.com', 
+    'https://www.linkedin.com/company/kansaltancyventures', 
+    'Finance and Legal', 'Kansaltancy Ventures is a global investment management firm specializing in making companies funding ready and raising funds for them by leveraging its ecosystem, having a network of 1000+ Global Investors, including marquee Angel Investors and Venture...', 'Large',
+    'Small', 
+    0, 'None', 
+    'New Delhi', 'None', 
+    'None', 
+    'India', 
+    'Asia/Kolkata', 
+    '2021-07-28', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6619608357, 'Skylar Dewitte ', 'kirk@kdn-consulting.com', 'None', 
+    'Kdn-Consulting', 'kdn-consulting.com', 
+    'https://www.linkedin.com/company/kdnc-llc-consulting', 
+    'Education', 'KDNC is a customer operations consultant. We help small to medium enterprises (SMEs) with business processes that impact and are visible to customers. KDNC is a customer experience specialist that helps businesses build solid CX strategies that improv...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-07-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6582979897, 'Parna Sarkar Basu', 'parna@brandandbuzzmarketing.com', 'None', 
+    'Brand and Buzz Marketing', 'brandandbuzzmarketing.com', 
+    'https://www.linkedin.com/company/brand-and-buzz-marketing-llc', 
+    'Education', 'Brand and Buzz Consulting, LLC is a consulting firm specializing in corporate marketing, thought leadership, and branding. They help elevate experts into thought leaders and transform brands to new heights. They offer services to build, humanize, and a...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Boston', 'MA', 
+    '02210', 
+    'United States', 
+    'America/New_York', 
+    '2021-07-15', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6556189811, 'Neal Katz', 'neal@ccfoglobal.org', 'None', 
+    'CCFO Global', 'ccfoglobal.org', 
+    'https://www.linkedin.com/company/ccfoglobal', 
+    'Finance and Legal', 'A new monetary paradigm for sustainable and renewable funding of mission critical and existential projects. Financial Services', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-07-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6333044488, 'Bernardo Nunez', 'bnunez@powdevs.com', 'None', 
+    'PowDevs', 'powdevs.com', 
+    'https://www.linkedin.com/company/powdevs', 
+    'Technology', 'PowDevs is a leading platform for developers, providing access to cutting-edge technology, tools, and resources. We specialize in providing the best software development teams for companies and startups in the United States and Canada. Our thorough hir...', 'Small',
+    'Small', 
+    0, '515 East Grant Street', 
+    'Phoenix', 'AZ', 
+    '85004', 
+    'United States', 
+    'America/Phoenix', 
+    '2021-06-24', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6289098278, 'Adetutu Oniya', 'detutuoniya@softcitygroup.com', 'None', 
+    'Softcity Group', 'softcitygroup.com', 
+    'https://www.linkedin.com/company/softcity-group', 
+    'Other', 'Softcity Group is Africa's Technology Powerhouse, prioritizing trust and humanity in the delivery of technology services across the globe. We provide intelligent automation, AI, and software development services. Our expertise includes mobile app devel...', 'Large',
+    'Small', 
+    0, '17A Commercial Avenue', 
+    'Lagos', 'None', 
+    'None', 
+    'Nigeria', 
+    'Africa/Lagos', 
+    '2021-06-22', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6168551693, 'milford bergnaum', 'milford_bergnaum@devap.org', 'None', 
+    'devap.org', 'devap.org', 
+    'None', 
+    'Technology', 'devap.org is a company that provides a wide range of resources and information. They are your go-to source for all the information you need, covering general topics and more specific ones. Whether you're looking for general knowledge or something speci...', 'Medium',
+    'Micro', 
+    0, '12 Ederstraße', 
+    'Frankfurt am Main', 'None', 
+    '60486', 
+    'Germany', 
+    'Europe/Berlin', 
+    '2021-05-31', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6151897621, 'Daniel Herrington', 'dan@leftcoastfs.com', '15033890545.0', 
+    'Left Coast Financial Solutions', 'leftcoastfs.com', 
+    'https://www.linkedin.com/company/left-coast-financial-solutions', 
+    'Finance and Legal', 'Left Coast Financial Solutions is a neobank providing an online payment platform that bridges cannabis and banking. We solve the cash problem by partnering with a depository institution to offer checking, ACH, and wires that allow businesses to receive...', 'Medium',
+    'Micro', 
+    0, '2425 Northeast 50th Avenue', 
+    'Portland', 'OR', 
+    '97213', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-27', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6103428120, 'Unknown', 'unknown29@invalid.com', '18559264374.0', 
+    'Cohesity', 'cohesity.com', 
+    'https://www.linkedin.com/company/cohesity', 
+    'Technology', 'AI powered data security and management | Cohesity Cohesity gives you both data security and data management. Defend against ransomware with immutable backup, AI based early threat detection, and rapid data recovery. We're Cohesity, a venture backed te...', 'Large',
+    'Enterprise', 
+    0, '451 El Camino Real', 
+    'None', 'CA', 
+    '95110', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-19', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6062094740, 'Kimberly Shakeri', 'honeydoghandmade@gmail.com', 'None', 
+    'Oku Solutions', 'okusolutions.com', 
+    'https://www.linkedin.com/company/okusolutions', 
+    'Education', 'Oku Solutions is a professional services and engineering consulting company that specializes in providing support to the broadband telecommunications industry. With over 30 years of experience, we offer innovative solutions and expertise in various are...', 'Medium',
+    'Micro', 
+    0, '9515 Soquel Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-10', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6057517432, 'Christie Cullen', 'christiecullen182@gmail.com', 'None', 
+    'GetVirtual', 'getvirtual.org', 
+    'https://www.linkedin.com/company/47671780', 
+    'Other', 'We partner with local/community businesses to provide basic off-the-shelf software implementation, We don’t provide custom development or programming, but we do provide:', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2022-11-26', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6057556592, 'J S', 'nobody@nowhere.com', '2088884079.0', 
+    'Ccia', 'nowhere.com', 
+    'https://www.linkedin.com/company/nowhereae', 
+    'Other', 'NOWHERE is a company located on Yas Island, Abu Dhabi. They provide a tranquil and refreshing escape to guests with premium casual dining and specialty coffee. They have restaurants.', 'Medium',
+    'Micro', 
+    0, '7100 TPC DR', 
+    'Orlando', 'WA', 
+    '32822', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-11', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6054974481, 'Ximena Waissbluth', 'ximenawaissbluth415@gmail.com', 'None', 
+    'Saucy Otter', 'saucyotter.com', 
+    'None', 
+    'Hospitality and Travel', 'Saucy Otter is a local brewpub located in California's last dry town.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-05', 
+    2022
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6024943367, 'Renee Mondragon ', 'afeldman@mpusd.k12.ca.us', '18313840255.0', 
+    'mpusd_now', 'mpusd.k12.ca.us', 
+    'https://www.linkedin.com/company/monterey-peninsula-unified-school-district', 
+    'Education', 'We serve 9,000+ students preschool-12 & adults on the Monterey Peninsula. https://t.co/vUhzFyftw0 | https://t.co/SbPtMqxb6w Superintendent: @pkdiff', 'Large',
+    'Large', 
+    0, '700 Pacific Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-06', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6022290321, 'Chris St John', 'cstjohn@americancastingco.com', '8316375641.0', 
+    'American Casting', 'americancastingco.com', 
+    'https://www.linkedin.com/company/american-casting-co', 
+    'Industrial and Manufacturing', 'American Casting Company is an ISO 9001 and AS9100 certified investment casting foundry and investment casting manufacturing company that delivers premier quality investment castings with the industry’s shortest lead times. Located in Hollister, CA, we...', 'Large',
+    'Medium', 
+    0, '51 Fallon Road', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6022014525, 'Megan Merz', 'megan@disasterhappens.biz', 'None', 
+    'disasterhappens.biz', 'disasterhappens.biz', 
+    'None', 
+    'Other', 'A property restoration contractor & proud Disaster Kleenup International member serving Monterey, Santa Cruz, San Benito, Santa Clara, & Alameda Counties in CA', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-05-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6022001734, 'Katrin Jakob', 'kjakob@cal-ba.net', 'None', 
+    'Cal-Ba.net', 'cal-ba.net', 
+    'None', 
+    'Other', 'Cal-BA (cal-ba.net) is an incubator and science company based in California. We provide a platform for entrepreneurs and startups to develop and grow their businesses. Our services include mentorship, funding, and access to resources and networks. We s...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-05-06', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6021986369, 'Diane Van Hoose', 'diane@hei-online.com', '8316257114.0', 
+    'hei-online.com', 'hei-online.com', 
+    'None', 
+    'Other', 'Health Education Innovations, Inc. providing continuing education courses for nurses in locations across the USA since 1993.', 'Medium',
+    'Small', 
+    0, '4095 SUNRIDGE RD', 
+    'Pebble Beach', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-06', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6016222308, 'Tonya Antle', 'tonyaantle@gmail.com', 'None', 
+    'Organic Produce Network', 'organicproducenetwork.com', 
+    'https://www.linkedin.com/company/organic-produce-network', 
+    'Other', 'Organic Produce Network is the leader for news and views about growing, marketing & selling organic fresh produce. The healthiest food in the world! Responding to the double digit growth in the fastest growing retail food category, the Organic Produce ...', 'Medium',
+    'Micro', 
+    0, '5 Harris Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-11-13', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6016222307, 'Amy Wu', 'amy.h.wu@gmail.com', 'None', 
+    'From Farms to Incubators', 'farmstoincubators.com', 
+    'https://www.linkedin.com/company/from-farms-to-incubators', 
+    'Other', 'From Farms to Incubators connects and empowers women in agrifoodtech through storytelling, community, resources and mentorship. We provide a community and network for women in agrifoodtech, with the mission of getting more women involved. We use storyt...', 'Small',
+    'Micro', 
+    0, '1100 Main Street', 
+    'Woodland', 'CA', 
+    '95695', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-11-10', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6002187802, 'Daniel Cardenas', 'dan@dancardenas.com', 'None', 
+    'Daniel Cardenas - Realtor', 'dancardenas.com', 
+    'None', 
+    'Real Estate and Development', 'Daniel Cardenas is a realtor specializing in properties in Carmel by the Sea, Monterey County. He offers top-level service to clients looking to buy or sell properties in the area. With a strong pulse on the local market and years of experience, Daniel...', 'Small',
+    'None', 
+    0, 'None', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-05-04', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    6002208302, 'Nick Ushio', 'nushio@itp-c.com', 'None', 
+    'Itp-C', 'itp-c.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760370, 'Bev Zerbib Berda', 'bevzerbib@gmail.com', 'None', 
+    'Bev Zerbib-Berda Pottery', 'bevzerbib-berdapottery.com', 
+    'None', 
+    'Other', 'Bev Zerbib-Berda Pottery is a company located in the Tannery Arts Center in Santa Cruz, California. They specialize in functional pottery that is handcrafted by Bev Zerbib-Berda. Each piece is created using the potter's wheel and is designed to have en...', 'Small',
+    'None', 
+    0, '1010 River Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760369, 'Cecilia Vanderlipe', 'kugtarinfo@gmail.com', '18318006332.0', 
+    'Kugtar Mma', 'kugtarmma.com', 
+    'https://www.linkedin.com/company/kugtar-mixed-martial-arts', 
+    'Education', 'Kugtar Mixed Martial Arts Academy is the premier martial arts academy in Monterey County, founded in 1995 by Master Vince Vanderlipe. Kugtar training is conducted five days a week with on-site instructors specializing in Brazilian Jiu Jitsu, Tang Soo D...', 'Medium',
+    'Micro', 
+    0, '315 North Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760367, 'Cypress Morales', 'cypressjanmariemo@gmail.com', 'None', 
+    'Cypress J. Morales, LMFT', 'cypressmorales.com', 
+    'None', 
+    'Other', 'Cypress J. Morales, LMFT is a marriage and family therapist with over 30 years of experience. She is also a professional life coach. Cypress has always been curious about life and humanity, and her passion for understanding family dynamics started at a...', 'Small',
+    'None', 
+    0, '5905 Soquel Drive', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970706588, 'Elizabeth Clar', 'vintagefusionjewelry@gmail.com', '18314718755.0', 
+    'Vintage Fusion Jewelry', 'vintagefusionjewelry.net', 
+    'None', 
+    'Consumer Goods and Retail', 'Vintage Fusion Jewelry specializes in jewelry repair and redesign, custom jewelry pieces, and vintage glassware. They offer services to repair and redesign vintage jewelry, creating custom pieces, and providing ready-to-shop one-of-a-kind jewelry. They...', 'Small',
+    'None', 
+    0, '1111 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760366, 'Renee Rowe', 'awakentoyourpath@gmail.com', 'None', 
+    'Rowe Intuitive Institute', 'roweintuitiveinstitute.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760365, 'Sonia Le', 'cosmochicdesigns@gmail.com', 'None', 
+    'CosmoChicSC', 'cosmochicsc.com', 
+    'None', 
+    'Consumer Goods and Retail', 'CosmoChicSC is a women's clothing and accessories company that offers custom clothing, anti-aging and wellness products, custom gifts, and custom embroidery. The company is run by Sonia Le, a fashion designer who creates unique and stylish outfits for ...', 'Small',
+    'None', 
+    0, '1050 River Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970760364, 'Susan Brown', 'susanbrownart@gmail.com', 'None', 
+    'susanbrownfineart.com', 'susanbrownfineart.com', 
+    'None', 
+    'Other', 'SusanBrownArt--fresh, vibrant art', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-04-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970775970, 'Jackie Tucker', 'jackie@carefromtheheart.net', '8314768316.0', 
+    'Care From The Heart', 'carefromtheheart.net', 
+    'https://www.linkedin.com/company/care-from-the-heart-in-home-services-inc', 
+    'Healthcare', 'Care From The Heart In Home Services, Inc. provides home health care services in Santa Cruz, CA. They offer hourly and 24-hour care for individuals suffering from major illnesses such as Alzheimer's, dementia, Parkinson's, stroke, cancer, and special n...', 'Medium',
+    'Small', 
+    0, '3141 Paul Sweet Road', 
+    'Santa Cruz', 'CA', 
+    '95065', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-29', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5970744631, 'Filip Iliescu', 'filiescu@gmail.com', 'None', 
+    'Santa Cruz Tech Exchange', 'santacruztechexchange.com', 
+    'https://www.linkedin.com/company/santa-cruz-tech-exchange', 
+    'Technology', 'Santa Cruz Tech Exchange is a retail store located on the West Side of Santa Cruz, CA. They specialize in buying, selling, trading, and repairing a wide range of technology products including computers, electronics, laptops, desktops, tablets, phones, ...', 'Medium',
+    'Micro', 
+    0, '1715 Mission Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-26', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921937770, 'Gregory Ahn', 'greg@folktalegroup.com', 'None', 
+    'Folktalewinegroup', 'folktalegroup.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Folktale Wine Group is a winery based in the United States that aims to tell stories through wine. They value partnership and offer a variety of new wines and spirits that complement their California-cultivated wines. The company is part of the Folktal...', 'Medium',
+    'Micro', 
+    0, '8940 Carmel Valley Rd', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921937769, 'Tim OConnor', 'toconnor@excelligence.com', '18313335586.0', 
+    'Excelligence Learning', 'excelligence.com', 
+    'https://www.linkedin.com/company/excelligence-learning-corp', 
+    'Consumer Goods and Retail', 'Excelligence Learning Corporation is a leading developer, manufacturer, distributor, and multi-channel retailer of educational products. They provide educational classroom services and solutions to Early Childhood and Elementary educators and parents. ...', 'Large',
+    'Large', 
+    0, '2 Lower Ragsdale Dr', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921005490, 'Murat Yalcin', 'yalcinmurat1986@gmail.com', 'None', 
+    'Urbanicfarm', 'urbanicfarm.com', 
+    'https://www.linkedin.com/company/urbanicfarm', 
+    'Consumer Goods and Retail', 'UrbanicFarm is a marketplace and networking platform that connects local farmers to consumers, allowing them to buy and sell local fresh food. The platform also connects gardeners and farmers with each other to share experience and knowledge. UrbanicFa...', 'Large',
+    'Small', 
+    0, '1159 Kelez Drive', 
+    'San Jose', 'CA', 
+    '95120', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-28', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921703278, 'Shawn Adams', 'shawn@montereysigns.com', '8316320490.0', 
+    'Monterey Signs', 'montereysigns.com', 
+    'https://www.linkedin.com/company/monterey-signs-inc.', 
+    'Other', 'Monterey Signs is a full-service sign shop that offers quality signs, banners, and vehicle graphics at great prices with fast service. They specialize in signs, banners, and vehicle wraps, and have a team of 5 graphic designers to assist with projects....', 'Medium',
+    'Micro', 
+    0, '555 Broadway Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921741587, 'Tom Harvey', 'tharvey@blumedistillation.com', '8317221012.0', 
+    'Blume Distillation', 'blumedistillation.com', 
+    'https://www.linkedin.com/company/blume-distillation', 
+    'Industrial and Manufacturing', 'Blume Distillation is a biofuel tech firm that provides alcohol fuel production equipment. Their advanced biorefinery systems convert waste into alcohol fuel and generate a wider range of beneficial energy, agricultural fertilizer, and pharmaceutical p...', 'Medium',
+    'Micro', 
+    0, '371 Calabasas Rd', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-09-23', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921711284, 'Ming Yeh', 'hmingy@alum.mit.edu', '6172589344.0', 
+    'MIT', 'alum.mit.edu', 
+    'https://www.linkedin.com/company/mit', 
+    'Education', 'Massachusetts Institute of Technology is a private land-grant research university in Cambridge, Massachusetts.', 'Large',
+    'Enterprise', 
+    0, '77 Massachusetts Ave', 
+    'Cambridge', 'MA', 
+    '02139', 
+    'United States', 
+    'America/New_York', 
+    '2021-04-22', 
+    1861
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921703263, 'Andy Drenick', 'andy.drenick@capitalforfounders.com', '3039916170.0', 
+    'Capital for Founders', 'capitalforfounders.com', 
+    'https://www.linkedin.com/company/capital-for-founders-llc', 
+    'Finance and Legal', 'Capital for Founders (CFF) is a venture capital and private equity firm that specializes in making investments in established, founder-operated businesses. With a focus on businesses that have a history of profitability and multiple opportunities for f...', 'Small',
+    'Micro', 
+    0, '101 Cooper Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921703262, 'Nick Zaldastani', 'nicholas@zaldastani.com', 'None', 
+    'zaldastani.com', 'zaldastani.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921733164, 'Kristi Bowers', 'kristi@flyxsystems.com', 'None', 
+    'GRAPE', 'flyxsystems.com', 
+    'https://www.linkedin.com/company/flyxsystems', 
+    'Consumer Goods and Retail', 'Data driven agriculture. We envision a world of next era sustainability, where agriculture knowledge is powered by innovative hardware and artificial intelligence. Wine and Spirits', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Cupertino', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921717877, 'Lorena Paz', 'kristian@akinpaz.com', 'None', 
+    'AkinPaz Architecture,', 'akinpaz.com', 
+    'None', 
+    'Real Estate and Development', 'AkinPaz Architecture, Inc. is a full-service architecture firm based in Ukiah, California. They offer a wide range of services including residential, institutional, master planning, permitting, and commercial design. With deep experience in new constru...', 'Medium',
+    'Micro', 
+    0, '2601 Tindall Ranch Road', 
+    'Ukiah', 'CA', 
+    '95482', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921731597, 'Jason Book', 'jason.book@yahoo.com', 'None', 
+    'Coastal Corporate Development', 'coastalcorpdev.com', 
+    'None', 
+    'Education', 'Coastal Corporate Development is a company that specializes in helping businesses grow. They offer a range of services including capital raising, talent scouting, coaching, and strategy. Their goal is to help businesses overcome obstacles and achieve b...', 'Small',
+    'None', 
+    0, '1414 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921731596, 'Sean Hulbert', 'shulbert@securitycentric.net', '19252924309.0', 
+    'Security Centric', 'securitycentric.net', 
+    'https://www.linkedin.com/company/security-centric-llc', 
+    'Other', 'Security Centric Inc. is a cybersecurity enablement company that specializes in hardened, secure virtualization technology. With over 35 years of experience in cybersecurity, computer forensics, hacking, and higher educational designs, we take a holist...', 'Medium',
+    'Micro', 
+    0, '3197 Independence Drive', 
+    'Livermore', 'CA', 
+    '94551', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921678390, 'Robert Hsu', 'robert.t.hsu@gmail.com', 'None', 
+    'Finret', 'finret.com', 
+    'https://www.linkedin.com/company/finret', 
+    'Other', 'Finret is the low cost leader for tenant screening. Tenant screening includes credit, background, eviction, and financial verification. Our reports provide property managers with the best data so they can confidently screen and place tenants into a hom...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'San Mateo', 'CA', 
+    '94401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921701671, 'Monique Lusse', 'monique@equitybydesign.com', '14153398849.0', 
+    'Equity By Design', 'equitybydesign.com', 
+    'https://www.linkedin.com/company/equity-by-design-llc', 
+    'Other', 'equitybydesign is a company that provides financial operations management and CFO services. They offer a menu of services including Financial Clarity VIP Consulting and Designing Equity Into Your Business packages. These packages are available for a 3-...', 'Medium',
+    'Micro', 
+    0, '583 Seaver Drive', 
+    'Mill Valley', 'CA', 
+    '94941', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921701670, 'Jill Zande', 'jzande@marinetech.org', '8316451393.0', 
+    'Marine Advanced Technology Education', 'marinetech.org', 
+    'https://www.linkedin.com/company/marine-advance-technology-education', 
+    'Education', 'The Marine Advanced Technology Education (MATE) Center is a national partnership of organizations working to improve marine technical education and in this way help to prepare America's future workforce for ocean occupations. Headquartered at Monterey ...', 'Large',
+    'Medium', 
+    0, '980 Fremont Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921717875, 'Simon La Barrie', 'simon@helpjess.com', 'None', 
+    'HelpJess', 'helpjess.com', 
+    'None', 
+    'Other', 'https://t.co/mDB96rBAO3 “Our Angels are coming”', 'Small',
+    'None', 
+    0, '199 5th Avenue', 
+    'New York', 'NY', 
+    '10010', 
+    'United States', 
+    'America/New_York', 
+    '2021-04-22', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921709658, 'Ashley Esiner', 'ashley@arterypay.com', '16692472177.0', 
+    'Artery Pay', 'arterypay.com', 
+    'https://www.linkedin.com/company/arterypay', 
+    'Other', 'Discounted tickets to ICBC San Francisco on February 8, 2019 with code ArteryVIP', 'Small',
+    'Micro', 
+    0, '1400 Coleman Avenue', 
+    'Santa Clara', 'CA', 
+    '95050', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921701669, 'John Alexander', 'jalexander@stow-tow.com', 'None', 
+    'Stow-Tow.com', 'stow-tow.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-04-22', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5880285788, 'Unknown', 'unknown30@invalid.com', 'None', 
+    'thetrimhandman.com', 'thetrimhandman.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-04-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921843333, 'Thomas Guttenberger', 'tguttenb@gmail.com', '3139189070.0', 
+    'Wazoo Mobile Technologies', 'wazoomobile.com', 
+    'None', 
+    'Other', 'Wazoo is a free smartphone app that provides users with the best deals and attractions near their location. With Wazoo, users can easily find and access discounts and offers in their area. The app is completely free to download and use.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2019-11-01', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5864823580, 'Ken Wong', 'ken.wong@sfoundation.io', '4088967329.0', 
+    'sFoundation', 'sfoundation.io', 
+    'https://www.linkedin.com/company/sfoundation', 
+    'Other', 'sFoundation is a small business focused service firm located in the heart of Silicon Valley. They provide CFO and bookkeeping services to startups and companies, ranging from solopreneurs to fifty person teams. Their dedicated bookkeepers and fractiona...', 'Large',
+    'Micro', 
+    0, '4500 Great America Parkway', 
+    'Santa Clara', 'CA', 
+    '95054', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5868732310, 'John Smith', 'john.smith@adpavtec.com', '8312382448.0', 
+    'Advanced Paving Technologies Inc.', 'adpavtec.com', 
+    'https://www.linkedin.com/company/advanced-paving-technologies-inc-', 
+    'Industrial and Manufacturing', 'Advanced Paving Technologies is a company that aims to revolutionize the way roads are paved. They have developed a new 3D Asphalt Paving Machine that cuts road work time in half and produces smooth and durable roads. Their innovative technology is aim...', 'Medium',
+    'Micro', 
+    0, '199 SURF WAY', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5864839793, 'Brad Morris', 'bmorris@bwcscorp.com', '8317835823.0', 
+    'BWCS Corp', 'bwcscorp.com', 
+    'None', 
+    'Technology', 'bwcs is a company that specializes in providing technology solutions for the US Federal, State, and Local government. They focus on areas such as tech, AI, Blockchain, mobile, and other solutions. One of their key offerings is technology for agricultur...', 'Small',
+    'None', 
+    0, 'None', 
+    'Simi Valley', 'CA', 
+    '93062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5864836226, 'Ben Mansuri', 'ben@magnabid.com', '18885591112.0', 
+    'Magnabid', 'magnabid.com', 
+    'https://www.linkedin.com/company/magna-doctors', 
+    'Healthcare', 'MagnaDoctors (magnabid.com) is a trusted medical marketplace that connects doctors and patients. Founded in 2017 and based in Los Angeles, California, MagnaDoctors allows doctors to offer promotions on their services, while patients can bid on those of...', 'Medium',
+    'Micro', 
+    0, '9735 Wilshire Boulevard', 
+    'Beverly Hills', 'CA', 
+    '90212', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-22', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5859279149, 'Alyssa Rodriguez', 'alyssa.arod11@gmail.com', '3153142317.0', 
+    'Instagram', 'instagram.com', 
+    'https://www.linkedin.com/company/instagram', 
+    'Technology', 'Instagram is a free photo sharing application that enables its users to take photos, apply filters, and share them on social networks. More than one billion people around the world use Instagram, and we’re proud to be bringing them closer to the people...', 'Large',
+    'Enterprise', 
+    1, '181 South Park Street', 
+    'None', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-01', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5853487026, 'Eldon Loblein', 'eldon.loblein@gametiks.com', 'None', 
+    'Gametiks', 'gametiks.com', 
+    'https://www.linkedin.com/company/gametiks', 
+    'Other', 'Gametiks is a community platform for hunters and outfitters to connect, share stories, and book hunts. Software Development', 'Small',
+    'Micro', 
+    0, '1025 Villa Street', 
+    'Mountain View', 'CA', 
+    '94041', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-13', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5810665572, 'Jason Sedano', 'jsedano@concentricpower.com', '14153210023.0', 
+    'Concentric Power', 'concentricpower.com', 
+    'https://www.linkedin.com/company/concentric-power', 
+    'Other', 'Concentric Power Inc. is an intelligent microgrid developer with a proven track record in agricultural, industrial, and community applications. Our patented Microgrid Controller technology manages the complete energy mix including supply, load, and cos...', 'Large',
+    'Small', 
+    0, '1550 Dell Avenue', 
+    'Campbell', 'CA', 
+    '95008', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-07', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5809895776, 'Juan Batista', 'juan@quiedan.com', '8053456686.0', 
+    'Quiedan', 'quiedan.com', 
+    'https://www.linkedin.com/company/quiedan-company', 
+    'Real Estate and Development', 'Quiedan Company is the most trusted provider of agricultural structures in the world. We design, manufacture, and distribute Agricultural and Horticultural Structures for use in Vineyards, Berry, Orchard, and Nursery applications. Our primary product l...', 'Large',
+    'Small', 
+    0, '15400 Meridian Road', 
+    'Prunedale', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-07', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5775224662, 'Terry Wright', 'terry@essentialoperations.com', 'None', 
+    'essentialoperations', 'essentialoperations.com', 
+    'None', 
+    'Other', 'Essential Operations is a water and wastewater company that offers system monitoring and maintenance, and regulatory inspections services.', 'Small',
+    'None', 
+    0, '3130 Winkle Avenue', 
+    'Santa Cruz', 'CA', 
+    '95065', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-01', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5758205448, 'Ronak Shah', 'ronak.shah@agileinfoways.com', '917622891234.0', 
+    'Agile Infoways', 'agileinfoways.com', 
+    'https://www.linkedin.com/company/agile-infoways-pvt-ltd-', 
+    'Technology', 'Agile Infoways is a top product engineering and web development company in the USA and India. We offer creative digital solutions to startups and enterprise clients. We provide software consulting services to their offshore software outsourcing clients...', 'Large',
+    'Large', 
+    0, 'Near Surendra Mangaldas Road', 
+    'Ahmedabad', 'None', 
+    '380015', 
+    'India', 
+    'Asia/Kolkata', 
+    '2021-03-31', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5721769274, 'Melanie Somosot', 'melaniejoy.s@icloud.com', 'None', 
+    'Mellifera Natives', 'melliferanatives.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Mellifera Natives is a company based in California that focuses on promoting and preserving native plants.', 'Small',
+    'None', 
+    0, 'None', 
+    'Big Sur', 'CA', 
+    '93920', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-10', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5721789081, 'Raul Pantoja', 'redenginerides@gmail.com', 'None', 
+    'Red Engine Rides', 'redenginerides.com', 
+    'https://www.linkedin.com/company/red-engine-rides', 
+    'Hospitality and Travel', 'Red Engine Rides is a company that offers fire engine rides in Marina. They provide a delightful ride through PG, where customers can enjoy the breathtaking holiday decorations on Candy Cane Lane. Customers can immerse themselves in the magic of the ho...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-05', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5721432881, 'Fidelia Delgado', 'davidxdelgado@sbcglobal.net', 'None', 
+    'pizzauce', 'pizzauce.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Pizzauce is a company that specializes in creating hot chimichurri pizza sauce. Their family improved secret recipe is designed to add spice and deliver a delicious flavor to your favorite pizza. In addition to pizza, Pizzauce can also be enjoyed with ...', 'Small',
+    'None', 
+    0, '1668 Capitola Road', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-26', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5721801082, 'Alicia Zuniga', 'evolvmkt@gmail.com', 'None', 
+    'EvolvMarket', 'evolvmarket.com', 
+    'None', 
+    'Technology', 'EvolvMarket is an upcoming company that aims to create a better future for all by providing a wide range of products and services. They will be launching their official website soon and are currently keeping their audience updated through email and Ins...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-05', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5721423364, 'Sue Thomas ', 'dougbriggs59@gmail.com', 'None', 
+    'Reinwater Gardens', 'reinwatergardens.com', 
+    'None', 
+    'Other', 'Reinwater Gardens is a landscaping company that specializes in providing sustainable landscaping and garden design using native, edible, and drought-tolerant plants. They also incorporate greywater and rain catchment systems to create beautiful and sus...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-10', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5646792546, 'James Marsh', 'jr_marsh@comcast.net', 'None', 
+    'Flowers', 'carmelfloraldesign.com', 
+    'None', 
+    'Other', 'Carmel Wedding Floral Design is a company that specializes in creating beautiful floral arrangements for weddings and events.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'E2 0FE', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5646920489, 'Jay Karmarkar Phd Jd', 'jay@i-c-i.com', '4086886917.0', 
+    'i-c-i.com', 'i-c-i.com', 
+    'https://www.linkedin.com/company/innovative-configuration-inc', 
+    'Other', 'Innovative Configuration Inc is a Computer Software company located in 712 Via Palo Alto Ste 100, Aptos, California, United States.', 'Medium',
+    'Micro', 
+    0, '712 VIA PALO ALTO', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-16', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5634998650, 'Katie', 'katie@carmelberry.com', '18316594288.0', 
+    'Carmel Berry', 'carmelberry.com', 
+    'https://www.linkedin.com/company/carmel-berry-company', 
+    'Consumer Goods and Retail', 'Carmel Berry Company is a female-founded, family-run business that specializes in handcrafted elderberry and elderflower products. They source 100% American grown, fresh-pressed, organic elderberries and native California elderflowers from small organi...', 'Medium',
+    'Micro', 
+    0, '11 Vía Contenta', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-04-20', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5608393874, 'Dennis Barbeau', 'debarbeau@innsolinc.com', '6027515271.0', 
+    'innsolinc.com', 'innsolinc.com', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'Micro', 
+    0, '2652 N 82ND ST', 
+    'Mesa', 'AZ', 
+    '85207', 
+    'United States', 
+    'America/Phoenix', 
+    '2021-03-11', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5605414710, 'Anthony Jones', 'ajones@mosaicds.com', '6502288754.0', 
+    'Mosaic Document Solutions', 'mosaicds.com', 
+    'https://www.linkedin.com/company/mosaic-document-solutions-inc-', 
+    'Industrial and Manufacturing', 'Mosaic Document Solutions, Inc. is a Construction company located in San Mateo, California, United States. Construction', 'Medium',
+    'Micro', 
+    0, '650 403 Box 1761', 
+    'San Mateo', 'CA', 
+    '94401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-11', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5605428655, 'Kenda Haines', 'kenda@nolinnali.com', 'None', 
+    'Noli n Nali', 'nolinnali.com', 
+    'https://www.linkedin.com/company/noli-n-nali-organic-and-natura', 
+    'Other', 'Organic and Natural Skincare for Mother and child. Manufacturing skin care organic natural', 'Small',
+    'Micro', 
+    0, '619 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-11', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5605435751, 'JB Hayworth', 'jbh@saladchopshop.com', 'None', 
+    'saladchopshop.com', 'saladchopshop.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-11', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5605435750, 'Gary Herman', 'gherman@jabico.com', '8314540850.0', 
+    'Jabico Enterprises', 'jabico.com', 
+    'https://www.linkedin.com/company/jabico-enterprises', 
+    'Technology', 'Jabico Enterprises is a software development company based in the San Francisco Bay Area and Silicon Valley. Since 2003, we have been providing cutting-edge software development services for web and mobile platforms. Our team of experienced professiona...', 'Large',
+    'Micro', 
+    0, '2450 17th Ave', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-11', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5586544238, 'Gyuwon Song', 'yg.stpaul@gmail.com', '9198343552.0', 
+    'Gamil Design', 'gamil.com', 
+    'https://www.linkedin.com/company/gamil-design', 
+    'Other', 'Gamil is a brand and product development firm that focuses on creating positive energy in the world through design and amplifying inspiring stories. They engage customers through meaningful experiences, dynamic connections, and progressive design and m...', 'Medium',
+    'Enterprise', 
+    0, '323 West Martin Street', 
+    'Raleigh', 'NC', 
+    '27601', 
+    'United States', 
+    'America/New_York', 
+    '2021-03-09', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5576402738, 'Leah Cowan', 'cowanl@sutterhealth.org', '9167338800.0', 
+    'Sutter Health', 'sutterhealth.org', 
+    'https://www.linkedin.com/company/sutter-health', 
+    'Healthcare', 'Sutter Health is a family of doctors and hospitals, serving more than 100 communities in Northern California including Sacramento, San Francisco, Modesto, Stockton, Roseville, Castro Valley, Tracy, Burlingame and Palo Alto. The Sutter Health team proud...', 'Large',
+    'Corporate', 
+    0, '2200 River Plaza Drive Sacramento #117', 
+    'Sacramento', 'CA', 
+    '95833', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-08', 
+    1865
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5566955421, 'Unknown', 'unknown31@invalid.com', 'None', 
+    'turbobiker.com', 'turbobiker.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    'None', 
+    1865
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5558822706, 'Lindsay Horton', 'lindsay@socialmonterey.com', 'None', 
+    'Social Monterey', 'socialmonterey.com', 
+    'https://www.linkedin.com/company/socialmonterey', 
+    'Education', 'Social Monterey helps small businesses build brand awareness and thriving communities with social media services. We specialize in social media and marketing to help make your business more strategic, efficient and profitable. Our main goal is to give ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-11-19', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5557704494, 'Christopher Wilson', 'topher@shopossola.com', 'None', 
+    'OSSOLA', 'shopossola.com', 
+    'https://www.linkedin.com/company/ossola-llc', 
+    'Consumer Goods and Retail', 'A brand primarily specializing in creating high performance skincare. Retail', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-05', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5557424238, 'Esmeralda Garcia', 'esmeralda@vainaesthetics.com', 'None', 
+    'Vain Aesthetics', 'vainaesthetics.com', 
+    'None', 
+    'Other', 'Licensed Master Aesthetician - Call (661) 427-6097 to schedule an appointment. Products are Vegan, Green, & Cruelty Free. Personalized skin care régimen for all skin types & custom facials.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    '93309', 
+    'None', 
+    'None', 
+    '2021-03-05', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5557424237, 'Sachin Sood', 'ssood@amsecusa.com', '19516859680.0', 
+    'AMERICAN SECURITY PRODUCTS', 'amsecusa.com', 
+    'https://www.linkedin.com/company/american-security-products', 
+    'Industrial and Manufacturing', 'American Security Products Company is a manufacturer of high quality, high security safes for home and business use. They offer an extensive product line of over 400 standard models of burglary and fire resistant safes in every insurance classification...', 'Large',
+    'Medium', 
+    0, '11925 Pacific Avenue', 
+    'Fontana', 'CA', 
+    '92337', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-05', 
+    1946
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5557543811, 'Justin Wilks', 'justin@thewildatheartranch.com', 'None', 
+    'Wild at Heart Ranch', 'thewildatheartranch.com', 
+    'https://www.linkedin.com/company/wild-at-heart-ranch', 
+    'Consumer Goods and Retail', 'Wild at Heart Ranch is a 1,500+ acre first generation, regenerative fiber ranch located in California’s Central Coast. We are committed to sustainably producing ethical fibers that are good for people, animals, and the planet. We are on a journey to br...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'King City', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-05', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5557308842, 'Pete Biggam', 'pete@blacksite.solutions', '18332557483.0', 
+    'Blacksite Solutions', 'blacksite.solutions', 
+    'https://www.linkedin.com/company/blacksite-solutions', 
+    'Technology', 'Blacksite Solutions, Inc. provides network solutions and security services for future-proofing organizations against threats. They offer secure communications software and hardware solutions, including secure domains using .scom/.snet through VirnetX s...', 'Small',
+    'Micro', 
+    0, '2825 Mission Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5556371374, 'Bruce Cole', 'bcole@plumcom.ca', 'None', 
+    'Plumcom', 'plumcom.ca', 
+    'https://www.linkedin.com/company/plum-communications-inc.', 
+    'Other', 'Experienced, Innovative, Strategic exposition and events producer . https://t.co/IFIrTapfdH #expoguru', 'Medium',
+    'Micro', 
+    0, '1054 Centre St', 
+    'Thornhill', 'None', 
+    'L4J 8E5', 
+    'Canada', 
+    'America/Halifax', 
+    '2021-03-05', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5554328739, 'Seana Day ', 'michael@betterfoodventures.com', 'None', 
+    'Better Food Ventures', 'betterfoodventures.com', 
+    'https://www.linkedin.com/company/better-food-ventures', 
+    'Education', 'Better Food Ventures is an early stage venture capital firm that is exclusively focused on investing in scalable technologies to transform and improve the food and agriculture sectors. We seek technologies that enable the food and agriculture industrie...', 'Medium',
+    'Micro', 
+    0, '355 Barton Way', 
+    'Menlo Park', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-05', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5548964757, 'Ron Wormser', 'ron@effectivenonprofits.com', 'None', 
+    'Effective Nonprofits', 'effectivenonprofits.com', 
+    'https://www.linkedin.com/company/effective-nonprofits', 
+    'Education', 'Effective Nonprofits is a consulting firm that specializes in helping nonprofit organizations increase their impact. With over 40 years of experience in executive level positions with nonprofits, including board development, fundraising strategies, and...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-04', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5543286552, 'Rosemarie Barbeau', 'rbarbeau@barbeauassociates.com', 'None', 
+    'barbeauassociates.com', 'barbeauassociates.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-03', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5531070343, 'Ryan Althaus', 'ryan@sweatysheep.com', '14432237334.0', 
+    'sweaty sheep', 'sweatysheep.com', 
+    'None', 
+    'Other', 'Sweaty Sheep was launched in Louisville, KY in 2010 and we are excited to be launching a new community on the California coast! We are seeking individuals who would like to lead small groups and meet-ups (a morning yoga or surf session, a weekly trail ...', 'Small',
+    'None', 
+    0, '111 Errett Circle', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-02', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5531099019, 'Charlotte Maumus', 'charlotte@memwris.com', 'None', 
+    'Memwris', 'memwris.com', 
+    'https://www.linkedin.com/company/memwris', 
+    'Technology', 'Welcome! Do big things with your small screen. | Sign up to be an early tester | #Cpp | #Vulkan | #Linux | #programming | #mobile | #UI', 'Medium',
+    'Micro', 
+    0, '872 Higuera Street', 
+    'San Luis Obispo', 'CA', 
+    '93401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-02', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5531099018, 'Michael Golden', 'michael@norobostudios.com', 'None', 
+    'Norobo Studios', 'norobostudios.com', 
+    'https://www.linkedin.com/company/norobo-studios', 
+    'Technology', 'Working on the cutting edge of mobile application development, Norobo Studios has taken up the challenge of producing interactive graphic stories that teach and broaden horizons while providing compelling entertainment for the whole family. Norobo Stud...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-02', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5531099017, 'Shanti Rackley', 'srackley@shoptejido.com', 'None', 
+    'Tejido', 'shoptejido.com', 
+    'https://www.linkedin.com/company/tejido', 
+    'Consumer Goods and Retail', 'TEJIDO SHOP works with master artisans in Peru, preserving the indigenous tradition of handmade textiles.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-03-02', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5465227951, 'Jeff Van Zanten', 'jeff@jvanzanten.com', 'None', 
+    'jvanzanten.com', 'jvanzanten.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-02-26', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439986731, 'David Carroll ', 'jmelgoza40@gmail.com', 'None', 
+    'Bruce Ariss Wharf Theater', 'wharftheatremonterey.org', 
+    'None', 
+    'Other', 'From Wikipedia, the free encyclopedia The Bruce Ariss Wharf Theater as it is officially known today began its history after World War II when Ariss, an artist and friend of John Steinbeck, returned to the city of Monterey after working with his fat...', 'Small',
+    'None', 
+    0, '95 Fishermans Wharf', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439484455, 'Carol Thomas', 'ctgoglobal@gmail.com', 'None', 
+    'Gail Cerâmica', 'gail.com', 
+    'https://www.linkedin.com/company/gail-arquitetura-em-cer-mica', 
+    'Other', 'Gail Cerâmica is a company that specializes in the production and sale of ceramic products. They offer a wide range of ceramic tiles, including floor tiles, wall tiles, and decorative tiles. Their products are known for their high quality and unique de...', 'Medium',
+    'Micro', 
+    0, '26 TRØJBORGVEJ', 
+    'São Paulo', 'None', 
+    'None', 
+    'Brazil', 
+    'America/Sao_Paulo', 
+    '2021-02-23', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439955847, 'Rich Berger', 'rberger@movielabs.com', '18189956600.0', 
+    'Motion Picture Laboratories Inc', 'movielabs.com', 
+    'https://www.linkedin.com/company/movielabs', 
+    'Other', 'MovieLabs is a non-profit research and development joint venture started by the six major motion picture studios. They work to research, experiment, and develop new technologies that improve the content, processes, and tools used in the media industry....', 'Large',
+    'Micro', 
+    0, '222 Kearny Street', 
+    'San Francisco', 'CA', 
+    '94108', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439697096, 'Susan Fixsen', 'susan@susanfixsen.com', 'None', 
+    'Pacific Oak Real Estate Services', 'susanfixsen.com', 
+    'None', 
+    'Other', 'Pacific Oak Realtors® are known for their extensive market knowledge and unmatched devotion to their clients.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-02-23', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439955845, 'Patrick Lampe', 'pat@lamperealty.com', 'None', 
+    'lamperealty.com', 'lamperealty.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-02-23', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439484451, 'Mike Fisher', 'mike@fisherscatering.com', '6314276383.0', 
+    'Angelic Delights Catering', 'fisherscatering.com', 
+    'https://www.linkedin.com/company/angelic-delights-catering', 
+    'Other', 'Inspired by the beautiful scenery and quality local ingredients of the central coast, Fisher’s offers new American style cuisine with a casual yet refined atmosphere. Our menu is ever-changing but the quality is always first priority.', 'Medium',
+    'Micro', 
+    0, '650 San Benito St', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439684956, 'Chris Evans', 'cevans@growingheartsgardencenter.org', '18315377700.0', 
+    'Growing Hearts Garden Center', 'growingheartsgardencenter.org', 
+    'https://www.linkedin.com/company/growing-hearts-garden-center', 
+    'Education', 'Growing Hearts Garden Center is a non-profit organization located in Hollister, CA. We specialize in supportive employment for individuals with special needs. Our goal is to deeply integrate special needs adults into their community by providing them w...', 'Medium',
+    'Micro', 
+    0, '165 MARKS DR', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439677047, 'Tom Horsfall', 'tom@nodoubtthomas.com', 'None', 
+    'nodoubtthomas.com', 'nodoubtthomas.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-02-23', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5439484450, 'Arabian Prince', 'arabian@inov8next.com', 'None', 
+    'Inov8 Next', 'inov8next.com', 
+    'None', 
+    'Other', 'Inov8 Next is a technology company that specializes in providing innovative solutions for businesses. They offer a wide range of products and services including software development, web design, mobile app development, and digital marketing. With a tea...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'California City', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5364202860, 'Emanuel Hillman', 'hillmane@sfusd.edu', '4156955665.0', 
+    'San Francisco Unified School District', 'sfusd.edu', 
+    'https://www.linkedin.com/company/sfusd', 
+    'Education', 'San Francisco Unified School District (SFUSD) is the seventh largest school district in California, educating around 49,000 students every year. SFUSD encompasses 140 PreK through 12th grade public schools and prepares students for success in college a...', 'Large',
+    'Enterprise', 
+    0, '555 Franklin Street', 
+    'San Francisco', 'CA', 
+    '94102', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-11', 
+    1851
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5364222133, 'Kei KONDO', 'kei@nskcic.com', 'None', 
+    'nskcic.com', 'nskcic.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-01-08', 
+    1851
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5364233652, 'Aaron Rudger ', 'lori.dematteis@irisonboard.com', 'None', 
+    'Iris Automation', 'irisonboard.com', 
+    'https://www.linkedin.com/company/iris-automation', 
+    'Industrial and Manufacturing', 'Iris Automation is a technology company that is working to build revolutionary new ways for drones and unmanned systems to see and navigate the world. Ensuring no two aircraft ever collide mid air. Equip your drone program with the leading onboard dete...', 'Large',
+    'Small', 
+    0, '450 Sinclair Street', 
+    'Reno', 'NV', 
+    '89501', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-11', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5338847147, 'Jason Appler', 'jason.appler@gmail.com', 'None', 
+    'Cypress Coast Design', 'cypresscoast.design', 
+    'None', 
+    'Other', 'Cypress Coast Design is a veteran-owned product design and manufacturing firm located on the California central coast. Founded by Jason Appler, MA Industrial Arts, MBA NPS, the company is rooted in responsible design principles. Cypress Coast Design pr...', 'Large',
+    'Small', 
+    0, 'None', 
+    'East Providence', 'RI', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-08', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5315089598, 'Lawrence Chavez', 'lawrence@lawrencechavez.com', 'None', 
+    'lawrencechavez.com', 'lawrencechavez.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-02-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5314711988, 'Elija Grassi', 'eja3o@wimsg.com', 'None', 
+    'wimsg.com', 'wimsg.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-02-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5312635739, 'George Chobany', 'gchobany@yahoo.com', 'None', 
+    'Allied Wealth Management', 'alliedwm.com', 
+    'None', 
+    'Finance and Legal', 'Allied Wealth Management LLC is a fiduciary company that prioritizes the needs of its clients. With their independence, they have the flexibility to provide innovative solutions and cutting-edge technology. They offer services such as Roth IRAs, retire...', 'Small',
+    'None', 
+    0, '200 Clock Tower Pl', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-29', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5309694737, 'Juliet Olivarria', 'juliet.olivarria@sysco.com', '12815841390.0', 
+    'Sysco Corporation', 'sysco.com', 
+    'https://www.linkedin.com/company/sysco', 
+    'Consumer Goods and Retail', 'Sysco is a global leader in the food distribution industry, serving restaurants, hotels, hospitals, sports stadiums, schools, cruise lines, and more. They provide a wide range of food products, including fresh produce, meat, seafood, and imported foods...', 'Large',
+    'Corporate', 
+    1, '1390 Enclave Parkway', 
+    'Houston', 'TX', 
+    '77077', 
+    'United States', 
+    'America/Chicago', 
+    '2021-02-05', 
+    1969
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5309774535, 'Ilene Marcus', 'ilene@alignedworkplace.com', 'None', 
+    'Aligned Workplace', 'alignedworkplace.com', 
+    'None', 
+    'Other', 'Aligned Workplace is a consulting business founded by Ilene Marcus. The company provides motivational speaking on team purpose, as well as consulting services to help manage annoying people in the workplace. Ilene Marcus is the author of the book 'Mana...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-02-05', 
+    1969
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5296972821, 'Ryan Lee', 'rylee@wesleyan.edu', '8606852000.0', 
+    'Wesleyan University', 'wesleyan.edu', 
+    'https://www.linkedin.com/company/wesleyan-media-project', 
+    'Education', 'Wesleyan University is a private, non-sectarian liberal arts university in Middletown, Connecticut. Founded in 1831, Wesleyan offers its 3,000 undergraduates and 200 graduate students a demanding educational environment that fosters creative, independe...', 'Large',
+    'Small', 
+    0, '45 Wyllys Avenue', 
+    'Middletown', 'CT', 
+    '06457', 
+    'United States', 
+    'America/New_York', 
+    '2021-02-03', 
+    1831
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5288329315, 'Wirda Azlin', 'wirda.azlin_2015@sit.singaporetech.edu.sg', '6565921189.0', 
+    'Singapore Institute of Technology', 'sit.singaporetech.edu.sg', 
+    'https://www.linkedin.com/company/singapore-institute-of-technology', 
+    'Education', 'I confirm that all information provided is accurate, and that I have read and accepted SIT's terms and conditions, including the section on "Use of Personal Data". *', 'Large',
+    'Medium', 
+    0, '10 Dover Drive', 
+    'Singapore', 'None', 
+    '138683', 
+    'Singapore', 
+    'Asia/Singapore', 
+    '2021-02-02', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5288362636, 'Thomas Leavitt', 'thomas@thomasleavitt.org', '8314693382.0', 
+    'Thomas Leavitt', 'thomasleavitt.org', 
+    'None', 
+    'Other', 'We specialize in providing high quality, affordable information technology services to small and medium sized organizations of all types. We have a broad range of expertise and can handle just about anything you throw at us, from copiers, to phone systems, to virtualization and cloud services.', 'Small',
+    'None', 
+    0, '500 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-02', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276093596, 'James G', 'james@lorrylorry.com', 'None', 
+    'Lorry Lorry', 'lorrylorry.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-01-31', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276093595, 'Samantha Mei', 'smei@pratt.edu', '7186875678.0', 
+    'Pratt Institute', 'pratt.edu', 
+    'https://www.linkedin.com/company/prattsoa', 
+    'Education', 'Pratt Institute provides the creative leaders of tomorrow the knowledge and experience to make a better world. Pratt offers 26 majors and concentrations at the undergraduate level and over 20 at the graduate level. Pratt offers fashion design, architec...', 'Large',
+    'Enterprise', 
+    0, '200 Willoughby Ave #', 
+    'Brooklyn', 'NY', 
+    '11205', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-31', 
+    1887
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276093594, 'Landon Ecker', 'landon@cratebind.com', '14694804627.0', 
+    'Cratebind', 'cratebind.com', 
+    'https://www.linkedin.com/company/cratebind', 
+    'Creative and Media', 'CrateBind is a digital product agency partnering with consumer brands to build smart, simple and beautiful technology. We bring together engineers, designers and strategists to develop custom apps and websites that create company success and cultivate ...', 'Large',
+    'Small', 
+    0, '6003 MCCOMMAS BLVD', 
+    'Dallas', 'TX', 
+    '75231', 
+    'United States', 
+    'America/Chicago', 
+    '2021-01-31', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276045557, 'Tomasz Gorka', 'tomasz@gorka.org.pl', 'None', 
+    'gorka.org.pl', 'gorka.org.pl', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-01-31', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276132747, 'Tarique S', 'ksham001@ucr.edu', '9518271012.0', 
+    'University of California, Riverside Botanic Gardens', 'ucr.edu', 
+    'https://www.linkedin.com/company/ucr-school-of-medicine', 
+    'Education', 'UC Riverside is a prestigious research university located in Inland Southern California. It is part of the University of California system and is widely recognized for its diversity. The university offers a wide range of academic programs and is commit...', 'Large',
+    'Enterprise', 
+    0, '900 University Ave', 
+    'Riverside', 'CA', 
+    '92507', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-31', 
+    1907
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5276093592, 'Ze Wong', 'zewong@inpel.io', 'None', 
+    'Inpel Inc', 'inpel.io', 
+    'https://www.linkedin.com/company/inpel-corporationturion', 
+    'Technology', 'Inpel Corporation is a start up online education company dedicated to placing students and teachers FIRST by providing accessible higher education for learners and additional sources of income for educators through a subscription based e learning platf...', 'Large',
+    'Micro', 
+    0, '6 East Bay Street', 
+    'Jacksonville', 'FL', 
+    '32202', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5275988460, 'Elizabeth Gummere', 'beth@repechagegroup.com', '8313453608.0', 
+    'repechagegroup.com', 'repechagegroup.com', 
+    'None', 
+    'Other', 'We've helped over 50 entrepreneurs and non-profits manage their money better and smarter. With finance consulting that works with you as you grow.', 'Medium',
+    'Micro', 
+    0, 'PO BOX 32', 
+    'Aptos', 'CA', 
+    '95001', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-31', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5262743494, 'Powell Loskamp', 'powellloskamp@gmail.com', 'None', 
+    'montereybaysolar.net', 'montereybaysolar.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-07-09', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257634894, 'Terry Perry', 'tperry@alignresource.com', 'None', 
+    'Align Resource Management', 'alignresource.com', 
+    'https://www.linkedin.com/company/alignresource', 
+    'Other', 'Align Resource Management align HR systems with overall enterprise strategy within HR and HRIS functional areas. Through our consultants and affiliates, we service clients in: HR and Payroll System implementations Merger & Acquisition and Divestitures HR and Payroll Data Conversion Workday, PeopleSoft, ADP, Fusion and other HRIS systems Global Experience Domestic and International HR Administration Don't think outside the box…dwell outside the box', 'Small',
+    'Micro', 
+    0, '1629 K Street Northwest', 
+    'Washington', 'DC', 
+    '20006', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-27', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257634893, 'Mario Lattuga', 'mlattuga1@gmail.com', '12026874798.0', 
+    'Georgetown University', 'georgetown.edu', 
+    'https://www.linkedin.com/school/georgetown-university', 
+    'Education', 'Georgetown University is the oldest and largest Catholic and Jesuit university in America. Georgetown today is a major student-centered, international research university, offering programs in Washington, DC; Doha, Qatar; and around the world.', 'Large',
+    'Enterprise', 
+    0, '37TH AND O ST NW', 
+    'Washington', 'DC', 
+    '20057', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-27', 
+    1789
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257606833, 'Shannon Bliss', 'shannon@seeds4stem.org', 'None', 
+    'seeds4stem.org', 'seeds4stem.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1789
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257612902, 'Abdulnaser Allabwani', 'abdulnaser.allabwani@mail.utoronto.ca', '4169784441.0', 
+    'University of Toronto', 'mail.utoronto.ca', 
+    'https://www.linkedin.com/company/university-of-toronto', 
+    'Education', 'The University of Toronto is a public research university in Toronto, Ontario, Canada, located on the grounds that surround Queen's Park.', 'Large',
+    'Enterprise', 
+    0, '27 King's College Circle', 
+    'Toronto', 'ON', 
+    'M5S 3J3', 
+    'Canada', 
+    'America/Halifax', 
+    '2021-01-27', 
+    1827
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257398383, 'Varsheeka David', 'varsheeka@gmail.com', '14028846677.0', 
+    'Group Marketing Services', 'gmsil.com', 
+    'https://www.linkedin.com/company/group-marketing-services-inc-', 
+    'Finance and Legal', 'Group Marketing Services specializes in individual and group medical, life, dental, disability, and long term care. They are a wholesale contracted general agency dedicated to supporting the sales and service needs of agents who sell benefit products. ...', 'Large',
+    'Small', 
+    0, '304 S Eldorado Rd', 
+    'Bloomington', 'IL', 
+    '61704', 
+    'United States', 
+    'America/Chicago', 
+    '2021-01-27', 
+    1981
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257606832, 'Sat Ramphal', 'satramphal@xibyte.com', 'None', 
+    'xibyte.com', 'xibyte.com', 
+    'https://www.linkedin.com/company/xibyte', 
+    'Creative and Media', 'XiByte™ is a technology company that specializes in bringing ideas to life through Maya's interactive experience. We provide innovative solutions and services to help businesses create immersive and engaging digital experiences. Our team of experts com...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Tampa', 'FL', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-27', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257654957, 'Roger Hackett', 'roger@ryanandrobbie.com', '4258968888.0', 
+    'Ryan And Robbie', 'ryanandrobbie.com', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'Micro', 
+    0, '13018 NE 31ST PL', 
+    'Bellevue', 'WA', 
+    '98005', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-27', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257654956, 'Ted Doll', 'henry@htd.cloud', 'None', 
+    'htd.cloud', 'htd.cloud', 
+    'None', 
+    'Other', 'I am not a civil rights expert, nor am I well read on the writings of Reverend Dr. Martin Luther King, Jr. However, a certain…', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-01-27', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257634890, 'Linjuan Huang', 'linjuanh@uci.edu', '9498245011.0', 
+    'University of California, Irvine', 'uci.edu', 
+    'https://www.linkedin.com/school/uci-school-of-medicine', 
+    'Education', 'The University of California, Irvine (UCI) is a prestigious research university that offers a wide range of academic programs and services. Established in 1965, UCI is a member of the Association of American Universities and is consistently ranked amon...', 'Large',
+    'Corporate', 
+    0, '2013 Uc Regents University Of California Irvine', 
+    'Irvine', 'CA', 
+    '92697', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-27', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257612901, 'Konya Badsa', 'kb3680@nyu.edu', '2129953085.0', 
+    'NYU College', 'nyu.edu', 
+    'https://www.linkedin.com/school/new-york-university', 
+    'Education', 'NYU New York University, founded in 1831, is one of the world’s foremost research universities and is a member of the selective Association of American Universities. NYU has degree granting university campuses in New York, Abu Dhabi, and Shanghai; and ...', 'Large',
+    'Corporate', 
+    0, '334 E 26th St', 
+    'New York', 'NY', 
+    '10012', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-27', 
+    1831
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5257080590, 'BA Gorshteyn', 'gorshteyn@seedstages.com', 'None', 
+    'Seedstages', 'seedstages.com', 
+    'https://www.linkedin.com/company/seedstages', 
+    'Other', 'Seedstages is a platform that connects students and recent graduates with internship opportunities at tech startups. The company's mission is to foster innovation by connecting emerging startups with motivated talent. Seedstages helps startups with lim...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Claremont', 'CA', 
+    '91711', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-27', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5231902315, 'Elaine Sherer', 'esherer@moremarketshare.com', 'None', 
+    'moremarketshare.com', 'moremarketshare.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-01-23', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5221212548, 'Jennifer Rudisill', 'jrudisill@rudisillaccountancy.com', 'None', 
+    'Rudisill Accountancy', 'rudisillaccountancy.com', 
+    'https://www.linkedin.com/company/rudisill-accountancy-apc', 
+    'Other', 'Rudisill Accountancy is a boutique Certified Public Accounting Firm that provides tax preparation, projections, accounting services, and compliance services to individuals and businesses.', 'Medium',
+    'Micro', 
+    0, '26607 Carmel Center Place', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-21', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5212836077, 'Helen Zhang', 'helen@ekeyweb.com', 'None', 
+    'Ekey Technology', 'ekeyweb.com', 
+    'https://www.linkedin.com/company/ekey', 
+    'Other', 'Ekey Technology is a marketing company providing location and consumer preference based advertising and offers to mobile devices. We provide an intuitive web based application, by using business intelligence to help business clients design targeted cam...', 'Medium',
+    'Micro', 
+    0, '60 Hazelwood Drive', 
+    'Champaign', 'IL', 
+    '61820', 
+    'United States', 
+    'America/Chicago', 
+    '2021-01-20', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5208800035, 'Erica Sipos', 'esipos@specialtyfood.com', '16468780124.0', 
+    'Specialty Food Association', 'specialtyfood.com', 
+    'https://www.linkedin.com/company/specialty-food-association', 
+    'Consumer Goods and Retail', 'The Specialty Food Association is a not-for-profit business trade association established in 1952. It represents over 3,000 member companies in the specialty food industry in the United States and overseas. The association fosters trade, commerce, and ...', 'Medium',
+    'Medium', 
+    0, '136 Madison Avenue', 
+    'New York', 'NY', 
+    '10016', 
+    'United States', 
+    'America/New_York', 
+    '2021-01-19', 
+    1952
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5189596116, 'Megan Rice', 'megan.rice@trinet.com', '15103525000.0', 
+    'Trinet', 'trinet.com', 
+    'https://www.linkedin.com/company/trinet', 
+    'Other', 'TriNet provides businesses with HR solutions including payroll, benefits, risk management and compliance — all in one place. Our services help businesses contain HR costs, minimize employer related risks, and reduce the administrative burden of HR. We ...', 'Large',
+    'Enterprise', 
+    1, '210 Park Ave', 
+    'None', 'None', 
+    '94568', 
+    'United States', 
+    'America/Chicago', 
+    '2021-09-16', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5165059354, 'Ian Utile', 'ian@attn.live', 'None', 
+    'attn.live', 'attn.live', 
+    'https://www.linkedin.com/company/attnlive', 
+    'Other', 'Live Podcasting from any phone, tablet, or computer (Mac•Android•Windows) to Amazon Alexa and YouTube. Join the private beta at https://t.co/RwLnfw1mc6 #hellofuture', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2021-01-12', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5162204968, 'Marci Prolo', 'marci@goosesgoodies.com', 'None', 
+    'Goose's Goodies', 'goosesgoodies.com', 
+    'None', 
+    'Other', 'Goose's Goodies is a decadent treat made for family, friends, and epicures alike. It is sure to spread sweet toffee love to whoever it reaches. Goose's Goodies offers handmade decadent toffee made in Santa Cruz, California. Visit our website at goosesg...', 'Small',
+    'None', 
+    0, '104 Bronson Street', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-11', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5121229515, 'Christopher Chiang', 'cchiang@kehillah.org', '6502139600.0', 
+    'Kehillah Jewish High School', 'kehillah.org', 
+    'https://www.linkedin.com/school/kehillah-jewish-high-school', 
+    'Education', 'Kehillah Jewish High School is distinguished by an exceptional academic program and a supportive environment that pairs rich traditions with the best of the Silicon Valley mindset. At Kehillah, students embark on a journey of self-discovery guided by a...', 'Large',
+    'Medium', 
+    0, '3900 Fabian Way', 
+    'Palo Alto', 'CA', 
+    '94303', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-11', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5026096338, 'Michele Seifert ', 'carol.presley@stanfordalumni.org', '6507232021.0', 
+    'stanfordalumni.org', 'stanfordalumni.org', 
+    'https://www.linkedin.com/school/stanford-university', 
+    'Other', 'Stanford University is a private research university in Stanford, California. The university is organized around seven schools on the same campus: three schools consisting of 40 academic departments at the undergraduate level as well as four profession...', 'Large',
+    'Enterprise', 
+    0, '326 GALVEZ ST', 
+    'Stanford', 'CA', 
+    '94305', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5021786355, 'Jay Graven', 'jpg@hyunjayllc.com', 'None', 
+    'hyunjayllc.com', 'hyunjayllc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-12-14', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013531, 'Unknown', 'unknown32@invalid.com', '6263986300.0', 
+    'ChapCare', 'chapcare.org', 
+    'https://www.linkedin.com/company/chapcare', 
+    'Healthcare', 'ChapCare provides a “one stop” shop where patients across all lifecycles can access comprehensive primary health care services, including medical and dental care, behavioral health counseling, nutrition and health education, and prevention programs. Wi...', 'Large',
+    'Medium', 
+    0, '2055 Lincoln Avenue', 
+    'Pasadena', 'CA', 
+    '91103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987640, 'Don Daves Rougeaux ', 'fredagdsn@gmail.com', 'None', 
+    'Bay Area Community College Consortium', 'baccc.net', 
+    'None', 
+    'Education', 'The Bay Area Community College Consortium (BACCC) is an organization that aims to improve the alignment of skills and competencies of learners with the needs of the workforce. They provide meaningful work-based and experiential learning opportunities t...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987639, 'Unknown', 'unknown33@invalid.com', '9168127927.0', 
+    'DE Novo Planning Group', 'denovoplanning.com', 
+    'https://www.linkedin.com/company/de-novo-planning-group', 
+    'Education', 'De Novo Planning Group is a land use and environmental planning firm specializing in community planning, environmental studies, and sustainability planning. The founding principals have successfully completed over 250 projects consisting of comprehensi...', 'Large',
+    'Small', 
+    0, '1020 Suncast Lane', 
+    'El Dorado Hills', 'CA', 
+    '95762', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987638, 'Blazej Nova', 'blazej.nova@epa.gov', '9195412350.0', 
+    'USEPA', 'epa.gov', 
+    'https://www.linkedin.com/company/usepa', 
+    'Other', 'The U.S. Environmental Protection Agency (EPA) is an official government organization that was established on December 2, 1970. The EPA's mission is to protect human health and the environment. They ensure that all Americans are protected from signific...', 'Large',
+    'Corporate', 
+    0, '1200 Pennsylvania Avenue Northwest', 
+    'Washington', 'DC', 
+    '20004', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1970
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987637, 'Unknown', 'unknown34@invalid.com', '9054150322.0', 
+    'Electric People International', 'electricpeople.com', 
+    'https://www.linkedin.com/company/electric-people-international', 
+    'Technology', 'Electric People International is a value-added reseller of consumer relations and custom software and technology. They provide IT services and IT consulting.', 'Medium',
+    'Micro', 
+    0, '4 Highway 7', 
+    'Markham', 'None', 
+    'L3P 1B4', 
+    'Canada', 
+    'America/Toronto', 
+    '2020-12-09', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013528, 'Amelia Mclear', 'amelia.mclear@wal-mart.com', '15012734000.0', 
+    'Walmart', 'wal-mart.com', 
+    'https://www.linkedin.com/company/wal-mart.com-usa-llc', 
+    'Consumer Goods and Retail', 'Walmart is an American multinational retail corporation that operates a chain of hypermarkets, discount department stores, and grocery stores. It offers a wide range of products including home furnishings, fashion, toys, beauty products, and furniture....', 'Large',
+    'Enterprise', 
+    1, '7000 Marina Boulevard', 
+    'Brisbane', 'CA', 
+    '20149', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987633, 'Unknown', 'unknown35@invalid.com', '14072481481.0', 
+    'QuoteWerks', 'quotewerks.com', 
+    'https://www.linkedin.com/company/aspire-technologies', 
+    'Technology', 'QuoteWerks is a sales quoting, estimating, and proposal software solution that integrates seamlessly with CRM software, accounting software, and major IT distributors to increase a company’s productivity. QuoteWerks integrates with ACT!, ACT! for Web, ...', 'Large',
+    'Small', 
+    0, '7680 Universal Boulevard', 
+    'Orlando', 'FL', 
+    '32819', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987632, 'Unknown', 'unknown36@invalid.com', '5302518800.0', 
+    'LASSEN COUNTY OFFICE OF EDUCATION', 'lassencoe.org', 
+    'https://www.linkedin.com/company/lassen-county-superintendent', 
+    'Education', 'Lassen County Superintendent is an Education Management company located in 472-013 Johnstonville Rd, Susanville, California, United States.', 'Medium',
+    'Micro', 
+    0, '472-013 Johnstonville Road', 
+    'Susanville', 'CA', 
+    '96130', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000662, 'Unknown', 'unknown37@invalid.com', '17758344444.0', 
+    'NV Energy, Inc.', 'nvenergy.com', 
+    'https://www.linkedin.com/company/nv-energy', 
+    'Other', 'NV Energy is a utility company that proudly serves Nevada with a service area covering over 44,000 square miles. They provide electricity to 2.4 million electric customers throughout Nevada, including popular cities like Las Vegas, Reno Sparks, Henders...', 'Large',
+    'Enterprise', 
+    0, '6226 West Sahara Avenue', 
+    'Las Vegas', 'NV', 
+    '89146', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1928
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000660, 'Amul Purohit', 'amul.purohit@myliquidcapital.com', '6052162196.0', 
+    'myliquidcapital.com', 'myliquidcapital.com', 
+    'https://www.linkedin.com/company/1803921', 
+    'Finance and Legal', 'Liquid Capital offers a variety of short term financing services in the US and Canada, including factoring, financing receivables, purchase financing and more.', 'Large',
+    'Small', 
+    0, '6102 134th St', 
+    'Aberdeen', 'SD', 
+    '57401', 
+    'United States', 
+    'America/Chicago', 
+    '2020-12-09', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987630, 'Unknown', 'unknown38@invalid.com', '14085562080.0', 
+    'Old Republic Title', 'ortc.com', 
+    'https://www.linkedin.com/company/oldrepublictitle', 
+    'Other', 'Old Republic Title is a member of the Old Republic Title Insurance Group and a proud provider of title insurance and settlement services. Since 1907, Old Republic Title has served the real estate industry with superior title insurance products and serv...', 'Large',
+    'Enterprise', 
+    0, '275 Battery Street', 
+    'San Francisco', 'CA', 
+    '94111', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1907
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985017707, 'Unknown', 'unknown39@invalid.com', '13108665043.0', 
+    'IBISWorld', 'ibisworld.com', 
+    'https://www.linkedin.com/company/ibisworld', 
+    'Other', 'IBISWorld is the world's largest independent publisher of industry research reports. They provide expert industry market research, reports, statistics, analysis, data, trends, and forecasts. Their goal is to help businesses make better and faster busin...', 'Large',
+    'Large', 
+    0, '11755 Wilshire Blvd', 
+    'Los Angeles', 'CA', 
+    '90025', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    1971
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000659, 'Unknown', 'unknown40@invalid.com', '9169331335.0', 
+    'El Dorado Hills Chamber', 'eldoradohillschamber.org', 
+    'https://www.linkedin.com/company/el-dorado-hills-chamber', 
+    'Education', 'The El Dorado Hills Chamber of Commerce is a nonprofit membership organization that works with local businesses to improve the region's economy and business environment; and strives to provide leadership, advocacy and support for our members. The Chamb...', 'Large',
+    'Micro', 
+    0, '2085 Vine Street', 
+    'El Dorado Hills', 'CA', 
+    '95762', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1986
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984970312, 'Unknown', 'unknown41@invalid.com', '4068836241.0', 
+    'S&K Electronics', 'skecorp.com', 
+    'https://www.linkedin.com/company/s&k-electronics-inc.', 
+    'Other', 'S & K Electronics is a leading electronics manufacturing company that specializes in circuit boards, cabling, box builds, and NBC heaters. With over 38 years of experience, we have consistently delivered superior products nationwide. Our team of talent...', 'Large',
+    'Medium', 
+    0, '56301 U.S. 93', 
+    'Polson', 'MT', 
+    '59860', 
+    'United States', 
+    'America/Denver', 
+    '2020-12-09', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984255953, 'Unknown', 'unknown42@invalid.com', '2132515700.0', 
+    'L.A. Watts Times', 'lawattstimes.com', 
+    'None', 
+    'Creative and Media', 'nan', 'Large',
+    'Medium', 
+    0, '3540 Wilshire Blvd', 
+    'Los Angeles', 'CA', 
+    '90010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984970311, 'Unknown', 'unknown43@invalid.com', 'None', 
+    'aicfinancegroup.com', 'aicfinancegroup.com', 
+    'None', 
+    'Education', 'AIC Finance Group is a leading financial services company that offers a wide range of products and services to individuals and businesses. With a focus on innovation and customer satisfaction, we provide personalized solutions in areas such as wealth m...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-12-09', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987629, 'Unknown', 'unknown44@invalid.com', '13238607300.0', 
+    'Renberg Theatre', 'lagaycenter.org', 
+    'https://www.linkedin.com/company/l-a--gay-&-lesbian-center', 
+    'Hospitality and Travel', 'The Los Angeles LGBT Center is a provider of programs and services for lesbian, gay, bisexual and transgender people.', 'Medium',
+    'Large', 
+    0, '1125 North McCadden Place', 
+    'Los Angeles', 'CA', 
+    '90038', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1969
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985017706, 'Unknown', 'unknown45@invalid.com', '4157313100.0', 
+    'Asia Pacific Groups', 'asiapacificgroups.com', 
+    'https://www.linkedin.com/company/asia-pacific-groups', 
+    'Other', 'Asia Pacific Groups specializes in commercial and residential property management as well as real estate and brokerage services.', 'Large',
+    'Small', 
+    0, '1290 24th Avenue', 
+    'San Francisco', 'CA', 
+    '94122', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1987
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013527, 'Unknown', 'unknown46@invalid.com', '12126211727.0', 
+    'Associated Press', 'ap.org', 
+    'https://www.linkedin.com/company/associated-press', 
+    'Other', 'The Associated Press is a global news agency that provides video, photo, text, audio, and data news services. They deliver fast, unbiased news from every corner of the world to all media platforms and formats. AP is the most trusted source of independe...', 'Large',
+    'Enterprise', 
+    0, '223 W Colfax Ave #2450', 
+    'New York', 'NY', 
+    '10281', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1846
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984970309, 'Unknown', 'unknown47@invalid.com', 'None', 
+    'Dont Declare', 'dontdeclare.com', 
+    'None', 
+    'Other', 'Dont Declare is a company that specializes in helping businesses avoid bankruptcy and deal with creditors. They negotiate new affordable terms on secured and unsecured business debt, including collection levels such as judgments, lawsuits, executions, ...', 'Small',
+    'None', 
+    0, '95 New Jersey 17', 
+    'Paramus', 'NJ', 
+    '07652', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1846
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987628, 'Unknown', 'unknown48@invalid.com', '3236922000.0', 
+    'The Korea Times', 'koreatimes.com', 
+    'https://www.linkedin.com/company/the-korea-times', 
+    'Creative and Media', 'The Korea Times is the oldest and largest circulation Korean language daily newspaper in the U.S. In addition to newspapers, KTLA also owns television, radio and internet operations serving the Korean community. Established in 1969 and headquartered in...', 'Large',
+    'Medium', 
+    0, '3731 Wilshire Boulevard', 
+    'Los Angeles', 'CA', 
+    '90010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1969
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984255951, 'Unknown', 'unknown49@invalid.com', '5032844524.0', 
+    'Impresa', 'impresaconsulting.com', 
+    'https://www.linkedin.com/company/impresa-inc-', 
+    'Other', 'Impresa Inc. is a Fine Art company located in 1424 NE Knott St, Portland, Oregon, United States. Fine Art', 'Medium',
+    'Micro', 
+    0, '1424 Northeast Knott Street', 
+    'Portland', 'OR', 
+    '97212', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000655, 'Unknown', 'unknown50@invalid.com', '6507264424.0', 
+    'Half Moon Bay Review', 'hmbreview.com', 
+    'https://www.linkedin.com/company/half-moon-bay-review', 
+    'Creative and Media', 'The Half Moon Bay Review is an award-winning community newspaper serving the San Mateo County Coastside since 1898. The Review is proud to employ a staff of trained journalists who cover local politics, local sports, local environmental issues, and loc...', 'Large',
+    'Small', 
+    0, '714 Kelly Street', 
+    'Half Moon Bay', 'CA', 
+    '94019', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000653, 'Unknown', 'unknown51@invalid.com', 'None', 
+    'Peach Tree Golf and Country Club', 'peachtreecc.net', 
+    'https://www.linkedin.com/company/peach-tree-golf-and-country-club', 
+    'Hospitality and Travel', 'Peach Tree Golf and Country Club (peachtreecc.net) is a premier recreational facility that offers a wide range of services and amenities. With a focus on providing an exceptional experience for its members, Peach Tree Golf and Country Club offers a cha...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-12-09', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985017702, 'Unknown', 'unknown52@invalid.com', '15308951010.0', 
+    'InterWest Insurance Services, LLC', 'iwins.com', 
+    'https://www.linkedin.com/company/interwest-insurance-services', 
+    'Finance and Legal', 'InterWest Insurance Services is a trusted insurance partner since 1910. They offer a full range of business and personal insurance products. Their services include commercial, employee benefits, surety, and personal insurance solutions. They provide cl...', 'Large',
+    'Large', 
+    0, '8950 Cal Center Drive', 
+    'None', 'CA', 
+    '95973', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985017701, 'Juli Golemi', 'juli.golemi@innovate.gatech.edu', '4048942000.0', 
+    'Georgia Institute of Technology', 'innovate.gatech.edu', 
+    'https://www.linkedin.com/company/georgia-institute-of-technology', 
+    'Education', 'The Georgia Institute of Technology, commonly referred to as Georgia Tech, is a public research university and institute of technology in Atlanta, Georgia.', 'Medium',
+    'Enterprise', 
+    0, '225 NORTH AVE', 
+    'Atlanta', 'GA', 
+    '30332', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013524, 'Unknown', 'unknown53@invalid.com', 'None', 
+    'MYuen Law', 'myuenlaw.com', 
+    'None', 
+    'Finance and Legal', 'MYuen Law is a legal firm that specializes in providing cost-effective intellectual property and corporate legal services for small businesses, entrepreneurs, and independent content creators. We offer assistance in navigating the legal waters of start...', 'Small',
+    'None', 
+    0, '484 Washington St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984255945, 'Unknown', 'unknown54@invalid.com', '2066251300.0', 
+    'Mrsc', 'mrsc.org', 
+    'https://www.linkedin.com/company/mrsc-inc', 
+    'Public and Government Services', 'MRSC is a nonprofit that supports local governments in Washington through trusted consultation, research, training, and collaboration. MRSC’s multidisciplinary team of legal and policy consultants help with nearly all types of local government issues, ...', 'Large',
+    'Small', 
+    0, '2601 4th Ave', 
+    'Seattle', 'WA', 
+    '98121', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    1934
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985017700, 'Unknown', 'unknown55@invalid.com', '4159285910.0', 
+    'Asian', 'sanjosembdacenter.com', 
+    'https://www.linkedin.com/company/asian-inc-', 
+    'Other', 'ASIAN, Inc. empowers diversity by creating opportunities in business development, housing and financial education, targeting low- to moderate-income communities of all races.', 'Large',
+    'Medium', 
+    0, '1167 Mission Street', 
+    'San Francisco', 'CA', 
+    '94103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1971
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987623, 'Unknown', 'unknown56@invalid.com', 'None', 
+    'California Bank of Commerce', 'bankcbc.com', 
+    'https://www.linkedin.com/company/2227024', 
+    'Other', 'California Bank of Commerce was designed and built to provide a unique banking experience for its clients. The Bank offers a broad range of commercial Banking services to closely held businesses and professionals throughout the San Francisco Bay Area.\r\n\r\nMember FDIC\r\n\r\nEqual Opportunity Employer', 'Large',
+    'Medium', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-12-09', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984255943, 'Unknown', 'unknown57@invalid.com', '8474654500.0', 
+    'TBI', 'tbicom.com', 
+    'https://www.linkedin.com/company/telecom-brokerage-inc-', 
+    'Technology', 'Telecom Brokerage Inc. (TBI) is a technology services distributor that offers solutions in cloud, voice, data, cybersecurity, internet, managed IT, and expense management. TBI is the nation's leading Master Agent, serving more than 2,000 agents through...', 'Large',
+    'Large', 
+    0, '8770 W Bryn Mawr Ave', 
+    'Chicago', 'IL', 
+    '60631', 
+    'United States', 
+    'America/Chicago', 
+    '2020-12-09', 
+    1991
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987621, 'Unknown', 'unknown58@invalid.com', '8008321355.0', 
+    'U.S. Forest Service', 'fs.fed.us', 
+    'https://www.linkedin.com/company/usda-forest-service', 
+    'Public and Government Services', 'The United States Forest Service is an agency of the US Department of Agriculture that administers the nation's 154 national forests and 20 national grasslands.', 'Large',
+    'Enterprise', 
+    0, '1400 Independence Avenue Southwest', 
+    'Washington', 'DC', 
+    '20024', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1905
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013522, 'Unknown', 'unknown59@invalid.com', '17078258260.0', 
+    'Plantown Simpleo Theme Powered ByWordPress', 'plantown.com', 
+    'https://www.linkedin.com/company/planwest-partners', 
+    'Real Estate and Development', 'Plantown is designed to attract a diverse array of people interested in the built and natural environments. Plantown's audience includes professional urban and environmental planners, developers, architects, policy makers, tribal representatives, educators, economists, civic enthusiasts and others.', 'Medium',
+    'Micro', 
+    0, '425 FOREST AVE', 
+    'Arcata', 'CA', 
+    '95521', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984987619, 'Unknown', 'unknown60@invalid.com', '5309383491.0', 
+    'Siskiyou Medical Group', 'siskiyoumedical.org', 
+    'None', 
+    'Healthcare', 'McCloud Healthcare Clinic, Siskiyou Medical Group, Dunsmuir Community Health Center and McCloud Dental Center.', 'Medium',
+    'Small', 
+    0, '50 Alamo Ave', 
+    'Weed', 'CA', 
+    '96094', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985000651, 'Chad Wright', 'chad.wright@sageworks.com', '19198517474.0', 
+    'Sageworks Inc', 'sageworks.com', 
+    'https://www.linkedin.com/company/sage-works', 
+    'Finance and Legal', 'Sageworks is a company that provides private company financial information and develops financial analysis applications to help people make better financial decisions.', 'Large',
+    'Medium', 
+    0, '5565 Centerview Drive', 
+    'Raleigh', 'NC', 
+    '27606', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4985013521, 'Unknown', 'unknown61@invalid.com', '8435715700.0', 
+    'Vision Software Solutions', 'visionsoftwaresolutions.com', 
+    'https://www.linkedin.com/company/vision-software-solutions', 
+    'Technology', 'Intuitive & straightforward commercial credit analysis software for financial analysis, credit decisioning, & portfolio exception tracking. Learn more here.', 'Large',
+    'Micro', 
+    0, '1 Carriage Ln', 
+    'Charleston', 'SC', 
+    '29407', 
+    'United States', 
+    'America/New_York', 
+    '2020-12-09', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4984255941, 'Unknown', 'unknown62@invalid.com', '19166762576.0', 
+    'GLX DELIVERY SOLUTIONS', 'glxsolutions.com', 
+    'https://www.linkedin.com/company/glx-delivery-solutions-inc-', 
+    'Other', 'GLX DELIVERY SOLUTIONS is a global logistics company that specializes in international trade and development. We provide a wide range of services to facilitate the movement of goods across borders, including freight forwarding, customs clearance, wareh...', 'Medium',
+    'Micro', 
+    0, '6584 THALIA WAY', 
+    'Citrus Heights', 'CA', 
+    '95621', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4962308987, 'Kevin Gomes ', 'berwin@mbari.org', '8317751700.0', 
+    'Mbari', 'mbari.org', 
+    'https://www.linkedin.com/company/monterey-bay-aquarium-research-institute-mbari-', 
+    'Education', 'MBARI is a nonprofit oceanographic research center dedicated to advancing marine science and engineering to understand our changing ocean. MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changin...', 'Large',
+    'Large', 
+    0, '7700 Sandholdt Rd', 
+    'Moss Landing', 'CA', 
+    '95039', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-05', 
+    1987
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4956525300, 'Russell Cole ', 'gevans@agxactly.com', 'None', 
+    'Agxactly', 'agxactly.com', 
+    'https://www.linkedin.com/company/agxactly', 
+    'Consumer Goods and Retail', 'AGXactly is a precision agriculture technology company located in Salinas, California. They provide farm data insights and analytics to farmers of specialty row crops, helping them improve profitability and organizational efficiencies from seed to sale...', 'Medium',
+    'Micro', 
+    0, '3180 Imjin Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-04', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4945840967, 'David Delgado', 'daviddelgado@agapebrandscorp.com', 'None', 
+    'agapebrandscorp.com', 'agapebrandscorp.com', 
+    'None', 
+    'Other', 'Pizzauce is a family improved secret recipe created to spice and deliver a delicious flavor to your favorite pizza. Don’t be shy though try it as you wish.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-12-02', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4914693813, 'Kerri Williams', 'kerri.williams@infantswim.com', '4079717170.0', 
+    'Infant Swimming Resource', 'infantswim.com', 
+    'https://www.linkedin.com/company/infant-swimming-resource', 
+    'Education', 'Infant Swimming Resource is a company that provides self-rescue swimming lessons for infants and young children. Their program is a 4-6 week course, scheduled 5 days per week, for 10 minutes each day. The lessons are one-on-one and taught by certified ...', 'Large',
+    'Large', 
+    0, '5464 119th SE Ave', 
+    'Bellevue', 'WA', 
+    '98006', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-11-26', 
+    1966
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4837526553, 'Rod Mathews', 'rodmathews@yahoo.com', '14083425400.0', 
+    'Barracuda Networks Inc', 'barracuda.com', 
+    'https://www.linkedin.com/company/barracuda-networks', 
+    'Technology', 'Barracuda Networks offers industry leading solutions designed to solve mainstream IT problems efficiently and cost effectively, while maintaining a level of customer support and satisfaction second to none. Barracuda Networks offers industry leading so...', 'Large',
+    'Enterprise', 
+    0, '3175 Winchester Boulevard', 
+    'Campbell', 'CA', 
+    '95008', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-11-09', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4618100144, 'Barbara Carr', 'bcarr@cityftmyers.com', '2393217000.0', 
+    'City of Fort Myers', 'cityftmyers.com', 
+    'https://www.linkedin.com/company/city-of-fort-myers', 
+    'Finance and Legal', 'The City of Fort Myers is the official local government administration in Fort Myers, Florida. Established in 1886, it is located on the Gulf of Mexico in beautiful Southwest Florida. The city's mission is to deliver exceptional government services and...', 'Large',
+    'Large', 
+    0, '2200 Second Street', 
+    'Fort Myers', 'FL', 
+    '33901', 
+    'United States', 
+    'America/New_York', 
+    '2020-10-12', 
+    1886
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4617214940, 'Janel Willette', 'janel@synergybyjanel.com', 'None', 
+    'Synergy', 'synergybyjanel.com', 
+    'None', 
+    'Hospitality and Travel', 'Synergy is a company that focuses on providing fitness and wellness services. They believe in the power of synergy, where the whole is greater than the sum of its parts. They offer guidance and support to individuals who are ready to explore their fitn...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-10-12', 
+    1886
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4612961912, 'Anthony Alcala', 'busography@theboothbus.com', '18312951311.0', 
+    'The Booth Bus', 'theboothbus.com', 
+    'https://www.linkedin.com/company/the-booth-bus', 
+    'Creative and Media', 'The Booth Bus is Northern California's Most Charming Photo Booth company offering hand crafted vintage booths available for weddings, parties and corporate events. Our VW bus is named Georgia. She's a 1970 classy Southern Belle. She's lived a good long...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Capitola', 'CA', 
+    '95010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-12', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921843331, 'Madeleine Tapia', 'madeleinet@alternacard.com', '6502837567.0', 
+    'Alterna Card Services, Inc.', 'alternacard.com', 
+    'None', 
+    'Finance and Legal', 'AlternaCard is a California based Financial Services company that provides prepaid Mastercard services. They offer the ability to pay bills online and offline, share money from card to card online, and receive funds instantly into an Alterna Mexico Acc...', 'Small',
+    'None', 
+    0, '3191 Coral Way', 
+    'Miami', 'FL', 
+    '33145', 
+    'United States', 
+    'America/New_York', 
+    '2020-10-08', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4598300406, 'Mary Maggiore', 'maggiore@five4five.org', 'None', 
+    'five4five.org', 'five4five.org', 
+    'https://www.linkedin.com/company/launch-five-4-five', 
+    'Education', 'nan', 'Large',
+    'Medium', 
+    0, 'None', 
+    'Fairfax', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-10-08', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4598286810, 'Tiesha Preston', 'tpreston@realtor.com', '18055572300.0', 
+    'Realtor.com', 'realtor.com', 
+    'https://www.linkedin.com/company/realtor-com', 
+    'Real Estate and Development', 'realtor.com® is a leading provider of online real estate services. It offers a comprehensive source of for sale properties and provides information, tools, and professional expertise to help people confidently navigate through every step of their home ...', 'Large',
+    'Enterprise', 
+    0, '15390 Bagley Rd', 
+    'San Jose', 'CA', 
+    '95113', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-10-08', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4598299166, 'De Parler', 'dp@5050geek.com', '12013202050.0', 
+    '5050geek.com', '5050geek.com', 
+    'None', 
+    'Technology', '50/50 Geek is a technical consultancy and managed services agency that specializes in infrastructure, security, automation, continuous delivery, and deployment. They provide technical leadership, architecture, design, and development of large-scale, mi...', 'Medium',
+    'Micro', 
+    0, '33 4th Street North', 
+    'St. Petersburg', 'FL', 
+    '33701', 
+    'United States', 
+    'America/New_York', 
+    '2020-10-08', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4559508105, 'Frank Dickinson', 'fdickinson@ccorpusa.com', '19512528555.0', 
+    'Cumming', 'ccorpusa.com', 
+    'https://www.linkedin.com/company/cumming-corporation', 
+    'Real Estate and Development', 'Cumming Corporation is an international project and cost consultancy that specializes in construction project and cost management services across a broad range of sectors.', 'Large',
+    'Enterprise', 
+    0, '523 West 6th Street', 
+    'Los Angeles', 'CA', 
+    '90014', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-10-01', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4543491577, 'Unknown', 'unknown63@invalid.com', '12146189003.0', 
+    'Hearst Television, Inc.', 'hearst.com', 
+    'https://www.linkedin.com/company/hearst', 
+    'Other', 'Hearst is one of the largest diversified media and information companies. Its major interests include magazine, newspaper and business publishing, cable networks, television and radio broadcasting, internet businesses, TV production and distribution, n...', 'Large',
+    'Enterprise', 
+    0, '300 West 57th Street', 
+    'New York', 'NY', 
+    '10019', 
+    'United States', 
+    'America/New_York', 
+    'None', 
+    1887
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4537704446, 'Mat Muller', 'mathias.muller@corteva.com', '13027741000.0', 
+    'Corteva', 'corteva.com', 
+    'https://www.linkedin.com/company/corteva', 
+    'Other', 'Corteva Agriscience is a global pure play agriculture company that provides farmers around the world with a complete portfolio of seed, crop protection, and digital products and services. They combine industry-leading innovations, customer engagement, ...', 'Large',
+    'Enterprise', 
+    1, '974 Centre Road', 
+    'Wilmington', 'DE', 
+    '19805', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-28', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4537514043, 'Megumi Reagan', 'megumi@startuprise.co', 'None', 
+    'Startuprise', 'startuprise.co', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-28', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4537704445, 'Alisha Cahlan ', 'timothy.escamilla@dole.com', '18188744000.0', 
+    'Dole', 'dole.com', 
+    'https://www.linkedin.com/company/dole-food-company', 
+    'Other', 'Dole is an Irish agricultural multinational corporation that is among the world's largest producers of fruit and vegetables. They offer a wide range of fresh produce, including bananas, pineapples, grapes, berries, deciduous and citrus fruits, and vege...', 'Large',
+    'Enterprise', 
+    1, '1 Dole Drive', 
+    'None', 'None', 
+    '28202', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-28', 
+    1851
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4537704444, 'Matt Morgan', 'mattmorgan@farmjournal.com', '12155578900.0', 
+    'Farm Journal', 'farmjournal.com', 
+    'https://www.linkedin.com/company/farm-journal', 
+    'Technology', 'Farm Journal is America’s #1 provider of connected agriculture content, producer insights and go to market business solutions. They offer a wide range of products and services including livestock, produce, and crops. They organize the annual Pro Farmer...', 'Large',
+    'Medium', 
+    0, '8725 Rosehill Rd', 
+    'None', 'None', 
+    '19102', 
+    'United States', 
+    'America/Chicago', 
+    '2020-09-28', 
+    1877
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4537706333, 'Jerry Cogliano ', 'ksheehan@leaderjam.com', 'None', 
+    'LeaderJam LLC', 'leaderjam.com', 
+    'https://www.linkedin.com/company/leaderjam', 
+    'Education', 'LeaderJam is an online learning platform that provides a premiere platform for hosting live learning, sharing content, and growing your audience. It offers on-demand problem solving with top coaches, allowing individuals and teams to optimize their per...', 'Large',
+    'Small', 
+    0, '186 Alewife Brook Parkway', 
+    'Cambridge', 'MA', 
+    '02138', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-28', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4532100127, 'Vishnu Doerga ', 'keonsmith@actioncoach.com', '4088996737.0', 
+    'ActionCOACH Global LLC', 'actioncoach.com', 
+    'https://www.linkedin.com/company/actioncoach', 
+    'Other', 'ActionCOACH is the world’s number one business coaching and executive coaching firm, with more than 1,000 offices in more than 55 countries. We are dedicated to helping your business grow and succeed!', 'Large',
+    'Enterprise', 
+    0, '5781 South Fort Apache Road', 
+    'Las Vegas', 'NV', 
+    '89148', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-25', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527998753, 'Kevin Reddy', 'kr@kevinreddy.com', 'None', 
+    'kevinreddy.com', 'kevinreddy.com', 
+    'https://www.linkedin.com/company/linktree', 
+    'Technology', 'Linktree is a freemium social media reference landing page developed by Alex Zaccaria, Anthony Zaccaria, and Nick Humphreys, headquartered in Melbourne and Sydney, Australia.', 'Large',
+    'Medium', 
+    0, '37 Islington Street', 
+    'Collingwood', 'None', 
+    '3066', 
+    'Australia', 
+    'Australia/Melbourne', 
+    '2020-09-24', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527739444, 'Oliver Nguyen', 'eventbrite@olivernguyen.33mail.com', 'None', 
+    '33 Mail', 'olivernguyen.33mail.com', 
+    'None', 
+    'Other', '33Mail forwarded its first email in August 2010. Seven years later we're handling over 2 million emails per month. Yep, we've been around a while, not just a "here today, gone tomorrow" startup.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Dublin', 'None', 
+    'None', 
+    'Ireland', 
+    'Europe/Dublin', 
+    '2020-09-24', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527581040, 'Namrata Banerjee', 'nmalik@andrew.cmu.edu', '4122682000.0', 
+    'Carnegie Mellon University', 'andrew.cmu.edu', 
+    'https://www.linkedin.com/company/carnegie-mellon-university', 
+    'Education', 'To learn more about updates to our admission process for Fall 2021, including our one-year test-optional policy, please review our Fall 2021 Admission FAQs.', 'Large',
+    'Enterprise', 
+    0, '5000 FORBES AVE', 
+    'Pittsburgh', 'PA', 
+    '15213', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-09', 
+    1900
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527690721, 'Bala Padmakumar', 'bala@padmakumar.com', 'None', 
+    'padmakumar.com', 'padmakumar.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-09-24', 
+    1900
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527551189, 'Marissa La Magna', 'marissa@bayareagreentours.org', '5107040379.0', 
+    'Bay Area Green Tours', 'bayareagreentours.org', 
+    'https://www.linkedin.com/company/bagt', 
+    'Hospitality and Travel', 'Bay Area Green Tours is an educational organization that offers tours and events focused on environmental and social justice issues. They provide educational tours that showcase the sustainable economy in action, inspire support for local green busines...', 'Medium',
+    'Small', 
+    0, '339 15th Street', 
+    'Oakland', 'CA', 
+    '94612', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-24', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527567846, 'Cody West', 'cwest@grozaconstruction.com', '8316557605.0', 
+    'Groza Construction', 'grozaconstruction.com', 
+    'https://www.linkedin.com/company/groza-construction-inc.', 
+    'Industrial and Manufacturing', 'Providing high end residential and commercial construction services to premiere properties along the Monterey Peninsula.', 'Large',
+    'Small', 
+    0, '883 Abrego Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-24', 
+    1986
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527564096, 'mike watson', 'mw@miruminvest.com', 'None', 
+    'Miruminvest', 'miruminvest.com', 
+    'https://www.linkedin.com/company/miruminvest', 
+    'Finance and Legal', 'Miruminvest is a boutique London based investment advisory company that helps startups and SMEs to successfully launch and grow their business. We connect startup businesses with investors and assist with raising finance, business development and plann...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'London', 'None', 
+    'None', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-09-24', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527403226, 'Rob Lee', 'robertl@hw-cpa.com', '8317596327.0', 
+    'Hayashi Wayland', 'hw-cpa.com', 
+    'https://www.linkedin.com/company/hayashi-&-wayland', 
+    'Other', 'Hayashi Wayland is a full service accounting firm offering CPA and investment services, business consulting, planning, and fraud analysis on the Central Coast. Hayashi Wayland offers a collection of professional accounting and investment services to he...', 'Large',
+    'Medium', 
+    0, '1188 Padre Drive', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-02-23', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527347423, 'Jayme Fields ', 'rod.braga@bragafresh.com', '18316783835.0', 
+    'Braga Fresh Foods LLC', 'bragafresh.com', 
+    'https://www.linkedin.com/company/braga-fresh-family-farms', 
+    'Consumer Goods and Retail', 'Braga Fresh is a company that integrates the latest practices and technologies into growing high quality, fresh produce. They offer a range of fresh conventional and organic products, including their newest product line: Chopped Salad Kits. With a focu...', 'Large',
+    'Large', 
+    0, '33750 Moranda Road', 
+    'Soledad', 'CA', 
+    '93960', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1928
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527360555, 'Connie Harrell', 'connie@connieharrell.com', 'None', 
+    'connieharrell.com', 'connieharrell.com', 
+    'None', 
+    'Other', 'Connie Harrell is a digital marketing agency that specializes in helping businesses improve their online presence. We offer a range of services including website design, search engine optimization, social media marketing, and content creation. Our team...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-24', 
+    1928
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527330923, 'Alex Carrabre', 'carrabre@imbuefitness.com', 'None', 
+    'Imbue', 'imbuefitness.com', 
+    'https://www.linkedin.com/company/imbueworld', 
+    'Healthcare', 'the only membership that allows you unlimited access to all facilities within our member network while taking care of our gym parters.', 'Large',
+    'Small', 
+    0, '1765 Ednamary Way', 
+    'Mountain View', 'CA', 
+    '94040', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-24', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527323807, 'Adam Gordon ', 'karen@oyagroup.com', '4083583444.0', 
+    'The Oya Group', 'oyagroup.com', 
+    'https://www.linkedin.com/company/the-oya-group', 
+    'Education', 'The Oya Group is a strategic brand agency that provides marketing and advertising services. They specialize in creating brand foundations that express unique brand value and get noticed, remembered, and preferred. Their services range from strategy to ...', 'Medium',
+    'Micro', 
+    0, '1 University Avenue', 
+    'Los Gatos', 'CA', 
+    '95030', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-08', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4527235711, 'Anbria Bates', 'alb526@psu.edu', '8148654700.0', 
+    'Penn State University', 'psu.edu', 
+    'https://www.linkedin.com/school/penn-state-university', 
+    'Education', 'The Pennsylvania State University is a public, state related research university with campuses and facilities throughout Pennsylvania. Penn State is a top ranked research university and Pennsylvania's sole land grant institution, founded with a mission...', 'Large',
+    'Enterprise', 
+    0, '253 South Burrowes Street', 
+    'State College', 'PA', 
+    '16802', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-24', 
+    1855
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4525496884, 'Raphael AIDANE', 'raphael.aidane@insead.edu', 'None', 
+    'Insead', 'insead.edu', 
+    'https://www.linkedin.com/school/insead', 
+    'Education', 'INSEAD is a leading global business school that provides business education and research across four regions: Europe, Asia, the Middle East, and North America. With campuses in France, Singapore, Abu Dhabi, and San Francisco, INSEAD offers a wide range...', 'Large',
+    'Enterprise', 
+    0, '1 Ayer Rajah Ave', 
+    'Abu Dhabi', 'None', 
+    'None', 
+    'United Arab Emirates', 
+    'Asia/Dubai', 
+    '2020-09-24', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4521684031, 'Kirsti Tcherkoyan', 'kirsti@2020insights.net', '14158628627.0', 
+    '2020 Insights', '2020insights.net', 
+    'https://www.linkedin.com/company/2020insights', 
+    'Other', '2020 Insights is a strategic performance management platform for Purpose Driven Companies. Specifically designed to streamline operations, increase productivity, and enhance communication. Insights is a performance alignment software system that create...', 'Small',
+    'Small', 
+    0, '179 Niblick Road', 
+    'Paso Robles', 'CA', 
+    '93446', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-23', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4515026132, 'Jo Fleming ', 'rachelle@milkbottlesupply.com', 'None', 
+    'Powered By WordPress to the Top ↑ Up ↑', 'milkbottlesupply.com', 
+    'None', 
+    'Other', '© 2020', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-22', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4502304430, 'Christina Bui', 'cbui@kranz.consulting', '16508544400.0', 
+    'Kranz', 'kranz.consulting', 
+    'https://www.linkedin.com/company/kranz-&-associates', 
+    'Other', 'Kranz Consulting is a finance and fractional outsourced accounting firm that offers accounting, technical accounting, and financial solutions to help emerging growth and venture capital companies grow. They provide services such as accounting startups ...', 'Large',
+    'Medium', 
+    0, '830 Menlo Avenue', 
+    'Menlo Park', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-20', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4492883761, 'Emory Nager', 'emory@jackieai.com', 'None', 
+    'JackieAI', 'jackieai.com', 
+    'https://www.linkedin.com/company/jackieai', 
+    'Other', 'JackieAI is a conversational AI solution that engages prospects on the human level over the phone. It helps qualify leads and schedule meetings for account executives with multiple prospects simultaneously, all while integrating with existing sales pro...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-18', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4489769971, 'Paula Groves', 'paula.groves@impactxcapital.com', 'None', 
+    'Impact X Capital', 'impactxcapital.com', 
+    'https://www.linkedin.com/company/impact-x-capital-partners-llp', 
+    'Other', 'Impact X Capital is a double bottom line venture capital firm that supports underrepresented entrepreneurs across Europe, particularly the Afro Caribbean diaspora. They fund ventures in the entertainment, media, tech, and creative industries at Seed, S...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'London', 'None', 
+    'None', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-09-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4488750466, 'Karen Murray', 'tea@eddisonandmelrose.com', '3028567555.0', 
+    'Eddison & Melrose', 'eddisonandmelrose.com', 
+    'None', 
+    'Hospitality and Travel', 'Eddison & Melrose is a Tea and Retreats company located on the Monterey Peninsula. They specialize in Tea Parties & Catering and offer a quaint Tea Room where customers can enjoy a taste of England. The menu is simple and made fresh from scratch, with ...', 'Large',
+    'Small', 
+    0, '775 Asilomar Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-17', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4484291714, 'Sheree Williams', 'sheree@vsheree.com', 'None', 
+    'V Sheree', 'vsheree.com', 
+    'None', 
+    'Other', 'V Sheree is a company that specializes in crafting impactful content for individuals, companies, and publications. They have expertise in writing compelling stories and creating visually stunning photos. They are particularly passionate about creating ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-16', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4484652077, 'Mari Kemp', 'mari@marikemp.com', 'None', 
+    'Mari Kemp', 'marikemp.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '150 Spear Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-16', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4467456948, 'Elmar Mair', 'elmar@neatleaf.com', 'None', 
+    'Neatleaf', 'neatleaf.com', 
+    'https://www.linkedin.com/company/neatleaf', 
+    'Consumer Goods and Retail', 'Neatleaf enables sustainable agriculture with optimal yields through data driven understanding and comprehensive automation for everyone. Neatleaf has built a first of its kind autonomous robotic platform for indoor cultivation - the Neatleaf Spyder. O...', 'Large',
+    'Small', 
+    0, '1800 Green Hills Road', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-22', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4458431678, 'Glenn Henderson', 'glenn@montereymakers.org', 'None', 
+    'Monterey Makers', 'montereymakers.org', 
+    'https://www.linkedin.com/company/monterey-makers', 
+    'Education', 'MONTEREY MAKERS is a community organization that aims to engage the community in all aspects of creating. We believe in STEM/STEAM education as a way to improve our community. Our services include hosting periodic fun and educational events on topics s...', 'Small',
+    'Micro', 
+    0, '565 Hartnell Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-09', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4458431661, 'Naimen Errol', 'errol@asctek.com', 'None', 
+    'Asctek', 'asctek.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-09', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4458200769, 'Julian Diaz', 'juldiaz@csumd.edu', 'None', 
+    'csumd.edu', 'csumd.edu', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-09', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4456478114, 'Hope Lehman ', 'nina@therunwayproject.org', 'None', 
+    'Runway', 'therunwayproject.org', 
+    'https://www.linkedin.com/company/runway-family', 
+    'Other', 'Pew Research Center has found that whites in the US have access to $142k and that African Americans have access to merely $11k from this common funding path. According to the census bureau, 30k is the capital starting point to get a startup off the ground, which leaves African American startups at a significant disadvantage. Jessica Norwood, an entrepreneur, activist, and advocate for equity, has seen what this looks like first hand. Whether it’s disenfranchised farmers in rural Alabama or discouraged youth in West Baltimore, she knows how a difference of $131k can have far reaching implications past just startup capital. She saw the advantage of using this concrete problem as a medium in which to address the larger issue of African American wealth creation.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'TX', 
+    'None', 
+    'United States', 
+    'America/Chicago', 
+    '2020-09-09', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4456418222, 'John Seabern', 'john@ridgecrestinvestments.net', 'None', 
+    'ridgecrestinvestments.net', 'ridgecrestinvestments.net', 
+    'None', 
+    'Other', 'Ridgecrest Investments was formed in 2009 by John Seabern, CFA. John worked as an analyst and portfolio manager for 16 years at RS Investments, a San Francisco based investment advisory firm. While at RS, John served on the management team of small and midcap growth funds with over $1 billion of assets under management. John holds a B.S. in Finance from the University of Colorado and is a Chartered Financial Analyst.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-09-09', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4456417351, 'Eric Quick', 'eric@thetownkitchen.com', '15102963198.0', 
+    'The Town Kitchen', 'thetownkitchen.com', 
+    'https://www.linkedin.com/company/the-town-kitchen', 
+    'Consumer Goods and Retail', 'Community-driven corporate catering. Let our team handle your office lunch program or corporate event. By choosing The Town Kitchen as your catering partner, you'll nourish your team and your community.', 'Medium',
+    'Small', 
+    0, '344 Thomas L Berkley Way', 
+    'Oakland', 'CA', 
+    '94612', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-09', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4456416129, 'Ben Jealous', 'ben@benjealous.com', 'None', 
+    'Ben Jealous', 'benjealous.com', 
+    'None', 
+    'Other', 'Ben Jealous is a civil rights leader, professor, and investor in startups for good. He is the former President & CEO of the NAACP and has also served as the Executive Director of the National Newspaper Publishers Association. Ben Jealous has been at th...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Baltimore', 'MD', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-09', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4452476544, 'Ricardo Barraza', 'ricardo@latinoedge.org', '18319156817.0', 
+    'latinoedge.org', 'latinoedge.org', 
+    'None', 
+    'Other', 'Latino Edge is a full-service marketing and public relations company based in Salinas, CA. Our creative branding strategies create relevance for your message and will put your brand on the map. With many years of industry experience, Latino Edge gives you the expertise and creative talent that will take your marketing efforts to the next level both offline and online. We provide creative solutions to your advertising and marketing challenges, increasing your company's visibility. Full-service marketing talent at your fingertips: contact us to find out what Latino Edge can do for you.', 'Small',
+    'None', 
+    0, '1881 Bradbury Street', 
+    'Salinas', 'CA', 
+    '93906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-08', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4450595395, 'Scott Rogalski ', 'kyle@norcalsbdc.org', '4082872310.0', 
+    'California SBDC', 'norcalsbdc.org', 
+    'https://www.linkedin.com/company/norcalsbdc', 
+    'Education', 'NorCal SBDC is a federally and state funded nonprofit network made up of 18 regional centers that provide expert, no fee advising to help established businesses and new startups realize their full potential. They offer direct and personalized technical...', 'Large',
+    'Medium', 
+    0, '84 W Santa Clara St', 
+    'Arcata', 'CA', 
+    '95521', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-08', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4447627691, 'Le Jun Yin', 'lejun.yin@colemanlabs.com', '2676447767.0', 
+    'COLEMAN LABORATORIES LLC', 'colemanlabs.com', 
+    'https://www.linkedin.com/company/coleman-labs-llc', 
+    'Technology', 'Coleman Laboratories is a company established to supply cutting edge products and services to the environmental, energy, and healthcare markets. Since its inception, our research and development team has focused on the application of electronic sensing...', 'Medium',
+    'Micro', 
+    0, '1150 1st Avenue', 
+    'King of Prussia', 'PA', 
+    '19406', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-07', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4446131842, 'Rajnesh kumar ', 'ike@kiwitech.com', '12024314430.0', 
+    'KiwiTech', 'kiwitech.com', 
+    'https://www.linkedin.com/company/kiwitech', 
+    'Consumer Goods and Retail', 'KiwiTech is a leading startup ecosystem that provides information technology services for startups. They also support startups with fundraising, mentoring, and go-to-market strategy. Their ecosystem is home to over 400 portfolio startups and 2000 inves...', 'Large',
+    'Large', 
+    0, '3030 K NW St', 
+    'Washington', 'DC', 
+    '20007', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-07', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4436063358, 'Tammy Huynh ', 'tony@omnibev.com', 'None', 
+    'Omni Bev', 'omnibev.com', 
+    'https://www.linkedin.com/company/omnibev', 
+    'Consumer Goods and Retail', 'Omni Bev is the world's first ready to drink authentic Vietnamese Cold Brew Coffee. From the grower to the roaster, our single origin coffee beans are harvested directly from our family farm in Vietnam and then brewed in California. We offer a deliciou...', 'Large',
+    'Micro', 
+    0, '1651 Pomona Avenue', 
+    'San Jose', 'CA', 
+    '95110', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-03', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4412081920, 'Zoff KHAN', 'zoff@mobilitymea.com', '97144549878.0', 
+    'MOBILITY MEA', 'mobilitymea.com', 
+    'https://www.linkedin.com/company/mobilitymea', 
+    'Technology', 'MOBILITY MEA is the leading company in the Middle East and Africa territories to help execute ‘Enterprise Mobility Solutions’. We believe in investing to attract the best talent in the MEA End User Computing space and has in place some of most certifie...', 'Large',
+    'Small', 
+    0, 'CONCORD TOWER', 
+    'Dubai', 'None', 
+    'None', 
+    'United Arab Emirates', 
+    'Asia/Dubai', 
+    '2020-08-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4410185518, 'Todd Thompson', 'todd@carnotcompression.com', '8315158019.0', 
+    'Carnot Compression Inc', 'carnotcompression.com', 
+    'https://www.linkedin.com/company/carnot-compression-llc', 
+    'Industrial and Manufacturing', 'Carnot Compression LLC is commercializing a proprietary isothermal compression technology. The first product application is currently targeted for oil free compressed air applications in light industrial, life sciences, technology, and food and beverag...', 'Large',
+    'Micro', 
+    0, '5610 Scotts Valley Drive', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-28', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4406883511, 'Bradley Hanon', 'bradley.hanon@pa-group.us', '16305668400.0', 
+    'Sikich - Formerly PA Group USA', 'pa-group.us', 
+    'https://www.linkedin.com/company/pagroup', 
+    'Technology', 'Sikich, formerly PA Group USA, is a software and cloud services firm dedicated to helping companies grow stronger through the use of ERP, CRM, Managed Services, and Manufacturing Execution. They offer implementation, support, training, and business pro...', 'Large',
+    'Small', 
+    0, '1601 Gulf Street', 
+    'Chattanooga', 'TN', 
+    '37421', 
+    'United States', 
+    'America/New_York', 
+    '2020-08-27', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4406551351, 'Chris Mossing', 'chris@salesignition.com', 'None', 
+    'Sales Ignition', 'salesignition.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-08-27', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4398530502, 'Jessica Corbin', 'jessica@sorce.io', 'None', 
+    'Sorce Technologies, Inc', 'sorce.io', 
+    'https://www.linkedin.com/company/revita5', 
+    'Healthcare', 'SORCE is a biofeedback driven coaching platform for high performing cultures at risk for burnout. Driven by the latest technology, SORCE leverages HRV (heart rate variability) to help corporations maximize employee performance, productivity, and wellbe...', 'Large',
+    'Small', 
+    0, '181 Pier Avenue', 
+    'Santa Monica', 'CA', 
+    '90405', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-26', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4397935945, 'Daniel Berger', 'dberger@defenseforce.com', 'None', 
+    'Defenseforce', 'defenseforce.com', 
+    'https://www.linkedin.com/company/defenseforce', 
+    'Technology', 'Defenseforce is a cybersecurity company that specializes in providing CMMC compliance solutions for defense contractors. With decades of experience in the field, Defenseforce offers innovative and in-depth expertise to help defense contractors safeguar...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Santa Barbara', 'CA', 
+    '93103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-26', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4390825091, 'Doron Comerchero', 'doron@foodwhat.org', '18314595476.0', 
+    '"Food', 'foodwhat.org', 
+    'https://www.linkedin.com/company/food-what', 
+    'Other', 'FoodWhat?! is a youth empowerment and food justice organization using food, through sustainable agriculture and health, as the vehicle for growing strong, healthy, and resilient teens. We partner with low income and struggling youth to grow, cook, eat,...', 'Medium',
+    'Micro', 
+    0, '1156 High Street', 
+    'Santa Cruz', 'CA', 
+    '95064', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-25', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4387578583, 'Chris Murphy', 'cmurphy@santacruzbasketball.com', '8317134400.0', 
+    'Santa Cruz Warriors', 'santacruzbasketball.com', 
+    'https://www.linkedin.com/company/santa-cruz-warriors', 
+    'Other', 'The Santa Cruz Warriors are the NBA D League affiliate of the Golden State Warriors. We are based in Santa Cruz, CA, and play all our home games at the Kaiser Permanente Arena.', 'Large',
+    'Small', 
+    0, '903 Pacific Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-25', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4390797271, 'Jonathan Hicken', 'jonathan@santacruzmah.org', '8314291964.0', 
+    'Santa Cruz Museum of Art & History', 'santacruzmah.org', 
+    'https://www.linkedin.com/company/santa-cruz-museum-of-art-&-history', 
+    'Other', 'Santa Cruz Museum of Art & History (MAH) is a different kind of museum that focuses on building community in Santa Cruz County. They offer interactive exhibitions, hands-on events, and projects that connect people to art, history, ideas, and each other...', 'Large',
+    'Small', 
+    0, '705 Front Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-25', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4371995285, 'Deneen Guss ', 'rodgarcia@montereycoe.org', '8317550300.0', 
+    'Monterey COE', 'montereycoe.org', 
+    'https://www.linkedin.com/company/monterey-county-office-of-education', 
+    'Education', 'Monterey County Office of Education Homepage', 'Large',
+    'Large', 
+    0, '901 Blanco Circle', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-21', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4372017688, 'Sonya Pryor Jones ', 'sherry.lassiter@fabfoundation.org', '6173314659.0', 
+    'Fab Foundation', 'fabfoundation.org', 
+    'https://www.linkedin.com/company/thefabfoundation', 
+    'Education', 'The Fab Foundation is a global community that works to provide access to tools, knowledge, and financial means for education, innovation, and invention using technology and digital fabrication. They support the growth of the international fab lab netwo...', 'Large',
+    'Small', 
+    0, '50 Milk Street', 
+    'Boston', 'MA', 
+    '02109', 
+    'United States', 
+    'America/New_York', 
+    '2020-08-21', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4372017686, 'Janet Auer ', 'andreabailey@chevron.com', '19258421000.0', 
+    'CHEVRON CORPORATION', 'chevron.com', 
+    'https://www.linkedin.com/company/chevron', 
+    'Industrial and Manufacturing', 'Chevron Corporation works to meet the world's growing demand for energy by exploring for oil and natural gas; refining and marketing gasoline; producing chemicals and more. They are one of the world’s leading integrated energy companies producing safe,...', 'Large',
+    'Corporate', 
+    1, '6001 Bollinger Canyon Road', 
+    'San Ramon', 'CA', 
+    '94583', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-21', 
+    1879
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366974586, 'Caitlin Brune', 'cbrune@pvhealthtrust.org', '8317615639.0', 
+    'Community Health Trust of Pajaro Valley', 'pvhealthtrust.org', 
+    'https://www.linkedin.com/company/community-health-trust', 
+    'Non-Profit', 'Community Health Trust of Pajaro Valley is a non-profit organization that promotes health and wellness in the Pajaro Valley community. They advocate for equitable access to resources, activities, and choices that help prevent illness and improve qualit...', 'Large',
+    'Small', 
+    0, '85 Nielson Street', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-20', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4367162697, 'Susie Brusa ', 'cdevers@ranchocieloyc.org', '18314443533.0', 
+    'Rancho Cielo', 'ranchocieloyc.org', 
+    'https://www.linkedin.com/company/rancho-cielo', 
+    'Education', 'Rancho Cielo invests in young people facing challenges for success through diploma education, vocational training, counseling, and life skills development in a safe and affirming environment. Rancho Cielo Youth Campus is a 100 acre ranch nestled in the...', 'Large',
+    'Small', 
+    0, '710 Old Stage Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-20', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4365929812, 'Emilee Kelly', 'emilee.kelly@hotmail.com', '5038104149.0', 
+    'Sitters by the Sea', 'sittersbythesea.net', 
+    'https://www.linkedin.com/company/sittersbythesea', 
+    'Other', 'GIỚI THIỆU VỀ ĐOÀN TRƯỜNG', 'Medium',
+    'Micro', 
+    0, '111 El Hemmorro B', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366731483, 'Claudia Baturone', 'baturonec@hotmail.com', 'None', 
+    'Pleasant Robotics', 'pleasantrobotics.com', 
+    'None', 
+    'Other', 'Pleasant Robotics is a sustainable robotics company that focuses on biomimetic and environmentally friendly devices to tackle global issues. Their first project is PETER, a free swimming aquatic device that will be able to fully digest microplastics us...', 'Small',
+    'None', 
+    0, '105 Westmoor Drive', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366502424, 'Shardonnay Macias', 'holisticishmama@gmail.com', '8316637075.0', 
+    'Holisticish Mama', 'holisticishmama.square.site', 
+    'https://www.linkedin.com/company/square--', 
+    'Other', 'Square helps millions of sellers run their business-from secure credit card processing to point of sale solutions. Get paid faster with Square. Sign up today!', 'Large',
+    'Enterprise', 
+    0, '835 Bautista Dr. #6', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366731485, 'James penny ', 'adrienne.mcconnell71@gmail.com', '7078450907.0', 
+    'Redwood Sea Ranch', 'redwoodsearanch.com', 
+    'None', 
+    'Other', '"OTR" Provides Kelp Ecosystem Services Through Advancing Urchin Removal and Aquaculture Technologies', 'Small',
+    'None', 
+    0, '5891 Empire Grade', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4365929811, 'Robert Payne', 'robpayne@mac.com', '4082182535.0', 
+    'Ridersbuzz', 'ridersbuzz.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '489 Melville Ave.', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366540032, 'Trevor Reese ', 'august.simmons@gmail.com', '9494244843.0', 
+    'Luma Water, LLC', 'lumabottle.com', 
+    'https://www.linkedin.com/company/radient-llc', 
+    'Industrial and Manufacturing', 'The Luma Bottle is a company that combines technology and innovation with water to create a reusable water bottle that cleans itself. Their goal is to provide a refreshing, pure, and pleasant drinking experience by eliminating the bad water bottle smel...', 'Small',
+    'Micro', 
+    0, '630 34th Ave', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Denver', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366502425, 'Joe Kitchell ', 'wendykitchell@gmail.com', '8312003454.0', 
+    'Monterey Bay Eco Tours', 'montereybayecotours.com', 
+    'None', 
+    'Other', 'Monterey Bay Eco Tours offers daily tours on the El Cat year round. Float down the beautiful Elkhorn Slough on our electric catamaran. Experience amazing wildlife viewing and vibrant wetlands during our Elkhorn Slough Safari tours. See otters, sea lion...', 'Small',
+    'None', 
+    0, 'PO Box 119', 
+    'Moss Landing', 'CA', 
+    '95039', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366603896, 'Charlie Oewel ', 'kentaub1@gmail.com', '4159440106.0', 
+    'Dash Houses', 'dashhouses.com', 
+    'None', 
+    'Other', 'DASH Houses (Disaster Area Steel Housing) are pre-assembled, pre-fab homes created from recycled shipping containers. Homeless relief temporary housing. POP-UP Instant houses with baths and kitchnettes. Can also be for OFF-GRID living: beach huts, moun...', 'Small',
+    'None', 
+    0, 'PO.BOX 935', 
+    'Carmel by the Sea', 'CA', 
+    '93921', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366573208, 'Leo Demushkane ', 'lukarobin@gmail.com', '8314190187.0', 
+    'HatchQuest', 'hatchquest.com', 
+    'None', 
+    'Other', 'Hi there, welcome to HatchQuest! Here you can find out more about the game and see what exciting things you can do with it. HatchQuest is an ARTS (Art, Reading, Thinking, Storytelling) game. Which means while you play it, you get to create art, read bo...', 'Small',
+    'None', 
+    0, '1112 Lincoln Ave', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366582796, 'Karen Ehlers', 'karendewrance@gmail.com', '4083488154.0', 
+    'Santa Cruz Afoot', 'santacruzafoot.com', 
+    'None', 
+    'Other', 'Afoot1 is a company that offers walking tours in Santa Cruz. They provide historical tours of the city, highlighting its dark and haunted past. The tours are led by local guides and cover various locations, including the Beach Boardwalk and the 'Lost B...', 'Small',
+    'None', 
+    0, '511B Swift Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366573206, 'Deyon Gaston', 'deegaston@gmail.com', '8314356094.0', 
+    'Pretty Boxes', 'pretty-boxes.com', 
+    'https://www.linkedin.com/company/pretty-boxes', 
+    'Other', 'Pretty Boxes is a company that provides paper-based organization products for everyday logistics. They offer household organization products for every room, including closets, offices, kitchens, under sinks, cupboards, and the garage. Their products ar...', 'Small',
+    'Micro', 
+    0, '4435 Diamond Street #2', 
+    'Capitola', 'CA', 
+    '95010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366582797, 'Howard Schrager', 'howardschrager@gmail.com', '8314207478.0', 
+    'New Directions in Education', 'newdirectionsineducation.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '530 Larkin St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366598121, 'Adnan Aygunduz ', 'sukrucansezer@gmail.com', '8319209892.0', 
+    'Highstone', 'nuriel.ai', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '3019 Eddy St.', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366558897, 'Ali Dwyer ', 'richardat317@gmail.com', '8313344522.0', 
+    'Heritage Chocolates Corralitos', 'hccchocolates.com', 
+    'None', 
+    'Other', 'A Touch Of Class, A Taste Of Heaven', 'Small',
+    'None', 
+    0, '317 Hames Road', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366603895, 'Anita Joshi', 'chaifivetea@gmail.com', '7194392506.0', 
+    'Chai Five Tea Co.', 'chaifiveteaco.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '2206 Golden Oaks Ln', 
+    'Monterey', 'CA', 
+    '93940', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366044216, 'Joshua Thomas', '9steel9@gmail.com', '8315880292.0', 
+    'Thomas Farm Films', 'thomasfarmfilms.com', 
+    'https://www.linkedin.com/company/thomasfarmfilms', 
+    'Other', '“I highly recommend Thomas Farm Films. My daughters, 10 and 12, had the best time at Thomas Farm Film camp this summer. Every community should have a fun and confidence-building camp like this. Kari and Josh are so kind and encouraging with the kids and give them an extraordinary opportunity to be fully involved in the film process—from acting to sound to filming to editing. We can’t wait for the film screening event in a real movie theater, and my kids will definitely do more camps and classes in the future.”', 'Medium',
+    'Micro', 
+    0, '9515 Soquel Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366597571, 'Ulysses Fregoso', 'ufregoso@yahoo.com', '8315393639.0', 
+    'Spacein Out Clothing', 'beyondspaceinout.com', 
+    'None', 
+    'Other', 'Don't forget to subscribe and follow us on our social media's to keep up with our latest projects!', 'Small',
+    'None', 
+    0, '73 Oak Road', 
+    'Royal Oaks', 'CA', 
+    '95076', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366558370, 'Bryan Gage', '2artist.gage@gmail.com', '8313349671.0', 
+    'Studio Gage', '2artistgage.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '125 Ocean View Blvd.', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366582266, 'George Pincham', 'george_pincham@yahoo.com', '8312102659.0', 
+    'Side Affects LLC', 'sideaffects831.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Side Affects is a highly anticipated Barber Shop & modern Social Venue located in Seaside. The company takes pride in the city of Seaside and aims to challenge the negative perception of the city by providing high-quality services and creating a welcom...', 'Small',
+    'None', 
+    0, '1868 Harding St.', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4366484097, 'Ian OHollaren ', 'hays.alexandria@gmail.com', '8057668403.0', 
+    'Seaquoia Wild Seaweeds', 'seaquoia.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Seaquoia is a company based in Santa Cruz, CA that specializes in harvesting wild California seaweed and kelp. They provide a range of products and services including home kelp supplements, liquid kelp fertilizer, culinary seaweeds, and seaweed for liv...', 'Small',
+    'None', 
+    0, 'P.O. Box 5512', 
+    'Santa Cruz', 'CA', 
+    '95063', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4365929271, 'Perla Sanchez', 'pasanche1@gmail.com', '8314067492.0', 
+    'Hints of Pearl', 'etsy.me', 
+    'https://www.linkedin.com/company/etsy', 
+    'Other', 'Advice and inspiration for successfully running your Etsy shop.', 'Large',
+    'Enterprise', 
+    1, '406 Stanford St', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363779834, 'Nathaniel Prorok ', 'stephanie.marrus@ucsf.edu', '4154769000.0', 
+    'University of California', 'ucsf.edu', 
+    'https://www.linkedin.com/school/ucsf', 
+    'Healthcare', 'UC San Francisco is a leading university exclusively focused on health. They are one of the top children's hospitals in the nation, specializing in pediatric expertise such as cancer, heart disease, neurological disorders, organ transplants, orthopedic...', 'Large',
+    'Enterprise', 
+    0, '513 Parnassus Ave', 
+    'San Francisco', 'CA', 
+    '94143', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1873
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363750243, 'Phillip Denny ', 'tstuart@haas.berkeley.edu', '5106426000.0', 
+    'Berkeley College', 'haas.berkeley.edu', 
+    'https://www.linkedin.com/company/datascience-berkeley', 
+    'Education', '2590472 The College of Engineering is one of 14 schools and colleges at the University of California, Berkeley.', 'Large',
+    'Enterprise', 
+    0, '110 Sproul Hall #1130', 
+    'Berkeley', 'CA', 
+    '94720', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-26', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363749498, 'Anuradha Basu ', 'heather.duplaisir@sjsu.edu', '14089241000.0', 
+    'San Jose State University', 'sjsu.edu', 
+    'https://www.linkedin.com/school/san-jose-state-university', 
+    'Education', 'San José State University is a major, comprehensive public university located in the heart of Silicon Valley. As the oldest state university in California, SJSU is a distinct blend of the traditional and the innovative. SJSU is firmly committed to teac...', 'Large',
+    'Enterprise', 
+    0, '1 WASHINGTON SQ', 
+    'San Jose', 'CA', 
+    '95192', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1857
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363798881, 'Michael Still', 'mstull@csusb.edu', 'None', 
+    'California State University, San Bernardino', 'csusb.edu', 
+    'https://www.linkedin.com/company/csusb', 
+    'Education', 'California State University, San Bernardino is a vital public comprehensive university serving San Bernardino and Riverside counties in Southern California. Founded in 1965, CSUSB currently enrolls more than 17,500 students and employs more than 2,100 ...', 'Large',
+    'Enterprise', 
+    0, '5500 University Parkway', 
+    'San Bernardino', 'CA', 
+    '92407', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363798878, 'Alex De Noble', 'adenoble@sdsu.edu', 'None', 
+    'San Diego State University', 'sdsu.edu', 
+    'https://www.linkedin.com/company/sdsu-research-foundation', 
+    'Education', 'San Diego State University (SDSU) is a public research university located in San Diego, California. Established in 1897, SDSU offers bachelor's, master's, and doctoral degrees across a wide range of disciplines. The university is known for its strong p...', 'Large',
+    'Enterprise', 
+    0, '5500 Campanile Drive', 
+    'San Diego', 'CA', 
+    '92182', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1897
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363779662, 'Wade Martin', 'wade.martin@csulb.edu', '5629854111.0', 
+    'California State University Long Beach', 'csulb.edu', 
+    'https://www.linkedin.com/company/csulb-cpace', 
+    'Education', 'California State University, Long Beach (CSULB) is a large, urban, comprehensive university in the 23 campus California State University system. The university offers a wide range of academic programs and educational resources in diverse fields, includ...', 'Large',
+    'Enterprise', 
+    0, '1250 North Bellflower Boulevard', 
+    'Long Beach', 'CA', 
+    '90815', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1949
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363779602, 'Mike Grimshaw', 'mgrimshaw@csudh.edu', 'None', 
+    'California State University, Dominguez Hills', 'csudh.edu', 
+    'https://www.linkedin.com/school/csudh', 
+    'Education', 'California State University Dominguez Hills Academics are the heart of California State University, Dominguez Hills. From face to face interactions to learning in the comfort of your own home, we offer a learning community where you can pursue your aca...', 'Large',
+    'Large', 
+    0, '1000 East Victoria Street', 
+    'Carson', 'CA', 
+    '90747', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363779576, 'Cynthia Sherman', 'cynthia.sherman@csuci.edu', '8054378400.0', 
+    'California State University Channel Islands', 'csuci.edu', 
+    'https://www.linkedin.com/school/csuci', 
+    'Education', 'CSU Channel Islands (CI) is a student-centered, four-year, public university located in Camarillo, California. The university is known for its interdisciplinary, multicultural, and international perspectives, as well as its emphasis on experiential and...', 'Large',
+    'Large', 
+    0, '1 University Drive', 
+    'Camarillo', 'CA', 
+    '93012', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4363165248, 'Alex s TAPIENSKI ', 'ecooper@withum.com', 'None', 
+    'Withum', 'withum.com', 
+    'https://www.linkedin.com/company/withumsmith-brown', 
+    'Other', 'Withum is a nationally ranked advisory and public accounting firm providing services to businesses and individuals on a local to global scale. Withum offers a wide range of services including advisory, tax, and audit services. They are a forward-thinki...', 'Large',
+    'Enterprise', 
+    0, '41 University Dr Fl', 
+    'Newtown', 'None', 
+    '08540', 
+    'Cayman Islands', 
+    'America/Cayman', 
+    '2020-08-19', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339307130, 'Rami Sahhar', 'rami@cliquemj.com', '19493466575.0', 
+    'CliqueMJ', 'cliquemj.com', 
+    'https://www.linkedin.com/company/cliquemj', 
+    'Technology', 'CliqueMJ is a revolutionary mobile application that rewards cannabis consumers for their brand loyalty. Our app allows users to scan receipts from retailers and receive cashback from the brands they purchased. With CliqueMJ, you can easily earn cashbac...', 'Small',
+    'Micro', 
+    0, '17901 Von Karman Ave', 
+    'Irvine', 'CA', 
+    '92614', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-17', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339312372, 'Jesus Sepulveda', 'sac@nasuu.com', 'None', 
+    'Nasuu.com', 'nasuu.com', 
+    'https://www.linkedin.com/company/nasuu', 
+    'Hospitality and Travel', 'We reduce downtime by 99% in the process of booking a room or event space Events Services revenue salones venue eventos hoteleria reservas servicios', 'Medium',
+    'Micro', 
+    0, 'COLOMBIA', 
+    'America', 'None', 
+    'None', 
+    'Brazil', 
+    'America/Cuiaba', 
+    '2020-08-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339305835, 'Byran Goldsmith', 'bryan@jndparts.aero', 'None', 
+    'jndparts.aero', 'jndparts.aero', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-08-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339578751, 'Richard Navarro', 'creativemind.nav@gmail.com', '18173202401.0', 
+    'Renewable Ocean Energy, Inc.', 'solutionsforenergy.net', 
+    'https://www.linkedin.com/company/creative-minds-solutions-inc.', 
+    'Other', 'Renewable Ocean Energy Inc. is a company that specializes in providing environmentally friendly hydrodynamic turbines for renewable energy generation. Their turbines are designed to eliminate common problems associated with other renewable energy sourc...', 'Medium',
+    'Micro', 
+    0, 'PO Box 426', 
+    'Kahului', 'HI', 
+    '96733', 
+    'United States', 
+    'America/Chicago', 
+    '2020-08-17', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339565370, 'Dave Korpi', 'dave.korpi@gmail.com', '8314550418.0', 
+    'Take 5, Inc.', 'tacticalflowmeter.com', 
+    'None', 
+    'Other', 'Tactical Flow Meter is an online store that offers a wide range of thermal mass flow meters for compressed air and gases, methane flow meters, natural gas flow meters, MAG meters, vortex flow meters, and more. Their products include mass flow meter con...', 'Medium',
+    'Micro', 
+    0, '22642 Indian Springs Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339560575, 'Marc Wilson', 'marc@seatforever.com', '6175003458.0', 
+    'SeatForever, Inc.', 'seatforever.com', 
+    'None', 
+    'Other', 'SeatForever is a global e-commerce business that specializes in selling tickets for various events and attractions worldwide. With a wide range of options available, customers can easily find and purchase tickets for concerts, sports events, theater sh...', 'Small',
+    'None', 
+    0, '2232 Dell Range Blvd', 
+    'Boston', 'MA', 
+    '82009', 
+    'United States', 
+    'America/Denver', 
+    '2020-08-17', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339555167, 'Steve Holman', 'sdholman@me.com', '8056103539.0', 
+    'Aire Services', 'aireservices.net', 
+    'https://www.linkedin.com/company/aireservices', 
+    'Other', 'AIRE Services is a company that provides a complete set of tools for real estate professionals. They specialize in computer software solutions.', 'Small',
+    'Micro', 
+    0, 'PO Box 2245', 
+    'Paso Robles', 'CA', 
+    '93447', 
+    'None', 
+    'None', 
+    '2020-08-17', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339527230, 'Astrid Arias ', 'maya@ifundwomen.com', '6465434001.0', 
+    'iFundWomen', 'ifundwomen.com', 
+    'https://www.linkedin.com/company/ifundwomen', 
+    'Other', 'IFundWomen is a crowdfunding platform for women-led businesses and their creative ideas. They provide access to capital through crowdfunding and small business grants, as well as startup education through coaching programs. They also offer revenue-gene...', 'Large',
+    'Small', 
+    0, '575 5th Avenue', 
+    'New York', 'NY', 
+    '10017', 
+    'United States', 
+    'America/New_York', 
+    '2020-08-17', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339574680, 'Joseph Maxwell', 'josephwmaxwell@gmail.com', '7077802673.0', 
+    'Maxwell Family Farms', 'maxwellfamilyfarms.com', 
+    'https://www.linkedin.com/company/maxwell-family-farms', 
+    'Industrial and Manufacturing', 'Maxwell Family Farms is a family-owned and operated farm located in the heart of the countryside. We specialize in providing high-quality, organic produce to our local community. Our farm is dedicated to sustainable farming practices, ensuring that our...', 'Medium',
+    'Micro', 
+    0, '201 A McCray Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339574679, 'Anthony Del Real', 'delreal_anthony@yahoo.com', '8314212363.0', 
+    'Modarri', 'modarri.com', 
+    'https://www.linkedin.com/company/modarri', 
+    'Consumer Goods and Retail', 'Modarri is a company that offers the ultimate toy car experience. With their Mix and Match Building System, customers can design their own custom cars and put their finger in the driver's seat to control them. These award-winning toy cars can be built ...', 'Medium',
+    'Micro', 
+    0, '303 Potrero St.', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5920753778, 'John Novitsky', 'jnovitsky@sbcglobal.net', '6503873172.0', 
+    'Aquaprawnics', 'aquaprawnics.com', 
+    'https://www.linkedin.com/company/aquaprawnics', 
+    'Consumer Goods and Retail', 'Aquaprawnics is a modern ESG sustainability engaged specialty aquaculture group that focuses on growing shrimp production in closed contained recirculated aquaculture systems on land in the USA. They produce fresh, superior quality, sustainable local U...', 'Large',
+    'Micro', 
+    0, '3585 Tripp Road', 
+    'Woodside', 'CA', 
+    '94062', 
+    'United States', 
+    'America/Denver', 
+    '2020-07-15', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4339569951, 'Marie Bonney', 'honeyblossomgarden@gmail.com', 'None', 
+    'Honey Blossom Garden', 'honeyblossomretreatgarden.life', 
+    'https://www.linkedin.com/company/honey-blossom-retreat-garden', 
+    'Consumer Goods and Retail', 'Honey Blossom Retreat Garden is an agriculture company that focuses on regenerative agriculture, market garden, artisanal products, eco agritourism, sustainable education, event hosting, and guest lodging in a living sanctuary.', 'Medium',
+    'Micro', 
+    0, '1 Work Avenue', 
+    'Del Rey Oaks', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4337427275, 'Josephine Fleming', 'jofleming@environmentalin.com', '18314717394.0', 
+    'Environmental Innovations', 'environmentalin.com', 
+    'https://www.linkedin.com/company/environmental-innovations', 
+    'Healthcare', 'Environmental Innovations is a certified B Corp dedicated to helping businesses, institutions, government, and individuals innovate towards more equitable and sustainable solutions. They provide a range of services including green business assistance, ...', 'Large',
+    'Small', 
+    0, '113 Cooper Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-17', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4313308756, 'Amy Francetic', 'amy@francetic.com', 'None', 
+    'francetic.com', 'francetic.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-08-12', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4292539093, 'Mark Trebek', 'mark@greycroft.com', '12127563508.0', 
+    'Greycroft LP', 'greycroft.com', 
+    'https://www.linkedin.com/company/greycroft-partners', 
+    'Finance and Legal', 'Greycroft is a leading venture capital firm focused on investments in the Internet and mobile markets. With offices in New York and Los Angeles, Greycroft partners with exceptional entrepreneurs to build the world's most transformative companies. They ...', 'Medium',
+    'Medium', 
+    0, '1650 Marlay Dr', 
+    'Los Angeles', 'CA', 
+    '90069', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-08', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4292547239, 'Ullas Naik ', 'michelle@streamlined.vc', 'None', 
+    'Streamlined Ventures', 'streamlinedventures.com', 
+    'https://www.linkedin.com/company/streamline-ventures-limited', 
+    'Education', 'Streamlined Ventures is a seed-stage venture capital firm. We invest in visionary founders who are building the next generation of transformational technology companies.', 'Medium',
+    'Micro', 
+    0, '1825 EMERSON ST', 
+    'London', 'None', 
+    'None', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-08-08', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290844069, 'Susan Cannon', 'cannon@susanville.com', '8313456823.0', 
+    'Susanville', 'susanville.com', 
+    'https://www.linkedin.com/company/susanville-llc', 
+    'Education', 'Feel the Joy is a company that has developed a mobile application to facilitate easy and convenient donations. The app allows users to give to their favorite non-profit organizations on the go, while also providing updates on the impact of their donati...', 'Medium',
+    'Micro', 
+    0, '111 Carter Road', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4310189425, 'Christy Tall', 'christy.21daykindnesschallenge@gmail.com', '8318182971.0', 
+    '21 Day Kindness Challenge, Inc.', '21daykindnesschallenge.org', 
+    'https://www.linkedin.com/company/21-day-kindness-challenge', 
+    'Education', 'The 21 Day Kindness Challenge is a program that is designed for schools k 12. The kindness challenge program is a proactive approach to bullying. We are changing the culture of schools by putting more of a focus on character development. Margaret Mead ...', 'Medium',
+    'Micro', 
+    0, '513 Sumner Ave', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290496370, 'Sibley Simon', 'sibley@newwayhomes.org', '18314194091.0', 
+    'New Way Homes', 'newwayhomes.org', 
+    'https://www.linkedin.com/company/new-way-homes', 
+    'Real Estate and Development', 'New Way Homes is a 501(c)3 non-profit organization that pioneers a sustainable and inclusive approach to housing. We specialize in creating affordable and below market rate housing for individuals and organizations. Through our securities-based crowdfu...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-07', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290532012, 'Michelle Doty', 'thatgarlicstuff@gmail.com', '8315243798.0', 
+    'That Garlic Stuff', 'thatgarlicstuff.com', 
+    'None', 
+    'Consumer Goods and Retail', 'That Garlic Stuff simply makes everything taste better. We are excited to again offer our spicy flavored That Garlic Stuff. Thank you for your patience and support! The Beginning Michelle and her daughter Audra began by working side by side running the...', 'Small',
+    'None', 
+    0, '351 Santa Ana Valley Rd', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4310189424, 'Karen Siebald', 'karen.siebald@gmail.com', '2243921292.0', 
+    'Women in Games Development', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '215 Glover St.', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4309323374, 'Parker Paris', 'pparis@csumb.edu', '8313249655.0', 
+    'Wheels', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '3225 Gettysburg Court', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290530017, 'Mckenzie Shipman', 'mshipmanwine@gmail.com', '7759976730.0', 
+    'The Lab Pros', 'labprostexas.com', 
+    'https://www.linkedin.com/company/thelabpros', 
+    'Other', 'Lab Pros Texas is a local laboratory that offers services for the wine industry in Texas. Their mission is to bring better quality control and recognition to Texas wineries through same day analysis, sample pick up options, competitive pricing, and fri...', 'Medium',
+    'Micro', 
+    0, '9547 Maple Court', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290530016, 'Wendy Iriberry', 'redbookresidential@gmail.com', '4084219799.0', 
+    'Http://sabbaticalsw.com', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '712 Broadway', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290530014, 'Cate Louis', 'celouis2019@gmail.com', '8316435004.0', 
+    'Organic Tea House', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'Carmel', 'CA', 
+    '93923', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4310345750, 'Peter Hlasny', 'stick-figurer@email.com', '8313751767.0', 
+    'Monterey Bay Cartoonatorium', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '524 Mar Vista Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290383269, 'Olivia Cruz', 'moodybits@hotmail.com', '8312338995.0', 
+    'MoodyBITS', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'P.O. Box 101', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290751675, 'Cinthia Duarte', 'cestrada@csumb.edu', '8319052438.0', 
+    'High-to-Flat Heels', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '17 Walker Lane', 
+    'Greenfield', 'CA', 
+    '93927', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290034521, 'Shoshanna Rene', 'creationsunlimited1231@gmail.com', '8312006283.0', 
+    'Creations Unlimited', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '1141 Lighthouse Ave.', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290024515, 'Neil Bowie', 'nbowie@csumb.edu', '8086838959.0', 
+    'AU2 Inc.-Creators of JabOrWalk', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '3112 Federickburg Ct', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290547098, 'Roberto Ramirez', 'roberto.ramirez831@yahoo.com', '8312290696.0', 
+    'Ale's Tamales', 'nan', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '535 John Street', 
+    'Salinas', 'CA', 
+    '93905', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290393293, 'Jason Bates', 'jason.e.bates@gmail.com', '18319179525.0', 
+    'Leviathan Foods LLC', 'radical.organic', 
+    'None', 
+    'Other', 'Our coconut water is treated through our proprietary, heat free process rather than pasteurization to keep the natural phytonutrients and that fresh-off-the-tree taste. All of our products are preservative free.', 'Large',
+    'Small', 
+    0, 'PO Box 3712', 
+    'Carmel', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290345371, 'Sophie Newman Sanders', 'sophie@synnapps.com', 'None', 
+    'Synnapps', 'synnapps.com', 
+    'https://www.linkedin.com/company/synnapps-ltd', 
+    'Technology', 'We connect people using contemporary digital technologies. Our products include @dancrs_app and @zindagi_app | https://t.co/3TfOvX919X', 'Large',
+    'Small', 
+    0, '125 Old Broad Street', 
+    'London', 'CA', 
+    'EC2N 1AR', 
+    'United States', 
+    'Europe/London', 
+    '2021-03-16', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4289653257, 'Margain Margain', 'alban.margain@braineet.com', '33645908366.0', 
+    'Braineet', 'braineet.com', 
+    'https://www.linkedin.com/company/braineet', 
+    'Technology', 'Build your innovation engine and feed it with our combination of solutions. The results? Companies drastically improve their innovation performance.', 'Medium',
+    'Small', 
+    0, '53 Rue de Turbigo', 
+    'Paris', 'CA', 
+    '12515', 
+    'United States', 
+    'Europe/Paris', 
+    '2021-03-16', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290415387, 'Brent Virgin', 'brentsv@comcast.net', '18312383766.0', 
+    'Wine Experience', 'wineexperience.org', 
+    'https://www.linkedin.com/company/wineexperience', 
+    'Other', 'The Wine Experience is more than just a wine bar. They offer a unique set of services including wine tasting, custom blending, label personalization, interactive classes, and more. They cater to both wine novices and enthusiasts with affordable pricing...', 'Medium',
+    'Micro', 
+    0, '381 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290415339, 'Nick Brand', 'nickjbrand@gmail.com', '8325153662.0', 
+    'Trackmylisting.com', 'trackyourlisting.com', 
+    'https://www.linkedin.com/company/track-your-listing', 
+    'Technology', 'Track Your Listing is an easy and reliable software solution designed specifically for real estate agents. It provides a comprehensive platform for agents to track and manage all their activities related to their customers. With Track Your Listing, age...', 'Medium',
+    'Micro', 
+    0, '843 Hawthorne', 
+    'Monterey', 'CA', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4284366696, 'Geoff Smith ', 'libbyh@granitecrete.com', '8006700849.0', 
+    'GraniteCrete', 'granitecrete.com', 
+    'https://www.linkedin.com/company/granitecrete', 
+    'Real Estate and Development', 'GraniteCrete is a company that provides permanent, permeable, and natural solutions for landscaping projects. They offer GraniteCrete paths and walkways that have the look and feel of a crushed organic surface, but with the strength and erosion control...', 'Medium',
+    'Micro', 
+    0, '419 Webster Street', 
+    'Monterey', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-06', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4273200650, 'Cecily Gambrell', 'elgambrell@gmail.com', 'None', 
+    'Seventeen Mile Drive Entertainment', 'seventeenmiledriveent.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4268601768, 'Nitin Parekh', 'nitin@gosapphire.com', '1510413497022.0', 
+    'Sapphire Automation', 'gosapphire.com', 
+    'https://www.linkedin.com/company/sapphire-automation-inc', 
+    'Technology', 'Sapphire Automation is a company that specializes in developing factory automation software using Machine Learning, IIoT, Cloud, and Big Data technology. They are dedicated to helping improve production efficiencies by providing solutions for data coll...', 'Large',
+    'Micro', 
+    0, '200 Brown Rd', 
+    'Fremont', 'CA', 
+    '94539', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-03', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4252428907, 'Fernando Florez', 'fflorez@makingsense.com', '2108073552.0', 
+    'Making Sense', 'makingsense.com', 
+    'https://www.linkedin.com/company/making-sense-llc', 
+    'Creative and Media', 'Making Sense is a software development company with a focus on UX. They provide software services to companies seeking to scale in product innovation. They combine bespoke creativity with the latest technology to transform businesses and enhance their ...', 'Medium',
+    'Large', 
+    0, '228 Hamilton Avenue', 
+    'San Antonio', 'TX', 
+    '78205', 
+    'United States', 
+    'America/Chicago', 
+    '2021-04-22', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4251255305, 'James Zelony', 'jzelony@gmail.com', '8312510202.0', 
+    'AgSensAI', 'thebugwatcher.com', 
+    'None', 
+    'Technology', 'thebugwatcher.com unexpectedly closed the connection.', 'Small',
+    'None', 
+    0, '273D Searidge Rd', 
+    'Aptos', 'CA', 
+    '95003', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4239559282, 'Unknown', 'unknown64@invalid.com', '18003160642.0', 
+    'Virbela', 'virbela.com', 
+    'https://www.linkedin.com/company/virbela', 
+    'Technology', 'Virbela is an immersive technology company that’s redefining the workplace for global businesses with its virtual worlds and campus environments. Founded in 2012 by a team of behavioral psychologists, Virbela is building the next generation of products...', 'Large',
+    'Medium', 
+    0, '2219 Rimland Drive', 
+    'Remote', 'OR', 
+    '97458', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238755655, 'Thomas Jensen', 'tjensen@icatalysts.net', 'None', 
+    'iCatalysts', 'icatalysts.net', 
+    'https://www.linkedin.com/company/icatalysts-powered-by-efn', 
+    'Education', 'iCatalysts is an innovation strategy and solutions firm with a highly experienced team of experts with deep expertise in the energy, materials, industrial, telecommunications and utilities industries providing strategy, assessment, marketplace and busi...', 'Medium',
+    'Micro', 
+    0, '480 Gate 5 Rd', 
+    'Sausalito', 'CA', 
+    '94965', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238712853, 'Kelly Bearden', 'kbearden@csub.edu', '6616542254.0', 
+    'California State University, Bakersfield', 'csub.edu', 
+    'https://www.linkedin.com/company/csub-school-of-business-and-public-administration', 
+    'Education', 'California State University, Bakersfield (CSUB) is a leader in academic excellence, diversity, quality, and community engagement. The School of Business and Public Administration (BPA) at CSUB provides students with the knowledge and skills to address ...', 'Large',
+    'Enterprise', 
+    0, '9001 Stockdale Highway', 
+    'Bakersfield', 'CA', 
+    '93311', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238745866, 'Kathryn Collins', 'kcollins@empowerinnovation.net', '13125735650.0', 
+    'Guidehouse, Inc.', 'navigant.com', 
+    'https://www.linkedin.com/company/navigant', 
+    'Education', 'Navigant is a specialized, global expert services firm dedicated to assisting clients in creating and protecting value in the face of critical business risks & opportunities. They provide a range of advisory, consulting, outsourcing, and technology/ana...', 'Large',
+    'Corporate', 
+    1, '30 South Wacker Drive', 
+    'Chicago', 'IL', 
+    '60606', 
+    'United States', 
+    'America/Chicago', 
+    '2020-07-29', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4237620487, 'Lisa Diamond', 'lisa.diamond@pinpointscience.com', '14156062900.0', 
+    'Pinpoint Science', 'pinpointscience.com', 
+    'https://www.linkedin.com/company/pinpointscience', 
+    'Healthcare', 'Pinpoint Science is an IVD diagnostic company developing 30 second highly accurate point of care tests using innovative nanosensor technology. They use nanosensor technology to make possible label-free electrical detection of specific biomolecules with...', 'Large',
+    'Micro', 
+    0, '522 OAK ST', 
+    'San Francisco', 'CA', 
+    '94111', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238386943, 'Kelly Harkins Kincaid', 'kelly@claretbio.com', '18334252738.0', 
+    'Claret Bioscience', 'claretbio.com', 
+    'https://www.linkedin.com/company/claretbio', 
+    'Other', 'Claret Bioscience is an early stage biotech startup based in Santa Cruz. They specialize in building NGS library preparation and analysis tools for fragmented samples, with a focus on cell free DNA, FFPE, cDNA, and single stranded molecules. They provi...', 'Small',
+    'Small', 
+    0, '1156 High Street', 
+    'Santa Cruz', 'CA', 
+    '95063', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4237620463, 'Bates Marshall', 'bates@ambientphotonics.com', 'None', 
+    'Ambient Photonics', 'ambientphotonics.com', 
+    'https://www.linkedin.com/company/ambient-photonics', 
+    'Other', 'Low Light Energy Harvesting Solar Cells for Connected Devices Ambient's low light solar PV cells harness power from ambient light, eliminating batteries & reducing connected IoT device carbon footprints. Consumers care about the environment and expect ...', 'Large',
+    'Micro', 
+    0, '100 Enterprise Way', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4237620457, 'Rob Mc Ginnis', 'rob@prometheusfuels.com', 'None', 
+    'Prometheus', 'prometheusfuels.com', 
+    'https://www.linkedin.com/company/prometheusfuels', 
+    'Industrial and Manufacturing', 'Prometheus Fuels is a company that specializes in removing CO2 from the air and converting it into gasoline and jet fuel. Their fuels are the first zero net carbon fuels that can compete with fossil fuels on price. They use renewable electricity and at...', 'Large',
+    'Small', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238391654, 'Alissa Klar', 'alissaklar@ekmmetering.com', '8314257371.0', 
+    'EKM Metering', 'ekmmetering.com', 
+    'https://www.linkedin.com/company/ekm-metering', 
+    'Industrial and Manufacturing', 'EKM Metering Inc. designs and sells smart submeters and metering systems for electric kWh energy, water, and gas. They offer meters and electricity metering systems for homeowners, business owners, tenants, and property owners with one meter or up to h...', 'Large',
+    'Micro', 
+    0, '122 Benito Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4238386883, 'Jack Wolosewicz', 'jack@certus-inc.com', 'None', 
+    'Certus Technology Systems', 'certus-inc.com', 
+    'https://www.linkedin.com/company/certus-technology-systems', 
+    'Other', 'Certus Technology Systems is a leading provider of secure, password-free login solutions. Our innovative technology leverages the power of smartphones to offer enterprises a simpler and more secure alternative to traditional user ID and password system...', 'Large',
+    'Micro', 
+    0, '3450 Sacramento Street', 
+    'San Francisco', 'CA', 
+    '02116', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-29', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4231170622, 'Seth Heitz', 'sethheitz@gmail.com', 'None', 
+    'Terroir In A Jar', 'terroirinajar.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Terroir in a Jar is a company that is dedicated to lifting our community one jar at a time. They have recently completed a documentary about their work and submitted it to the James Beard Foundation Awards. The company focuses on partnering with the lo...', 'Small',
+    'None', 
+    0, 'None', 
+    'Soquel', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-28', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4230000758, 'Ksbw Newsroom', 'news@ksbw.com', '12146189003.0', 
+    'KSBW', 'ksbw.com', 
+    'https://www.linkedin.com/company/ksbw-tv', 
+    'Creative and Media', 'KSBW is a news and weather company based in Monterey, Salinas, and Santa Cruz, CA. They provide news, weather, and sports coverage for the Central Coast. KSBW Action News 8 and Central Coast ABC are the most watched and respected television news statio...', 'Large',
+    'Small', 
+    0, '777 1st Street', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-28', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4227596732, 'Francisco Rojas', 'francisco@bees2biz.com', 'None', 
+    'Bees2Biz', 'bees2biz.com', 
+    'https://www.linkedin.com/company/bees2biz', 
+    'Technology', 'Bees2Biz is a company that specializes in providing effective internet strategy for businesses. They offer services to help companies promote their products and services online. They assist with the software development lifecycle, from concept to produ...', 'Large',
+    'Small', 
+    0, '4768 Soquel Drive', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-27', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4204103579, 'John Paul Lake', 'johnpaul@prochorusllc.com', 'None', 
+    'Prochorus,', 'prochorusllc.com', 
+    'None', 
+    'Real Estate and Development', 'Prochorus, LLC is a family business founded by John Paul and Ingrid Lake. They specialize in real estate, new ventures, community projects, and not-for-profit initiatives. Prochorus offers services such as introductions to like-minded individuals, spea...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-07-22', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4187065621, 'Bob Stayton', 'bobs@sagehill.net', '8315668239.0', 
+    'Sagehill Enterprises', 'sagehill.net', 
+    'https://www.linkedin.com/company/sage-hill-enterprises-inc', 
+    'Technology', 'Sage Hill Enterprises is a company that specializes in providing consulting services and publishing resources related to DocBook and XSL. They offer a comprehensive guide on DocBook XSL, authored by Bob Stayton. Additionally, they provide consulting se...', 'Medium',
+    'Micro', 
+    0, '4880 Buffalo Road', 
+    'Chubbuck', 'ID', 
+    '83202', 
+    'United States', 
+    'America/Boise', 
+    '2020-07-19', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4177317681, 'Carson Kelly', 'carson@benevolent.ly', '14157122427.0', 
+    'Benevolent.ly', 'benevolent.ly', 
+    'https://www.linkedin.com/company/benevolently23', 
+    'Other', 'Benevolently is an AI-driven platform that provides curated opportunities for individuals to help others without expecting anything in return. The platform brings people together for compassionate acts and aims to increase engagement and meaningful con...', 'Medium',
+    'Micro', 
+    0, '877 Cedar Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-16', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4177001204, 'Trivia Frazier', 'trivia.frazier@obatalasciences.com', '5045985246.0', 
+    'Obatala Sciences, Inc', 'obatalasciences.com', 
+    'https://www.linkedin.com/company/obatalasciences', 
+    'Other', 'Organ-on-a-chip supplier of the 1st human-derived hydrogel for 2D & 3D cell culture. Our fat-on-a-chip platform is a more accurate way to model human response in vitro.', 'Medium',
+    'Small', 
+    0, '2000 Lakeshore Dr', 
+    'New Orleans', 'CA', 
+    '70148', 
+    'United States', 
+    'America/Chicago', 
+    '2020-07-16', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173283642, 'Frank Gerber', 'frank@blueshiftpartners.com', 'None', 
+    'blueshiftpartners.com', 'blueshiftpartners.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173315013, 'Richard Ferrari', 'rich@denovovc.com', '6503291999.0', 
+    'denovovc.com', 'denovovc.com', 
+    'https://www.linkedin.com/company/63200', 
+    'Finance and Legal', 'De Novo Ventures LLC operates as a venture capital firm. The Company focuses on all stages of enterprise development and growth. De Novo primarily targets healthcare companies with a focus on medical device and biotechnology companies in the United States.', 'Large',
+    'Small', 
+    0, '2180 Sand Hill Rd', 
+    'Menlo Park', 'HI', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173283527, 'Brian Bordley', 'brian@skydeck.vc', 'None', 
+    'Berkeley SkyDeck Fund', 'skydeck.vc', 
+    'None', 
+    'Education', 'Berkeley SkyDeck Fund is a partnership between the Haas School of Business, the College of Engineering, and the Office of the Vice Chancellor for Research. They provide support and resources to the next generation of global entrepreneurs from Berkeley ...', 'Medium',
+    'Micro', 
+    0, '2150 Shattuck Avenue', 
+    'Rome', 'None', 
+    '94704', 
+    'Italy', 
+    'Europe/Rome', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173344561, 'Bob Kavner', 'bob@idealab.com', '15085289260.0', 
+    'Idealab', 'idealab.com', 
+    'https://www.linkedin.com/company/idealab', 
+    'Other', 'Idealab creates groundbreaking companies whose products and services change the way people think, live, and work. Founded in 1996, Idealab is the longest-running technology incubator. They have created over 150 companies with more than 40 IPOs and acqu...', 'Large',
+    'Medium', 
+    0, '130 West Union Street', 
+    'Pasadena', 'CA', 
+    '91103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173261841, 'Christine Outram', 'christine@everydae.com', 'None', 
+    'Everydae', 'everydae.com', 
+    'https://www.linkedin.com/company/everydae-me', 
+    'Other', 'Ace the SAT exam with prep that feels like a game. Built by Harvard & MIT grads. As seen on the Today Show! Get a top score in as little as 10 minutes per day.', 'Small',
+    'Small', 
+    0, 'None', 
+    'None', 'CA', 
+    '90401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173283405, 'Krishan Arora', 'k@aroraproject.co', 'None', 
+    'Arora Project', 'aroraproject.co', 
+    'https://www.linkedin.com/company/arora-project', 
+    'Finance and Legal', 'Arora Project is a full-service crowdfunding campaign management agency that helps high-growth ventures raise capital. They have raised and invested over $125 million for innovative and disruptive companies through various offerings. With a holistic an...', 'Large',
+    'Small', 
+    0, '1101 Brickell Avenue', 
+    'Miami', 'FL', 
+    '33131', 
+    'United States', 
+    'America/New_York', 
+    '2020-07-15', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173283371, 'Mike Rose', 'mrose@montagecapital.com', '4089737829.0', 
+    'Montage Capital', 'montagecapital.com', 
+    'https://www.linkedin.com/company/montage-capital', 
+    'Finance and Legal', 'Montage Capital is a leading provider of minimally dilutive growth capital to technology and life science companies. Montage’s debt oriented funding solutions allow founders, management teams and early investors to maintain control and ownership of the...', 'Medium',
+    'Micro', 
+    0, '900 East Hamilton Avenue', 
+    'Campbell', 'CA', 
+    '95008', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173344423, 'Arno Hesse ', 'angie@slowmoneynorcal.org', 'None', 
+    'Slow Money Northern California', 'slowmoneynorcal.org', 
+    'https://www.linkedin.com/company/slowmoney-norcal', 
+    'Non-Profit', 'Slow Money Northern California is a network of investors and entrepreneurs who seek to seed, nurture, and grow a local economy based on principles of collaborative knowledge sharing, mutually reinforcing relationships, community participation, fairness...', 'Large',
+    'Small', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-07-15', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4173198697, 'Homayoun Talieh', 'htalieh@memoria-inc.com', 'None', 
+    'Memoria-Inc.com', 'memoria-inc.com', 
+    'https://www.linkedin.com/company/memoria-inc', 
+    'Technology', 'Memoria is a cloud-based platform that provides unified communication services, including easy scheduling and automatic transcripts after every call.', 'Large',
+    'Small', 
+    0, 'None', 
+    'Redwood City', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171477789, 'Megan Macdonald', 'megan@sasadesignsbythedeaf.com', 'None', 
+    'Sasa Designs by the Deaf', 'sasadesignsbythedeaf.com', 
+    'https://www.linkedin.com/company/sasa-designs-by-the-deaf', 
+    'Consumer Goods and Retail', 'Sasa Designs by the Deaf is a wholesale and retail jewelry line that provides employment and fair wages to deaf artisans in Kenya. The company aims to empower deaf artisans by giving them the opportunity to learn new skills, discover their potential, a...', 'Large',
+    'Small', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171452484, 'Randy Whiting', 'rwhiting@cephasonics.com', '14087722428.0', 
+    'Cephasonic Ultrasound Solutions', 'cephasonics.com', 
+    'https://www.linkedin.com/company/cephasonics', 
+    'Healthcare', 'Cephasonics is a developer of embedded ultrasound technologies for applications in the medical, industrial, and imaging sectors. They provide ultrasound OEM platforms that use data and AI to enable researchers and medical entrepreneurs to create innova...', 'Large',
+    'Small', 
+    0, '160 Saratoga', 
+    'Santa Clara', 'CA', 
+    '95051', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171512256, 'Ali Abrahim', 'ali@laptoprestoration.com', '4159978318.0', 
+    'Laptop Restoration', 'laptoprestoration.com', 
+    'https://www.linkedin.com/company/laptop-restoration', 
+    'Technology', 'Laptop Restoration is a home-based PC repair business that specializes in laptop repair and parts refurbishing. They offer flat rate prices for all services performed onsite, including desktop/laptop tuneup, part repair and replacement, software instal...', 'Medium',
+    'Micro', 
+    0, '3137 Seacrest Avenue', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171542431, 'Charlie Sanchez', 'charlie@zocalotamales.com', 'None', 
+    'zocalotamales.com', 'zocalotamales.com', 
+    'None', 
+    'Other', 'For your delight, our cuisine is crafted with love.  Currently, we are offering traditional masa flavors.  Full vegetarian options slated for release soon.  Traditional flavors influenced by: the State of Veracruz, the “Distrito Federal” (D.F. – the heart of Mexico) & the State of Michoacán.  California Green Mole and Central Coast Tamale were specially designed to meet the needs of you the Central Coast clients.  (No cumin spice used – ever).  Tamales are hand-made and individually wrapped in traditional corn husks and flavors are infused together via steam – in our County of Santa Cruz commercial approved kitchen.  Our mole and sauce/chile fillings are “light and/or mild spicy”.  New gourmet and additional traditional flavors introduced in the near future – depending on seasonal availability and popularity.  Enjoy!', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-07-15', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171549057, 'Laxmish Bhat', 'laxmish@izen.ai', 'None', 
+    'iZen ai, Inc.', 'izen.ai', 
+    'https://www.linkedin.com/company/izen-ai-inc', 
+    'Education', 'iZen.ai is a Talent Empowerment platform company, offering end to end solutions for skill development and employability, leveraging the power of AI, ML, etc. Partnering Educators, Businesses and Governments to build Industry relevant certification prog...', 'Small',
+    'Micro', 
+    0, '4556 Fernandez St.', 
+    'Union City', 'CA', 
+    '94587', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171477788, 'Ariel Weindling', 'ariel@not-me.com', '18336686300.0', 
+    '#NotMe', 'not-me.com', 
+    'https://www.linkedin.com/company/notmesolutions', 
+    'Technology', 'NotMe Solutions is a company that provides a 100% anonymous reporting platform for workplace misconduct. They offer a case management tool and lawsuit prevention services. Their goal is to empower whistleblowers and address issues of sexual harassment,...', 'Large',
+    'Small', 
+    0, '11601 Wilshire Blvd.', 
+    'Los Angeles', 'CA', 
+    '90025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171512253, 'Jan Thoren', 'enoneves@gmail.com', '4157865042.0', 
+    'Nanoarchitech, Inc.', 'nanoarchitech.com', 
+    'None', 
+    'Industrial and Manufacturing', 'NanoArchitech is a company that specializes in advanced NanoCeramics Nanocomposite matrix for 3D Printing Buildings. They offer a phosphate bonded nano ceramic matrix for structures or as coating, which is a super material for disaster resiliency or re...', 'Small',
+    'None', 
+    0, '1416 Ousley Drive', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'None', 
+    'None', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171542430, 'Ken Winters', 'ken@jobescrow.com', '8316007685.0', 
+    'JobEscrow', 'jobescrow.com', 
+    'https://www.linkedin.com/company/jobescrow', 
+    'Other', 'JobEscrow is a licensed, insured, and bonded internet escrow agency offering pay for performance outplacement. They provide a platform where companies laying off employees can put rewards in escrow for whoever helps or hires their former employees. Job...', 'Large',
+    'Small', 
+    0, '5400 Scotts Valley Drive', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-11', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171549056, 'Jeremiah Astorga', 'jeremiah@globalfruition.com', 'None', 
+    'Globalfruition', 'globalfruition.com', 
+    'None', 
+    'Other', 'Global Fruition Inc. The Direct link from the grower to you', 'Large',
+    'Micro', 
+    0, '2224 N KENT CT', 
+    'VISALIA', 'CA', 
+    '93291', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171477786, 'David Silverglate', 'david@thoughtfulltoys.com', '8312521200.0', 
+    'ThoughtFull Toys', 'thoughtfulltoys.com', 
+    'https://www.linkedin.com/company/thoughtfull-toys-inc-', 
+    'Consumer Goods and Retail', 'ThoughtFull Toys is a company that creates beautiful, functional, and durable toys for children. Our toys are designed to encourage kids to explore and engage in open-ended play. Unlike many throw-away toys in the market, our toys have strong play valu...', 'Medium',
+    'Micro', 
+    0, '303 Potrero Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171462871, 'Elena Falkovskaia', 'efalkov@yahoo.com', '4087132962.0', 
+    'Bliss Impact', 'blissimpact.com', 
+    'https://www.linkedin.com/company/bliss-impact-inc.', 
+    'Education', 'Bliss Impact is a company that provides project and program management services in information technology, funded projects & programs, and media, marketing & communications. They specialize in system analysis, product evaluation, service process develo...', 'Medium',
+    'Micro', 
+    0, 'FROM THE', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171512252, 'Valerie Gaino', 'buenaondaimports@gmail.com', 'None', 
+    'buenaondaimports.com', 'buenaondaimports.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171542429, 'Wilma Mangan', 'w.mangan@peek-technologies.com', 'None', 
+    'Peek Technologies Corp.', 'peek-technologies.com', 
+    'https://www.linkedin.com/company/peek-technologies-inc', 
+    'Other', 'Peek Technologies is a company that creates innovative diagnostic testing instruments for beer and wine producers. They have developed the Peek System, a fast, affordable, and accurate chemical testing solution for alcoholic beverage makers. The system...', 'Medium',
+    'Micro', 
+    0, '3329 Kifer Road', 
+    'Santa Clara', 'CA', 
+    '95051', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171462870, 'Leo Nguyen', 'leo.nguyen@jvemicrons.com', 'None', 
+    'Five Microns', 'fivemicrons.com', 
+    'https://www.linkedin.com/company/five-microns', 
+    'Healthcare', 'Five Microns is a biotechnology company that provides a non-invasive hand tremor reduction device called Tremelo. The device is designed to help individuals with Essential Tremor and Parkinson's disease enjoy life, independence, and daily activities. I...', 'Medium',
+    'Micro', 
+    0, '7621 N. Del Mar Ave.', 
+    'Fresno', 'CA', 
+    '93711', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171462544, 'Sambhab Thapaliya ', 'david.thomas@asmi.co', '6508043436.0', 
+    'ASMI', 'asmi.co', 
+    'https://www.linkedin.com/company/asmicorp', 
+    'Technology', 'ASMI is a company that specializes in dynamic product placement and automated shoppable video content. They provide software development for video monetization and short video advertising.', 'Large',
+    'Small', 
+    0, '1000 El Camino Real', 
+    'Atherton', 'CA', 
+    '94027', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4171536783, 'Alexandra Luning', 'alex@fawnandlamb.com', '8312750275.0', 
+    'Fawn & Lamb Infant Care and Consulting', 'fawnandlamb.com', 
+    'None', 
+    'Other', 'Fawn & Lamb provides families with personalized newborn support and education. Clients seeking overnight newborn care, car seat installation, breastfeeding support, or any of our many offerings will benefit from our relevant, evidence-based ap...', 'Small',
+    'None', 
+    0, '111 Shubrick Rd', 
+    'Monterey', 'CA', 
+    '93940', 
+    'None', 
+    'None', 
+    '2020-07-15', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4170647193, 'Rob Stump', 'rastump@verizon.net', '4087022545.0', 
+    'ANI PSG', 'ani-psg.com', 
+    'https://www.linkedin.com/company/ani-psg', 
+    'Education', 'Learning solutions company with 20+ years of experience partnering with companies like Cisco and Apple. ANI is a single source learning solutions provider with over 20 years of experience building training programs and learning teams. ANI equips compan...', 'Large',
+    'Small', 
+    0, '530 Lakeside Drive', 
+    'Sunnyvale', 'CA', 
+    '94085', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4167335701, 'Peter Schubart', 'schubart@ix.netcom.com', '14258239420.0', 
+    'NetCom Inc.', 'ix.netcom.com', 
+    'https://www.linkedin.com/company/net.com-sistemas', 
+    'Technology', 'NETCOM On-Line Communication Services, Inc. is a subsidiary of ICG Communications, Inc. (Nasdaq: ICGX - news), a leading integrated communications provider (ICP) offering high-quality telecommunications services. Headquartered in Englewood, Colorado, ICG has extensive switched fiber-optic networks and offers local, long distance and enhanced telephony and data services, and provides Internet communication solutions, connectivity and web site hosting to individuals and to small and medium-sized businesses.', 'Large',
+    'Small', 
+    0, '1113 FIRST STREET', 
+    'NEPTUNE BEACH', 'FL', 
+    '32266', 
+    'Brazil', 
+    'America/New_York', 
+    '2020-07-14', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4167085025, 'Michael Read', 'michael.read@skybase.aero', 'None', 
+    'Skybase', 'skybase.aero', 
+    'https://www.linkedin.com/company/skybase', 
+    'Other', 'Skybase is an aviation technology company that specializes in developing technology upgrade solutions for existing airplanes. Their product, SOFI, is an AI system designed to keep pilots safely on the ground, enabling new roles for aircraft and unlocki...', 'Large',
+    'Micro', 
+    0, '293 Durham Street North', 
+    'Christchurch', 'CA', 
+    '8013', 
+    'United States', 
+    'Pacific/Auckland', 
+    '2020-07-14', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4162289176, 'Gerry Baranano', 'gbaranano@techfuturesgroup.org', '14087257133.0', 
+    'Tech Futures Group', 'techfuturesgroup.org', 
+    'https://www.linkedin.com/company/tech-futures-group', 
+    'Education', 'Tech Futures Group is a venture platform that provides Northern California tech startups with the resources and strategy to move faster and build bigger. They offer 100% free business advising to startups and entrepreneurs, focusing on assisting with t...', 'Medium',
+    'Micro', 
+    0, '2120 University Avenue', 
+    'Berkeley', 'CA', 
+    '94704', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4162299697, 'Bobbi Burns', 'bobbi@centralcoastangels.com', 'None', 
+    'Central Coast Angels', 'centralcoastangels.com', 
+    'None', 
+    'Other', 'Central Coast Angels is a venture capital firm that invests in early-stage technology companies. They provide funding, mentorship, and strategic guidance to help these companies grow and succeed. With a focus on the Central Coast region of California, ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-05', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4162299696, 'Jim Dunning ', 'jmahan@calpoly.edu', '18057561111.0', 
+    'Cal Poly', 'calpoly.edu', 
+    'https://www.linkedin.com/company/cal-poly-associated-students-inc', 
+    'Education', 'Cal Poly is a California public university that offers more than 150 undergraduate programs. It is one of five comprehensive polytechnic universities in the U.S. Cal Poly follows the philosophy of 'Learn by Doing' and provides a comprehensive curriculu...', 'Large',
+    'Enterprise', 
+    0, '1 Grand Avenue', 
+    'San Luis Obispo', 'CA', 
+    '93405', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    1901
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4162299695, 'Janneke Lang', 'janneke@theinspiringenterprise.com', 'None', 
+    'The Inspiring Enterprise', 'theinspiringenterprise.com', 
+    'https://www.linkedin.com/company/the-inspiring-enterprise', 
+    'Other', 'The Inspiring Enterprise is a community of entrepreneurs in Santa Cruz, committed to solving social and environmental problems by creating successful social enterprises. They bring together the Santa Cruz business community, tech industry, city governm...', 'Small',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4161239797, 'Karen Mitchell ', 'ozkaya@cpp.edu', '19098694549.0', 
+    'Cal Poly Pomona', 'cpp.edu', 
+    'https://www.linkedin.com/company/cppcba', 
+    'Other', 'Cal Poly Pomona is a leading polytechnic university that offers experiential learning, discovery, and innovation. They provide a comprehensive range of academic programs in various fields such as business administration, MBA, accounting, cybersecurity,...', 'Small',
+    'Large', 
+    0, '3801 West Temple Avenue', 
+    'Pomona', 'CA', 
+    '91768', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    1968
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4161236771, 'Tara Ryan', 'tara.ryan@coupa.com', '16509313200.0', 
+    'Coupa', 'coupa.com', 
+    'https://www.linkedin.com/company/coupa-software', 
+    'Technology', 'Coupa Software is a leading provider of cloud-based applications for finance. They help companies optimize spend and boost profits with their simple and intuitive platform. Their suite of cloud applications includes procurement, expense management, and...', 'Large',
+    'Enterprise', 
+    0, '1855 South Grant Street', 
+    'San Mateo', 'CA', 
+    '94402', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141729428, 'Stephen Schwirzke', 'stephan@holonstudios.com', 'None', 
+    'Holon Studios Inc.', 'holonstudios.com', 
+    'https://www.linkedin.com/company/holon-studios-inc', 
+    'Other', 'At Holon Studios our goal is to deliver best in class gaming experiences on mobile and AR/VR platforms. As social casino, Virtual Reality, Augmented Reality and mobile gaming become more pervasive in the lives of people around the world, we are excited...', 'Medium',
+    'Micro', 
+    0, '1595 Josselyn Canyon Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-09', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141766562, 'Fernando Romano', 'fromano@arkusnexus.com', '6196234465.0', 
+    'ArkusNexus', 'arkusnexus.com', 
+    'https://www.linkedin.com/company/arkus-services', 
+    'Technology', 'ArkusNexus is a software development company that provides high-level solutions to increase company revenue. They work with the best selected developers from Mexico and Latin America and have been in the industry for over 14 years. They specialize in c...', 'Large',
+    'Large', 
+    0, '3065 Beyer Boulevard', 
+    'San Diego', 'CA', 
+    '92154', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-09', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141745215, 'Dutch Meyer ', 'counsel@monterey.attorney', 'None', 
+    'Monterey Attorney', 'monterey.attorney', 
+    'None', 
+    'Finance and Legal', 'Monterey Peninsula Law Inc is a law firm that provides a range of legal services. Our attorneys are knowledgeable, expedient, and meticulous about details. We specialize in Criminal Law, Business Law, Commercial Bankruptcies, Family Law, and Civil Liti...', 'Small',
+    'None', 
+    0, '31 Upper Ragsdale, Ste 3', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141729427, 'Trevor Schapiro', 'trevorschapiro92@gmail.com', '15037686237.0', 
+    'Lewis & Clark College', 'lclark.edu', 
+    'https://www.linkedin.com/school/lewisandclarklawschool', 
+    'Education', 'Lewis & Clark College is a nationally known institution located in Portland, Oregon. They offer a liberal arts education that prepares students for local and global engagement. The college emphasizes the core values of the liberal arts, which align wit...', 'Large',
+    'Large', 
+    0, '0615 Southwest Palatine Hill Road', 
+    'Portland', 'OR', 
+    '97219', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1884
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141766561, 'Abisha Mascorro', 'tuk81739@temple.edu', '12152047000.0', 
+    'Temple University', 'temple.edu', 
+    'https://www.linkedin.com/school/templeuniversity', 
+    'Education', 'Temple University is a top-tier research institution and Philadelphia's only public university. With a diverse student body and a commitment to accessible education, Temple provides world-class academics and experiences that prepare students for their ...', 'Large',
+    'Corporate', 
+    0, '1801 Liacouras Walk', 
+    'Philadelphia', 'PA', 
+    '19122', 
+    'United States', 
+    'America/New_York', 
+    '2020-07-09', 
+    1884
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141745213, 'Charles Douglas', 'charles.douglas@alumni.cgu.edu', '15593253600.0', 
+    'California Health Sciences University', 'chsu.edu', 
+    'https://www.linkedin.com/school/california-health-sciences-university', 
+    'Education', 'California Health Sciences University (CHSU) is a university committed to improving healthcare by educating future doctors and healthcare professionals in the Central Valley. CHSU offers doctoral programs in pharmacy and osteopathic medicine to address...', 'Large',
+    'Medium', 
+    0, '120 Clovis Avenue', 
+    'Clovis', 'CA', 
+    '93612', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-09', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4141398862, 'Anne Banta', 'anne@banta.org', 'None', 
+    'banta.org', 'banta.org', 
+    'https://www.linkedin.com/company/1596957', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-07-09', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4082935454, 'Camila Vega', 'camila@centrocommunity.org', '16504164578.0', 
+    'Centro Community Partners', 'centrocommunity.org', 
+    'https://www.linkedin.com/company/centro-community-partners', 
+    'Other', 'Centro Community Partners is an Oakland-based non-profit organization that provides entrepreneurship and financial literacy training programs, access to microloans, and one-on-one business advisory services to low to moderate-income entrepreneurs. Thei...', 'Large',
+    'Small', 
+    0, '825 Washington Street', 
+    'Oakland', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-06-29', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3966844521, 'Pamela Burns', 'pamela@wildplumcafe.com', '18316463109.0', 
+    'Takeout', 'wildplumcafe.com', 
+    'None', 
+    'Other', 'The Wild Plum Cafe is committed to providing fresh, organic and sustainable American bistro fare.', 'Small',
+    'None', 
+    0, '731 Munras Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-04-19', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3874326217, 'Antonio Valenzuela', 'avalenzuela.hotbox@gmail.com', 'None', 
+    'htbx.io', 'htbx.io', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3873513876, 'Melanie Garrett', 'melaniefae@theravensmouth.com', 'None', 
+    'The Raven's Mouth,', 'theravensmouth.com', 
+    'None', 
+    'Education', 'The Ravens Mouth is dedicated to helping small businesses thrive in rural communities. Learn more.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2019-02-19', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3872930696, 'david blume ', 'tharvey@blumedistillation.com', 'None', 
+    'mbrf1.com', 'mbrf1.com', 
+    'None', 
+    'Other', 'BETTER FOR YOU, BETTER FOR THE PLANET! Blume Organics is proud to help lead the way to “best practices” for super-safe home and work hygiene and health care. At Blume Organics, “organic” isn’t a buzzword; it is a guiding principle that supports our way...', 'Small',
+    'None', 
+    0, 'None', 
+    'Freedom', 'CA', 
+    '95019', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-06-08', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3385548018, 'Leila Roberts', 'leila@northcoastsbdc.org', '7074642168.0', 
+    'North Coast SBDC', 'northcoastsbdc.org', 
+    'https://www.linkedin.com/company/northcoastsbdc', 
+    'Education', 'The North Coast Small Business Development Center (NCSBDC) is a nonprofit organization that provides free one-on-one business counseling and low-cost training services to local entrepreneurs in California's Humboldt, Del Norte, and Tribal Lands. NCSBDC...', 'Large',
+    'Small', 
+    0, '520 E Street', 
+    'Eureka', 'CA', 
+    '95501', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-04-17', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3318726985, 'Lee Schulz', 'lschulz@iastate.edu', '5152944111.0', 
+    'Iowa State University', 'iastate.edu', 
+    'https://www.linkedin.com/school/iowastateu', 
+    'Education', 'Iowa State University is an international, prestigious university with a friendly welcoming personality. Students choose from 100 majors, study with world class scholars and hone their leadership skills in more than 800 student organizations. Iowa Stat...', 'Large',
+    'Enterprise', 
+    0, '100 Center Ave #of', 
+    'Ames', 'IA', 
+    '50011', 
+    'United States', 
+    'America/Chicago', 
+    '2020-04-04', 
+    1858
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3309424389, 'Tinh Nguyen', 'tam.nguyen@sprint.com', '19137941091.0', 
+    'Sprint', 'sprint.com', 
+    'https://www.linkedin.com/company/sprint', 
+    'Technology', 'Sprint is a telecommunications company that offers wireless and wireline communications services for consumers, businesses, and government users.', 'Large',
+    'Enterprise', 
+    1, '6200 Sprint Parkway', 
+    'Overland Park', 'CA', 
+    '66211', 
+    'United States', 
+    'America/Chicago', 
+    '2020-04-02', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667488, 'Patrick Launspach', 'patrick@thenextmarketplace.com', 'None', 
+    'TheNextMarketplace', 'thenextmarketplace.com', 
+    'https://www.linkedin.com/company/nextmarketplace', 
+    'Other', 'TheNextMarketplace's integrated online marketing services help small to medium size businesses attract leads and convert them into customers. \r\n\r\nOur Beliefs\r\n\r\nStop shouting, get found. If you offer a unique product or service that brings value to your customers there is already an audience actively seeking out your product or service. Inbound marketing focuses on using online tools to position your brand in front of this community.\r\n\r\nImpact and leverage. Its tough being a small fish in a big pond, but focusing your resources where they have the greatest impact and leverage helps level the playing field. We tailor our services to match your brand's unique personality and strengths, giving you the greatest return on investment– including your money, time, and energy.\r\n\r\nWe hand you the keys. We give you as much control over your marketing programs as you choose. All of our services are designed to allow us to do everything for you, to work with you, or let you to take over and do it all yourself. Its your business, we have no interest in holding it hostage.', 'Medium',
+    'Micro', 
+    0, 'SOUTH BAY AREA /', 
+    'San Jose', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667485, 'Eric Shank', 'eric@ericshank.com', '15094932699.0', 
+    'Eric Shank', 'ericshank.com', 
+    'None', 
+    'Other', 'Eric Shank is a company that specializes in providing home improvement services. They offer a wide range of services including remodeling, renovation, and repair work for both residential and commercial properties. With a team of experienced profession...', 'Medium',
+    'Micro', 
+    0, 'PO BOX 923', 
+    'White Salmon', 'WA', 
+    '98672', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667483, 'Christie Cromeenes', 'christie@ccbabuilds.com', '18317581624.0', 
+    'Central Coast Builders Association', 'ccbabuilds.com', 
+    'https://www.linkedin.com/company/central-coast-builders-association', 
+    'Industrial and Manufacturing', 'Promoting local businesses while working to improve the industry. The CCBA has teamed up with other Builders Exchanges, Insurance Companies, Medical Providers, and many more to bring you the most comprehensive services ever. Our partnerships will help ...', 'Medium',
+    'Micro', 
+    0, '242 East Romie Lane', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1952
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672583, 'Terrence Gargiulo', 'terrence@makingstories.net', '14159488087.0', 
+    'Terrence Gargiulo', 'makingstories.net', 
+    'None', 
+    'Other', 'Terrence Gargiulo, the founder of makingstories.net, is passionate about inciting insight in others. The company specializes in crafting healing bridges through the power of storytelling. By uncovering the wisdom of storied graces, they help individual...', 'Medium',
+    'None', 
+    0, '19 Caribou Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672581, 'Des Johnston', 'dj@stfeplanning.com', 'None', 
+    'Santa Fe Land Planning', 'stfeplanning.com', 
+    'https://www.linkedin.com/company/1334177', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672580, 'Julio Gil', 'julio@ccsigndesign.com', '18317750700.0', 
+    'Ccsigndesign', 'ccsigndesign.com', 
+    'None', 
+    'Other', 'Custom Sign Shop | Salinas California | Central Coast Sign & Design We offer QUALITY. DESIGN. SERVICE. Logo Design · Custom Graphics · Custom Signs · Window Lettering · Vinyl Graphics · Dimensional Letters · Banners Stay Tuned! At Central Coast Sign & ...', 'Large',
+    'Micro', 
+    0, '1311 Dayton Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672575, 'Jennifer Coile', 'jennifer@acmeplanning.com', 'None', 
+    'acmeplanning.com', 'acmeplanning.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672574, 'Bud Colligan', 'bud@colligans.com', 'None', 
+    'colligans.com', 'colligans.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    'None', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672573, 'Mark Cohan', 'markcohan@kw.com', '15123273070.0', 
+    'Keller Williams Realty Inc', 'kw.com', 
+    'https://www.linkedin.com/company/keller-williams-realty-inc', 
+    'Real Estate and Development', 'Keller Williams Realty, Inc. is the world’s largest real estate franchise by agent count, with approximately 800 offices and more than 150,000 associates across the Americas, Europe, Africa, and Asia. The company has grown exponentially since the openi...', 'Large',
+    'Corporate', 
+    0, '1221 South MoPac Expressway', 
+    'Austin', 'TX', 
+    '78746', 
+    'United States', 
+    'America/Chicago', 
+    '2021-02-23', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731401, 'Ken Rozin', 'ken@shopdineplay.com', 'None', 
+    'ShopDinePlay.com', 'shopdineplay.com', 
+    'https://www.linkedin.com/company/shopdineplay-com', 
+    'Other', 'SHOP DINE PLAY is a premiere entertainment company on the Central Coast. They provide an online directory for retail shops, restaurants, and entertainment venues in Monterey and Santa Cruz Counties. Their platform is designed to give businesses in the ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731400, 'Jim Riedel ', 'kelley.r.buck2.civ@mail.mil', '17035713343.0', 
+    'mail.mil', 'mail.mil', 
+    'https://www.linkedin.com/company/united-states-department-of-defense', 
+    'Other', 'The Department of Defense provides the military forces needed to deter war, and to protect the security of the United States.', 'Large',
+    'Enterprise', 
+    0, '1400 DEFENSE PENTAGON', 
+    'Washington', 'DC', 
+    '20301', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731399, 'Maija West ', 'evelyn@maijawest.com', '18318547546.0', 
+    'Maijawest', 'maijawest.com', 
+    'None', 
+    'Other', 'Matriarch Makeover Guiding women to map their truth, heal their wounds, own their lineages, and forge new paths to radically generative futures. Through online journeys and in person retreats, we invite women to choose a new form of self leadership tha...', 'Medium',
+    'Micro', 
+    0, '883 ABREGO ST', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731398, 'Blanca M Rivera', 'brivera.cyuk5@primerica.com', '17703811000.0', 
+    'Primerica', 'primerica.com', 
+    'https://www.linkedin.com/company/primerica', 
+    'Finance and Legal', 'Primerica is a leading financial services company in North America, with a mission to help families earn more income and become properly protected, debt-free, and financially independent. They offer a range of products and services, including term life...', 'Large',
+    'Enterprise', 
+    1, '1 Primerica Pkwy', 
+    'Duluth', 'GA', 
+    '30099', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731395, 'Randy Starbuck', 'randy@a2bconsultinggroup.com', 'None', 
+    'A2B Consulting Group', 'a2bconsultinggroup.com', 
+    'None', 
+    'Education', 'A2B Consulting Group is a consulting firm that specializes in problem-solving and providing fresh perspectives to clients. They help clients navigate challenges and find solutions to get from Point A to Point B, regardless of the issue. They work with ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731394, 'Will Elkadi', 'will@elabcommunications.com', '18313757600.0', 
+    'eLab Communications', 'elabcommunications.com', 
+    'https://www.linkedin.com/company/elab-communications', 
+    'Education', 'eLab Communications is an award-winning advertising, marketing, and public relations agency based in Monterey, California. They offer a full range of services including branding, web design, photography, content marketing, video production, and more. T...', 'Large',
+    'Micro', 
+    0, '829 Foam Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731393, 'Lucas Young', 'luke@mylocalthrive.com', '9519075262.0', 
+    'The Local Thrive', 'mylocalthrive.com', 
+    'None', 
+    'Other', 'My Local Thrive is a perks club and connected membership that brings community and promotions together within Monterey. It offers a single app that provides access to perks from a curated group of local businesses. The app also features hidden menu ite...', 'Small',
+    'None', 
+    0, '124 Cypress Grove Ct', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221920, 'Felix', 'felix@myhelpster.com', 'None', 
+    'MyHelpster', 'myhelpster.com', 
+    'https://www.linkedin.com/company/myhelpster-ltd-', 
+    'Technology', 'Getting help with tech has never been easier. With the press of a button, MyHelpstser instantly connects people to friendly and trusted Helpsters who provide expert help with technology, making the lives of freelancers, entrepreneurs and those who work...', 'Medium',
+    'Micro', 
+    0, '78 Grafton Street', 
+    'Manchester', 'None', 
+    'M13 9LR', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221919, 'Linda Baxter ', 'imross@elissarglobal.com', '8313838136.0', 
+    'Elissar Global', 'elissarglobal.com', 
+    'https://www.linkedin.com/company/elissar-global', 
+    'Technology', 'Elissar Global is a California-based company that offers industry-leading optimal control software to diverse customers worldwide. They specialize in revolutionizing guidance navigation and control in space, allowing customers to exceed system performa...', 'Medium',
+    'Micro', 
+    0, '225 Crossroads Boulevard', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221917, 'Sol Gonzalvo', 'sgon@epmeds.com', '8314447271.0', 
+    'ehomeds.com', 'ehomeds.com', 
+    'None', 
+    'Other', 'nan', 'Large',
+    'Micro', 
+    0, '1046 MELVILLE ST', 
+    'SALINAS', 'CA', 
+    '93906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221916, 'Gary Vincent ', 'calmaraz@johnmuircs.com', '15302724008.0', 
+    'John Muir Charter School', 'johnmuircs.com', 
+    'https://www.linkedin.com/school/john-muir-charter-schools', 
+    'Education', 'John Muir Charter Schools is a company that provides young people with the opportunity to earn a high school diploma while working with various training and employment sites around the state. They offer individualized education that integrates with the...', 'Large',
+    'Medium', 
+    0, '117 New Mohawk Rd', 
+    'Nevada City', 'CA', 
+    '95959', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-01-27', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667479, 'Matt Coombs', 'matt@elumenconnect.com', '16122454773.0', 
+    'Elumen', 'elumenconnect.com', 
+    'https://www.linkedin.com/company/elumenconnect', 
+    'Education', 'eLumen is an integrated software solutions company that provides tools for outcomes assessment, curriculum mapping, and program review in higher education. Their platform offers powerful tools for colleges and universities to design and evolve their as...', 'Large',
+    'Small', 
+    0, '514 N 3RD ST', 
+    'Minneapolis', 'MN', 
+    '55413', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667478, 'Jennifer Metcalf', 'jennifer.metcalf@rbc.com', '14169743940.0', 
+    'RBC InvestEase Inc', 'rbc.com', 
+    'https://www.linkedin.com/company/rbc', 
+    'Other', 'Royal Bank of Canada (RBC) is a global financial institution that provides a wide range of products and services. With a focus on innovation and exceptional client experiences, RBC serves personal, business, public sector, and institutional clients in ...', 'Large',
+    'Corporate', 
+    1, '3010 N Center St #2100', 
+    'Montreal', 'CA', 
+    '55402', 
+    'United States', 
+    'America/Montreal', 
+    '2020-03-30', 
+    1864
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605165, 'Elizabeth Beebe', 'e@traversegroup.co', 'None', 
+    'traversegroup.co', 'traversegroup.co', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1864
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605162, 'R Patrick Mathews', 'patrickm@svswa.org', '18314245520.0', 
+    'Svswa', 'svswa.org', 
+    'None', 
+    'Other', 'The Salinas Valley Solid Waste Authority (SVSWA) is a joint powers agency responsible for providing secure long term solid waste disposal and resource recovery service to its members. It is made up of local governments including Monterey County and the...', 'Medium',
+    'Micro', 
+    0, '126 Sun Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605161, 'Ton van der Velden', 't.vandervelden@enzasalinas.com', 'None', 
+    'Dan.com - a GoDaddy brand', 'enzasalinas.com', 
+    'None', 
+    'Other', 'Introducing a new chapter in domains.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211288, 'Sherri Cofelt', 'sherri@resultspartner.com', 'None', 
+    'Results Partner', 'resultspartner.com', 
+    'https://www.linkedin.com/company/results-partner', 
+    'Education', 'Results Partner is a company that provides professional training and coaching services in the areas of marketing, digital marketing, entrepreneurship, business start-up, business planning, virtual business, laptop lifestyle, lead generation, business s...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211287, 'Brad Sharek', 'brad@sharek.com', '13126550826.0', 
+    'Strategos', 'sharek.com', 
+    'None', 
+    'Other', 'Sharek is a technology company that provides a platform for sharing and renting various items. From tools and equipment to household items and electronics, Sharek allows users to easily lend and borrow items within their community. With a user-friendly...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'NJ', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211286, 'Carl Drummond', 'carl@carldrummond.com', 'None', 
+    'carldrummond.com', 'carldrummond.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211285, 'Mark Watson', 'mark.watson@innsbythesea.com', '8316240101.0', 
+    'INNS By The Sea', 'innsbythesea.com', 
+    'https://www.linkedin.com/company/inns-by-thesea', 
+    'Hospitality and Travel', 'Half Moon Bay -Cypress Inn on Miramar Beach Santa Cruz -The Babbling Brook Inn Capitola -Inn at Depot Hill Carmel-by-the-Sea -Candle Light Inn -Carriage House Inn -Svendsgaard's Inn -Wayside Inn', 'Large',
+    'Medium', 
+    0, 'PO BOX 101', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667469, 'Meghnad Joshi', 'cmd@stemplusbiotech.com', 'None', 
+    'stemplusbiotech.com', 'stemplusbiotech.com', 
+    'None', 
+    'Healthcare', 'StemPlus Biotech is a DCGI approved cord blood bank that offers cryopreservation services for cord blood, cord tissue, placenta, menstrual blood stem cells, urine derived stem cells, and dental stem cells. They also provide treatment to patients using ...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667468, 'Farshad Taheri', 'f.taheri@batislife.com', '18442698047.0', 
+    'Batis Smart', 'batislife.com', 
+    'https://www.linkedin.com/company/batis-smart', 
+    'Technology', 'BATIS SMART is a smart home company with a passion for innovation and smart living. We have over 14 years of experience in the hardware industry and our mission is to make sure your home is working for you. We create revolutionary, next generation tech...', 'Medium',
+    'Micro', 
+    0, '635 Bryant Street', 
+    'Palo Alto', 'CA', 
+    '94301', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667467, 'Tao Tien', 'me@taotien.com', 'None', 
+    'Tao Tien', 'taotien.com', 
+    'None', 
+    'Other', 'Tao Tien is a technology company that specializes in providing innovative solutions for businesses. They offer a wide range of products and services, including software development, web design, mobile app development, and digital marketing. With a team...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    '37640-000', 
+    'United States', 
+    'America/Sao_Paulo', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667464, 'Alan Smith', 'asmith@legalshieldassociate.com', '9529940849.0', 
+    'LegalSheild', 'legalshieldassociate.com', 
+    'https://www.linkedin.com/company/legalsheild', 
+    'Education', 'LegalShield provides affordable access to legal services for individuals, families, and small businesses. With a network of experienced attorneys, LegalShield offers a wide range of legal services, including document review, contract consultation, and ...', 'Large',
+    'Medium', 
+    0, '5924 HOLIDAY RD', 
+    'New York', 'NY', 
+    '55345', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667463, 'Eric Villneuve', 'eric@social-appetite.com', 'None', 
+    'Social-Appetite.com', 'social-appetite.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667462, 'Marie Christensen', 'mej@ucsd.edu', '8585342230.0', 
+    'University of California, San Diego', 'alumni.ucsd.edu', 
+    'https://www.linkedin.com/company/university-of-california-at-san-diego', 
+    'Education', 'The University of California San Diego School of Medicine is the graduate medical school of the University of California San Diego in La Jolla, California.', 'Large',
+    'Enterprise', 
+    0, '9500 Gilman Drive', 
+    'La Jolla', 'CA', 
+    '92093', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667458, 'Unknown', 'unknown65@invalid.com', '5108419190.0', 
+    'epssac.com', 'epssac.com', 
+    'https://www.linkedin.com/company/economic-&-planning-systems-inc-', 
+    'Education', 'Economic & Planning Systems, Inc. (EPS) is a land economics consulting firm experienced in the full spectrum of services related to real estate development', 'Large',
+    'Small', 
+    0, '1 Kaiser Plaza', 
+    'Oakland', 'CA', 
+    '94612', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667455, 'Juliano Calil ', 'paulosalvatore@virtualplanet.tech', 'None', 
+    'Virtual Planet Technologies', 'virtualplanet.tech', 
+    'https://www.linkedin.com/company/virtual-planet-technologies-llc', 
+    'Technology', 'Virtual Planet Technologies is a creative force dedicated to spreading awareness about climate change through storytelling and technology. They leverage the latest technology and pair it with effective and highly creative storytelling to help communiti...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667452, 'James Sherrett ', 'azamarripa@slack-corp.com', '14156307943.0', 
+    'slack-corp.com', 'slack-corp.com', 
+    'https://www.linkedin.com/company/tiny-spec-inc', 
+    'Technology', 'Slack-Corp.com offers premium quality software solutions, including collaboration tools, data management, and communication services. Their innovative products empower teams to work together with maximum productivity and efficiency. Slack-Corp.com is c...', 'Large',
+    'Enterprise', 
+    0, '500 Howard Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667450, 'Oscar Hernandez ', 'zelia.mares27@gmail.com', '8313598249.0', 
+    'Omni Health Medicine', 'omnihealthmedicine.com', 
+    'https://www.linkedin.com/company/omnihealthmedicine', 
+    'Healthcare', 'Omni Health Medicine is a Chinese Medicine Practitioner and Tuina Massage Therapist. They offer a range of services including acupuncture, herbal medicine, cupping therapy, and nutritional counseling. Their goal is to provide holistic healthcare and pr...', 'Medium',
+    'Micro', 
+    0, '23 E BEACH ST', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667449, 'Robert Siegfried', 'buikema@cawd.org', '18316241248.0', 
+    'Carmel Area Wastewater District', 'cawd.org', 
+    'https://www.linkedin.com/company/carmel-area-waste-water-dst', 
+    'Other', 'Carmel Area Wastewater District (CAWD) is a special district that provides wastewater services to the Carmel area. They are responsible for treating and managing wastewater in the district. In addition to wastewater treatment, CAWD is also working on p...', 'Large',
+    'Small', 
+    0, '3945 Rio Road', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667448, 'David Lopez', 'david.lopez@latinotaxpro.org', '8669362587.0', 
+    'Latino Tax Professionals Association', 'latinotaxpro.org', 
+    'https://www.linkedin.com/company/latino-tax-professionals-association', 
+    'Education', 'Lo Que Hacemos en español mas abajo) The Latino Tax Professionals Association (LTPA) is a professional association dedicated to excellence in the field of tax preparation and related services. LTPA was formed to serve Latino Professionals who work in...', 'Medium',
+    'Micro', 
+    0, '1588 Moffett Street', 
+    'Salinas', 'CA', 
+    '93905', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667447, 'Tony Walker', 'tony@comforcare.com', '5202974333.0', 
+    'ComForCare', 'comforcare.com', 
+    'https://www.linkedin.com/company/comforcarehomecare', 
+    'Healthcare', 'ComForCare is a premier provider of in home care with nearly 200 locations in the U.S., Canada and the U.K. We help seniors live independently in their own home and continue to do all the things they love. Our compassionate caregivers can assist with p...', 'Large',
+    'Enterprise', 
+    0, '2520 S Telegraph Rd', 
+    'Bloomfield Hills', 'MI', 
+    '48302', 
+    'United States', 
+    'America/Detroit', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667445, 'Todd Farr ', 'richard.solis@salinasuhsd.org', '18317967037.0', 
+    'Salinas Union High School District', 'salinasuhsd.org', 
+    'https://www.linkedin.com/company/salinas-union-high-school-district', 
+    'Other', 'The Salinas Union High School District serves 16,257 students in grades 7-12 who live in and outside the city of Salinas, California. Originally home to one high school in 1900, it has since grown to five comprehensive high schools, four middle schools...', 'Large',
+    'Enterprise', 
+    0, '431 West Alisal Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1910
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731390, 'Melissa', 'melissa@liljammerz.com', 'None', 
+    'Lil' Jammerz', 'liljammerz.com', 
+    'https://www.linkedin.com/company/lil-jammerz', 
+    'Consumer Goods and Retail', 'Lil' Jammerz is a company that provides Bluetooth musical infant plush toys. The idea for Lil’ Jammerz emerged after the founder, Melissa Croland, learned about the possible health risks associated with SAR radio frequency emissions from mobile phones....', 'Medium',
+    'Micro', 
+    0, '2201 Northwest 30th Place', 
+    'Pompano Beach', 'FL', 
+    '33069', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731388, 'Aga Simpson', 'aga@westcoastagave.com', '8312361850.0', 
+    'West Coast Agave', 'westcoastagave.com', 
+    'None', 
+    'Other', 'West Coast Agave is a Central Coast distributor and broker of artisanal food products created by local makers. They proudly support small family owned businesses that offer unique and delicious food items.', 'Small',
+    'None', 
+    0, 'P.O.Box 1841', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731386, 'Matt Nathanson', 'mattn@coho.org', 'None', 
+    'Coho', 'coho.org', 
+    'https://www.linkedin.com/company/1579937', 
+    'Other', 'nan', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731384, 'Leti Hernandez', 'leticia@landbasedlearning.org', '5307959569.0', 
+    'Center For Land-Based Learning', 'landbasedlearning.org', 
+    'https://www.linkedin.com/company/center-for-land-based-learning', 
+    'Non-Profit', 'Our Mission is to inspire, educate, and cultivate future generations of farmers, agricultural leaders and natural resource stewards.', 'Medium',
+    'Small', 
+    0, '5265 Putah Creek Road', 
+    'Winters', 'CA', 
+    '95694', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731373, 'Richard Stedman', 'rstedman@mbuapcd.org', '8316479411.0', 
+    'Mbuapcd', 'mbuapcd.org', 
+    'https://www.linkedin.com/company/mbuapcd', 
+    'Other', 'Government agency overseeing air quality for Monterey, San Benito, and Santa Cruz Counties. Visit us on the web at www.montereybaycleanair.org', 'Large',
+    'Small', 
+    0, '24580 Silver Cloud Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1968
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731368, 'Paul Temple', 'paul@advancedonion.com', '8312380870.0', 
+    'Advanced Onion', 'advancedonion.com', 
+    'https://www.linkedin.com/company/advanced-onion-inc', 
+    'Technology', 'Advanced Onion, Inc. is a technology services company that specializes in People Analytics, IT Support Services, and Customer Contact Center Operations for the Federal Government. They provide progressive solutions to organizations' mission by deliveri...', 'Large',
+    'Medium', 
+    0, '2460 Garden Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221912, 'Jane Rekedal ', 'violini@razzolink.com', '8317898149.0', 
+    'Razzolink', 'razzolink.com', 
+    'https://www.linkedin.com/company/razzolink-inc', 
+    'Technology', 'Razzolink is an Internet Service Provider in Monterey and Salinas, CA. They offer high-speed Internet solutions for businesses and residents in Monterey County, Santa Cruz County, San Benito County, and Santa Clara County. Their services include custom...', 'Medium',
+    'Micro', 
+    0, '1961 Main Street', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731364, 'Jim Vossen', 'jim@montereytelevision.com', 'None', 
+    'Monterey Television', 'montereytelevision.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '505 Broadway Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731363, 'Tucker Hirsch', 'tucker@thinc.green', '18319013945.0', 
+    'THinc Green', 'thinc.green', 
+    'https://www.linkedin.com/company/thinc-green', 
+    'Other', 'Providing customized science learning - from the classroom to the board room - that inspires conservation and sustainability for the next generation.', 'Medium',
+    'Micro', 
+    0, '1195 8th Street', 
+    'Pacific Grove', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221910, 'Brandon Wiggins', 'brandon@visionplantscaping.com', '8316591800.0', 
+    'Vision Plantscaping', 'visionplantscaping.com', 
+    'https://www.linkedin.com/company/vision-plantscaping', 
+    'Other', 'Vision Plantscaping, Inc. is a company that specializes in providing consumer services related to plantscaping. They offer a wide range of products and services to enhance indoor and outdoor spaces with plants, including design, installation, and maint...', 'Large',
+    'Micro', 
+    0, '4 Buena Vista Del Rio', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731360, 'Tom Padula', 'tpadula@solar-rail.com', '14089648665.0', 
+    'Solar Rail', 'solar-rail.com', 
+    'https://www.linkedin.com/company/solar-rail', 
+    'Other', 'Solar Rail is exploring the future of passenger rail transportation in Santa Cruz county. Starting with the recreational and tourist market, our goal is to create economical, clean, and effective rail based transportation a reality. Truck Transportation', 'Medium',
+    'Micro', 
+    0, '877 Cedar St.', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211284, 'Suraj Patel', 'spatel13@dons.usfca.edu', '4154225555.0', 
+    'University of San Francisco', 'dons.usfca.edu', 
+    'https://www.linkedin.com/company/usfca-nursing', 
+    'Education', 'San Francisco is more than a breathtaking backdrop for the university. It’s an extension of our campus and a reflection of our values.', 'Large',
+    'Enterprise', 
+    0, '2130 Fulton Street', 
+    'San Francisco', 'CA', 
+    '94117', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1855
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731358, 'Alex Akin ', 'jvluong@ucla.edu', 'None', 
+    'Ucla', 'ucla.edu', 
+    'https://www.linkedin.com/company/ucla', 
+    'Education', 'UCLA advances knowledge, addresses pressing societal needs and creates a university enriched by diverse perspectives where all individuals can flourish. For nearly a century, UCLA has been home to dreamers and game changers. People come to these sun dr...', 'Large',
+    'Corporate', 
+    0, '405 Hilgard Avenue', 
+    'Los Angeles', 'CA', 
+    '90024', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221905, 'Mitch Moss', 'mmoss@steinbeckproduce.com', '8317541577.0', 
+    'Nature's Reward', 'steinbeckproduce.com', 
+    'https://www.linkedin.com/company/steinbeck-country-produce-inc-', 
+    'Consumer Goods and Retail', 'Steinbeck Produce now has a blog! Check it out and and share your comments and pictures. http://naturesrewardblog.com/', 'Large',
+    'Small', 
+    0, '9 Harris Place', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1949
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221904, 'Barbara Sprenger', 'barbara@satellitedeskworks.com', '13104524200.0', 
+    'thesatelliteinc.com', 'thesatelliteinc.com', 
+    'None', 
+    'Other', 'A mix of coworking, private offices, workstations, dedicated desks, conference rooms, virtual office plans, print/scan/copy facilities and videoconferencing — available 24/7 to members. Each Satellite Center includes high-speed broadband Internet, ergonomic seating, community events, and free coffee.', 'Large',
+    'Small', 
+    0, '6265 HWY 9', 
+    'Felton', 'CA', 
+    '95018', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221903, 'Vicki Tackett', 'vickit@certifiedfolder.com', '7607275100.0', 
+    'Certified Folder', 'certifiedfolder.com', 
+    'https://www.linkedin.com/company/certified-folder-display-service-inc.', 
+    'Other', 'Certified Folder Display Service, Inc. is North America's largest professional travel brochure distribution and display service. With over 22,000 visitor information display racks on location throughout Western and Central United States and Western Can...', 'Large',
+    'Medium', 
+    0, '1120 Joshua Way', 
+    'Vista', 'CA', 
+    '92081', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1899
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731356, 'Julie King', 'julie@piercekinglaw.com', '18312751002.0', 
+    'Pierce King Law Firm', 'piercekinglaw.com', 
+    'None', 
+    'Finance and Legal', 'Pierce King Law Firm is an estate planning law firm based in California. They specialize in helping families protect themselves from financial burden in the event of death. The firm has been repeatedly voted as the 'Best Attorney in Monterey County' an...', 'Small',
+    'None', 
+    0, '2100 Garden Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1899
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221901, 'Sundar Kamath', 'sundar.kamath@sanmina.com', '14089643500.0', 
+    'Sanmina', 'sanmina.com', 
+    'https://www.linkedin.com/company/sanmina', 
+    'Other', 'Sanmina Corporation is a leading integrated manufacturing solutions provider serving the fastest growing segments of the global Electronics Manufacturing Services (EMS) market. The company designs, manufactures, and repairs complex and innovative produ...', 'Large',
+    'Corporate', 
+    1, '2700 North 1st Street', 
+    'San Jose', 'CA', 
+    '95134', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1980
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731355, 'Lorri Koster', 'lkoster@kostercommunications.com', 'None', 
+    'kostercommunications.com', 'kostercommunications.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1980
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221899, 'Norm Groot', 'norm@montereycfb.com', '8317513100.0', 
+    'Monterey County Farm Bureau', 'montereycfb.com', 
+    'https://www.linkedin.com/company/1412188', 
+    'Other', 'Monterey County Farm Bureau is a private, nonprofit association of farmers and ranchers located in Monterey County, California. Founded in 1917, the Farm Bureau serves as a collective voice for farmers and ranchers and provides information, advocacy, b...', 'Medium',
+    'Micro', 
+    0, '1140 Abbott Street', 
+    'Salinas', 'CA', 
+    '38060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731353, 'Tom Livoti', 'tlivoti@mbita.org', '8313354780.0', 
+    'Monterey Bay International Trade Association', 'mbita.org', 
+    'https://www.linkedin.com/company/monterey-bay-international-trade-association', 
+    'Education', 'The Monterey Bay International Trade Association(MBITA) is a non-profit international trade association dedicated to job creation by providing global trade promotion services, global business networking education in the greater Monterey Bay Region of C...', 'Medium',
+    'Micro', 
+    0, '725 Front Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1987
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731352, 'Nan Mc Cauley ', 'bchamberlain@montereytechnologies.com', '18316480190.0', 
+    'Monterey Technologies', 'montereytechnologies.com', 
+    'https://www.linkedin.com/company/monterey-technologies-inc-', 
+    'Real Estate and Development', 'Monterey Technologies, Inc (MTI) specializes in holistic approaches to human engineering, software development, and systems engineering for complex, mission-critical systems. They provide highly effective solutions for complex, critical missions throug...', 'Large',
+    'Small', 
+    0, '1790 Sun Peak Drive', 
+    'Park City', 'UT', 
+    '84098', 
+    'United States', 
+    'America/Denver', 
+    '2020-03-30', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211280, 'Don Romeka', 'dromeka@extreme-impact.com', '8315215251.0', 
+    'Extreme-Impact', 'extreme-impact.com', 
+    'https://www.linkedin.com/company/extreme-impact-inc-', 
+    'Technology', 'Extreme Impact is a leading provider of software and web solutions for the event and rental industries as well as the automotive repair shop industry. Their products, Intellievent and Master Repair, are software systems designed to help businesses grow...', 'Large',
+    'Small', 
+    0, '560 Fremont Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211279, 'Unknown', 'unknown66@invalid.com', 'None', 
+    'Volcanotel', 'volcanotel.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    'None', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605156, 'George Sidman', 'sidman@sidekarr.com', '18316011776.0', 
+    'sidekarr.com', 'sidekarr.com', 
+    'None', 
+    'Other', 'EXPERTISE FOR BUSINESS FORMATION, OPERATIONS & GROWTH . . . We are a specialized consulting group - working with startups and early stage businesses - helping our clients turn excellent ideas and innovations into successful business ventures. Prepare your company properly to raise capital through AngelList, from private equity investors or VCs. We understand the regulatory and legal issues and know how to position a company to successfully navigate the fund raising process. With many decades of entrepreneurial and operations experience in technology, communications, real estate, sports facility development and other business areas, we are familiar with the range of organizational challenges and financial constraints that young ventures face. We can help you move quickly through these issues and others, preparing your company to operate smoothly and nimbly as it grows.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    '93923', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221896, 'Kyle Bryan', 'thewhiteglovemovers@gmail.com', '8312360336.0', 
+    'White Glove Movers', 'thewhiteglovemovers.com', 
+    'None', 
+    'Other', 'White Glove Movers is a professional moving and storage company that offers local and long distance moving services. They provide a wide range of services including packing supplies, business relocation, industrial moving, and long distance moving. Wit...', 'Small',
+    'None', 
+    0, '1009 Olmsted Ave', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605155, 'Julie Ann Lozano ', 'elsa@centcoastfcu.com', '18313860376.0', 
+    'Central Coast Federal Credit Union', 'centcoastfcu.com', 
+    'https://www.linkedin.com/company/central-coast-federal-credit-union', 
+    'Other', 'Central Coast Federal Credit Union offers personal bank accounts, loans, credit cards and other financial services to residents throughout Monterey County. A great way to fund your home improvement projects, consolidate bills, pay college tuition, and ...', 'Large',
+    'Small', 
+    0, '4242 Gigling Rd', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1961
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605154, 'Peter Kasavan', 'pk@kasavanarch.com', '8314242232.0', 
+    'Kasavan Architects', 'kasavanarch.com', 
+    'https://www.linkedin.com/company/kasavan-architects', 
+    'Real Estate and Development', 'Kasavan Architects is an award-winning architectural firm located in Salinas, California. Established in 1949, we are a highly regarded full-service firm experienced with many project types including educational, governmental, healthcare, and commercia...', 'Large',
+    'Micro', 
+    0, '60 West Market Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1949
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221895, 'Sherri Goodman', 'sherri@goodman-graphics.com', '8314769353.0', 
+    'Goodman Graphics', 'goodman-graphics.com', 
+    'https://www.linkedin.com/company/goodman-graphics', 
+    'Creative and Media', 'Goodman Graphics is a design studio that specializes in providing design and digital services. They offer assistance to creative teams in completing projects, ensuring that both the clients and the team are satisfied with the results. The company takes...', 'Medium',
+    'Micro', 
+    0, '13119 California 9', 
+    'Boulder Creek', 'CA', 
+    '95006', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605153, 'Trishna Saigal', 'trishna@downtocookfoods.com', 'None', 
+    'Down to Cook', 'downtocookfoods.com', 
+    'https://www.linkedin.com/company/down-to-cook', 
+    'Consumer Goods and Retail', 'At Down to Cook, we make it easy to create delicious and nutritionally complete plant-based meals using fresh vegetables. Combine our Adda Veggie Protein Mix with a fresh vegetable of your choice to create a mouthwatering ground meat alternative in minutes.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'El Cerrito', 'CA', 
+    '94530', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211275, 'Sue Murphy', 'murphys@sidwater.org', '7074486847.0', 
+    'Solano Irrigation District', 'sidwater.org', 
+    'https://www.linkedin.com/company/solano-irrigation-district', 
+    'Other', 'Solano Irrigation District (SID) is an independent special district, a local government agency, formed in 1948. The district provides safe and reliable water to farms, families, and businesses in Solano County. SID has entitlements for 141,000 acre fee...', 'Large',
+    'Medium', 
+    0, '810 Vaca Valley Parkway', 
+    'Vacaville', 'CA', 
+    '95688', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1948
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211273, 'Kathi Speller', 'kathi@communityofcaringmp.org', '8316554755.0', 
+    'Community of Caring Monterey Peninsula', 'communityofcaringmp.org', 
+    'https://www.linkedin.com/company/community-of-caring-monterey-peninsula', 
+    'Other', 'communityofcaringmp.org is your first and best source for all of the information you’re looking for. From general topics to more of what you would expect to find here, communityofcaringmp.org has it all. We hope you find what you are searching for!', 'Large',
+    'Small', 
+    0, '600 CAMINO EL ESTERO', 
+    'Monterey', 'CA', 
+    '93942', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211272, 'Daniel Philpott ', 'rosalielaroco@gmail.com', 'None', 
+    'inosot.com', 'inosot.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731351, 'Christine Duncan ', 'jvargas@ywcamc.org', '8314228602.0', 
+    'Ywcamc', 'ywcamc.org', 
+    'https://www.linkedin.com/company/ywca-monterey-county', 
+    'Other', 'YWCA Monterey County is on a mission to eliminate racism and empower women. Get to know us and get involved for a peaceful and just Monterey.', 'Large',
+    'Small', 
+    0, '236 Monterey Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-09-18', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221894, 'Richards', 'mark@smartfaststartup.com', 'None', 
+    'The Smart Fast Startup', 'smartfaststartup.com', 
+    'None', 
+    'Other', 'From product, to market, to team, to selling, to financing, to hiring, and all the details in between, The Smart Fast Startup shares the best practices from successful Silicon Valley startups. The Smart Fast Startup is fully compatible with the Lean St...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731348, 'Cesar Lara', 'labordirector@gmail.com', '8314224626.0', 
+    'Monterey Bay Central Labor Council', 'mbclc.org', 
+    'https://www.linkedin.com/company/monterey-bay-central-labor-council', 
+    'Public and Government Services', 'The Monterey Bay Central Labor Council is the local body of the AFL CIO. We are a membership organization serving as a coalition of the Labor Community in Monterey and Santa Cruz Counties. Over 60 unions are affiliated with the MBCLC, representing more...', 'Medium',
+    'Micro', 
+    0, '931 East Market Street', 
+    'Salinas', 'CA', 
+    '93905', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221891, 'John Laird ', 'bryan.swanson@hollister.ca.gov', '9164452841.0', 
+    'California', 'edd.ca.gov', 
+    'https://www.linkedin.com/company/caltrans', 
+    'Public and Government Services', 'The California Department of Transportation (Caltrans) is a government agency that manages over 50,000 miles of highways and freeways in California. They provide intercity rail services, oversee public use airports, and work on innovative transportatio...', 'Large',
+    'Enterprise', 
+    0, '1325 J St', 
+    'Sacramento', 'CA', 
+    '95814', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-08', 
+    1850
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731347, 'Shawn Vandergriff', 'shawnv@apple.com', '14089961010.0', 
+    'Apple Inc.', 'apple.com', 
+    'https://www.linkedin.com/company/apple', 
+    'Technology', 'Apple is a multinational corporation that designs, manufactures, and markets consumer electronics, personal computers, and software. We’re a diverse collective of thinkers and doers, continually reimagining what’s possible to help us all do what we lov...', 'Large',
+    'Corporate', 
+    1, '1 Apple Park Way', 
+    'Cupertino', 'CA', 
+    '95014', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731345, 'Kendra Rauh', 'ken@tastemonterey.com', '18316465446.0', 
+    'A Taste of Monterey', 'tastemonterey.com', 
+    'https://www.linkedin.com/company/a-taste-of-monterey-wine-market-&-bistro', 
+    'Consumer Goods and Retail', 'A Taste of Monterey is a company that offers a wide selection of wines from over 90 wineries in the Monterey area. They have a visitor center where customers can taste different wines, indulge in gourmet food, and enjoy the beautiful view. With wines f...', 'Large',
+    'Small', 
+    0, '700 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731344, 'Todd Miller', 'tmiller@gwabbit.com', '16508520400.0', 
+    'Gwabbit, Inc', 'gwabbit.com', 
+    'https://www.linkedin.com/company/gwabbit-llc', 
+    'Technology', 'This page is for fans of www.gwabbit.com, the award-winning email contact gwabber for Outlook and BlackBerry! Download gwabbit for BlackBerry Free at http://www.gwabbit.com/gwabbit_free_blackberry.php', 'Medium',
+    'Micro', 
+    0, '89 PO Box', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211269, 'Kathy Kobata', 'kkobata@tostevin.com', '8313727348.0', 
+    'Tostevin Accountancy', 'tostevin.com', 
+    'https://www.linkedin.com/company/tostevin-accountancy-corp', 
+    'Other', 'Tostevin Accountancy Corporation is a local accounting firm that was established in 1944 by Isabel and J.O. Tostevin. We are committed to providing our clients with exceptional service and expertise. Our team of experienced accountants offers a wide ra...', 'Medium',
+    'Micro', 
+    0, '877 Pacific Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605144, 'Barbara Mitchell', 'bmitchell@interiminc.org', '8317543838.0', 
+    'Interim', 'interiminc.org', 
+    'https://www.linkedin.com/company/interim-inc.', 
+    'Healthcare', 'Interim Inc. is a company that provides a unique combination of support services, housing, and treatment for adults with mental illness in Monterey County. They offer mental health treatment, affordable housing, residential treatment, social support, h...', 'Large',
+    'Medium', 
+    0, 'Po Box 3222', 
+    'Monterey', 'CA', 
+    '93942', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211266, 'Ralph Widmar', 'rwidmar@netg2.com', '9257872995.0', 
+    'Network Intelligence', 'netg2.com', 
+    'https://www.linkedin.com/company/network-intelligence-inc-', 
+    'Technology', 'Home Network Intelligence has evolved from providing clients with information and advice to providing fully customized and outsourced operating solutions for their telecommunications business models. Advice in Action is the key to your success! We can ...', 'Medium',
+    'Micro', 
+    0, '40 Cuesta Vista Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731341, 'Ryan Flagg', 'ryan@gocasta.net', '18318699925.0', 
+    'GO Cast A .net', 'gocasta.net', 
+    'https://www.linkedin.com/company/gocasta-net', 
+    'Other', 'Succeeding in business, the public sphere, or your personal life can entail fostering one's own virtual community. With experience across a spectrum of industries, GoCastA.Net strategizes, develops, & manages online content / social media for enti...', 'Medium',
+    'Micro', 
+    0, '3850 Rio Road', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211265, 'Paul Moncrief', 'paul@moncriefhart.com', '8317590900.0', 
+    'Moncrief & Hart', 'moncriefhart.com', 
+    'https://www.linkedin.com/company/moncrief-&-hart-pc', 
+    'Finance and Legal', 'Moncrief & Hart is a full service legal firm specializing in a variety of practice areas, including business and real estate, agriculture, land use, estate planning, litigation and arbitration. With a focus on land use, business, and agriculture, Moncr...', 'Large',
+    'Small', 
+    0, '16 West Gabilan Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221884, 'Kurt Gollnick', 'kurt@scheidvineyards.com', '18314559990.0', 
+    'Scheid Vineyards California Inc', 'scheidvineyards.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Scheid Vineyards is a company that offers world-class wines grown and produced in Monterey County, California. They have ten estate vineyards located along a 70-mile spread of the Salinas Valley, encompassing four primary climate zones. The unique geog...', 'Medium',
+    'Micro', 
+    0, '305 Hilltown Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731340, 'Scott Mc Kenzie', 'scott@greenwise.industries', '18316439911.0', 
+    'greenwise.industries', 'greenwise.industries', 
+    'https://www.linkedin.com/company/greenwise-water-&-landscapes', 
+    'Other', 'Find out where your water is going!  We perform full water audits on your home or business.  We'll show you where you can improve usage efficiency and save money.', 'Medium',
+    'Micro', 
+    0, '98 Via Ventura', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731339, 'Paul Fuller', 'paulcraigfuller@gmail.com', 'None', 
+    'astropreneer.com', 'astropreneer.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605140, 'Sean Ikaika Hamre', 'sihamre@aggies.ncat.edu', '3363347500.0', 
+    'North Carolina A&T State University', 'aggies.ncat.edu', 
+    'https://www.linkedin.com/company/north-carolina-a&t-state-university', 
+    'Education', 'North Carolina Agricultural and Technical State University is a public, historically black, research university in Greensboro, North Carolina.', 'Large',
+    'Enterprise', 
+    0, '1601 East Market Street', 
+    'Greensboro', 'NC', 
+    '27411', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1891
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221882, 'Jeffrey Mrizek', 'jmrizek@cccco.edu', '9164458752.0', 
+    'California Community Colleges', 'cccco.edu', 
+    'https://www.linkedin.com/company/californiacommunitycolleges', 
+    'Education', 'The California Community Colleges is the largest system of higher education in the nation, with 116 colleges serving 1.8 million students. Learn about career paths and career education opportunities designed to get you into good paying jobs. Learn abou...', 'Large',
+    'Corporate', 
+    0, '1102 Q Street', 
+    'Sacramento', 'CA', 
+    '95811', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1967
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221881, 'Alexandra Sklar', 'alexandra@merchanthome.com', 'None', 
+    'Merchant Home', 'merchanthome.com', 
+    'https://www.linkedin.com/company/merchanthome', 
+    'Education', 'Modern Housewares for the Well Lived Home. A new vision for modern living: clean lines, clever details, and simple style. Arriving soon: refined goods for the well lived home. A merchandise consultancy. In pursuit of the well lived home. Everyday house...', 'Medium',
+    'Micro', 
+    0, '7828 PO Box', 
+    'Santa Cruz', 'CA', 
+    '95061', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211264, 'David van Sunder', 'david@vansunder.com', '8316570177.0', 
+    'vansunder.com', 'vansunder.com', 
+    'https://www.linkedin.com/company/in-stride-physical-therapy-&-rehab-inc-', 
+    'Other', 'We'll be sharing events and tips to help our community in their quest to live happier, healthier lives.', 'Medium',
+    'Micro', 
+    0, '581 Lighthouse Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672571, 'John Lloyd', 'jlloyd@pine-inn.com', '8143710127.0', 
+    'Pine Inn', 'pine-inn.com', 
+    'https://www.linkedin.com/company/pine-inn', 
+    'Hospitality and Travel', 'Featuring boutique accommodations, modern amenities and delicious dining, Pine Inn is the place to stay in Carmel-by-the-Sea, California.', 'Medium',
+    'Micro', 
+    0, 'PO BOX 297', 
+    'Falls Creek', 'PA', 
+    '15840', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605138, 'Erik Johnson', 'erik@eriksdelicafe.com', '4083651515.0', 
+    'Eriksdelicafe', 'eriksdelicafe.com', 
+    'https://www.linkedin.com/company/eriks-deli-cafe', 
+    'Hospitality and Travel', 'Fresh made sandwiches, soups, and salads in San Jose Erik's DeliCafé For 45+ years we have been a Santa Cruz, California staple for sandwiches, soups, and salad made with the character you love! Our mission remains the same today as it did over 40 year...', 'Large',
+    'Medium', 
+    0, '1550 The Alameda', 
+    'San Jose', 'CA', 
+    '95126', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211263, 'Chro Thomas', 'cthomas@inversemedia.com', '2032559620.0', 
+    'Inverse Media - Trade Shows and Events', 'inversemedia.com', 
+    'https://www.linkedin.com/company/inverse-media', 
+    'Other', 'Inverse Media is a boutique tradeshow and event production company. We listen to your needs and develop an engaging strategy that conveys your uniqueness. Our background in marketing and design brings clarity of message and prestige. Disciplined planni...', 'Large',
+    'Small', 
+    0, 'Po Box 1072', 
+    'Southport', 'CT', 
+    '06890', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1991
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211262, 'Kai Peters', 'kpeters@gordonrees.com', '4159865900.0', 
+    'Gordon Reese', 'gordonrees.com', 
+    'https://www.linkedin.com/company/gordon-reese', 
+    'Finance and Legal', 'Gordon & Rees is a law firm that provides a range of legal services, including litigation, corporate law, real estate law, employment law, and intellectual property law. The firm has a national presence with over 900 attorneys in 49 offices spread out ...', 'Large',
+    'Enterprise', 
+    0, '275 Battery Street', 
+    'San Francisco', 'CA', 
+    '94111', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211261, 'David H Rogers', 'davidr@bkpcpa.com', '4087782112.0', 
+    'Bianchi', 'bkpcpa.com', 
+    'https://www.linkedin.com/company/bianchi-kasavan-&-pope-llp', 
+    'Other', 'Bianchi, Kasavan & Pope, LLP is a leading accounting firm with over 100 years of tax, audit, business consulting, and accounting experience. With offices in Monterey, Salinas, and Hollister, they provide world-class accounting, business advising, and t...', 'Large',
+    'Small', 
+    0, '450 Lincoln Avenue', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605137, 'Shawn Bakker', 'shawn@bakkerconstruction.com', '8312063034.0', 
+    'Bakker Construction', 'bakkerconstruction.com', 
+    'https://www.linkedin.com/company/bakker-construction-inc.', 
+    'Industrial and Manufacturing', 'Bakker Construction is a Design Build residential contractor serving the Monterey Peninsula, including Pebble Beach, Pacific Grove, Monterey, Carmel, Carmel Valley, and Big Sur. They offer free consultations and specialize in residential construction p...', 'Medium',
+    'Micro', 
+    0, '40 Clark Street', 
+    'Salinas', 'CA', 
+    '93912', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672570, 'Kim Stemler', 'kim@montereywines.org', '18313759400.0', 
+    'Monterey Wines', 'montereywines.org', 
+    'https://www.linkedin.com/company/monterey-county-vintners-and-growers-association', 
+    'Consumer Goods and Retail', 'Monterey Wine Country is located less than an hour south of California’s famous Silicon Valley. A world class wine region with a variety of amazing wines.', 'Medium',
+    'Micro', 
+    0, '536 Pearl St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731336, 'Molly Hemmeter ', 'christy@plantedplaces.com', '8312102043.0', 
+    'Planted Places', 'plantedplaces.com', 
+    'https://www.linkedin.com/company/planted-places', 
+    'Other', 'Planted Places is an online garden company that provides vertical gardening systems, hydroponic subscription boxes, and planted containers. They offer a sustainable way to grow organic produce at home, using nutrient-rich soil and water-wise plants. Pl...', 'Large',
+    'Micro', 
+    0, 'PO Box 2426 pmb 12', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731334, 'Bert Wank ', 'william.allen@infinirel.com', '4084003803.0', 
+    'InfiniRel', 'infinirel.com', 
+    'https://www.linkedin.com/company/infinirel-corporation', 
+    'Other', 'Infinirel is a company that provides reliability services for renewable energy investors. They offer a patented solar inverter health scanner and predictive maintenance/diagnostics to reduce operational risks and extend the life of critical assets. The...', 'Medium',
+    'Micro', 
+    0, '111 North Market Street', 
+    'San Jose', 'CA', 
+    '95113', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221878, 'Sharon Sarris', 'slsarris@greenfuseenergy.com', '8006887900.0', 
+    'greenfuseenergy.com', 'greenfuseenergy.com', 
+    'https://www.linkedin.com/company/1138608', 
+    'Other', 'nan', 'Medium',
+    'Micro', 
+    0, '111 N Main St', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211260, 'Dr Jian Huang', 'huangjian@sinochem.com', '861059568888.0', 
+    'Sinochem Group', 'sinochem.com', 
+    'https://www.linkedin.com/company/sinochemgroup', 
+    'Other', 'Sinochem Group is a global conglomerate with core businesses in energy, agriculture, chemicals, real estate, and financial services. It is one of China's four state oil companies and the largest agricultural input company, providing fertilizers, seeds,...', 'Large',
+    'Corporate', 
+    0, '28 FUXINGMENNEI ST.', 
+    'Beijing', 'None', 
+    '100031', 
+    'China', 
+    'Asia/Shanghai', 
+    '2020-03-30', 
+    1950
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731333, 'Edward Rockower', 'ed@rockower.net', 'None', 
+    'Edward B. Rockower', 'rockower.net', 
+    'None', 
+    'Other', 'Edward B. Rockower is a multidisciplinary company that provides a range of products and services. With a Ph.D. in Physics and a focus on humanistic whole brain approaches, the company offers expertise in various areas. From Feb. 2004 to Aug. 2009, Edwa...', 'Small',
+    'None', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    '93942', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1950
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211256, 'John Reid', 'jreid@chartwell.org', '8313943468.0', 
+    'Chartwell School', 'chartwell.org', 
+    'https://www.linkedin.com/company/chart-well', 
+    'Education', 'Chartwell School is an independent day school for students who think and learn differently, with a focus on empowering bright students with language-based learning differences such as dyslexia to thrive in college, careers, and beyond.', 'Medium',
+    'Medium', 
+    0, '2511 Numa Watson Road', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211255, 'Andrew Racz', 'aracz@mcwd.org', '18313846131.0', 
+    'Marina Coast Water District', 'mcwd.org', 
+    'https://www.linkedin.com/company/marina-coast-water-district', 
+    'Other', 'Marina Coast Water District is one of the largest public water utilities in Monterey County serving the City of Marina, Ord Community as well as portions of Seaside, Del Rey Oaks, Monterey and Monterey County. Utilities', 'Large',
+    'Medium', 
+    0, '11 Reservation Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605134, 'Alexis Ramirez', 'alexis@cagranitestone.com', 'None', 
+    'Cagranitestone', 'cagranitestone.com', 
+    'None', 
+    'Industrial and Manufacturing', 'Cagranitestone is a family-owned business that specializes in the fabrication and installation of residential and commercial countertops. With over 14 years of experience, they are known for their quality craftsmanship and reliability. They offer a wid...', 'Small',
+    'None', 
+    0, '4110 Fairview Road', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731332, 'Xavier Nazario', 'xavier@bayareadsn.com', 'None', 
+    'bayareadsn.com', 'bayareadsn.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672568, 'Bill Kenney', 'bkenney@testmypitch.com', '18605734821.0', 
+    'Testmypitch', 'testmypitch.com', 
+    'https://www.linkedin.com/company/test-my-pitch', 
+    'Education', 'Private communication skill development platform. Think Toastmasters online. Create communication confidence and competence. Also @scoremypitch & @billkenney. Sharing your ideas and gaining support isn't easy. Pitching and introducing yourself can be n...', 'Medium',
+    'Micro', 
+    0, '45 West Hills Road', 
+    'Essex', 'CT', 
+    '06442', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605133, 'Jason Kaehler', 'j.kaehler@asylumlabsinc.com', '13122133223.0', 
+    'Asylum Labs', 'asylumlabsinc.com', 
+    'https://www.linkedin.com/company/asylum-labs', 
+    'Technology', 'Asylum Labs is a developer of mobile and web-based entertainment software. Founded in 2012, the company focuses on 'AAA Indie' development, with an emphasis on quality production values and key multiplayer and social networking elements. They specializ...', 'Medium',
+    'Micro', 
+    0, '724 CALIFORNIA ST', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672566, 'Tony Sabarez', 'tsabarez@acsii-inc.com', 'None', 
+    'Acsii-Inc.com', 'acsii-inc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221875, 'Jack Zahorsky', 'jzahorsky@zstrategy.com', 'None', 
+    'zstrategy.com', 'zstrategy.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221874, 'David Steinberg', 'rethaw@gmail.com', 'None', 
+    'Resium', 'resium.com', 
+    'https://www.linkedin.com/company/resium', 
+    'Technology', 'Resium is a company founded with the goal of improving how computer systems interact with users. The founder has a background in research and government, writing software and firmware for business analytics, communications, and physics. Resium offers s...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221873, 'Kurt Overmeyer ', 'renexg3@sbcglobal.net', 'None', 
+    'watsonville.ca.us', 'ci.watsonville.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2019-01-03', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605132, 'Mark Wilson', 'mark.wilson@ghosttreesales.com', 'None', 
+    'ghosttreesales.com', 'ghosttreesales.com', 
+    'None', 
+    'Other', '“When your passion is greater than your fear, you’re ready for Ghost Tree.”', 'Small',
+    'None', 
+    0, '56B 5th Avenue', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605131, 'Catherine Stedman ', 'jack.wang@amwater.com', '18569554001.0', 
+    'American Water Works Company, Inc.', 'amwater.com', 
+    'https://www.linkedin.com/company/american-water', 
+    'Other', 'American Water is the largest and most geographically diverse U.S. publicly traded water and wastewater utility company. They provide safe, clean, affordable, and reliable water services to more than 14 million people in 24 states. Their services inclu...', 'Large',
+    'Enterprise', 
+    1, '1 Water St', 
+    'Camden', 'NJ', 
+    '08102', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1886
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605128, 'Curtis Mo', 'curtis.mo@dlapiper.com', '14105804308.0', 
+    'DLA Piper', 'dlapiper.com', 
+    'https://www.linkedin.com/company/dla-piper', 
+    'Finance and Legal', 'DLA Piper is a global law firm with lawyers in 40+ countries, providing legal solutions to businesses worldwide. Helping clients succeed every day. DLA Piper, a global law firm operating through separately constituted and regulated legal entities. Atto...', 'Large',
+    'Corporate', 
+    0, '650 South Exeter Street', 
+    'Baltimore', 'CA', 
+    '21202', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605127, 'Janet Celi', 'janet@linksforecollegegolf.com', 'None', 
+    'linksforecollegegolf.com', 'linksforecollegegolf.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211254, 'Kathy Anderson', 'k.anderson@ctt.com', '19048548100.0', 
+    'Chicago Title Insurance Company', 'ctt.com', 
+    'https://www.linkedin.com/company/welcome-to-ctt-com-au', 
+    'Finance and Legal', 'Chicago Title Insurance Company provides a full range of title, escrow, and real estate related products. They offer services that help cut costs and turnaround times without compromising quality. Customers can also order title, appraisal, credit, and ...', 'Large',
+    'Enterprise', 
+    0, '601 Riverside Ave', 
+    'None', 'CA', 
+    '92660', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1847
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731329, 'Marilyn Jessup', 'mjessup@vicality.com', 'None', 
+    'Vicality', 'vicality.com', 
+    'None', 
+    'Other', 'Vicality is an eco concierge service that helps people discover and experience a sustainable lifestyle. They provide a guide to the cultural and biological diversity of the Monterey Bay region, as well as environmentally friendly merchants, ideas on su...', 'Small',
+    'None', 
+    0, '500 Cathedral Drive', 
+    'Aptos', 'CA', 
+    '95001', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211253, 'Jayson Zimmer', 'jayson.zimmer@interstatehotels.com', '19729520200.0', 
+    'Interstate Hotels & Resorts Inc.', 'interstatehotels.com', 
+    'https://www.linkedin.com/company/rim-hospitality', 
+    'Hospitality and Travel', 'Interstate Hotels & Resorts is a global hotel management company that operates and manages over 425 branded full and select service hotels, resorts, conference centers, and independent hotels with nearly 75,000 rooms in North America, the UK, Europe, a...', 'Large',
+    'Medium', 
+    0, '4501 Fairfax Drive', 
+    'Arlington', 'VA', 
+    '22203', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1960
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672559, 'John Turner', 'jturner@pahotel.com', '8645421614.0', 
+    'pahotel.com', 'pahotel.com', 
+    'None', 
+    'Other', 'Connecting millions of travelers in destinations across the globe, at Sheraton we bring people together. Book your stay at one of our international hotels today.', 'Medium',
+    'None', 
+    0, '625 EL CAMINO REAL', 
+    'Palo Alto', 'CA', 
+    '94301', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1986
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605126, 'Nelson Rivera ', 'unknown67@invalid.com', '8316498800.0', 
+    'Lariviere Grubman & Payne the Law Firm of', 'lgpatlaw.com', 
+    'https://www.linkedin.com/company/lariviere-grubman-pc', 
+    'Finance and Legal', 'Keepers of your Big Idea', 'Large',
+    'Micro', 
+    0, '200 Sky Park Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731327, 'Kanav Hasija', 'kanav.hasija@innovaccer.com', '16508430988.0', 
+    'Innovaccer Inc.', 'innovaccer.com', 
+    'https://www.linkedin.com/company/innovaccer', 
+    'Technology', 'Health Cloud powered by unified patient data | Innovaccer Accelerate your digital transformation with the Innovaccer Health Cloud to activate data and create a 360° view of the patient that enables whole person care. InnovAccer was born out of research...', 'Large',
+    'Enterprise', 
+    0, '101 Mission Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731326, 'Melissa Jawaharlal', 'melissaj@stemcenterusa.com', '19097100017.0', 
+    'STEM Center USA', 'stemcenterusa.com', 
+    'https://www.linkedin.com/company/stem-center-usa', 
+    'Education', 'K 12 Robotics & Coding for Kids | STEM Center USA We make STEM education fun, hands on, and long lasting. Virtual and in person robotics and coding classes for kids and school districts. Exciting the next generation of STEM leaders through hands on, me...', 'Medium',
+    'Small', 
+    0, '678 South Indian Hill Boulevard', 
+    'Claremont', 'CA', 
+    '91711', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211248, 'Kelly Sorenson', 'kellysorenson@ventanaws.org', '8314559514.0', 
+    'Ventana Wildlife Society', 'ventanaws.org', 
+    'https://www.linkedin.com/company/ventana-wildlife-society', 
+    'Education', 'Ventana Wildlife Society is a non-profit organization founded in 1977. They are dedicated to conserving native wildlife and their habitats through research, education, and collaboration. They provide meaningful outdoor experiences to youth and families...', 'Medium',
+    'Small', 
+    0, '19045 Portola Drive', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211246, 'Roberto Levi', 'rlevi@americaseduprograms.com', 'None', 
+    'Americas Educational Programs', 'americaseduprograms.com', 
+    'https://www.linkedin.com/company/americas-educational-programs', 
+    'Education', 'Americas Educational Programs Costa Rican Business is an educational immersion program in business and culture. MBA and Ph.D. students from different universities in USA and Europe, come to Costa Rica for a period of 9 days (period is variable) to lear...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'San Jose', 'CA', 
+    '1019', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221867, 'Courtney Parker', 'cparker@chiquita.com', 'None', 
+    'Chiquita', 'chiquita.com', 
+    'https://www.linkedin.com/company/chiquita', 
+    'Consumer Goods and Retail', 'Chiquita Brands International, Inc. is an international marketer and distributor of bananas and pineapples sold under the Chiquita and other brand names in 70 countries. They also sell packaged salads under the Fresh Express and other brand names prima...', 'Large',
+    'Corporate', 
+    0, '2 Route de l'Etraz', 
+    'Rolle', 'CA', 
+    '1180', 
+    'Switzerland', 
+    'Europe/Zurich', 
+    '2020-03-30', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221866, 'Rick Thau', 'rick@thaught.com', '6508541490.0', 
+    'Thaught Site', 'thaught.com', 
+    'None', 
+    'Other', 'Thaught Site is an online learning platform that offers a wide range of courses and educational resources. With a focus on professional development and personal growth, Thaught Site provides high-quality content in various fields such as business, tech...', 'Medium',
+    'Small', 
+    0, '2468 Sharon Oaks Dr', 
+    'Menlo Park', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1978
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672558, 'Julia Marsh', 'jmarsh2@sva.edu', '2125922000.0', 
+    'School of Visual Arts', 'sva.edu', 
+    'https://www.linkedin.com/school/svanyc', 
+    'Education', 'School of Visual Arts is a college of art and design located in New York City. With a faculty of more than 1100 creative professionals, SVA offers 11 undergraduate and 21 graduate degrees, along with continuing education courses. With over 6,000 studen...', 'Large',
+    'Large', 
+    0, '209 East 23rd Street', 
+    'New York', 'NY', 
+    '10010', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672557, 'Darius Sadeghi', 'darius@bio-chek.com', '18316255533.0', 
+    'bio-chek.com', 'bio-chek.com', 
+    'None', 
+    'Other', 'Bio-Chek is a developmental stage electronic device company that owns patents on measuring pesticide residues on leaf surfaces.', 'Large',
+    'Small', 
+    0, '10 JUNIPERO AVE', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605123, 'Tim York', 'tim.york@producepassion.com', 'None', 
+    'producepassion.com', 'producepassion.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731323, 'Alan Stacy', 'astacy@haiku-productions.com', '18319207311.0', 
+    'Haiku Productions', 'haiku-productions.com', 
+    'None', 
+    'Creative and Media', 'Haiku Productions is a company that specializes in marketing and technical communications. They offer services such as information architecture, screenplays, and haiku and poetry. The company is founded by Alan Stacy, who is also the contact person. Th...', 'Large',
+    'Micro', 
+    0, '25480 TIERRA GRANDE DR', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672554, 'Bob Kramer', 'kramer@visionstrategy.com', 'None', 
+    'Visionstrategy', 'visionstrategy.com', 
+    'https://www.linkedin.com/company/visionary-strategic-consulting', 
+    'Other', 'Visionary Strategic Consulting is a leading provider of business consulting and services. We specialize in helping companies develop and implement strategic plans, improve operational efficiency, and achieve sustainable growth. Our team of experienced ...', 'Medium',
+    'Micro', 
+    0, '4010 Sunridge Road', 
+    'None', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605122, 'Chris Range', 'crange@montagewellnesscenter.com', '8318835656.0', 
+    'Montage Wellness Center', 'montagewellnesscenter.com', 
+    'https://www.linkedin.com/company/montage-health', 
+    'Hospitality and Travel', 'With locations in Marina and Salinas, the Montage Wellness Centers offer gyms, pools, classes, and personal training by certified fitness professionals, dedicated to keeping our communities healthy and active.', 'Medium',
+    'Large', 
+    0, '1910 North Davis Road', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221864, 'Kieth Siddel', 'ksiddel@siddellaw.com', 'None', 
+    'Siddel Law', 'siddellaw.com', 
+    'https://www.linkedin.com/company/siddel-law', 
+    'Finance and Legal', 'Siddel Law is a Law Firm providing services to Healthcare providers, business entrepreneurs, active duty military, and armed forces veterans. From Licensed Healthcare Professionals in Private Practice to Integrated Healthcare Sytems, Medical Business ...', 'Large',
+    'Micro', 
+    0, '1968 South Coast Highway', 
+    'Laguna Beach', 'CA', 
+    '92651', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605121, 'Jim Swallow', 'jswallow@globalgreenventures.com', 'None', 
+    'globalgreenventures.com', 'globalgreenventures.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221861, 'Keith Brown ', 'emmaclarewynnejones@gmail.com', '5185848555.0', 
+    'Balet Flowers Design', 'gmaill.com', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'Micro', 
+    0, '5041 NELSON AVE EXT', 
+    'BALLSTON SPA', 'NY', 
+    '12020', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605120, 'Julie Rosenau', 'julie@r7-consulting.com', 'None', 
+    'r7-consulting.com', 'r7-consulting.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221860, 'Unknown', 'unknown68@invalid.com', '5102732200.0', 
+    'California Nurses Association/National Nurses Organizing Committee', 'calnurses.org', 
+    'https://www.linkedin.com/company/california-nurses-association', 
+    'Healthcare', 'California Nurses Association: Represents more than 100,000 RNs. Helped win state's #SafeStaffing ratios law. Executive Director is @NNUBonnie.', 'Medium',
+    'Medium', 
+    0, '2000 Franklin Street', 
+    'Oakland', 'CA', 
+    '94612', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1903
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605119, 'Steve Shimek', 'exec@otterproject.org', '18316468837.0', 
+    'Otter Project', 'otterproject.org', 
+    'https://www.linkedin.com/company/otter-project', 
+    'Other', 'The Otter Project is a non-profit organization dedicated to saving otters and preserving the ecosystems they inhabit. We work towards raising awareness about the importance of otters in the natural environment and take action to protect them from threa...', 'Large',
+    'Micro', 
+    0, '3098 Stewart Court', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605117, 'Michael Oprish', 'moprish@bernardus.com', '8316583400.0', 
+    'Bernardus', 'bernardus.com', 
+    'https://www.linkedin.com/company/bernardus18', 
+    'Consumer Goods and Retail', 'Bernardus Winery is a renowned American wine brand that has been producing traditional world-class wines since 1990. Located in the vineyard region of Carmel Valley, USA, Bernardus Winery specializes in Bordeaux blends, including their flagship wine, M...', 'Large',
+    'Small', 
+    0, '415 West Carmel Valley Road', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221859, 'Patrick Zelaya', 'patrickzelaya@heavyconnect.com', '18337225727.0', 
+    'Heavy Connect', 'heavyconnect.com', 
+    'https://www.linkedin.com/company/heavyconnect', 
+    'Education', 'HeavyConnect provides digital documentation solutions for the food supply chain to manage Food Safety, Worker Training, Time & Productivity Tracking, Quality Assurance, Traceability, Supplier & Grower Management, and more.', 'Medium',
+    'Small', 
+    0, '150 South Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672548, 'Lewis Ross', 'lewis.ross@mitso.me', 'None', 
+    'mitso.me', 'mitso.me', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672547, 'David Singe', 'david@davidsinge.com', 'None', 
+    'davidsinge.com', 'davidsinge.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731321, 'Steans ', 'g.stearns@stearnsandmorecapital.com', 'None', 
+    'Stearns & More Capital', 'stearnsandmorecapital.com', 
+    'None', 
+    'Other', 'Startup Coaching LOHAS Sea Land Air Space Regional Investment for People - Planet - Profits', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    '20500', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731320, 'Lisa Mc Lean', 'lisa@carmelriviera.com', 'None', 
+    'carmelriviera.com', 'carmelriviera.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731319, 'Kara Kytle', 'kkytle@assure-technologies.com', 'None', 
+    'Assure Technologies', 'assure-technologies.com', 
+    'https://www.linkedin.com/company/3855183', 
+    'Other', 'Assure Technologies is a company focused on providing products and services for social connection and support, specifically targeting the 50+ market. Their flagship product, WithYou, is an easy way for families and older adults to stay in touch every d...', 'Medium',
+    'Micro', 
+    0, '252 1st Ave', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672543, 'Tom Pesce', 'tom.pesce@pinnacle.bank', '4087627171.0', 
+    'Pinnacle Bank Online', 'pinnaclebankonline.com', 
+    'https://www.linkedin.com/company/pinnacle-bank_3', 
+    'Other', 'Please visit our website. Banking', 'Large',
+    'Medium', 
+    0, '7597 Monterey Road', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731317, 'Kendall Nishimine ', 'nikke@ojingolabs.com', 'None', 
+    'Ojingo', 'ojingolabs.com', 
+    'https://www.linkedin.com/company/ojingo', 
+    'Technology', 'Ojingo Labs is a company that develops digital products and experiences that positively impact daily life. They work with global brands, artists, and innovators to realize their vision. Their diverse team's passion for people-friendly products has been...', 'Large',
+    'Small', 
+    0, '608 48th Avenue', 
+    'San Francisco', 'CA', 
+    '94121', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731316, 'Jeffrey Alexander', 'jeffrey.alexander@sri.com', '6508592000.0', 
+    'SRI International', 'sri.com', 
+    'https://www.linkedin.com/company/sri-international', 
+    'Other', 'A global leader in R&D with deep roots in Silicon Valley. For almost 80 years, we have collaborated across disciplines to develop groundbreaking products and technologies and bring innovations and ideas to the marketplace. SRI International is a nonpro...', 'Large',
+    'Enterprise', 
+    0, '333 Ravenswood Avenue', 
+    'Menlo Park', 'CA', 
+    '47906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1946
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731314, 'Dave Stoldt', 'dstoldt@mpwmd.net', '14082099290.0', 
+    'MPWMD', 'mpwmd.net', 
+    'https://www.linkedin.com/company/mpwmd', 
+    'Other', 'The Monterey Peninsula Water Management District, or MPWMD, was created in 1977 and is responsible for regional water supply planning in the Monterey Peninsula and Carmel Valley area. They manage the production of water from surface water sources and g...', 'Large',
+    'Micro', 
+    0, '5 Harris Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672540, 'Armida Garcia ', 'mariacvasquez57@gmail.com', '4086005107.0', 
+    'JMM Dance Co.', 'jmmdanceco.org', 
+    'None', 
+    'Education', 'nan', 'Small',
+    'None', 
+    0, '410 Alicante Drive', 
+    'Hollister', 'CA', 
+    '95023', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221851, 'Saul Lopez ', 'helen.leek@darrigo.com', '8314554500.0', 
+    'Darrigo', 'darrigo.com', 
+    'None', 
+    'Other', 'nan', 'Large',
+    'Medium', 
+    0, '21777 HARRIS RD', 
+    'SALINAS', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605110, 'Andrew Di Marzio ', 'opeggy@cruzio.com', '5108682655.0', 
+    'calcentral.com', 'calcentral.com', 
+    'https://www.linkedin.com/company/cruzio-internet', 
+    'Technology', 'Cruzio is one of the largest independent ISPs in California, offering high-speed broadband, data center and coworking services to Santa Cruz County.', 'Large',
+    'Small', 
+    0, '877 Cedar Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605107, 'Mr Kelly Weigel', 'weigel@transuniversalenergy.com', 'None', 
+    'FOTDDO', 'fotddo.biz', 
+    'None', 
+    'Other', 'Welcome to the Fort Ord Technology Development Deployment Office Website', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605106, 'Robert Musser', 'services@rmusser.net', 'None', 
+    'rmusser.net', 'rmusser.net', 
+    'None', 
+    'Technology', 'Hi, my name is Robert Musser and I like to do stuff.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221849, 'Mr Denphong Srirach', 'denphong@stecon.co.th', '6622601321.0', 
+    'stecon.co.th', 'stecon.co.th', 
+    'None', 
+    'Other', 'Stecon Co., Ltd. is a leading provider of construction and engineering services in Thailand. With over 20 years of experience, we specialize in the design, construction, and maintenance of various infrastructure projects, including roads, bridges, buil...', 'Large',
+    'Large', 
+    0, 'Floor 29-30, Sino-Thai Tower', 
+    'Bangkok', 'CA', 
+    '10110', 
+    'United States', 
+    'Asia/Bangkok', 
+    '2020-03-30', 
+    1967
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672539, 'Daniel Mountjoy', 'btaylor@suscon.org', '4159518008.0', 
+    'Sustainable Conservation', 'suscon.org', 
+    'https://www.linkedin.com/company/sustainable-conservation', 
+    'Other', 'Sustainable Conservation is a company that helps California thrive by uniting people to solve the toughest challenges facing our land, air, and water. They bring together business, landowners, and government to steward the resources that we all depend ...', 'Large',
+    'Small', 
+    0, '98 Battery Street', 
+    'San Francisco', 'CA', 
+    '94111', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672532, 'Nikki Rodoni', 'nikki@measuretoimprovellc.com', '18315947972.0', 
+    'Measure to Improve', 'measuretoimprovellc.com', 
+    'https://www.linkedin.com/company/measure-to-improve-llc', 
+    'Education', 'Measure to Improve is a sustainability consulting company based in Salinas, California. We specialize in helping fresh produce organizations measure, improve, and promote their sustainability efforts. Our team of experts offers a wide range of services...', 'Medium',
+    'Micro', 
+    0, '820 Park Row', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221847, 'Andrew Van Valer', 'andy@slingshotsv.com', 'None', 
+    'SlingShotsv', 'slingshotsv.com', 
+    'https://www.linkedin.com/company/slingshotsv', 
+    'Technology', 'Slingshot SV is a business incubator and accelerator based in Silicon Valley. They provide entrepreneurs with a range of resources and services to support the successful development of their businesses or startups. Their flexible approach, led by exper...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'Scotts Valley', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221841, 'Alexandra Hamm ', 'nick.delpozzo@hyatt.com', '13127501234.0', 
+    'Hyatt Hotels Corporation', 'hyatt.com', 
+    'https://www.linkedin.com/company/hyatt', 
+    'Hospitality and Travel', 'Hyatt Hotels Corporation is a global hospitality company that offers a wide range of products and services. With a portfolio of over 1,000 hotel and all-inclusive properties in more than 65 countries, Hyatt operates under various brands including Park ...', 'Large',
+    'Corporate', 
+    1, '150 North Riverside Plaza', 
+    'Chicago', 'IL', 
+    '60606', 
+    'United States', 
+    'America/Chicago', 
+    '2022-01-11', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221840, 'Gary Golomb', 'gary@awakenetworks.com', '8332925348.0', 
+    'Awake Networks', 'awakenetworks.com', 
+    'https://www.linkedin.com/company/awake-networks', 
+    'Technology', 'Awake Networks is a company that is reimagining network security with a platform that provides unprecedented visibility into network operations and security.', 'Large',
+    'Small', 
+    0, '200 West Evelyn Avenue', 
+    'Mountain View', 'CA', 
+    '94041', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221838, 'Gordon Thrupp', 'gthrupp@geosyntec.com', '15619950900.0', 
+    'Geosyntec Consultants', 'geosyntec.com', 
+    'https://www.linkedin.com/company/geosyntec-consultants', 
+    'Other', 'Geosyntec Consultants is a specialized consulting and engineering firm that works with private and public sector clients to address new ventures and complex problems. They provide a range of services including environmental services, infrastructure eng...', 'Large',
+    'Enterprise', 
+    0, '5901 Broken Sound NW Pkwy', 
+    'Boca Raton', 'FL', 
+    '33487', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672531, 'Craig Kleindl', 'ckleindl@rdoequipment.com', '17012377356.0', 
+    'RDO Equipment Co.', 'rdoequipment.com', 
+    'https://www.linkedin.com/company/rdo-equipment-co-', 
+    'Consumer Goods and Retail', 'RDO Equipment Co. is a total solutions provider for agriculture, construction, environmental, positioning, surveying, and irrigation equipment. They sell and support top equipment brands such as John Deere, Vermeer, and Topcon. With over 75 locations a...', 'Large',
+    'Enterprise', 
+    0, '700 7th S St', 
+    'Fargo', 'ND', 
+    '58103', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1968
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672530, 'Elizabeth Plante', 'elizabethplante@hotmail.com', '8318401589.0', 
+    'Monterey Bay Moves', 'montereybaymoves.com', 
+    'https://www.linkedin.com/company/monterey-bay-moves', 
+    'Hospitality and Travel', 'Monterey Bay Moves is a professional fitness and yoga company that offers a variety of outdoor and virtual classes, as well as private coaching. They provide services such as Marina Yoga, Outdoor Group Training, Coaching, and Wellness in the Monterey B...', 'Medium',
+    'Micro', 
+    0, '220 9th Street', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1968
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672527, 'Mark Martin', 'mark.martin@design4x.com', '6502487728.0', 
+    'Design4X', 'design4x.com', 
+    'None', 
+    'Education', 'Design4X is a company that specializes in manufacturing and engineering education and training. They provide assistance to manufacturing companies and K-16 educational institutions in training and workforce development. For any organization in need of ...', 'Medium',
+    'Micro', 
+    0, '5724 Mendocino Ave', 
+    'Oakland', 'CA', 
+    '94618', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672526, 'Joan Popolo', 'jpopolo@actionnewengland.org', '8882565837.0', 
+    'Action Innovation Network', 'actionnewengland.org', 
+    'https://www.linkedin.com/company/action-association-of-cleantech-incubators-of-new-england', 
+    'Other', 'ACTION Innovation Network is New England’s leading network of cleantech incubators. They aim to accelerate the growth and success of early stage companies, strengthen the regional cleantech cluster, and create more green jobs in New England. They provi...', 'Large',
+    'Micro', 
+    0, '151 Martine Cottage Road', 
+    'Portsmouth', 'NH', 
+    '02723', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672525, 'Thom Maughan', 'thommaughan@gmail.com', 'None', 
+    'Isee-Solutions.com', 'isee-solutions.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672522, 'Bobbi Wells', 'rwells@edcsanbenito.org', 'None', 
+    'Economic Development Corporation of San Benito County', 'edcsanbenito.org', 
+    'https://www.linkedin.com/company/economic-development-corporation-of-san-benito-county', 
+    'Other', 'The Economic Development Corporation of San Benito County (EDC) is dedicated to promoting economic growth and prosperity in the county. We work with businesses, government agencies, and community organizations to attract new businesses, retain existing...', 'Medium',
+    'Micro', 
+    0, 'PO BOX 1265', 
+    'Hollister', 'CA', 
+    '95024', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-23', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672521, 'Kristy Santiago', 'kristy.santiago@kion546.com', '18317754222.0', 
+    'KION546', 'kion546.com', 
+    'None', 
+    'Other', 'We want to encourage your comments and input. However, comments containing profanity, racist language or derogatory attacks on other commenters for their race, religion, or sexual orientation will be deleted.', 'Large',
+    'Medium', 
+    0, '1550 Moffett Street', 
+    'Salinas', 'CA', 
+    '93905', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672520, 'Tan White', 'twhite@anzutech.com', '8318834400.0', 
+    'ANZU Technology', 'anzutech.com', 
+    'https://www.linkedin.com/company/anzu-technology', 
+    'Consumer Goods and Retail', 'Anzu Technology is an established collaborative engineering company that works with CPG products manufacturers, assisting them with process selection and improvements. Located systems for innovative pouch packaging systems, thermal processing, size red...', 'Medium',
+    'Micro', 
+    0, '3180 IMJIN RD', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672518, 'Silas Quintero', 'silas_quintero@kellyservices.com', '12483624444.0', 
+    'Kelly Services, Inc.', 'kellyservices.com', 
+    'https://www.linkedin.com/company/kellyservices', 
+    'Other', 'Kelly Services is a global workforce solutions provider that offers a comprehensive array of outsourcing and consulting services, as well as staffing on a temporary, temporary to hire, and direct hire basis. With over 70 years of industry leadership, K...', 'Large',
+    'Enterprise', 
+    1, '999 West Big Beaver Road', 
+    'Troy', 'MI', 
+    '48084', 
+    'United States', 
+    'America/Detroit', 
+    '2020-03-30', 
+    1946
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672517, 'Shoji Mathew', 'shoji@spreadingthevalley.org', 'None', 
+    'Spreadingthevalley', 'spreadingthevalley.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1946
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672515, 'Katy Scott ', 'jventura@mbayaq.org', '8316484800.0', 
+    'Monterey Bay Aquarium Gift & Bookstore', 'mbayaq.org', 
+    'https://www.linkedin.com/company/monterey-bay-aquarium', 
+    'Other', 'Monterey Bay Aquarium is a nonprofit public aquarium in Monterey, California.', 'Large',
+    'Large', 
+    0, '886 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672511, 'Aaron Waters', 'aaron@raynetech.com', '18316495050.0', 
+    'Rayne Technology Solutions', 'raynetech.com', 
+    'https://www.linkedin.com/company/rayne-technology-solutions-inc.', 
+    'Technology', 'Rayne Technology Solutions is a premier IT support and consulting firm in Monterey Bay. They provide managed IT services, IT consulting, project management, IT development and support, and cloud services. Their goal is to exceed the standards of managi...', 'Medium',
+    'Small', 
+    0, '484 Lighthouse Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672508, 'Kat Kim', 'kat@solbrands.com', 'None', 
+    'solbrands.com', 'solbrands.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672504, 'Kim Wadsworth', 'kim@five-three.com', 'None', 
+    'Five-Three.com', 'five-three.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667442, 'Deborah Kleffman', 'deborah@rockthefoob.com', 'None', 
+    'rockthefoob.com', 'rockthefoob.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667440, 'David Lazarony', 'david@elegancepresents.com', 'None', 
+    'Elegance Presents', 'elegancepresents.com', 
+    'https://www.linkedin.com/company/elegance-presents-llc', 
+    'Technology', 'Elegance Presents LLC is a computer software company committed to helping people express their creativity. You can find the new Elegance iphone app in the Apple store in mid to late December 2013. This app is designed to help you Snap, Create something...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667438, 'Thomas Rapko', 'tom@sonictrade.com', '6173311784.0', 
+    'SonicTrade', 'sonictrade.com', 
+    'https://www.linkedin.com/company/vimeo', 
+    'Technology', 'Download SonicTrade from the app store and trade cryptocurrency in seconds with this mobile app!', 'Large',
+    'Medium', 
+    0, '215 W Franklin Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/New_York', 
+    '2021-02-23', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667435, 'Paul Kephart', 'paul@ranacreekdesign.com', '8316593820.0', 
+    'Rana Creek', 'ranacreekdesign.com', 
+    'https://www.linkedin.com/company/rana-creek-habitat-restoration', 
+    'Education', 'Our design solutions provide value-added return on financial investments through the reduction of stormwater runoff, water reuse, energy management, sound attenuation and amenity enhancement. Delivering resourceful solutions that are beautiful, red...', 'Large',
+    'Small', 
+    0, '27875 Berwick Drive', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667429, 'Doc Hendley', 'heather.brett@premierespeakers.com', '16152614000.0', 
+    'Premiere Speakers Bureau', 'premierespeakers.com', 
+    'https://www.linkedin.com/company/premiere-speakers-bureau', 
+    'Hospitality and Travel', 'Premiere Speakers Bureau is a leading provider of keynote speakers, motivational speakers, business speakers, and celebrity speakers for events. With over a thousand speakers, including exclusive speakers, Premiere Speakers Bureau offers excellent serv...', 'Large',
+    'Small', 
+    0, '1600 Westgate Circle', 
+    'Brentwood', 'TN', 
+    '37027', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667428, 'Tracy Mendoza', 'tracy@getdeclared.com', '8312614734.0', 
+    'Declare®', 'getdeclared.com', 
+    'https://www.linkedin.com/company/getdeclared', 
+    'Technology', 'Declare is an academic advisor in every student's pocket. The Declare app is a college student's fast pass to multiple college degrees. Whether you've selected a degree program or are looking to explore options, Declare makes it quick and easy for stud...', 'Medium',
+    'Micro', 
+    0, '335 Pajaro Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667424, 'Mai Ryuno', 'hello@playfullground.com', '8312888048.0', 
+    'Play Full Ground', 'playfullground.com', 
+    'https://www.linkedin.com/company/play-full-ground', 
+    'Education', 'Play Full Ground is a creative learning community that helps individuals embrace their uniqueness, enhance creativity, and make everyday life art through the concept of 'The Art of Everyday'.', 'Medium',
+    'Micro', 
+    0, '550 Lighthouse Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667421, 'Unknown', 'unknown69@invalid.com', '18317537677.0', 
+    'Alvarez Technology Group Inc', 'alvareztg.com', 
+    'https://www.linkedin.com/company/alvarez-technology-group', 
+    'Technology', 'Alvarez Technology Group is a leading provider of IT services and consulting in Salinas and Monterey, CA. They offer a range of services including VoIP, help desk support, network security, and compliance. Their team of experts helps businesses predict...', 'Large',
+    'Small', 
+    0, '209 Pajaro Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667420, 'Kay Mercer', 'kmercer@ppeng.com', 'None', 
+    'kaymercer.com', 'kaymercer.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667418, 'Jake Reisdorf', 'info@carmelhoneycompany.com', '18316878511.0', 
+    'Carmel Honey', 'carmelhoneycompany.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Carmel Honey Company is a family-operated business that specializes in providing real, raw, and premium honey straight from the hive. They are dedicated to supplying authentic honey and educating their customers along the way. In addition to honey, the...', 'Small',
+    'None', 
+    0, 'PO Box 222632', 
+    'Carmel', 'CA', 
+    '93922', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667417, 'Bob Komoto', 'bob@komoto.biz', 'None', 
+    'Komoto Global', 'komoto.biz', 
+    'None', 
+    'Other', 'Certified Global Business Professional helping businesses plan, set up and launch and import and export', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667415, 'Joseph Green', 'joe@g-jcpas.com', 'None', 
+    'g-jcpas.com', 'g-jcpas.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667414, 'Susan Alcatara ', 'royal@redshift.com', '18316558710.0', 
+    'RedShift Internet', 'redshift.com', 
+    'None', 
+    'Technology', 'Red Shift Internet Solutions is a high bandwidth internet provider that aims to enable customers to thrive using the internet. They offer services such as securing home or business networks, teaching customers how to connect and use electronic devices,...', 'Large',
+    'Medium', 
+    0, '712 Hawthorne St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1990
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667413, 'Michael Rottman', 'michael@blujaysbrand.com', 'None', 
+    'mymooki.com', 'mymooki.com', 
+    'https://www.linkedin.com/company/9292937', 
+    'Other', 'Bridging the Gap Between Higher Education & The Larger Economy', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667412, 'Kent Jones ', 'monica.sciuto@montagehealth.org', '18316245311.0', 
+    'Montage Health', 'montagehealth.org', 
+    'https://www.linkedin.com/company/montagehealth', 
+    'Healthcare', 'Montage Health is a nonprofit company that provides a collection of entities designed to keep people healthy and connected. They offer preventive, restorative, palliative, and coordinated care through various parts of their organization. The Montage He...', 'Large',
+    'Enterprise', 
+    0, '23625 Holman Highway', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667410, 'Kristina Nunes ', 'dnunes@foxyproduce.com', '8317517500.0', 
+    'Foxy Produce', 'foxyproduce.com', 
+    'https://www.linkedin.com/company/the-nunes-company-inc', 
+    'Consumer Goods and Retail', 'The Nunes family has been farming vegetables throughout California, Nevada and Arizona for four generations. We're committed to preserving our time-honored horticultural practices, while utilizing the latest technology to help us produce high-quality vegetables for the United States and marketplaces around the world. From implementing "Good Agricultural Practices" and "Good Manufacturing Practices" that take into account economic, social and environmental sustainability, to our hands-on, in-the-field approach to farming, our heritage is deeply rooted in our fields.', 'Large',
+    'Medium', 
+    0, '925 JOHNSON AVE', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667409, 'Gary Peterson', 'gary@cafarmlink.org', '8314250303.0', 
+    'cafarmlink.org', 'cafarmlink.org', 
+    'https://www.linkedin.com/company/california-farmlink', 
+    'Consumer Goods and Retail', 'California FarmLink is a nonprofit organization that provides farmers with the tools they need to lease and purchase land, access capital, and improve business and financial management skills.', 'Large',
+    'Small', 
+    0, '335 Spreckels Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667405, 'Bethany Mayer', 'bethanymayer2@gmail.com', '18188711800.0', 
+    'Keysight Technologies Inc.', 'ixiacom.com', 
+    'https://www.linkedin.com/company/ixia', 
+    'Technology', 'Ixia is a provider of IP network validation and network visibility solutions for equipment manufacturers, service providers, and government agencies. They offer physical and virtual network application performance and security resilience solutions, inc...', 'Large',
+    'Enterprise', 
+    1, '1400 Fountaingrove Parkway', 
+    'Calabasas', 'CA', 
+    '91302', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667404, 'Dorothee  Caminiti  ', 'mslain@scu.edu', '4083539798.0', 
+    'Santa Clara University', 'scu.edu', 
+    'https://www.linkedin.com/school/santa-clara-university', 
+    'Education', 'Santa Clara University is a comprehensive Jesuit, Catholic university located in California’s Silicon Valley. Santa Clara offers its more than 8,800 students rigorous undergraduate programs in arts, sciences, business, and engineering, plus master’s de...', 'Large',
+    'Large', 
+    0, '500 El Camino Real', 
+    'Santa Clara', 'CA', 
+    '95053', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-28', 
+    1851
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667398, 'Chip Rerig', 'crerig@ci.carmel.ca.us', 'None', 
+    'carmel.ca.us', 'ci.carmel.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1851
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667396, 'Tom Greer', 'tgreer@montereyairport.com', 'None', 
+    'Monterey Regional Airport', 'montereyairport.com', 
+    'https://www.linkedin.com/company/monterey-regional-airport', 
+    'Hospitality and Travel', 'Monterey Regional Airport offers a convenient and hassle-free travel experience. Boarding time and security checks are quick and efficient, and long-term parking is just a few steps away. The airport provides regular flights to Dallas, Denver, Las Vega...', 'Large',
+    'Small', 
+    0, '200 Fred Kane Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667395, 'Juana Gomez', 'jo.gomez119@gmail.com', '18316256219.0', 
+    'Earthbound Farm', 'ebfarm.com', 
+    'https://www.linkedin.com/company/danone', 
+    'Consumer Goods and Retail', 'Cultivating a healthier world through organic food and farming. 🌻Organic fruits + veggies #EarthboundFarm', 'Large',
+    'Enterprise', 
+    0, '1721 San Juan Hwy', 
+    'San Juan Bautista', 'CA', 
+    '95045', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605102, 'Matt Le Baron', 'matt.lebaron@revvim.com', '4086371067.0', 
+    'Revvim', 'revvim.com', 
+    'https://www.linkedin.com/company/revvim', 
+    'Technology', 'Revvim is a company that offers a suite of tools for dynamic Google Ads placement and optimization. Their flagship product, Revvim AdAi, helps reduce unnecessary Google Ads brand spend without compromising traffic, conversions, or revenue. It turns cos...', 'Medium',
+    'Small', 
+    0, '405 2nd Street', 
+    'San Juan Bautista', 'CA', 
+    '95045', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605101, 'Dina Hagens ', 'marcelatomimbang@quaillodge.com', '8316208821.0', 
+    'Quail Lodge & Golf Club', 'quaillodge.com', 
+    'https://www.linkedin.com/company/quail-lodge-resort-&-golf-club', 
+    'Hospitality and Travel', 'Quail Lodge & Golf Club is a Carmel Valley hotel located on the beautiful Monterey Peninsula in California. Enjoy spacious guestrooms, award winning golf & other resort activities. Nestled in a sunny country setting, Quail Lodge Golf Club, a semi priva...', 'Large',
+    'Medium', 
+    0, '8205 Valley Greens Drive', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1963
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605099, 'Duane Good', 'duane@aingel.ai', 'None', 
+    'AiNGEL', 'aingel.ai', 
+    'https://www.linkedin.com/company/aingel', 
+    'Technology', 'Aingel is an NYU born analytics platform that helps VCs scale their sourcing and selection using AI. It is used by top VCs to source, select and predict successful early stage startups in their deal flow, helping them spot selection bias and avoid miss...', 'Large',
+    'Small', 
+    0, '75 East Santa Clara Street', 
+    'San Jose', 'CA', 
+    '95113', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211238, 'Jonathan La Riviere', 'jonathan@scootscience.com', 'None', 
+    'Scoot Science', 'scootscience.com', 
+    'https://www.linkedin.com/company/scoot-science', 
+    'Other', 'Unlock New Insights from Your Ocean Data Scoot Science SeaState transforms the environmental, fish inventory, and operations data that you're already collecting into site specific ocean forecasts and fish health insights. The forerunner in ocean data...', 'Large',
+    'Small', 
+    0, '877 Cedar Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605098, 'David Mc Cornack', 'mccornackdavid@gmail.com', 'None', 
+    'mccornack.com', 'mccornack.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605095, 'Damon OHanlon', 'damon@wanderingsage.consulting', 'None', 
+    'Wandering Sage Consulting', 'wanderingsage.consulting', 
+    'https://www.linkedin.com/company/wanderingsage', 
+    'Other', 'Need help designing, refining, and executing your brand? We’ve partner with organizations of all sizes, from agile startups to multi-national organizations.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605093, 'David Levesque', 'david@mypulsedj.com', 'None', 
+    'mypulsedj.com', 'mypulsedj.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '444 Broadway', 
+    'Saratoga Springs', 'NY', 
+    '12866', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605091, 'Timon Harrison', 'tim@timonharrison.com', 'None', 
+    'timonharrison.com', 'timonharrison.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211233, 'Erik Gillberg', 'erik@nowcitylabs.com', 'None', 
+    'Now City', 'nowcitylabs.com', 
+    'https://www.linkedin.com/company/now-city', 
+    'Other', 'Redefining home with green neighborhoods that are good for people and planet.', 'Small',
+    'Micro', 
+    0, '101 Cooper St', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605087, 'Carlos Lopez', 'carlos@lopeztax.net', '8317582512.0', 
+    'lopeztax.net', 'lopeztax.net', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'Small', 
+    0, '1588 Moffett Street', 
+    'Salinas', 'CA', 
+    '93905', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2020
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211228, 'Jack Goldwasser', 'jack@watchtechnologies.com', '5414728095.0', 
+    'WATCH ENTERPRISES', 'watchtechnologies.com', 
+    'https://www.linkedin.com/company/watch-enterprises-llc', 
+    'Industrial and Manufacturing', 'Watch Technologies is a company that designs, manufactures, and installs innovative water control equipment for various applications such as agriculture/irrigation, water/waste water, and industrial use. They specialize in designing and manufacturing s...', 'Medium',
+    'Micro', 
+    0, '2185 Northeast Spalding Avenue', 
+    'Grants Pass', 'OR', 
+    '97526', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211226, 'Matt Gallegos', 'matt_gallegos@nmcusd.org', '8316333343.0', 
+    'North Monterey County Unified School District', 'nmcusd.org', 
+    'https://www.linkedin.com/company/north-monterey-county-unified-school-district', 
+    'Education', 'North Monterey County Unified School District is a school district on the Central Coast of California serving K-12 students. They offer education administration programs.', 'Large',
+    'Large', 
+    0, '13994 Castroville Boulevard', 
+    'Castroville', 'CA', 
+    '95012', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211225, 'Sharon Hathaway Forrest', 'sharon@sharonhathawayforrest.com', 'None', 
+    'sharonhathawayforrest.com', 'sharonhathawayforrest.com', 
+    'None', 
+    'Other', 'This page is all about me', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211223, 'Mathias Kolsch', 'matz@velocity-vision.com', 'None', 
+    'Velocity-Vision.com', 'velocity-vision.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605082, 'Jim Keel', 'jimkeel@keelocean.com', 'None', 
+    'keelocean.com', 'keelocean.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605081, 'Exodie Roe ', 'nora.taktajian@mail.house.gov', '12022243121.0', 
+    'U.S. House of Representatives', 'mail.house.gov', 
+    'https://www.linkedin.com/company/u.s.-house-of-representatives', 
+    'Public and Government Services', 'The United States House of Representatives is the lower house of the United States Congress, the Senate being the upper house.', 'Large',
+    'Enterprise', 
+    0, '2100 Rayburn Hob Bldg', 
+    'Washington', 'DC', 
+    '20515', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-28', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605078, 'LETUAN', 'slt@uxdconsulting.com', 'None', 
+    'Uxdconsulting', 'uxdconsulting.com', 
+    'https://www.linkedin.com/company/uxdconsulting', 
+    'Creative and Media', 'UXD Consulting is a leading design agency that specializes in providing design services to businesses of all sizes. With a team of experienced designers, we offer a wide range of design solutions including user experience design, user interface design,...', 'Small',
+    'Micro', 
+    0, '750 North Saint Paul Street', 
+    'Dallas', 'CA', 
+    '75201', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605077, 'John Louie', 'johnlouie@planttape.com', '34936379892.0', 
+    'Planttape', 'planttape.com', 
+    'https://www.linkedin.com/company/planttape-inc', 
+    'Other', 'Plant Tape is a visionary and innovative company founded in Spain with technology that will revolutionize agriculture. Pioneering agricultural leader, Tanimura & Antle, acquired the Plant Tape to expand its operations into North America. Tanimura...', 'Large',
+    'Small', 
+    0, '6 Carretera Llobatona', 
+    'Viladecans', 'None', 
+    '08840', 
+    'Spain', 
+    'Europe/Madrid', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605076, 'Richard Vaughn ', 'mccarthy@ci.monterey.ca.us', '8317554800.0', 
+    'County of Monterey', 'ci.monterey.ca.us', 
+    'https://www.linkedin.com/company/county-of-monterey', 
+    'Other', 'Proudly serving the community since 1850. The Mission of Monterey County is to Excel at providing Quality Services for the benefit of all Monterey County residents while developing, maintaining, and enhancing the resources of the area.', 'Large',
+    'Enterprise', 
+    0, '168 W ALISAL ST', 
+    'SALINAS', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1850
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211221, 'David Griffin', 'dgriffin@shamrockseed.com', '8317711500.0', 
+    'Shamrock Seed Co', 'shamrockseed.com', 
+    'https://www.linkedin.com/company/shamrock-seed-co', 
+    'Consumer Goods and Retail', 'Innovazione e competenza al servizio del cliente', 'Large',
+    'Small', 
+    0, '3 Harris Pl', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211219, 'Peter Goodson', 'petergoodson@good-assoc.com', 'None', 
+    'Good-Assoc.com', 'good-assoc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211218, 'Dr Suthikorn Kingkaew ', 'dean@tbs.tu.ac.th', '6625643221.0', 
+    'Thammasat University', 'tbs.tu.ac.th', 
+    'https://www.linkedin.com/company/thammasat-university', 
+    'Education', 'มหาวิทยาลัยธรรมศาสตร์ในวันนี้ไม่ได้เป็นเพียงสถาบันการศึกษาชั้นนำที่ทำหน้าที่ผลิตบัณฑิต สร้างงานวิจัย และเป็นผู้นำด้านนวัตกรรมงานวิชาการที่โดดเด่นเพียงเท่านั้น หากแต่ยังมุ่งสู่การเป็น“มหาวิทยาลัยแห่งการสร้างผู้นำรุ่นใหม่เพื่อสังคมไทยและนานาชาติ” (Groomi...', 'Large',
+    'Enterprise', 
+    0, 'None', 
+    'Bangkok', 'None', 
+    '12121', 
+    'Thailand', 
+    'Asia/Bangkok', 
+    '2020-03-30', 
+    1934
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211212, 'Chris Mcelwain', 'chris@chrismcelwain.com', '6027958400.0', 
+    'Chris McElwain', 'chrismcelwain.com', 
+    'None', 
+    'Other', 'Literary manager for Laura Ingalls-Wei @wastelandhouse // Khagan of @Knowmadlaw // Mitch Albom satirist https://t.co/YqQ5BLDEeU', 'Medium',
+    'Micro', 
+    0, '14500 N NORTHSIGHT BLVD', 
+    'Scottsdale', 'AZ', 
+    '85260', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1934
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221835, 'Peterson', 'mark@petersoncom.com', '18316264400.0', 
+    'Peterson Communications', 'petersoncom.com', 
+    'https://www.linkedin.com/company/peterson-communications', 
+    'Creative and Media', 'Peterson Communications is a marketing strategy and public relations company that is focused on helping companies increase the value of their corporate brands, products and services. We custom build programs to meet a company's needs and offer a comple...', 'Large',
+    'Micro', 
+    0, '56B 5th Avenue', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221830, 'Eric Johnson', 'eric@hilltromper.com', '5102518320.0', 
+    'Hilltromper', 'hilltromper.com', 
+    'https://www.linkedin.com/company/hilltrompersantacruz', 
+    'Other', 'Hilltromper is a guide to outdoor recreation, the active life, and green living in Santa Cruz. They provide information on great beaches, parks, trails, and activities in Santa Cruz, Santa Clara, and San Mateo counties. They also share conservation new...', 'Large',
+    'Micro', 
+    0, '877 Cedar Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221828, 'Lee Henderson', 'lhenderson@vybion.com', '6072660860.0', 
+    'Vybion', 'vybion.com', 
+    'https://www.linkedin.com/company/vybion-inc.', 
+    'Healthcare', 'Vybion is a leading developer of Intrabodies for neurodegenerative diseases. They leverage antibody technologies to address unmet medical needs. Vybion's Intrabodies are scFv fragments that target and change the fate of intracellular events, such as pr...', 'Medium',
+    'Micro', 
+    0, '33 Thornwood Dr', 
+    'Ithaca', 'NY', 
+    '14850', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221827, 'John Haupt', 'john.haupt@blach.com', 'None', 
+    'Blach Construction', 'blach.com', 
+    'https://www.linkedin.com/company/blach-construction-company', 
+    'Industrial and Manufacturing', 'Blach Construction is a California based general contractor and construction manager specializing in commercial construction. They have been committed to quality, innovation, craftsmanship, and enhancing Bay Area and Monterey communities since 1970. Bl...', 'Large',
+    'Medium', 
+    0, '2244 Blach Place', 
+    'San Jose', 'CA', 
+    '95131', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1970
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221822, 'Daniel Howe', 'daniel@howeneat.com', 'None', 
+    'howeclean.co', 'howeclean.co', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1970
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221819, 'Hunter Harvath', 'hharvath@mst.org', '8318992555.0', 
+    'Monterey-Salinas Transit', 'mst.org', 
+    'https://www.linkedin.com/company/monterey-salinas-transit', 
+    'Other', 'Monterey Salinas Transit (MST) provides bus service to the greater Monterey and Salinas areas, as well as to Paso Robles, Big Sur, Santa Cruz, and San Jose. Their goal is to provide residents and visitors with high-quality transit service.', 'Large',
+    'Medium', 
+    0, '19 Upper Ragsdale Drive', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221817, 'Peter Hernandez', 'ohanashaveice@yahoo.com', '8318016164.0', 
+    'Ohana Shave Ice', 'ohanahawaiianshaveice.com', 
+    'None', 
+    'Other', 'Ohana Shave Ice is a company that brings the sweet taste of shave ice and paradise to the mainland. They offer 100% Kona Coffee, açaí bowls, and a full menu of shave ice flavors. Whether you've been to the Hawaiian Islands or not, Ohana Shave Ice will ...', 'Small',
+    'None', 
+    0, '951 Peridot Ct.', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-15', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221816, 'Brandon Geoffroy ', 'arshia93@mail.sfsu.edu', '4153381111.0', 
+    'San Francisco State University', 'mail.sfsu.edu', 
+    'http://www.linkedin.com/company/165837', 
+    'Education', 'Official site of San Francisco State University, a public urban university with a conscience located in one of the world's most vibrant and beautiful cities. Begin your college search here for world-class undergraduate study, graduate study, scholarly research and community service learning.', 'Large',
+    'Enterprise', 
+    0, '1600 Holloway Avenue', 
+    'San Francisco', 'CA', 
+    '94132', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1899
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672503, 'Tammy Blount ', 'jennifer@seemonterey.com', '18882211010.0', 
+    'SeeMonterey', 'seemonterey.com', 
+    'http://linkedin.com/company/monterey-county-convention-&-visitors-bureau', 
+    'Hospitality and Travel', 'See Monterey County, CA is the official travel information website for Monterey County. They provide information on hotels, dining, beaches, events, and things to do in California's Central Coast. They cover various locations including Monterey, Carmel...', 'Medium',
+    'Micro', 
+    0, '401 Camino El Estero', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221812, 'Unknown', 'unknown70@invalid.com', '8312054748.0', 
+    'Alpha Heart Health LLC', 'alphahearthealth.com', 
+    'https://www.linkedin.com/company/alpha-heart-health-llc', 
+    'Healthcare', 'ALPHA HEART HEALTH is a healthcare company that specializes in providing equitable, affordable, and accessible chronic disease prevention and management services to residents in Monterey, Santa Cruz, and San Benito Counties.', 'Small',
+    'Micro', 
+    0, '101 Cooper Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221811, 'Angela Fucci ', 'larissaanelson@yahoo.com', '8312004098.0', 
+    'We Hike, Inc.', 'wehike.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '1697 San Lucas St', 
+    'Seaside', 'CA', 
+    '93955', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221807, 'Tamesh Sharma ', 'kunal@swiftfiletransfer.com', 'None', 
+    'KumiLabs', 'kumilabs.com', 
+    'https://www.linkedin.com/company/kumi-labs-p-ltd-', 
+    'Technology', 'Our vendor URL'sBlackberry specialists who had collaborated in different contexts were brought together to deliver you valuable products and services. We leverage our core competencies to generate solutions combining advanced mobile technologies and sc...', 'Large',
+    'Small', 
+    0, 'KUMI', 
+    'Gurugram', 'None', 
+    'None', 
+    'India', 
+    'Asia/Kolkata', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221805, 'Jamie Grooms ', 'mpresti@saferxpharmaceuticals.com', '3523754849.0', 
+    'SAFERx Pharmaceuticals, LLC', 'saferxpharmaceuticals.com', 
+    'https://www.linkedin.com/company/saferx-pharma', 
+    'Healthcare', 'SafeRx Pharmaceuticals is a development stage drug company pursuing FDA approval of our new patented platform of products designed to solve a critical but previously unaddressed dimension of the U.S. opioid crisis the combination of opioids with alcoh...', 'Medium',
+    'Micro', 
+    0, '1067 Morse Dr.', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2021
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672499, 'Charles Bello', 'charles.bello@conferencedirect.com', '13236553848.0', 
+    'ConferenceDirect', 'conferencedirect.com', 
+    'https://www.linkedin.com/company/conferencedirect', 
+    'Hospitality and Travel', 'ConferenceDirect is a full service meeting and event management company providing customized solutions and exceptional customer service. ConferenceDirect is a leading provider of global meeting planning solutions. ConferenceDirect partners with organiz...', 'Large',
+    'Large', 
+    0, '6300 Wilshire Blvd', 
+    'Los Angeles', 'CA', 
+    '90048', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672497, 'Ruhnke Henry', 'henryr@wrdarch.com', '5593252038.0', 
+    'Wrdarch', 'wrdarch.com', 
+    'https://www.linkedin.com/company/wr&d-architects', 
+    'Real Estate and Development', 'Wald, Ruhnke & Dost Architects is a community-based architecture and interior design firm that has been serving the Monterey Bay region and beyond since 1963. With a focus on laying a foundation for the future, planning successful business environments...', 'Large',
+    'Small', 
+    0, '2340 Garden Rd', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1963
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731309, 'Starla Warren ', 'jgoebel@hamonterey.org', '8317755000.0', 
+    'Hamonterey', 'hamonterey.org', 
+    'None', 
+    'Public and Government Services', 'nan', 'Large',
+    'Small', 
+    0, '1 Haciendas Place', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672495, 'John Jackson', 'jjackson@fullerton.edu', '6572782011.0', 
+    'California State University, Fullerton', 'exchange.fullerton.edu', 
+    'https://www.linkedin.com/company/california-state-university-fullerton', 
+    'Education', 'CSU Fullerton Auxiliary Service Corporation (ASC) was incorporated on October 26, 1959 as a nonprofit public corporation for the purpose of promoting and assist', 'Large',
+    'Enterprise', 
+    0, '800 N State College Blvd', 
+    'Fullerton', 'CA', 
+    '92831', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-08-19', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672494, 'Paula Kehoe', 'pkehoe@sfwater.org', '4159204600.0', 
+    'SAN Francisco Public Utilities Commission', 'sfwater.org', 
+    'https://www.linkedin.com/company/sfpuc', 
+    'Other', 'The San Francisco Public Utilities Commission (SFPUC) is a public agency that provides water, wastewater, and electric power services to the city of San Francisco and the surrounding Bay Area counties. The SFPUC delivers clean and pure drinking water t...', 'Large',
+    'Enterprise', 
+    0, '525 Golden Gate Avenue', 
+    'San Francisco', 'CA', 
+    '94102', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1930
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731306, 'Kent Bransford MD', 'kent@juniperhealth.com', 'None', 
+    'Juniper Health', 'juniperhealth.com', 
+    'https://www.linkedin.com/company/juniper-health', 
+    'Healthcare', 'Juniper Health is a unique solution that bridges the communication gap between you and your doctor to ensure all your important medical tests are done and tracked over time. Our web based platform protects you and your family against unnecessary illnes...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    '93953', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672488, 'Bob Lippi', 'bob@bobtheprinter.com', '8318994038.0', 
+    'Bob The Printer', 'bobtheprinter.com', 
+    'https://www.linkedin.com/company/bob-the-printer', 
+    'Other', 'Bob the Printer offers Printing, Promotional Products and Smiles for the hospitality industry and general business. Serving Central California and beyond from Monterey Peninsula, CA. Printing Services', 'Medium',
+    'Micro', 
+    0, '5 Maiden Court', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672486, 'Gary Cursio', 'gcursio@deltaviewgc.com', 'None', 
+    'deltaviewgc.com', 'deltaviewgc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672485, 'Kevin DAngelo', 'kevin@baronanddangelo.org', 'None', 
+    'baronanddangelo.org', 'baronanddangelo.org', 
+    'None', 
+    'Other', 'First | Previous Picture | Next Picture | Last | Thumbnails', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731303, 'Derek Derdivanis', 'derek.derdivanis@vistage.com', '18585095887.0', 
+    'Vistage Worldwide Inc', 'vistage.com', 
+    'https://www.linkedin.com/company/vistage', 
+    'Other', 'Vistage is the world’s largest and most comprehensive executive coaching organization for small and midsize businesses. We help CEOs and business owners grow their business through executive coaching and peer advisory groups. Our members participate in...', 'Large',
+    'Enterprise', 
+    0, '11452 El Camino Real', 
+    'San Diego', 'CA', 
+    '92130', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731298, 'rock clapper', 'rockclapper@gmail.com', '6506950400.0', 
+    'Band of Angels', 'bandangels.com', 
+    'https://www.linkedin.com/company/band-of-angels', 
+    'Finance and Legal', 'Band of Angels is Silicon Valley's oldest angel investment group. They are a group of 150+ angel investors who invest their time and money into new, cutting-edge startup companies. They offer financial and advisory services to start-up companies and ha...', 'Medium',
+    'Medium', 
+    0, '750 Battery Street', 
+    'San Francisco', 'CA', 
+    '94111', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-06', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731297, 'Griselda Gil Solis', 'griselda@opportunityfund.org', '14082970204.0', 
+    'Opportunity Fund', 'opportunityfund.org', 
+    'https://www.linkedin.com/company/opportunity-fund', 
+    'Other', 'Opportunity Fund advances the economic well being of working people by helping them earn, save, and invest in their future. At Opportunity Fund, we help our neighbors, the hard working people getting by on modest wages in California. We achieve this by...', 'Large',
+    'Medium', 
+    0, '100 Bush Street', 
+    'San Francisco', 'CA', 
+    '94104', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672476, 'Jim Hale ', 'joanne@browndogpartners.com', '15598755607.0', 
+    'Brown Dog Partners', 'browndogpartners.com', 
+    'https://www.linkedin.com/company/brown-dog-partners', 
+    'Finance and Legal', 'Brown Dog Partners builds entrepreneurial success stories through the simple vision of connecting investors, entrepreneurs, companies and communities with the joy of commercially viable innovation. We are successful entrepreneurs and corporate executiv...', 'Medium',
+    'Micro', 
+    0, '700 Godwin Ave', 
+    'Midland Park', 'NJ', 
+    '07432', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672474, 'Jennifer Golden', 'jen@luvrocx.com', '8312778947.0', 
+    'LUV ROCX', 'luvrocx.com', 
+    'None', 
+    'Other', 'Our mission is to provide handmade teddy bears and clothing to foster kids. Come and join us in spreading luv!', 'Small',
+    'None', 
+    0, '1120 Forest Avenue #247', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672473, 'Omar Perez ', 'srhyans@xinampa.bio', '8313832422.0', 
+    'Xinampa', 'xinampa.bio', 
+    'https://www.linkedin.com/company/xinampa', 
+    'Other', 'XINAMPA BIO HUB is a Salinas, CA based community lab that promotes technological literacy and training. They develop services and programs to complement existing institutions and organizations, strengthening the local economy. They empower individuals ...', 'Medium',
+    'Micro', 
+    0, '1213 Bellehaven St.', 
+    'Salinas', 'CA', 
+    '93905', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672472, 'Emily Ham', 'emily@sccbusinesscouncil.com', 'None', 
+    'SCC Business Council', 'sccbusinesscouncil.com', 
+    'https://www.linkedin.com/company/santa-cruz-county-business-council', 
+    'Non-Profit', 'The Santa Cruz County Business Council, est. 1996, is a cross-section of business leaders working to support Santa Cruz County economic vitality.', 'Medium',
+    'Small', 
+    0, '877 Cedar Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-07-06', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672470, 'Paul Sciuto ', 'diana@my1water.org', '8313723367.0', 
+    'my1water.org', 'my1water.org', 
+    'https://www.linkedin.com/company/mrwpca', 
+    'Other', 'Monterey Regional Water Pollution Control Agency (MRWPCA)', 'Medium',
+    'Small', 
+    0, '5 Harris Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667393, 'Delia Leal ', 'kshoup@middlebury.edu', '8024433000.0', 
+    'Middlebury College', 'middlebury.edu', 
+    'https://www.linkedin.com/school/middlebury-college', 
+    'Education', 'Middlebury College is a nationally recognized academic institution that encompasses a liberal arts undergraduate college, 38 Schools Abroad programs, 11 summer immersion Language Schools, the Bread Loaf School of English, the Bread Loaf Writers' Confer...', 'Large',
+    'Large', 
+    0, 'Mailing Address Middlebury College', 
+    'Middlebury', 'VT', 
+    '05753', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1800
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667392, 'Loreli Cappel', 'lcappel@sloevc.org', '8057882013.0', 
+    'Economic Vitality Corporation', 'sloevc.org', 
+    'https://www.linkedin.com/company/economic-vitality-corporation-of-san-luis-obispo-county', 
+    'Non-Profit', 'Covering a large region on the beautiful California Central Coast, the EVC provides local businesses and entrepreneurs with a wide range of resources including workshops and seminars, international trade consultation, angel investor and venture capital...', 'Medium',
+    'Micro', 
+    0, '735 Tank Farm Road', 
+    'San Luis Obispo', 'CA', 
+    '93401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211204, 'Linda Byrne', 'lindab@hrcmc.org', '8314249186.0', 
+    'hrcmc.org', 'hrcmc.org', 
+    'https://www.linkedin.com/company/housing-resource-center-of-monterey-county', 
+    'Other', 'The Housing Resource Center of Monterey County is a non-profit organization that aims to end and prevent homelessness in Monterey County and beyond. They provide a range of services including new home buyer education, rent assistance, and homeless prev...', 'Large',
+    'Small', 
+    0, '60 West Market Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731288, 'Richard Dilluvio', 'rdilluvio@cityofpasadena.net', '16267447311.0', 
+    'City of Pasadena - Public Agency', 'cityofpasadena.net', 
+    'https://www.linkedin.com/company/city-of-pasadena', 
+    'Finance and Legal', 'The City of Pasadena is a public agency located in California. It is the official government entity responsible for managing and providing various services to the residents of Pasadena. The city offers a wide range of services, including public safety,...', 'Medium',
+    'Enterprise', 
+    0, '100 Garfield Avenue', 
+    'Pasadena', 'CA', 
+    '91101', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731287, 'Kari Bernardi', 'kari@supernaturalchef.com', '18312360987.0', 
+    'Super Natural Foods', 'supernaturalchef.com', 
+    'https://www.linkedin.com/company/super-natural-foods-company', 
+    'Other', 'Super Natural Foods is a company that focuses on making healthy living fresh, simple, and delicious. They create and teach plant-based foods and share unique and helpful recipes, techniques, and preparations. They are known for their divinely decadent ...', 'Medium',
+    'Micro', 
+    0, 'PO Box 22992', 
+    'CARMEL', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731286, 'Unknown', 'unknown71@invalid.com', '5597336441.0', 
+    'Tulare County, California', 'co.tulare.ca.us', 
+    'https://www.linkedin.com/company/county-of-tulare', 
+    'Other', 'Tulare County is a county in the US state of California.', 'Large',
+    'Enterprise', 
+    0, '230 East Chestnut Street', 
+    'Exeter', 'CA', 
+    '93221', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1852
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731284, 'John Huerta Jr', 'jhuerta@ci.greenfield.ca.us', 'None', 
+    'Greenfield Police Department', 'ci.greenfield.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1852
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667388, 'Nichole Flewell ', 'wmaysey@taylorfarms.com', '18317540471.0', 
+    'Taylor Fresh Foods Inc', 'taylorfarms.com', 
+    'https://www.linkedin.com/company/taylor-farms', 
+    'Consumer Goods and Retail', 'Taylor Farms creates healthy lives through our selection of fresh vegetables, meal kits, and salad kits. We're N. America's favorite maker of healthy, fresh foods. North America's Favorite Maker of Salads and Healthy Fresh Foods', 'Large',
+    'Corporate', 
+    0, '947 Blanco Cir', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667387, 'David Colleen ', 'maclen@sapientx.com', '4152542330.0', 
+    'SapientX', 'sapientx.com', 
+    'https://www.linkedin.com/company/sapeintx', 
+    'Other', 'SapientX is a company that specializes in conversational AI. They create AI interfaces that understand and assist users in completing tasks. Their unique conversational AI platform allows for natural and smooth conversations with users. SapientX also o...', 'Large',
+    'Small', 
+    0, '4600 Smith Grade Road', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211202, 'David Mc Nair ', 'pharmon@svwd.org', '8314382363.0', 
+    'Scotts Valley Water District', 'svwd.org', 
+    'https://www.linkedin.com/company/scotts-valley-water-district', 
+    'Other', 'Scotts Valley Water District (SVWD) is a public agency that provides water service for domestic, commercial, municipal, and fire fighting purposes. They cover an area of six square miles, including most of the City of Scotts Valley and a portion of the...', 'Large',
+    'Small', 
+    0, '2 Civic Center Drive', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1961
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605075, 'Robert Arnold', 'arnold@robertarnoldinc.com', '18312506757.0', 
+    'Robert Arnold Inc.', 'robertarnoldinc.com', 
+    'https://www.linkedin.com/company/robert-arnold-inc', 
+    'Other', 'Robert Arnold Inc. is a law firm that specializes in helping business owners and investors in the Monterey Peninsula area. Their mission is to assist clients in making more money and achieving their goals by providing advice and assistance with their c...', 'Medium',
+    'Micro', 
+    0, 'PO BOX 5395', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211200, 'Lisa Dias', 'ldias@laubergecarmel.com', '8316248578.0', 
+    'L'Auberge Carmel', 'laubergecarmel.com', 
+    'https://www.linkedin.com/company/l'auberge-carmel-relais-&-chateaux', 
+    'Hospitality and Travel', 'L'Auberge Carmel is a full service luxury historic hotel located in the heart of Carmel by the Sea. It features 20 luxuriously appointed guest rooms in a three-story building. The hotel offers valet parking, room service, a restaurant on premises, and ...', 'Large',
+    'Small', 
+    0, 'Monte Verde & 7th Ave', 
+    'Carmel', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211198, 'Daniel Dawson', 'citymanager@delreyoaks.com', 'None', 
+    'delreyoaks.com', 'delreyoaks.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667385, 'Amin Almassian', 'amin@wiseper.com', 'None', 
+    'Wiseper', 'wiseper.com', 
+    'https://www.linkedin.com/company/wiseper', 
+    'Technology', 'Wiseper is a decentralized fact checking and exploration platform that combines social and artificial intelligence to help the general public make better sense of online media information. They also provide IT services and IT consulting.', 'Medium',
+    'Micro', 
+    0, '877 Cedar St #150', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667382, 'David Esmaili', 'david.esmaili@westvalley.edu', '4087412000.0', 
+    'West Valley College', 'westvalley.edu', 
+    'https://www.linkedin.com/school/west-valley-college', 
+    'Education', 'West Valley College offers guaranteed transfer to CSUs, UCs, and other four year universities through our Transfer Agreement Guarantee program. We also offer AA/AS degrees, and certificates. A friendly, inclusive campus, modern, student centered facili...', 'Large',
+    'Large', 
+    0, '14000 Fruitvale Avenue', 
+    'Saratoga', 'CA', 
+    '95070', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1963
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211193, 'Dylan France', 'france-dylan@aramark.com', '12152383000.0', 
+    'Aramark', 'aramark.com', 
+    'https://www.linkedin.com/company/aramark', 
+    'Hospitality and Travel', 'Aramark provides food service, facilities and uniform services to hospitals, universities, school districts, stadiums and other businesses around the world. Aramark proudly serves Fortune 500 companies, world champion sports teams, state of the art hea...', 'Large',
+    'Enterprise', 
+    1, '1101 Market Street', 
+    'Philadelphia', 'PA', 
+    '19103', 
+    'United States', 
+    'America/New_York', 
+    '2020-09-22', 
+    1936
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667377, 'Tyler Tracy', 'ttracyyy@gmail.com', '8317470340.0', 
+    'Able Kombucha', 'ablekombucha.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '1009 Olmsted Ave', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1936
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605068, 'Chuck Erickson', 'cee@cecoassoc.com', 'None', 
+    'cecoassoc.com', 'cecoassoc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    '95070', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1936
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605067, 'Nathan Harkleroad', 'nathan@albafarmers.org', '8317581469.0', 
+    'ALBA', 'albafarmers.org', 
+    'https://www.linkedin.com/company/alba-farms', 
+    'Education', 'ALBA The Agriculture and Land Based Training Association (ALBA) provides educational and business opportunities for farm workers and aspiring farmers. ALBA is a 501(3) Non profit incorporated in 2001. © 2020 Agriculture and Land Based Training Associat...', 'Medium',
+    'Micro', 
+    0, '1011 Post Drive', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211192, 'Beau Jansen ', 'mike@santacruzcore.com', '9313345883.0', 
+    'Santa Cruz CORE Fitness', 'santacruzcore.com', 
+    'https://www.linkedin.com/company/santa-cruz-core-fitness---rehab', 
+    'Hospitality and Travel', 'Santa Cruz CORE Fitness + Rehab offers a wide range of services including personal training, therapeutic and corrective exercises, Sports Chiropractic, nutrition, massage, acupuncture, and group classes. Our goal is to help you reach your wellness goal...', 'Large',
+    'Small', 
+    0, '317 Potrero St', 
+    'Seaside', 'CA', 
+    '95059', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211191, 'Jonathan Gaines', 'jgaines@bsgassociates.com', '16179472777.0', 
+    'BSG Associates', 'bsgassociates.com', 
+    'https://www.linkedin.com/company/bsgassociates', 
+    'Education', 'BSG Associates is a company that specializes in accelerating sales for businesses. They offer services such as strategic partnerships, business development, and results-driven solutions. They work with companies in various industries including SaaS, AI...', 'Large',
+    'Micro', 
+    0, 'None', 
+    'Boston', 'MA', 
+    'None', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211190, 'Christopher Garcia', 'christopher.garc1009@campus.mccd.edu', '2093846000.0', 
+    'Merced College', 'campus.mccd.edu', 
+    'https://www.linkedin.com/company/merced-community-college-district', 
+    'Education', 'Merced College is a California Public Community College operated by the Merced Community College District, which was formed by a vote of the people of the Le Grand and Merced Union High School Districts on February 27, 1962. The District, which comprised the eastern half of Merced County, consisted of the areas served by these two high school districts. The Governing Board consisted of five members elected at large in the District.', 'Large',
+    'Large', 
+    0, '3600 M Street', 
+    'Merced', 'CA', 
+    '95348', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605063, 'Kelley Foy', 'kelley@kelleyannfoy.com', '4087411111.0', 
+    'Alain Pinel Realtors', 'kelleyannfoy.com', 
+    'http://linkedin.com/company/alain-pinel-realtors', 
+    'Other', 'The second quarter of 2015 showed continued appreciation and a lack of inventory, with multiple offers still prevalent, and properties often selling considerably over asking. However, beginning in June there have been fewer offers (though still multiple) on individual properties, more negotiating, and in some instances, cancellation of contracts. Several things could be contributing to this: the season (graduations, vacations, etc.), buyer fatigue (with some buyers feeling they cannot compete in this environment), global uncertainty (Greece, China), or a possibility of the market peaking. This next quarter will be an important one to watch and see where the market is headed. Will it continue to be a seller’s market, or will the playing field level out to be more balanced? Buyers may have a reason to be optimistic as well; there is a general historical trend of increased overall inventory moving into the summer and fall. This probably won't translate into a softening of prices, but it will offer buyers more options in their home searches. If you are thinking about moving this year, it will be vital to work closely with an experienced agent to navigate this challenging market. We will be happy to help you.', 'Large',
+    'Enterprise', 
+    0, '12772 Saratoga-Sunnyvale Road', 
+    'Saratoga', 'CA', 
+    '95070', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1990
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605062, 'Tom Dalzell', 'tmd9@ibew1245.com', '7074522717.0', 
+    'IBEW Local 1245', 'ibew1245.com', 
+    'https://www.linkedin.com/company/ibew-local-1245', 
+    'Other', 'IBEW Local 1245 is an affiliate of International Brotherhood of Electrical Workers, which represents hundreds of thousands of members in both the United States and Canada. With more than 25,000 members across northern and central California, and parts ...', 'Medium',
+    'Small', 
+    0, '30 Orange Tree Circle', 
+    'Vacaville', 'CA', 
+    '95687', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211189, 'Keith Gudger', 'keith@sploids.com', 'None', 
+    'sploids.com', 'sploids.com', 
+    'None', 
+    'Consumer Goods and Retail', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211188, 'Craig Chatterton', 'reg.csumb@excel4x.com', '2063370221.0', 
+    'Excel 4x', 'excel4x.com', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'Small', 
+    0, 'PO BOX 73', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1941
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211187, 'Kathleen Johnsen ', 'melving@pebblebeach.com', '18316243811.0', 
+    'Pebble Beach Resorts', 'pebblebeach.com', 
+    'https://www.linkedin.com/company/pebble-beach-company', 
+    'Hospitality and Travel', 'Pebble Beach Resorts is a legendary golf resort located between Monterey and Carmel, CA. It features four renowned golf courses and three acclaimed resorts. The company also owns and operates the Spa at Pebble Beach, the Pebble Beach Equestrian Center,...', 'Large',
+    'Enterprise', 
+    1, '2700 17 Mile Dr', 
+    'Pebble Beach', 'CA', 
+    '93953', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667376, 'Dene Bustichi', 'dene@bustichi.com', '18314382356.0', 
+    'Bustichi Construction', 'bustichi.com', 
+    'https://www.linkedin.com/company/bustichi-construction-inc', 
+    'Other', 'Bustichi Construction is a leading construction company that specializes in providing high-quality construction services. With years of experience in the industry, Bustichi Construction has built a strong reputation for delivering exceptional results. ...', 'Medium',
+    'Micro', 
+    0, '4652 Scotts Valley Drive', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211186, 'Walt Froloff', 'walt@patentalchemy.com', '18316620505.0', 
+    'Wristoffice', 'patentalchemy.com', 
+    'None', 
+    'Other', 'We service the San Francisco Bay Area including from San Jose to Monterey.', 'Medium',
+    'Small', 
+    0, '273 SEA RIDGE RD', 
+    'APTOS', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667371, 'Donnette Carter', 'donnette@tularechamber.org', '5596861547.0', 
+    'Tulare Chamber of Commerce', 'tularechamber.org', 
+    'https://www.linkedin.com/company/tulare-chamber-of-commerce', 
+    'Public and Government Services', 'The Tulare Chamber of Commerce exists to serve its members and citizens by advocating for, and engaging in, efforts to encourage economic opportunity and business prosperity. For more than 100 years, The Tulare Chamber of Commerce and its predecessor, ...', 'Medium',
+    'Micro', 
+    0, '220 East Tulare Avenue', 
+    'Tulare', 'CA', 
+    '93274', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1891
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605061, 'Marie Butcher', 'mariebutcher@greenheartworks.com', '18316594520.0', 
+    'Green Heart Works', 'greenheartworks.com', 
+    'None', 
+    'Education', 'Green Education and Inspiration', 'Medium',
+    'Micro', 
+    0, '6 PASO MEDIANO', 
+    'Carmel Valley', 'CA', 
+    '93924', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1891
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667367, 'Doug Daley', 'doug@dea4fun.com', '19257668677.0', 
+    'DEA Daley Entertainment Agency', 'dea4fun.com', 
+    'None', 
+    'Other', 'D.E.A. Daley Entertainment Agency is a professional mobile DJ and karaoke company that also offers services as a master of ceremonies, ordained ministries, interactive games, and more. They provide entertainment for parties and events, making sure that...', 'Medium',
+    'Micro', 
+    0, '55 Broderick Dr', 
+    'Brentwood', 'CA', 
+    '94513', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1891
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211185, 'Dohna Dundersale', 'dohna@madeinsantacruz.com', '18314262257.0', 
+    'Made in Santa Cruz', 'madeinsantacruz.com', 
+    'https://www.linkedin.com/company/made-in-santa-cruz-catalo', 
+    'Other', 'Made In Santa Cruz proudly feature over 100 local Santa Cruz County artists and vendors in our store. We offer a collection of locally made artisan gifts, artwork, souvenirs and more, plus Santa Cruz t shirts. Located at the end of the Santa Cruz Wharf.', 'Medium',
+    'Micro', 
+    0, '57 Municipal Wharf', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1891
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211183, 'Kylie Grader ', 'dlaguna@starbucks.com', '12064471575.0', 
+    'Starbucks', 'starbucks.com', 
+    'https://www.linkedin.com/company/starbucks', 
+    'Consumer Goods and Retail', 'Starbucks is an international chain of restaurants that retails handcrafted coffee, tea, and fresh food items.', 'Large',
+    'Enterprise', 
+    1, '2401 Utah Avenue South', 
+    'Seattle', 'WA', 
+    '98134', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1971
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605058, 'Chad Hall', 'chad@remodelmate.com', '12025997989.0', 
+    'Remodelmate', 'remodelmate.com', 
+    'https://www.linkedin.com/company/remodelmate', 
+    'Industrial and Manufacturing', 'Remodelmate is an online marketplace for buying, selling, and managing home renovations. Our team of experts manages the design and build of your dream bathroom, from concept to completion. We offer effortless bathroom renovations with no material sour...', 'Medium',
+    'Micro', 
+    0, '387 Technology Drive', 
+    'College Park', 'MD', 
+    '20740', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221803, 'Will Pigeon', 'will@simple-track.com', '8779982639.0', 
+    'Tablet Command', 'simple-track.com', 
+    'https://www.linkedin.com/company/tablet-command', 
+    'Other', 'Incident Management Software for fire departments. This app is accountability software, incident command software, and incident response software. It also features advanced mapping including pre-plans and hydrants and custom map layers.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'San Rafael', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605056, 'Sean Harre', 'sean@kinatouch.com', 'None', 
+    'kinatouch.com', 'kinatouch.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605054, 'Cecil Moskowitz ', 'c18stephen.brown@usafa.edu', '7193333994.0', 
+    'U.S. Air Force Academy', 'usafa.edu', 
+    'https://www.linkedin.com/school/us-air-force-academy', 
+    'Education', 'The United States Air Force Academy instills cadets with pride and integrity while preparing them to serve their country and succeed. To educate, train and inspire men and women to become officers of character, motivated to lead the U.S. Air and Space ...', 'Large',
+    'Enterprise', 
+    0, '2304 Benton Pkwy', 
+    'Colorado Springs', 'CO', 
+    '72015', 
+    'United States', 
+    'America/Denver', 
+    '2020-03-30', 
+    1954
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605053, 'Susan Mc Peak ', 'sim@thedalesgroup.com', '5172144681.0', 
+    'The Dales Group', 'thedalesgroup.com', 
+    'https://www.linkedin.com/company/mcpeak-media', 
+    'Other', 'The Dales Group is an advertising agency that provides flexible marketing, PR, and advertising solutions tailored for clients. They work with a team of independent specialists to achieve cost-effective, focused results based on a thorough understanding...', 'Medium',
+    'Micro', 
+    0, '28 RIVER RDG', 
+    'Capitola', 'CA', 
+    '95010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221801, 'Jason Dadakis', 'jdadakis@ocwd.com', '7143783373.0', 
+    'Orange County Water District', 'ocwd.com', 
+    'https://www.linkedin.com/company/orange-county-water-district', 
+    'Other', 'The Orange County Water District (OCWD) is a special district established by the California State Legislature in 1933. It manages the large groundwater basin underlying north and central Orange County, providing approximately 75 percent of the water fo...', 'Large',
+    'Large', 
+    0, '18700 Ward Street', 
+    'Fountain Valley', 'CA', 
+    '92708', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1933
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211182, 'John Fair ', 'ann.hajnosz@weareharris.com', '9258274900.0', 
+    'Harris & Associates', 'weareharris.com', 
+    'https://www.linkedin.com/company/harris-&-associates', 
+    'Real Estate and Development', 'Harris & Associates is a top provider of civil engineering, construction management, environmental, and municipal finance consulting services across the California Bay Area, Southern California, Nevada, and Washington. They are a 100% employee-owned co...', 'Large',
+    'Large', 
+    0, '1401 Willow Pass Road', 
+    'Concord', 'CA', 
+    '94520', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211176, 'Katy Levinson ', 'derrick@brightsky.ai', '6505508480.0', 
+    'BrightSky', 'brightsky.ai', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '101 Cooper St', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211175, 'David Hood ', 'alkorniakov@cambrillo.edu', 'None', 
+    'cambrillo.edu', 'cambrillo.edu', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211173, 'Daniela Bryan ', 'hschoen@trayas-group.com', '8443226224.0', 
+    'Trayas, Inc.', 'trayas-group.com', 
+    'None', 
+    'Technology', 'Trayas Best Finds: Discover our best finds from around the world. We source products globally and distribute them in the United States and in Germany.', 'Large',
+    'Small', 
+    0, '1 Ave Maria Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221798, 'Stephane Boussely', 'stephane@unique.ai', 'None', 
+    'Unique.ai', 'unique.ai', 
+    'https://www.linkedin.com/company/unique.ai', 
+    'Technology', 'Unique.ai is an enterprise conversational technology company that specializes in automating personalized experiences. They provide a vertical SaaS platform for hotels, restaurants, retail stores, and interim or real estate agencies. Their software deve...', 'Medium',
+    'Micro', 
+    0, '149 Natoma Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605050, 'Hakan Erdinc', 'hakan.erdinc@rabobank.com', 'None', 
+    'Rabobank', 'rabobank.com', 
+    'https://www.linkedin.com/company/rabobank', 
+    'Other', 'Rabobank is a cooperative bank that offers a full range of financial services. It operates on cooperative principles and has a strong focus on customer satisfaction. The bank provides online banking services for both Dutch private customers and interna...', 'Large',
+    'Corporate', 
+    0, '18 Croeselaan', 
+    'Utrecht', 'None', 
+    '3521CB', 
+    'Netherlands', 
+    'Europe/Amsterdam', 
+    '2020-03-30', 
+    1895
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605049, 'Daniel Casciato', 'dan@ultracoldgold.com', 'None', 
+    'ultracoldgold.com', 'ultracoldgold.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1895
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221794, 'Lara Bezich', 'larabezich@muvobox.com', 'None', 
+    'Muvobox', 'muvobox.com', 
+    'https://www.linkedin.com/company/muvobox', 
+    'Consumer Goods and Retail', 'D2C Storage and Organization for Renters A new kind of furniture for renters, students, and adventuring minimalists, Muvo Box combines strength and lightweight durability to be the first paper honeycomb modular furniture that fits any space, need, or ...', 'Medium',
+    'Micro', 
+    0, '2871 Soquel Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605048, 'Cindy Evenson', 'ag@agvising.com', 'None', 
+    'agvising', 'agvising.com', 
+    'https://www.linkedin.com/company/agvising', 
+    'Other', 'Agvising is a company that specializes in helping farm leaders make data-driven decisions. They use business intelligence strategies, project management, and technology to drive results in operations management and regulatory compliance. They partner w...', 'Medium',
+    'Micro', 
+    0, '8042 Moss Landing Road', 
+    'Moss Landing', 'CA', 
+    '95039', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605047, 'Kevin Heuer', 'kheuer@cfscc.org', '18316622000.0', 
+    'Community Foundation Santa Cruz County', 'cfscc.org', 
+    'https://www.linkedin.com/company/community-foundation-santa-cruz-county', 
+    'Non-Profit', 'Community Foundation Santa Cruz County (CFSCC) is a local community foundation in Santa Cruz County, California. We provide resources and support for individuals, families, and organizations to make a positive impact in our community. With total assets...', 'Large',
+    'Small', 
+    0, '7807 Soquel Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605045, 'Matt Herman', 'matt@wavestaff.com', '8316899800.0', 
+    'Wave Executive Search', 'wavestaff.com', 
+    'https://www.linkedin.com/company/wavestaff', 
+    'Other', 'Wave Executive Search & GTM Recruiting is a GTM Recruiting Agency that partners with SaaS startups to help grow and scale their teams with top talent. They offer Recruiting as a Service (RaaS), Contingency Recruiting, and retained search. Wave Executiv...', 'Medium',
+    'Micro', 
+    0, '783 Rio Del Mar Boulevard', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605044, 'Jynel Gularte', 'jynel@rinconfarmsinc.com', 'None', 
+    'rinconfarmsinc.com', 'rinconfarmsinc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221792, 'La Tanya Hawkins', 'latanya.hawkins@turnergroupconstruction.com', '15108350400.0', 
+    'Turner Group Construction', 'turnergroupconstruction.com', 
+    'https://www.linkedin.com/company/turner-group-construction', 
+    'Industrial and Manufacturing', 'In 2005, Turner Group Construction was established by family members Len Turner, Lance Turner, Lagon Turner, and Fred Mackay. These four were soon joined by Ken Houston and La Tanya Hawkins. This fateful collaboration created a vital integration of well-honed skills, such as, General Contracting, Contract Negotiating, Human Resources Development, and Property Management. The union included former owners of state-of-the-art Builders; Mackay Professional Building Services, Top Notch Builders, and One Touch Property Maintenance. Under this leadership, and the combined 80 years of construction and management experience, the company focused on residential rehabilitation and property maintenance. Soon the scope of work was expanded to include construction of commercial and industrial projects, such as, hospitals, medical office buildings, educational institutions, ports, transportation railways and similar projects. Today, Turner Group is established as a premier Bay Area minority contractor, dedicated to the redevelopment, renovation and renewal of the communities in which we live and work. TGC's mission is to deliver affordable, quality construction and property management services to every project within the community.', 'Large',
+    'Medium', 
+    0, '1625 Filbert Street', 
+    'Oakland', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221790, 'Christina Bassani', 'christina.bassani@utcpartners.com', '18312980898.0', 
+    'UTC Partners', 'utcpartners.com', 
+    'https://www.linkedin.com/company/utcpartners', 
+    'Education', 'UTC Partners is a company that helps leaders, teams, and organizations stay ahead of the curve. They offer support in enterprise transformation and their typical project duration is 30-90 days, depending on the scope of discovery. UTC Partners' team of...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    5921853291, 'Karl Gramespacher ', 'scubasonar@gmail.com', '8312242611.0', 
+    'Wawico', 'wawico.com', 
+    'https://www.linkedin.com/company/wawico', 
+    'Industrial and Manufacturing', 'WAWICO is a technology company focused on developing intelligent and intuitive water metering and leak detection solutions for the household consumer. Their affordable metering systems provide precise water usage data for an entire piping network witho...', 'Medium',
+    'Micro', 
+    0, '8 Mescal Place', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221787, 'Angelo Dovolis', 'adovolis@producegroup.net', 'None', 
+    'producegroup.net', 'producegroup.net', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221781, 'Bryan Beatty', 'bryan@gisplanning.com', '14152944775.0', 
+    'GIS Planning', 'gisplanning.com', 
+    'https://www.linkedin.com/company/gis-planning', 
+    'Technology', 'GIS Planning is the leading provider of online economic development solutions for investment promotion and corporate site selection, offering best in class technology, service, and data. They help clients attract, retain, and grow business with their w...', 'Large',
+    'Small', 
+    0, '1 Hallidie Plz', 
+    'San Francisco', 'CA', 
+    '94102', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221777, 'Jerry Edelen', 'cityhall@delreyoaks.org', '8313948511.0', 
+    'City of Del Rey Oaks', 'delreyoaks.org', 
+    'https://www.linkedin.com/company/del-rey-oaks-police-dept', 
+    'Other', 'The City of Del Rey Oaks is a municipality located in Monterey County, California. It provides various services to its residents and visitors, including law enforcement. The city is committed to ensuring the safety and well-being of its community. Del ...', 'Medium',
+    'Micro', 
+    0, '650 Canyon Del Rey Boulevard', 
+    'Del Rey Oaks', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221776, 'Christian Campisi', 'chrisc@legacyplanllc.com', 'None', 
+    'legacyplanllc.com', 'legacyplanllc.com', 
+    'None', 
+    'Technology', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221775, 'Daniel Fitzgerald', 'dfitzgerald@swccd.edu', '16202296368.0', 
+    'Southwestern Community College District', 'swccd.edu', 
+    'https://www.linkedin.com/school/southwestern-community-college-district', 
+    'Education', 'Southwestern College is a public community college located in Chula Vista, California. Established in 1961, it is the only institution of higher education in south San Diego County. The college offers over 320 associate degree and certificate options, ...', 'Large',
+    'Enterprise', 
+    0, '900 Otay Lakes Road', 
+    'Chula Vista', 'CA', 
+    '91910', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1961
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221774, 'Shea Brucker', 'shea@homesliceapp.com', 'None', 
+    'Undefined', 'homesliceapp.com', 
+    'https://www.linkedin.com/company/3355336', 
+    'Technology', 'HouseSlice is a household management solution that streamlines bills, supplies, and chores for roommates. Our platform helps roommates easily split and track expenses, manage household supplies, and assign and track chores. With HouseSlice, roommates c...', 'Medium',
+    'Micro', 
+    0, '955 Morro St', 
+    'San Luis Obispo', 'CA', 
+    '93401', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221773, 'Anthony Botelho ', 'patkim@garlic.com', '8008994125.0', 
+    'South Valley Internet', 'garlic.com', 
+    'https://www.linkedin.com/company/south-valley-internet-incorporated', 
+    'Technology', 'South Valley Internet (garlic.com) is a leader in global communications, providing internet connectivity and telecommunications services. Originally founded in 1994 as an Internet Service Provider, SVI has evolved into a communication solutions provide...', 'Large',
+    'Micro', 
+    0, '95 East San Martin Avenue', 
+    'San Martin', 'CA', 
+    '95046', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221772, 'Karen Calcagno', 'karenc@advantagefbc.com', '18314754479.0', 
+    'Karen Calcagno', 'advantagefbc.com', 
+    'None', 
+    'Other', 'Happy Families - Healthy Family Business. Coaching + Training = Legacy Building Results. Karen Calcango, CPCC,PCC, ORSCC', 'Medium',
+    'Small', 
+    0, '1080 PO Box', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221771, 'Andrew Doll', 'adoll@ciginsurance.com', '8006829255.0', 
+    'Capital Insurance Group', 'ciginsurance.com', 
+    'https://www.linkedin.com/company/capital-insurance-group', 
+    'Finance and Legal', 'Established in 1898, Capital Insurance Group® (CIG) is a leading regional property and casualty insurer in the Western U.S. Headquartered in Monterey, California, CIG offers trusted Agriculture, Commercial, and Personal coverage across Arizona, Califor...', 'Large',
+    'Large', 
+    0, '2300 Garden Rd', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1898
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221769, 'Kurt Grutzmacher ', 'adam@pacificworkplaces.com', '19543892511.0', 
+    'Pacific Workplaces', 'pacificworkplaces.com', 
+    'https://www.linkedin.com/company/pacific-workplaces', 
+    'Real Estate and Development', 'Pacific Workplaces offers flexible office space, virtual offices, coworking memberships, and access to meeting rooms. Join our community and make work better. Need a work from home or hybrid work solution? Try our All Access Plans. Work when you want. ...', 'Large',
+    'Medium', 
+    0, '201 Spear Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221768, 'Shana Kropp ', 'skip@taygeta.com', '8316410645.0', 
+    'Taygeta Scientific Incorporated', 'taygeta.com', 
+    'https://www.linkedin.com/company/taygeta-scientific-inc-', 
+    'Technology', 'Taygeta Network Security Services is dedicated to protecting and monitoring your personal, business and corporate network infrastructure. Taygeta Scientific Incorporated has been in business since 1995 (founded by Everett Carter) providing clients with...', 'Medium',
+    'Micro', 
+    0, '605 Charles Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672466, 'Geoff Dillon', 'gdillon@tctig.com', 'None', 
+    'tctig.com', 'tctig.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '18655 Madrone Parkway', 
+    'Morgan Hill', 'CA', 
+    '95037', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672464, 'Mike Ihnot', 'thehall@ibew234.org', '4082659443.0', 
+    'Ibew234.org', 'ibew234.org', 
+    'None', 
+    'Other', 'The Electrical Worker's Union for Monterey, Santa Cruz, and San Benito County. Electricians, Solar, Energy Efficiency, Green Jobs', 'Medium',
+    'Small', 
+    0, '10300 Merritt St', 
+    'Castroville', 'CA', 
+    '95012', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1996
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672463, 'Joshua Bradley', 'jbradley@levered.com', '15416017144.0', 
+    'Step One', 'gotostepone.com', 
+    'https://www.linkedin.com/company/step-one-llc', 
+    'Technology', 'Thriving with Crohn's Disease as a father, husband, co founder, and athlete Joshua is writing about his journey healing from Crohn's/Inflammatory Bowel Disease and his path as an autoimmune athlete and author of books related to food, IBD, and performa...', 'Medium',
+    'Micro', 
+    0, '478 Siskiyou Blvd', 
+    'Santa Cruz', 'CA', 
+    '97520', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672461, 'Ann Bixler ', 'mrygillc@gmail.com', '8003277322.0', 
+    'Thanbai88 Casino Online', 'mazdaraceway.com', 
+    'https://www.linkedin.com/company/mazda-raceway-laguna-seca', 
+    'Healthcare', 'Thanbai88 Casino Online is the #1 online casino in Vietnam. They offer fast deposits and withdrawals, as well as a variety of gambling options such as sports betting, online lottery, fishing games, slot games, and live casino. They provide the best odd...', 'Large',
+    'Micro', 
+    0, '1021 Monterey Salinas Highway', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672460, 'Unknown', 'unknown72@invalid.com', '5308771965.0', 
+    'Youth for Change', 'youth4change.org', 
+    'https://www.linkedin.com/company/youth-for-change', 
+    'Other', 'Youth for Change is a non profit, public benefit organization providing comprehensive and dynamic services, support and treatment to individuals, families and communities in the North State. Wraparound provides the support, skills & resources to help f...', 'Large',
+    'Medium', 
+    0, '7200 Skyway', 
+    'Paradise', 'CA', 
+    '95969', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1991
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672458, 'Yuri Anderson ', 'katy.castagna@unitedwaymcca.org', '8313728026.0', 
+    'United Way Monterey County', 'unitedwaymcca.org', 
+    'https://www.linkedin.com/company/united-way-monterey-county', 
+    'Non-Profit', 'Our mission is to engage the community and focus resources to improve lives in Monterey County. We work collaboratively with local businesses, government and nonprofits to tackle critical issues in the community. In any community, education, income and...', 'Large',
+    'Small', 
+    0, '60 Garden Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1929
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672456, 'Edward Fordyce', 'ed@roguepye.com', '8312514402.0', 
+    'Rogue Pye by Artisan Hand Food', 'roguepye.com', 
+    'None', 
+    'Other', 'Rogue Pye is a company that specializes in artisan hand food, particularly meat pies that can be eaten on the go.', 'Small',
+    'None', 
+    0, '115 Manresa Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1929
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672455, 'Ron Duncan ', 'tajd@soquelcreekwater.org', '8314758500.0', 
+    'Soquel Creek Water District', 'soquelcreekwater.org', 
+    'https://www.linkedin.com/company/soquel-creek-water-district', 
+    'Other', 'Soquel Creek Water District is a nonprofit, local government agency providing water to parts of the City of Capitola, and the unincorporated areas of Aptos, La Selva Beach, Opal Cliffs, Rio Del Mar, Seascape and Soquel in Santa Cruz County, Calif.', 'Large',
+    'Small', 
+    0, '5180 Soquel Drive', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1961
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672453, 'David Eldredge', 'deldredge@eldredgeconsulting.com', 'None', 
+    'eldredgeconsulting.com', 'eldredgeconsulting.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1961
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672452, 'Roger Grimsley', 'citymanager@san-juan-bautista.ca.us', '8312340893.0', 
+    'City of San Juan Bautista', 'san-juan-bautista.ca.us', 
+    'https://www.linkedin.com/company/city-of-san-juan-bautista', 
+    'Hospitality and Travel', 'The City of San Juan Bautista is a unique village, alive with early California history and home to one of the most authentic, picturesque and pristine missions along the California mission trail. A deep commitment to preservation has endowed the city w...', 'Large',
+    'Small', 
+    0, '311 2nd Street', 
+    'San Juan Bautista', 'CA', 
+    '95045', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731282, 'Paul Caliandro', 'paul@schoolcnxt.com', '9783442698.0', 
+    'SchoolCNXT', 'schoolcnxt.com', 
+    'https://www.linkedin.com/company/schoolcnxt', 
+    'Creative and Media', 'Snap! Connect SchoolCNXT is a mobile/web based family engagement solution that helps districts and schools create school centered communities with a positive school culture and actively engaged families. Find. Share. Engage. Building community one scho...', 'Medium',
+    'Micro', 
+    0, '33 Bradford Street', 
+    'Concord', 'MA', 
+    '01742', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731280, 'Sonya Davis', 'sonya@neqtr.com', 'None', 
+    'Neqtr', 'neqtr.com', 
+    'https://www.linkedin.com/company/neqtr', 
+    'Technology', 'Neqtr is a relationship app for socially conscious people looking for love or friendship. We bring positive meaning back to the word sexy, by connecting people via causes & lifestyles and helping them meet at planned group socials like volunteering, ch...', 'Medium',
+    'Micro', 
+    0, '3987 GEORGIA ST', 
+    'San Diego', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731277, 'Bryan Banks', 'brian@kiptraq.com', 'None', 
+    'KipTraq', 'kiptraq.com', 
+    'https://www.linkedin.com/company/kiptraq.com', 
+    'Technology', 'KipTraq is a mobile data collection platform that helps businesses collect data on their mobile devices and report on that data via the cloud. KipTraq is flexible enough to give users full control on what data their employees capture, and our best in c...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731276, 'Charles Canfield', 'charles.canfield@scseaside.com', '18314603365.0', 
+    'Santa Cruz Seaside Company', 'scseaside.com', 
+    'https://www.linkedin.com/company/seaside-systems', 
+    'Technology', 'Seaside Systems is a leading provider of IT services and IT consulting. With a team of experienced professionals, we offer a wide range of solutions to help businesses optimize their IT infrastructure and achieve their goals. From network design and im...', 'Medium',
+    'Micro', 
+    0, '23 Whites Path', 
+    'Yarmouth', 'MA', 
+    '02664', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1915
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731275, 'Chris Starr ', 'betha916@gmail.com', '9496102270.0', 
+    'Coincierge Club', 'coincierge.club', 
+    'https://www.linkedin.com/company/coincierge-club', 
+    'Finance and Legal', 'Coincierge Club is a mobile private key wallet and point of sale solution. It offers a mobile private key wallet that supports over 40,000 different coins, making purchasing easy, safe, and efficient. The wallet is integrated with the Waves Blockchain,...', 'Large',
+    'Micro', 
+    0, '1950 VILLAGE CENTER CIR', 
+    'Las Vegas', 'CA', 
+    '89128', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731274, 'Abby Taylor Silva ', 'jim@growershipper.com', '8314228844.0', 
+    'Grower-Shipper Association of Central California', 'growershipper.com', 
+    'https://www.linkedin.com/company/grower-shipper-association-of-central-california', 
+    'Public and Government Services', 'The Grower-Shipper Association of Central California is a membership-based organization that represents the agricultural needs of its members on the Central Coast. With over 300 member companies, the association provides extensive information and netwo...', 'Medium',
+    'Micro', 
+    0, '512 Pajaro Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1930
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731273, 'Rod Braga ', 'laura.penera@bragaranch.com', '8316752154.0', 
+    'Braga Ranch', 'bragaranch.com', 
+    'https://www.linkedin.com/company/braga-ranch-inc.', 
+    'Consumer Goods and Retail', 'Braga Ranch is a leading agricultural company based in California's Salinas Valley. With year-round farming operations, we are known for consistently delivering fresh vegetables to top shippers, processors, and resellers. Our produce is grown under the...', 'Large',
+    'Medium', 
+    0, '33750 Moranda Road', 
+    'Soledad', 'CA', 
+    '93960', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605040, 'Fred Deyoung', 'fdeyoung@pbfurniture.com', '12018430500.0', 
+    'Pricebuster Furniture and Mattress Warehouse', 'pbfurniture.com', 
+    'https://www.linkedin.com/company/pricebuster-furniture-and-mattress-warehouse', 
+    'Consumer Goods and Retail', 'Pricebuster Furniture and Mattress Warehouse (pbfurniture.com) is a leading provider of high-quality furniture and home furnishings. With a focus on manufacturing, we offer a wide range of products including sofas, beds, dining sets, and more. Our furn...', 'Medium',
+    'Micro', 
+    0, '159 Route 4', 
+    'Paramus', 'NJ', 
+    '07652', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605039, 'Jerry Hall', 'jerry@segwaytoursmonterey.com', '18313244438.0', 
+    'Segway Tours Monterey', 'segwaytoursmonterey.com', 
+    'None', 
+    'Hospitality and Travel', 'Segway Tours Monterey offers a variety of tour adventures that allow visitors to see and experience more during their visit to the Monterey Bay Area. With the best way to experience the bay, Segway Tours Monterey provides an exciting and unique way to ...', 'Medium',
+    'Micro', 
+    0, '125 Ocean View Boulevard', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731269, 'John Eastman', 'johne@myraeastman.com', '8314798470.0', 
+    'myraeastman.com', 'myraeastman.com', 
+    'None', 
+    'Other', 'Myra Eastman is a leading provider of innovative technology solutions for businesses. We specialize in developing custom software applications, mobile apps, and web solutions that help companies streamline their operations and improve their productivit...', 'Medium',
+    'Small', 
+    0, '1031 El Dorado Avenue', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-15', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731268, 'Adam Davis ', 'alan.barich@barichbiz.com', '8314621413.0', 
+    'Barich Business Services', 'barichbiz.com', 
+    'https://www.linkedin.com/company/barich-business-services-llc', 
+    'Education', 'MontereyBayBizPlan (barichbiz.com) is a business consulting company that has been operating in Silicon Valley and the Monterey Bay Area for 30 years. Led by Susan Arcady Barich, the company offers a range of consulting services to start-ups, students, ...', 'Medium',
+    'Micro', 
+    0, '1725 Grey Seal Road', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731267, 'Austin Dorsay ', 'chris@seeviapp.com', '8312418147.0', 
+    'SeeVi', 'seeviapp.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '3081 Valdez', 
+    'Pebble Beach', 'CA', 
+    '93953', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731266, 'Russell Conway', 'russell@smartbinstech.com', '6508393535.0', 
+    'SmartBins', 'smartbinstech.com', 
+    'https://www.linkedin.com/company/smartbinstech', 
+    'Other', 'Hassle-free smart dispensers for grocery shoppers.', 'Medium',
+    'Micro', 
+    0, '826 Bay Ave #1877', 
+    'Capitola', 'CA', 
+    '95010', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731265, 'Joe Calcagno', 'joe@montereybaydatacenter.com', 'None', 
+    'montereybaydatacenter.com', 'montereybaydatacenter.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731264, 'Wendy Brickman', 'brickman@brickmanmarketing.com', '8316334444.0', 
+    'Brickman Marketing', 'brickmanmarketing.com', 
+    'https://www.linkedin.com/company/brickman-marketing', 
+    'Education', 'Brickman Marketing is an award-winning marketing and public relations consultant that specializes in promoting products and services through various channels such as print, radio, television, and the internet. They offer services in marketing and adver...', 'Medium',
+    'Micro', 
+    0, '395 Del Monte Center', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1990
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605037, 'Lauren  ', 'alisha@goodtimes.sc.com', '442078858888.0', 
+    'Standard Chartered', 'goodtimes.sc.com', 
+    'https://www.linkedin.com/company/standardchartered', 
+    'Other', 'Standard Chartered PLC is an international banking company. The Banks's segments include Corporate & Institutional Banking, Retail Banking, Commercial Banking and Private Banking. Its Corporate & Institutional Banking segment allows companies and financial institutions to operate and trade globally, and its Private Banking segment supports high net worth individuals with their banking needs across borders and offers access to global investment opportunities. Its Retail Banking segment offers clients, as well as small businesses a range of banking support solutions, and its Commercial Banking segment provides mid-sized companies with financial solutions and services. Its personal banking offerings include investments and employee banking. Its business banking capabilities include transaction banking, Islamic banking and global research. Its private banking offerings include online services and its e-magazine.', 'Large',
+    'Enterprise', 
+    1, '1 Basinghall Ave', 
+    'London', 'None', 
+    'EC2V 5DD', 
+    'Singapore', 
+    'Asia/Singapore', 
+    '2020-03-30', 
+    1853
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605035, 'Jeremy Blalock ', 'ben@foundryplatform.io', '8314028539.0', 
+    'Foundry Platform', 'foundryplatform.io', 
+    'None', 
+    'Other', 'Adalo makes creating apps as easy as putting together a slide deck. Turn your idea into a real app — without writing a single line of code.', 'Small',
+    'None', 
+    0, '1161 Sylvan Pl.', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1853
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605034, 'Glen Dupree', 'glen@merrillfarms.com', '8314247365.0', 
+    'Merrill Farms, LLC', 'merrillfarms.com', 
+    'https://www.linkedin.com/company/merrill-farms-llc', 
+    'Other', 'Merrill Farms is a fourth generation vegetable grower in the Salinas Valley since 1933. They specialize in farming high-quality vegetables and are committed to sustainable and environmentally friendly practices. With decades of experience, Merrill Farm...', 'Large',
+    'Medium', 
+    0, '18900 Portola Dr', 
+    'Salinas', 'CA', 
+    '93902', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605032, 'Jamie Goldstein ', 'jbertrand@ci.capitola.ca.us', 'None', 
+    'capitola.ca.us', 'ci.capitola.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605030, 'Ryan Lentz ', 'jacbaker@csumb.com', 'None', 
+    'csumb.com', 'csumb.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-09-26', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605029, 'Augie Louis ', 'elm3@got.net', '8314602000.0', 
+    'Got.Net', 'got.net', 
+    'https://www.linkedin.com/company/got-net', 
+    'Technology', 'Got.net is a leading provider of internet and cloud hosting services. They offer a full range of services, including personal web hosting, email services, corporate networking, and server colocation. With their high-speed internal network and connectio...', 'Medium',
+    'Micro', 
+    0, '303 Potrero Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211171, 'Gabriel Guimares ', 'rafael.batista@bovcontrol.com', 'None', 
+    'BovControl', 'bovcontrol.com', 
+    'https://www.linkedin.com/company/bovcontrol', 
+    'Industrial and Manufacturing', 'BovControl is a company that empowers rural producers and livestock farmers to make more precise, productive, and profitable decisions. They are building applications for the future of food, sustainability, and carbon credits. Their goal is to feed 1 b...', 'Large',
+    'Small', 
+    0, '1748 Avenida Engenheiro Luís Carlos Berrini', 
+    'So Paulo', 'None', 
+    '04578-000', 
+    'Brazil', 
+    'America/Sao_Paulo', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211169, 'Chuck Boggs', 'cboggs@paladin-sf.com', '14153057698.0', 
+    'Paladin-Sf.com', 'paladin-sf.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    '93940', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211168, 'Michael Buffo', 'mike@houseof8media.com', '18312048526.0', 
+    'House of 8 Media', 'houseof8media.com', 
+    'None', 
+    'Other', 'House of 8 Media believes eyeballs are the new real estate. From the big screen to the screen in your pocket, each platform is a unique tool for delivering your message. If this is your first time working with video or your hundredth time, you couldn’...', 'Medium',
+    'Micro', 
+    0, '44 MELWAY CIR', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211166, 'Ralph Bracamonte', 'rmb@centralwaterdistrict.us.com', 'None', 
+    'centralwaterdistrict.us.com', 'centralwaterdistrict.us.com', 
+    'None', 
+    'Other', 'Boost Consulting, Inc specialized in consulting services, business development, sales and marketing strategy, strategic plannung.', 'Small',
+    'Small', 
+    0, '9480 S Eastern Avenue Suite 180', 
+    'Castle Rock', 'CO', 
+    'None', 
+    'United States', 
+    'America/Denver', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221767, 'Charles davis', 'charles@mobilityecommerce.com', '14088054704.0', 
+    'MobilityeCommerce', 'mobilityecommerce.com', 
+    'https://www.linkedin.com/company/mobilityecommerce.com', 
+    'Consumer Goods and Retail', 'MobilityeCommerce is a saas based enterprise platform for wholesalers, distributors, retailers, drop shippers, product companies, and manufacturers. It provides a comprehensive solution for maximizing the power of eCommerce and marketplaces, leveraging...', 'Large',
+    'Small', 
+    0, '1159 Sonora Court', 
+    'Sunnyvale', 'CA', 
+    '94086', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221762, 'Cameron Burnett', 'cameronburnett2013@gmail.com', 'None', 
+    'ctlce.com', 'ctlce.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672449, 'Brian Bode', 'brian@heybode.com', 'None', 
+    'HeyBode', 'heybode.com', 
+    'None', 
+    'Consumer Goods and Retail', 'HeyBode creates all natural, organic beauty products with handpicked, Certified Organic Ingredients. HeyBode is designed to keep our planet beautiful while helping you find natural beauty in your own reflection.', 'Medium',
+    'Micro', 
+    0, '201 Lighthouse Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221760, 'Kristian Akin', 'kaakin@ncsu.edu', '2524822830.0', 
+    'NC State University', 'ncsu.edu', 
+    'http://www.linkedin.com/company/4813', 
+    'Education', 'NC State University is an educational institution that offers graduate and undergraduate programs. Start your college journey — and see where it will take you. Learn about NC State, our leadership and where we excel. Gain knowledge, skills and experien...', 'Large',
+    'Enterprise', 
+    0, '6498 Campus Dr', 
+    'Raleigh', 'NC', 
+    '27695', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    1887
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672447, 'Joseph Billingsley', 'founder@milcyber.org', 'None', 
+    'MCPA', 'milcyber.org', 
+    'https://www.linkedin.com/company/military-cyber-professionals-association', 
+    'Other', 'MCPA Military Cyber Professionals Association is dedicated to developing the American military cyber profession & investing in our nation's future through STEM ed. Donate Today! Join Today! We are dedicated to developing American military cyber profess...', 'Large',
+    'Small', 
+    0, '6641 WAKEFIELD DR', 
+    'Alexandria', 'MD', 
+    '22307', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221759, 'Victor  Bond', 'vbond@bondgroup.us', 'None', 
+    'bondgroup.us', 'bondgroup.us', 
+    'https://www.linkedin.com/company/1498569', 
+    'Other', 'nan', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672445, 'Bob Martin', 'chilibob@riofarms.com', '8313856225.0', 
+    'Rio Farms, LLC', 'riofarms.com', 
+    'https://www.linkedin.com/company/gills-onions-llc', 
+    'Other', 'All Otr Misc Crop Farming', 'Large',
+    'Large', 
+    0, 'Po Box 605', 
+    'King City', 'CA', 
+    '93930', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672443, 'Peter Biggam', 'peter.b@digitalsignagefactory.com', '8314271786.0', 
+    'SUB Culture Television', 'digitalsignagefactory.com', 
+    'None', 
+    'Other', 'Do it yourself digital signage. Only $33 a month for 6 months. Then cancel anytime or pay just $6 a month', 'Medium',
+    'Small', 
+    0, '2825 MISSION ST', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289221756, 'Gary Byrne ', 'svanrooy@cffsbc.org', 'None', 
+    'Community Foundation for San Benito County', 'givesanbenito.org', 
+    'https://www.linkedin.com/company/community-foundation-for-san-benito-county', 
+    'Public and Government Services', 'The Community Foundation for San Benito County is a 501(c)3 nonprofit organization that supports philanthropic activities for our community. The Community Foundation helps donors achieve their long term charitable goals through a variety of giving opti...', 'Large',
+    'Micro', 
+    0, '829 San Benito Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289667365, 'Rich Amirsehhi ', 'kriste@naturipe.com', '2395911664.0', 
+    'naturipe.com', 'naturipe.com', 
+    'https://www.linkedin.com/company/1312699', 
+    'Other', 'Naturally in Good Taste', 'Large',
+    'Small', 
+    0, '999 VANDERBILT BEACH RD', 
+    'Naples', 'FL', 
+    '34108', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731261, 'Teresa Alberts', 'jan@vanderbiltcpa.com', '8316200811.0', 
+    'Vanderbilt CPA', 'vanderbiltcpa.com', 
+    'https://www.linkedin.com/company/vanderbilt-certified-public-accountants', 
+    'Other', 'We are Monterey County's most innovative accounting and consulting firm, serving Carmel, Monterey, Salinas, and the greater Monterey Peninsula. Our team specializes in what matters to you most: value. We prepare returns and financials, sure, but we als...', 'Medium',
+    'Micro', 
+    0, '126 Clock Tower Place', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289731260, 'Carrie Birkhofer', 'cbirkhofer@bayfed.com', '8314796000.0', 
+    'Bay Federal Credit Union', 'bayfed.com', 
+    'https://www.linkedin.com/company/bay-federal-credit-union', 
+    'Other', 'Bay Federal Credit Union is a full service, not for profit financial cooperative. We provide personal and business banking services but, unlike a bank, we're owned by our account holders — members like you! Our goal is to be better than a bank by deliv...', 'Large',
+    'Large', 
+    0, '3333 Clares Street', 
+    'Capitola', 'CA', 
+    '95010', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211165, 'Laura Alexander', 'lcalexander@lauraalexanderco.com', 'None', 
+    'Laura Alexander', 'lauraalexanderco.com', 
+    'https://www.linkedin.com/company/laura-alexander-company-llc', 
+    'Consumer Goods and Retail', 'nan', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    '34107', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3290211161, 'Jason Burnett', 'jason@burnettforcarmel.com', 'None', 
+    'burnettforcarmel.com', 'burnettforcarmel.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1957
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605028, 'Alec Abend', 'alec@hexboxfitness.com', '5595779980.0', 
+    'Hexbox Fitness LLC', 'hexboxfitness.com', 
+    'https://www.linkedin.com/company/hexbox-fitness', 
+    'Other', 'Hexbox Fitness is a state-of-the-art fitness facility in Monterey, California. They offer 24-hour gym access, intense 50-minute workouts, and points-based HR technology. Their services include small group classes, real-time heart rate sensing, and a mo...', 'Small',
+    'Micro', 
+    0, '1760 Fremont Blvd #D3', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605027, 'James Anderson', 'ceo@ucejuice.com', '18312168231.0', 
+    'UCE Juice', 'ucejuice.com', 
+    'https://www.linkedin.com/company/uce-juice-llc', 
+    'Consumer Goods and Retail', 'UCE JUICE is a leading provider of high-quality, organic juices. We offer a wide range of delicious and nutritious juices made from fresh fruits and vegetables. Our juices are cold-pressed to retain maximum nutrients and flavor. We are committed to pro...', 'Large',
+    'Micro', 
+    0, '3330 Del Monte Boulevard', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289605021, 'Charlie Jackman', 'dcamba@hospicegiving.org', '8313339023.0', 
+    'Hospice Giving Foundation', 'hospicegiving.org', 
+    'https://www.linkedin.com/company/hospice-giving-foundation', 
+    'Non-Profit', 'Hospice Giving Foundation raises funds and gives grants to hospice and other end of life care organizations in Monterey and San Benito counties, and is a source of information and guidance on end of life questions.', 'Large',
+    'Micro', 
+    0, '80 Garden Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289672439, 'Jonathan Alonso', 'jalonso@ssumb.edu', 'None', 
+    'ssumb.edu', 'ssumb.edu', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642178, 'William Tysseling', 'bill.tysseling@santacruzchamber.org', '8314573713.0', 
+    'Santa Cruz Chamber of Commerce', 'santacruzchamber.org', 
+    'https://www.linkedin.com/company/santa-cruz-chamber-of-commerce', 
+    'Public and Government Services', 'Santa Cruz Area Chamber of Commerce', 'Medium',
+    'Small', 
+    0, '725 Front Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1889
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643644, 'Justin Lemus', 'justin@photobloomar.com', '3109940845.0', 
+    'Photo Bloom AR', 'photobloomar.com', 
+    'https://www.linkedin.com/company/photobloom-ar-inc.', 
+    'Technology', 'PhotoBloom AR is an end-to-end Interactive Print platform and creator marketplace that offers Augmented Reality (AR) development services for iOS and Android mobile applications. They specialize in creating incredible photo products such as frames, pos...', 'Medium',
+    'Micro', 
+    0, '1415 Rodriguez St.', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643642, 'Terence Unger', 't.w.unger@gmail.com', '2094539525.0', 
+    'Vega Energy Systems', 'vegaenergysystems.com', 
+    'None', 
+    'Other', '"Hello: My name is Terence W. Unger I am the CEO of Vega Energy Systems. Our product is a universal clean energy electrode.', 'Medium',
+    'Micro', 
+    0, '1093 Broadway Ave.', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220044, 'Gabriella Martay', 'g.martay@helps2.com', '8315783868.0', 
+    'Helps2', 'helps2.com', 
+    'https://www.linkedin.com/company/helps2media', 
+    'Other', 'Helps2 is a company that specializes in helping small businesses and organizations grow. They offer services such as social media management, website design, and strategy consulting to build a strong online presence. Their team of marketing experts is ...', 'Large',
+    'Micro', 
+    0, '19180 Locarno Way', 
+    'Salinas', 'CA', 
+    '93906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569928, 'Hanwei Tan', '168talk@gmail.com', 'None', 
+    'elaiju.com', 'elaiju.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569926, 'thomas rettenwender', 'ttretten@gmail.com', '8319208333.0', 
+    'EcoLogic Game Lab', 'ecologicdesignlab.com', 
+    'None', 
+    'Other', 'EcoLogic Design Lab is an Architectural and ecological design and research firm specializing in commercial and residential green building design projects.', 'Small',
+    'None', 
+    0, '437 Figueroa St', 
+    'Carmel Valley', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642176, 'Anthony Rimando', 'smudggluv@att.net', '8316330559.0', 
+    'smudggluv.com', 'smudggluv.com', 
+    'https://www.linkedin.com/company/the-original-smudg-g%27luv', 
+    'Other', 'The Original Smudg G'luv - use public monitors without worring about germs', 'Medium',
+    'Micro', 
+    0, '11195 Sanchez St', 
+    'Castroville', 'CA', 
+    '93906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148022, 'Nathanael Wondergem', 'nathanaelwondergem@gmail.com', 'None', 
+    'Wondergems', 'wondergems.com', 
+    'None', 
+    'Other', 'ORGANIC FOODS', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643639, 'Bill Sarris', 'bill@linqto.com', '8317174267.0', 
+    'Linqto Inc', 'linqto.com', 
+    'https://www.linkedin.com/company/linqto-inc.', 
+    'Finance and Legal', 'Linqto is a leading private equity platform that empowers retail and accredited investors to explore private market investment in shares of top pre-IPO companies. They develop innovative software solutions for financial services, eLearning, and researc...', 'Large',
+    'Small', 
+    0, '1193', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643638, 'Missy Woolstenhulme', 'missy@kitchenwitchbroth.com', '18312913969.0', 
+    'Kitchen Witch Bone Broth, LLC', 'kitchenwitchbroth.com', 
+    'https://www.linkedin.com/company/kitchen-witch-bone-broth-llc', 
+    'Consumer Goods and Retail', 'KITCHEN WITCH BONE BROTH is a company that specializes in providing high-quality bone broth products. Our bone broth is made from organic, grass-fed bones and simmered for hours to extract maximum nutrients and flavor. We offer a variety of flavors, in...', 'Medium',
+    'Micro', 
+    0, '411 Olive St', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220043, 'Darius Mohsenin', '4219799@gmail.com', '14088307003.0', 
+    'bidaflat.com', 'bidaflat.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '390 Sixth Ave', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289206296, 'Anna Rico', 'sanjosecrepeco@live.com', '14083140550.0', 
+    'sanjosecrepecompany.com', 'sanjosecrepecompany.com', 
+    'None', 
+    'Other', 'San Jose Crepe Company manufactures ready-to-eat crepes, gluten free available, using organic products; recipes. Wholesale.', 'Large',
+    'Micro', 
+    0, '3272 Faith Court', 
+    'San Jose', 'CA', 
+    '95127', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220037, 'Jordan Starr ', 'unknown73@invalid.com', '9252370156.0', 
+    'Neces Gluten Free Baked Goods', 'necesglutenfree.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Nece's GF Baked Goods is a company that specializes in providing the best in gluten-free baked goods.', 'Small',
+    'None', 
+    0, '730 Casanova', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569925, 'Holly Mcwhinnie', 'hmcwhinnie@att.net', 'None', 
+    'Dreams-Visions.org', 'dreams-visions.org', 
+    'None', 
+    'Real Estate and Development', 'Dreams Visions is a realty company based in Sacramento, CA. We provide a range of real estate services, including home buying assistance, buyer resources, and hosting home buyer ready events. Our goal is to help individuals and families find their drea...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148019, 'Douglas Lutkus', 'lut3d@yahoo.com', 'None', 
+    'Whitehat', 'whitehatllc.com', 
+    'https://www.linkedin.com/company/white-hat-llc', 
+    'Other', 'nan', 'Small',
+    'Micro', 
+    0, '581 N Street', 
+    'Lincoln', 'CA', 
+    '95648', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148018, 'Stacy Woytak', 'stacymaria1@gmail.com', 'None', 
+    'salewhip.com', 'salewhip.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642174, 'Corwin Nichols', 'corwin@valentpower.com', '18314717000.0', 
+    'Valent Power', 'valentpower.com', 
+    'https://www.linkedin.com/company/valent-power', 
+    'Technology', 'Valent Power is a company located in Silicon Valley that was founded in 2013. Their mission is to provide affordable products that contribute to the world's electric vehicle support infrastructure. They specialize in manufacturing electric vehicle fast...', 'Large',
+    'Micro', 
+    0, '5617 Scotts Valley Dr.', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643637, 'Jan Sondergaard', 'jan@servicepal.com', '16503945484.0', 
+    'ServicePal Inc.', 'servicepal.com', 
+    'https://www.linkedin.com/company/servicepal', 
+    'Technology', 'ServicePal is a simple, flexible, and cost effective way to manage your service work. The leading mobile service app for iPad. Schedule, dispatch, invoice and collect payments on our electronic clipboard. Sign up for a free account today! Field Service...', 'Medium',
+    'Micro', 
+    0, '8 Overlook Pl', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220036, 'William Shady P E', 'bsmepe35@gmail.com', '8314597300.0', 
+    'SDPM', 'sustainabledesignpm.com', 
+    'https://www.linkedin.com/company/sustainable-design-and-product-management', 
+    'Real Estate and Development', 'SDPM is a mechanical engineering design and consulting firm that specializes in the innovation and integration of renewable energy and energy efficient home heating and cooling products. Sustainable Design and Product Management (SDPM) is a mechanical ...', 'Medium',
+    'Micro', 
+    0, '2315 MATTISON LN', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289206294, 'Vania Bernatsky ', 'ceberhardttldocs@gmail.com', '14083107366.0', 
+    'Time Lock Documentation', 'timelockdocs.com', 
+    'https://www.linkedin.com/company/time-locked-documentation', 
+    'Real Estate and Development', 'Time Lock Docs is a company that provides professional engineering applications to streamline the inspection process. They offer instant digital documentation through their patented time locked reporting software. Their software allows users to create ...', 'Medium',
+    'Micro', 
+    0, '1769 Hillsdale Avenue', 
+    'San Jose', 'CA', 
+    '95124', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642171, 'Michael Powers', 'mpowers@kingcity.com', '8313865937.0', 
+    'City of King', 'kingcity.com', 
+    'https://www.linkedin.com/company/king-city', 
+    'Public and Government Services', 'The City of King is a full-service city with a Council Manager form of government. It provides its own police, fire, community development, recreation, public works, and wastewater services. Other agencies with offices and facilities within King City i...', 'Large',
+    'Small', 
+    0, '401 Division Street', 
+    'King City', 'CA', 
+    '93930', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1911
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569924, 'Nathan DORN', 'nathan.dorn@food-origins.com', '8052187028.0', 
+    'Food Origins', 'food-origins.com', 
+    'https://www.linkedin.com/company/food-origins', 
+    'Consumer Goods and Retail', 'Food Origins is a specialty agriculture and food and beverage processing company that provides data capture and analytics for manual labor agriculture. Our focus is on utilizing IoT to enable continuous improvement in the pruning, planting, and harvest...', 'Medium',
+    'Micro', 
+    0, '11 Quail Run Circle', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643636, 'Jessie Fischer', 'jessiemfischer@gmail.com', 'None', 
+    'optioapp.co', 'optioapp.co', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643635, 'Robert Kasavan', 'kasavan@aol.com', '18317532511.0', 
+    'Robert Kasavan Marketing', 'kasavan.com', 
+    'https://www.linkedin.com/company/robert-kasavan-marketing', 
+    'Other', 'Kasavan Marketing is a company that started as a produce brokerage/distribution firm specializing in lettuce, mixed vegetables and strawberries in Salinas, CA. The company evolved and grew over the years to add a Real Estate Management Division and now...', 'Medium',
+    'Micro', 
+    0, '38 East Romie Lane', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643634, 'Brittany Fritsch', 'britt@makethewebwork.com', '8884089561.0', 
+    'Webity', 'really.makethewebwork.com', 
+    'https://www.linkedin.com/company/webity', 
+    'Technology', 'We Make the Web Work for You! Webity has the tools to create the website, app or platform of your dreams.', 'Medium',
+    'Micro', 
+    0, '801 LIGHTHOUSE AVE', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643633, 'dawn hightree', 'corpthinkheavenly@gmail.com', '18313462689.0', 
+    'Think Heavenly Company', 'thinkheavenlycorporation.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '2206 40th St', 
+    'Santa Cruz', 'CA', 
+    '95010', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220030, 'Weilian Su ', 'alicia@360healthcafe.com', '18319013582.0', 
+    '360 Health Cafe', '360healthcafe.com', 
+    'https://www.linkedin.com/company/360-health-cafe', 
+    'Hospitality and Travel', '360 Health Cafe is a restaurant located in Marina, California that specializes in serving organic and healthy food. They offer a variety of products including smoothies, chicken wings, panini, acai bowls, boba teas, and fresh juices. Their focus is on ...', 'Medium',
+    'Micro', 
+    0, '120 General Stilwell Drive', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148016, 'Heraclio Aguilar', 'toifactoree@gmail.com', 'None', 
+    'Toisoldierproject', 'toisoldierproject.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148015, 'Marcos Gutierrez', 'eliteteammonterey@gmail.com', '5597507553.0', 
+    'Eliteteam Monterey BrazilianJiujitsu', 'eliteteammonterey.com', 
+    'None', 
+    'Other', 'Eliteteam Monterey Brazilian JiuJitsu is a premier academy located in Monterey, California. We offer a range of classes for both kids and adults, from beginners to advanced levels. Our classes are held 7 days a week and cover various aspects of Brazili...', 'Small',
+    'None', 
+    0, '201 Glenwood Circle', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569922, 'John Werdmuller', 'maurits@kushmoda.com', 'None', 
+    'Kushmoda', 'kushmoda.com', 
+    'https://www.linkedin.com/company/kushmoda-inc.', 
+    'Other', 'Kushmoda is a company that incentivizes integrated solutions for travel.', 'Small',
+    'Micro', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-16', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569920, 'William Suh', 'suhwilliam60@gmail.com', 'None', 
+    'kokuacards.com', 'kokuacards.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569919, 'Michael Oneil', 'michael-oneil@hotmail.com', 'None', 
+    'CheckYourEngineLight', 'checkyourenginelight.com', 
+    'None', 
+    'Industrial and Manufacturing', 'CheckYourEngineLight.com is a company that provides the Check Your Engine Light Adapter, a device that saves time, money, and builds trust at the mechanic by providing information about your vehicle. The adapter plugs into the vehicle underneath the st...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569917, 'Kollin Kosmicki', 'kollinkosmicki@gmail.com', '4144121025.0', 
+    'San Benito Live', 'sanbenitolive.com', 
+    'None', 
+    'Technology', 'San Benito Live is a multimedia news platform that provides video and other multimedia news and features in San Benito County.', 'Small',
+    'None', 
+    0, '726 San Benito St.', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643631, 'Robert Officer', 'connect@arrowheartranch.com', 'None', 
+    'Arrowheartranch', 'arrowheartranch.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2021-03-16', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643630, 'Matthias Hohensee ', 'mslater@levered.com', '5416017144.0', 
+    'Levered Learning', 'levered.com', 
+    'https://www.linkedin.com/company/levered-learning', 
+    'Education', 'Levered Learning is an online math program for elementary classrooms. Their curriculum is Common Core aligned and adaptive, allowing students to learn at their own pace. The program tracks student progress and provides teachers with data to support ind...', 'Medium',
+    'Micro', 
+    0, '981 OId San Jose Road', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643629, 'Tom Czipowicz', 'tom.czepowicz@gmail.com', 'None', 
+    'invitrosnap.com', 'invitrosnap.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643628, 'Antonio De Luca ', 'roger.snyder@yahoo.com', '4082562691.0', 
+    'LitmusBox', 'litmusbox.com', 
+    'https://www.linkedin.com/company/litmusbox', 
+    'Education', 'LitmusBox is a Digital Engagement Agency dedicated to helping companies improve user engagement and create meaningful relationships. We work with leading brands and marketing agencies to deliver best in class experiences. Our experts partner with other...', 'Medium',
+    'Micro', 
+    0, 'PO Box 146', 
+    'Mount Hermon', 'CA', 
+    '95041', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643627, 'Jamaal Perryman', 'jamaalperryman@gmail.com', 'None', 
+    'perryleash.com', 'perryleash.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642168, 'Dori Duncan', 'dori@campfashionista.net', '4087573434.0', 
+    'Camp Fashionista', 'campfashionista.net', 
+    'https://www.linkedin.com/company/camp-fashionista', 
+    'Education', 'Camp Fashionista is a unique fashion design school for children and adults. Founded in 2010 by Dori Duncan, we offer beginning sewing and fashion illustration classes in San Jose. Our year-round classes, summer camps, and fashion birthday parties provi...', 'Large',
+    'Micro', 
+    0, '1702 Meridian Ave', 
+    'Salinas', 'CA', 
+    '95125', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642167, 'Wallace Lynch', 'pr@hshub.com', '4086818817.0', 
+    'hshub.com', 'hshub.com', 
+    'https://www.linkedin.com/company/3128985', 
+    'Other', 'HSHub is an online marketplace providing one-stop shopping experience for all services, specialized in previously unprofitable human values.', 'Large',
+    'Small', 
+    0, '801 Lighthouse Ave', 
+    'San Jose', 'CA', 
+    '39339', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4290759611, 'Lorraine Gonzales ', 'rcabalza@gmail.com', '8317471470.0', 
+    'Abilities Cafe', 'abilitiescafe.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '2078 Paralta Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148012, 'Susana Mc Guire Jewell', 'susana.mcguire@gmail.com', '18312392594.0', 
+    'McGuire Communication', 'onlinefitnessyoga.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'P.O. Box 2273', 
+    'Monterey', 'CA', 
+    '93942', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148011, 'Evin Ollinger', 'evin@joingolden.com', '4156891089.0', 
+    'Golden', 'joingolden.com', 
+    'None', 
+    'Finance and Legal', 'Golden is a company that provides financial care for parents. They offer services such as organizing all accounts into one financial picture, alerting users to pay bills and protect against fraud, reducing expenses, increasing government benefits, and ...', 'Medium',
+    'Micro', 
+    0, '985 Benito Court', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148008, 'Martin', 'unknown74@invalid.com', 'None', 
+    'thegreenwaffle.com', 'thegreenwaffle.com', 
+    'None', 
+    'Other', 'At The Green Waffle LLC we are dedicated to making your waffle experience fun, delicious and unique!', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289206289, 'Carson Franklin', 'carson@franklintechnology.net', '18314422300.0', 
+    'Franklin Technology', 'franklintechnology.net', 
+    'https://www.linkedin.com/company/franklintech', 
+    'Technology', 'Franklin Technology Management is a Premier, Full Service IT Provider supporting Small and Medium Sized Businesses in the Monterey Bay and across the nation. From Desktop Support to Managed Cloud Services We support every aspect of your IT Infrastructu...', 'Medium',
+    'Micro', 
+    0, '462 Webster Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289206288, 'Jay Karma', 'giantkarma1@gmail.com', '18316886917.0', 
+    'MultiMedia-to-Go', 'snapstudioplus.com', 
+    'http://linkedin.com/company/one-on-one-ads-inc.', 
+    'Creative and Media', 'SnapStudioPlus is a platform that allows users to create professional video ads in minutes. With their video ad making software, users can showcase their business by creating video ads online. The platform offers free images and video clips for all ind...', 'Large',
+    'Small', 
+    0, '712 Via Palo Alto', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/New_York', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    4289835404, 'Paul C Fuller', 'paul@astropreneurthegame.com', '8312623483.0', 
+    'Astropreneur LLC', 'astropreneurthegame.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'PO Box 413', 
+    'Carmel', 'CA', 
+    '95023', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220029, 'Roxanne Lloyd', 'roxannelloyd0@gmail.com', '18317768109.0', 
+    'pumperpal.io', 'pumperpal.io', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, '286 San Juan Grade Road', 
+    'Salinas', 'CA', 
+    '93906', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220028, 'Ryan Hambley', 'ryan@yoderm.com', '4085963376.0', 
+    'Yo-Derm', 'yoderm.com', 
+    'https://www.linkedin.com/company/yoderm-inc.', 
+    'Healthcare', 'YoDerm is a telemedicine company that connects patients with board certified dermatologists for online consultations and treatment plans.', 'Large',
+    'Small', 
+    0, '101 Broadway', 
+    'Carmel Valley', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220027, 'Ken James', 'kmjseaside@gmail.com', 'None', 
+    'theculinaryclubinc.com', 'theculinaryclubinc.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569914, 'Becki Hadley', 'chapter35.csea@gmail.com', '4084331230.0', 
+    'California School Employees Association', 'members.csea.com', 
+    'https://www.linkedin.com/company/california-school-employees-association', 
+    'Non-Profit', 'The California School Employees Association, AFL-CIO is the largest classified school employees labor union in the United States.', 'Medium',
+    'Large', 
+    0, '2045 Lundy Avenue', 
+    'San Jose', 'CA', 
+    '95131', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569913, 'Jessy Bradish', 'jessicabradish@gmail.com', '18475072517.0', 
+    'Jessy Bradish', 'jessybradish.com', 
+    'None', 
+    'Other', 'nan', 'Large',
+    'Small', 
+    0, '2017 W OHIO', 
+    'Chicago', 'IL', 
+    '60612', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643624, 'Henry Benner ', 'adubey@iondx.com', '9257084171.0', 
+    'IonDX', 'iondx.com', 
+    'https://www.linkedin.com/company/iondx', 
+    'Technology', 'IonDX is a bioanalytical instrumentation company built on disruptive macromolecule ion mobility technology. We characterize biopharmaceuticals, biosimilars, polymers and more. Analytical instrumentation/services company equipped with disruptive ion mob...', 'Medium',
+    'Micro', 
+    0, '8 Harris Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643623, 'Justis Earle', 'justis@hansnap.com', '18313321631.0', 
+    'Hansnap', 'hansnap.com', 
+    'https://www.linkedin.com/company/hansnap', 
+    'Industrial and Manufacturing', 'Stabilize your footage, never drop your phone. Successful Kickstarter! Shipping January - Preorder now: www.hansnap.com', 'Medium',
+    'Micro', 
+    0, '265 Alturas Way', 
+    'Soquel', 'CA', 
+    '95073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643622, 'Erin Borges', 'erinborges@hotmail.com', 'None', 
+    'Calendars.com LLC', 'erinborgesdesigns.com', 
+    'https://www.linkedin.com/company/calendar-club-uk', 
+    'Consumer Goods and Retail', 'Personalize your space and organize your life with Calendars.com. Huge selection of 2019 calendars, games, toys, puzzles, gifts and more!', 'Large',
+    'Medium', 
+    0, '6000 W MARKHAM ST', 
+    'Exeter', 'AR', 
+    'EX2 8FD', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-03-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643621, 'Patricia Langrehr Marsh ', 'jadelittlecrow@e.com', '8613940022103.0', 
+    'Yingkou Dacheng Pipe', 'e.com', 
+    'None', 
+    'Other', 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'Large',
+    'Large', 
+    0, 'ZHENGDA SQUARE B-, TIANJIN SOUTH STREET, HEPING DISTRICT, SHENYANG, LIAONIN', 
+    'Shenyang', 'CA', 
+    'None', 
+    'United States', 
+    'Asia/Shanghai', 
+    '2020-03-30', 
+    1900
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642163, 'Karl Larsen', 'karllarsen93@gmail.com', 'None', 
+    'knightsatthewrongtable.com', 'knightsatthewrongtable.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1900
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642162, 'Terry Frankilin MD ', 'tel@telmd.com', '8316410923.0', 
+    'TelMD', 'telmd.com', 
+    'https://www.linkedin.com/company/telmdapp', 
+    'Healthcare', 'TelMD is a company that connects doctors directly with people interested in monitoring and improving their health and wellbeing. They offer tools to create a personal wellness team, consultation, collaboration, and inspiration. TelMD is a new and bette...', 'Medium',
+    'Micro', 
+    0, '1011 Cass Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642160, 'Stephen Ando ', 'tbateman@scottsvalley.org', '8314380910.0', 
+    'City of Scotts Valley', 'scottsvalley.org', 
+    'https://www.linkedin.com/company/city-of-scotts-valley', 
+    'Public and Government Services', 'The City of Scotts Valley is a small suburban community located in the Santa Cruz Mountains. It serves as a vacation spot for both leisure and business travelers. The city provides official news and events to its residents, businesses, and visitors. Wi...', 'Large',
+    'Medium', 
+    0, '1 Civic Center Drive', 
+    'Scotts Valley', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1966
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289642159, 'Jennifer Fenton', 'theequinehealingcollaborative@gmail.com', '8315821017.0', 
+    'The Equine Healing Collaborative', 'theequinehealingcollaborative.com', 
+    'https://www.linkedin.com/company/equine-healing-collaborative-inc', 
+    'Healthcare', 'Equine Healing Collaborative is a non-profit organization that provides Equine Assisted Psychotherapy services on a sliding scale, with a focus on recovery, self-discovery, and personal growth.', 'Large',
+    'Micro', 
+    0, '8767 Carmel Valley Road', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1966
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148007, 'Joel Esqueda', 'articulturepaintparty@gmail.com', 'None', 
+    'Arti-Culture.com', 'arti-culture.com', 
+    'None', 
+    'Other', 'Award winning community based Art Business in Hollister, California', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1966
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148004, 'Mathew Arcoleo', 'mat@discoverywhalewatch.com', '4088353391.0', 
+    'Discovery Charters Inc.', 'discoverywhalewatch.com', 
+    'https://www.linkedin.com/company/discoverywhalewatch', 
+    'Other', 'Discovery Whale Watch is a company that offers daily whale watch trips in Monterey Bay. Their trips are narrated by marine biologists and naturalists who provide educational and interesting information about whales, dolphins, and other marine wildlife....', 'Large',
+    'Micro', 
+    0, '66 Fisherman's Wharf', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148003, 'Moe Ammar ', 'heather@pacificgrove.org', '8006566650.0', 
+    'Pacific Grove Chamber', 'pacificgrove.org', 
+    'https://www.linkedin.com/company/pacific-grove-plaza', 
+    'Hospitality and Travel', 'The Pacific Grove Chamber of Commerce is a local organization that promotes the prosperity of businesses and the well-being of the community. They serve as a resource for the business community and operate two Tourist Information Centers and one inform...', 'Medium',
+    'Micro', 
+    0, '584 Central Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1915
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220025, 'Kristin Horton ', 'samteel@comcast.net', '8316268636.0', 
+    'MCHA', 'mcha.net', 
+    'https://www.linkedin.com/company/monterey-county-hospitality', 
+    'Other', 'Monterey County Hospitality Association (MCHA) is the only trade organization that serves all facets of Monterey County’s hospitality industry. Since 1975, MCHA has been working with local hotels, inns, restaurants, visitor attractions, and hospitality...', 'Medium',
+    'Micro', 
+    0, 'PO BOX 223542', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289220024, 'Andrew Bozzo', 'andy@simple-track.com', '8312380981.0', 
+    'Simple Track LLC/Tablet Command', 'tabletcommand.com', 
+    'https://www.linkedin.com/company/tablet-command', 
+    'Technology', 'Tablet Command is a mobile incident command and response solution that increases situational awareness, speeds incident response, streamlines incident management, and improves firefighter accountability. With Tablet Command, an incident commander can t...', 'Large',
+    'Small', 
+    0, '3152 Forest Lake Rd', 
+    'Monterey', 'CA', 
+    '93952', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643620, 'Colin Gallagher', 'colingallagher.rpcv@gmail.com', 'None', 
+    'Dan.com', 'abis.io', 
+    'None', 
+    'Technology', 'The domain name Abis.io is for sale. Make an offer or buy it now at a set price.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289643619, 'Megane Simons', 'msimons2018@student.hult.edu', '9252838829.0', 
+    'Keiretsu Forum', 'keiretsuforum.com', 
+    'https://www.linkedin.com/company/keiretsu-forum', 
+    'Finance and Legal', 'Keiretsu Forum is a global angel investor network with more than 2,500 accredited investor members throughout 47 chapters on 3 continents.', 'Large',
+    'Large', 
+    0, '425 Market St', 
+    'San Francisco', 'CA', 
+    '94104', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-13', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3288569912, 'Lex Smith ', 'schilders@meememorial.com', '8313856000.0', 
+    'Mee Memorial Healthcare System', 'meememorial.com', 
+    'https://www.linkedin.com/company/mee-memorial-healthcare-system', 
+    'Healthcare', 'Mee Memorial Healthcare System is a primary healthcare organization serving the rural communities of Southern Monterey County. They provide a wide range of healthcare services, including routine checkups, chronic care, and emergency care. Their commitm...', 'Large',
+    'Large', 
+    0, '300 Canal Street', 
+    'King City', 'CA', 
+    '93930', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1962
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3289148001, 'Steve Mc Shane', 'membership@salinaschamber.com', '8314247611.0', 
+    'Salinas Valley Chamber of Commerce', 'salinaschamber.com', 
+    'https://www.linkedin.com/company/salinasvalleychamberofcommerce', 
+    'Non-Profit', 'The Salinas Valley Chamber of Commerce is an association of businesses organized to build a strong local economy by promoting sound government and an informed membership and community. They offer targeted benefits, valuable resources, and unparalleled ...', 'Large',
+    'Small', 
+    0, '119 East Alisal Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1918
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3280281930, 'El Pajaro CDC', 'el_pajaro_cdc@mail.vresp.com', 'None', 
+    'Deluxe Small Business Sales, Inc.', 'mail.vresp.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-27', 
+    1918
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3258446576, 'Manmeet Nehru', 'manmeet.nehru@rsystems.com', '919168308545.0', 
+    'R Systems International Limited', 'rsystems.com', 
+    'https://www.linkedin.com/company/r-systems', 
+    'Technology', 'R Systems specializes in digital product engineering, offering innovative solutions in automation, AI, and data design to transform and elevate your business operations. R Systems offers customized services in four major IT verticals including Banking ...', 'Large',
+    'Enterprise', 
+    0, '5000 Windplay Drive', 
+    'Noida', 'None', 
+    '201307', 
+    'India', 
+    'Asia/Kolkata', 
+    '2020-03-24', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3250981109, 'Maxwell Dike', 'mdike@securelink.com', '15126378700.0', 
+    'SecureLink Inc', 'securelink.com', 
+    'https://www.linkedin.com/company/securelink', 
+    'Education', 'SecureLink is a remote access software company that provides a software platform for third party access and remote support. They are the industry leader in critical access management, empowering organizations to secure access to their most valuable net...', 'Large',
+    'Medium', 
+    0, '11402 FM 2244 Rd', 
+    'Austin', 'TX', 
+    '78738', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-23', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3216148775, 'Burns ', 'acwinkle@schwartzlawgroup.us', '18316256255.0', 
+    'Schwartz Law Group, Inc.', 'schwartzlawgroup.us', 
+    'https://www.linkedin.com/company/schwartz-law-group-inc-', 
+    'Other', 'Schwartz Law Group, Inc. provides creative yet practical solutions to individuals, families, and businesses in the Northern and Central Coast regions of California. They offer comprehensive legal counsel in tax planning and controversy, estate planning...', 'Medium',
+    'Micro', 
+    0, '200 Clock Tower Place', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93922', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-18', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3196021421, 'Debra Whizin', 'calendar@goodtimes.sc', '8314581100.0', 
+    'Good Times', 'goodtimes.sc', 
+    'https://www.linkedin.com/company/good-times-santa-cruz', 
+    'Other', 'Good Times is a free-circulation weekly newspaper based in Santa Cruz, California.', 'Large',
+    'Small', 
+    0, '1101 Pacific Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3158612633, 'Chris', 'chris@risleypartners.com', 'None', 
+    'risleypartners.com', 'risleypartners.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-10', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3153019929, 'Emmanuel Barajas ', 'jacky@whova.com', '18559786578.0', 
+    'Whova Inc', 'whova.com', 
+    'https://www.linkedin.com/company/whova', 
+    'Technology', 'Whova is an award-winning event management software company that provides event organizers with all-in-one solutions to create engaging and organized events. Their software includes a mobile event app, online registration, event marketing tools, and ti...', 'Large',
+    'Medium', 
+    0, '6540 Lusk Boulevard', 
+    'San Diego', 'CA', 
+    '92121', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-09', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3147604768, 'Mike Siracuse', 'mike.w.siracuse@vayusaero.com', 'None', 
+    'vayusaero.com', 'vayusaero.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3141504017, 'Hillary Talbot', 'hillary@sailcommunitycapital.com', 'None', 
+    'Sail', 'sailcommunitycapital.com', 
+    'https://www.linkedin.com/company/sail-community-capital', 
+    'Finance and Legal', 'Sail is a crowdfunding agency that works at the grassroots level, connecting startups and small businesses with their communities to raise up to $5 million through Regulation Crowdfunding. Sail Community Capital works at the grassroots level to connect...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Santa Cruz', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-06', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3140085078, 'Mysty Rusk', 'mrusk@sandiego.edu', 'None', 
+    'University of San Diego', 'sandiego.edu', 
+    'https://www.linkedin.com/school/university-of-san-diego', 
+    'Education', 'The University of San Diego is a Catholic university, committed to preparing compassionate and ethical leaders, and offering programs in liberal arts, business administration, education, engineering, law, nursing and peace studies.', 'Large',
+    'Enterprise', 
+    0, '5998 Alcal Park', 
+    'San Diego', 'CA', 
+    '92110', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-06', 
+    1949
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3139549952, 'Nik Bahram', 'nikb@venova.com', '8315881356.0', 
+    'Bahram', 'venova.com', 
+    'None', 
+    'Other', 'nan', 'Medium',
+    'None', 
+    0, '203 BORDEAUX LN', 
+    'Santa Cruz', 'CA', 
+    '95066', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-05', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3124635181, 'Taran Barca Hall', 'taranbh@janorcal.org', '9254651068.0', 
+    'Junior Achievement of Northern California', 'janorcal.org', 
+    'https://www.linkedin.com/company/janorcal', 
+    'Education', 'Junior Achievement USA is a non-profit organization that aims to inspire and prepare young people to succeed in a global economy through work readiness, entrepreneurship, and financial literacy programs.', 'Large',
+    'Small', 
+    0, '3003 Oak Road', 
+    'Walnut Creek', 'CA', 
+    '94597', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1950
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3101819899, 'Violeta Abouata ', 'mathai@cnb.com', '12136739120.0', 
+    'City National Bank', 'cnb.com', 
+    'https://www.linkedin.com/company/city-national-bank', 
+    'Other', 'City National Bank offers a wide variety of premier financial services including personal banking, credit cards, business banking, retirement planning wealth planning, and more. City National Corporation is a bank holding company and a financial holdin...', 'Large',
+    'Enterprise', 
+    1, '555 SOUTH FLOWER ST', 
+    'Los Angeles', 'CA', 
+    '90071', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-28', 
+    1954
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3087068110, 'Brent Plemmons ', 'hcallens@agloan.com', '5306674236.0', 
+    'American AgCredit', 'agloan.com', 
+    'https://www.linkedin.com/company/american-agcredit', 
+    'Finance and Legal', 'American AgCredit offers a broad range of agricultural loan, leasing and insurance services. We provide financial services, insurance products, and resources for farmers and ranchers. American AgCredit partners with agriculture and rural customers thro...', 'Large',
+    'Large', 
+    0, '1120 PO Box', 
+    'Santa Rosa', 'CA', 
+    '95402', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-26', 
+    1916
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3077584663, 'Jesse Martin ', 'aaronm@agtechinsight.com', '18315956064.0', 
+    'AgTech Insight', 'agtechinsight.com', 
+    'https://www.linkedin.com/company/agtechinsight', 
+    'Education', 'AgTech Insight is a full service agriculture consulting and advisory firm offering expertise to ensure success and projection in today's global economy. Over the past 45 years, our team members have been involved in integrating the best ideas and viabl...', 'Medium',
+    'Small', 
+    0, '820 Park Row', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-25', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3075768328, 'Tony Pastore ', 'sschwirzke@3ce.org', '8889096227.0', 
+    'Monterey Bay Community Power', 'mbcommunitypower.org', 
+    'https://www.linkedin.com/company/monterey-bay-community-power', 
+    'Other', 'Jesus Loves You, Mandarin Baptist Church of Pasadena (MBCOP)', 'Small',
+    'None', 
+    0, '70 GARDEN CT', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-03-08', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3066350383, 'Unknown', 'unknown75@invalid.com', '14258828080.0', 
+    'Microsoft', 'microsoftonline.com', 
+    'https://www.linkedin.com/company/kazi-management-vi-llc', 
+    'Technology', 'Microsoft Corporation is a technology company. The Company develops, licenses, and supports a range of software products, services and devices. The Company's segments include Productivity and Business Processes, Intelligent Cloud and More Personal Computing. The Company's products include operating systems; cross-device productivity applications; server applications; business solution applications; desktop and server management tools; software development tools; video games, and training and certification of computer system integrators and developers. It also designs, manufactures, and sells devices, including personal computers (PCs), tablets, gaming and entertainment consoles, phones, other intelligent devices, and related accessories, that integrate with its cloud-based offerings. It offers an array of services, including cloud-based solutions that provide customers with software, services, platforms, and content, and it provides solution support and consulting services.', 'Large',
+    'Small', 
+    0, '1 Microsoft Way', 
+    'Redmond', 'WA', 
+    '98052', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-12-09', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3059624015, 'Unknown', 'unknown76@invalid.com', '19788247013.0', 
+    'CyberGrants, LLC', 'cybergrants.com', 
+    'https://www.linkedin.com/company/cybergrants', 
+    'Non-Profit', 'CyberGrants is the leading provider of corporate philanthropic solutions. They offer industry-leading Software as a Service for Grant Making and Corporate Social Responsibility. Their services include IT services and consulting, corporate philanthropy ...', 'Large',
+    'Medium', 
+    0, '300 Brickstone Square', 
+    'Andover', 'MA', 
+    '01810', 
+    'United States', 
+    'America/New_York', 
+    '2020-02-21', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3034262792, 'Gregg Glover', 'gglover@imsearch.com', '6172626500.0', 
+    'Isaacson', 'imsearch.com', 
+    'https://www.linkedin.com/company/isaacson-miller', 
+    'Other', 'Isaacson, Miller is one of the country's premier executive search firms, recruiting transformational leaders for organizations that advance the public good. They specialize in recruiting transformative leadership for mission-driven organizations such a...', 'Large',
+    'Large', 
+    0, '263 Summer Street', 
+    'Boston', 'MA', 
+    '02210', 
+    'United States', 
+    'America/New_York', 
+    '2020-02-18', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3006861961, 'Santa Cruz Warriors', 'santacruz@email.warriors.com', '12013255518.0', 
+    'Golden State Warriors', 'email.warriors.com', 
+    'https://www.linkedin.com/company/golden-state-warriors', 
+    'Other', 'The Golden State Warriors are an American professional basketball team based in San Francisco, California.', 'Large',
+    'Large', 
+    0, '1011 Broadway', 
+    'Oakland', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-13', 
+    1946
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    3001368926, 'Nicholas Pasculli ', 'sam@tmdcreative.com', '8317586425.0', 
+    'TMD Creative', 'tmdcreative.com', 
+    'https://www.linkedin.com/company/tmdcreative', 
+    'Education', 'TMD Creative is a full-service marketing agency that has been serving clients throughout the west coast since 1999. They offer a wide range of services including marketing, advertising, planning, social networking strategy, website design, print, TV/ra...', 'Large',
+    'Small', 
+    0, '307 Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2999802169, 'Emily Kasmouski', 'ekasmouski@mimecast.com', '442078478700.0', 
+    'Mimecast Limited', 'mimecast.com', 
+    'https://www.linkedin.com/company/mimecast', 
+    'Technology', 'Mimecast is a provider of cloud cybersecurity services for email, data, and web. They offer advanced email protection, email archiving, and email continuity services. Mimecast's cloud-based security solutions protect critical communications, people, an...', 'Large',
+    'Enterprise', 
+    0, '1 Finsbury Avenue', 
+    'London', 'None', 
+    'EC2M 2PF', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2020-02-12', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2999752117, 'Djuna Muniz', 'djuna_muniz@mechanicsbank.com', '14195240831.0', 
+    'Mechanics Bank', 'mechanicsbank.com', 
+    'https://www.linkedin.com/company/mechanics-bank', 
+    'Other', 'Mechanics Bank is a full-service community bank in California that has been serving its communities for over 110 years. They offer personal banking, business banking, commercial banking, and wealth management services. Their core principles include com...', 'Large',
+    'Enterprise', 
+    0, '1111 Civic Drive', 
+    'Walnut Creek', 'CA', 
+    '94596', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-12', 
+    1905
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2999751022, 'Alex Doyle', 'alex.doyle@economicmodeling.com', '17735272170.0', 
+    'Emsi', 'economicmodeling.com', 
+    'https://www.linkedin.com/company/emsiburningglass', 
+    'Technology', 'EMSI is a company that provides web-based tools and reports to help organizations understand employment, economic trends, and training needs for their region. They started by conducting economic impact studies for higher education and collecting labor ...', 'Large',
+    'Large', 
+    0, '409 S Jackson St', 
+    'Moscow', 'ID', 
+    '83843', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-12', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2952320557, 'Elliott Dennis', 'elliott.dennis@unl.edu', '14024723635.0', 
+    'University of Nebraska-Lincoln', 'unl.edu', 
+    'https://www.linkedin.com/school/university-of-nebraska-lincoln', 
+    'Education', 'The University of Nebraska–Lincoln is the flagship public research university in Nebraska, and is a member of the Big Ten Conference. Home of the Huskers. Founded in 1869, the University of Nebraska Lincoln is the state's land grant university and the ...', 'Large',
+    'Enterprise', 
+    0, '14TH AND R ST', 
+    'Lincoln', 'NE', 
+    '68588', 
+    'United States', 
+    'America/Chicago', 
+    '2020-02-06', 
+    1869
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2937995247, 'Marci Bracco', 'marci@chatterboxpublicrelations.com', '18317477455.0', 
+    'Chatterbox PR', 'chatterboxpublicrelations.com', 
+    'https://www.linkedin.com/company/chatterboxpr', 
+    'Creative and Media', 'Chatterbox PR is a savvy marketing and public relations firm specializing in creating, building, and advancing brands. Chatterbox focuses on the unique qualities of a company, organization, product or service and the characteristics of its defined audi...', 'Small',
+    'Micro', 
+    0, '23 ORANGE DR', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2914758431, 'Andre Conceicao ', 'matt.creonte@netapp.com', '14088226000.0', 
+    'NetApp, Inc.', 'netapp.com', 
+    'https://www.linkedin.com/company/netapp', 
+    'Technology', 'NetApp is a global leader in intelligent data infrastructure. They provide storage and data management solutions that enable customers to accelerate business innovations and achieve cost efficiencies. Their portfolio of products and services satisfy a ...', 'Large',
+    'Corporate', 
+    1, '3060 Olsen Drive', 
+    'San Jose', 'CA', 
+    '95128', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-30', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2912563226, 'Jane Bessin', 'jane.bessin@gmail.com', 'None', 
+    'bessingroup.com', 'bessingroup.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-01-30', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2908578334, 'Patrick Reilly', 'patrick.reilly@ipsociety.net', '18313327127.0', 
+    'IP Society', 'ipsociety.net', 
+    'https://www.linkedin.com/company/ipsociety', 
+    'Education', 'IP Society is a company that provides legal services for patents, trademarks, and copyright protection. They help individuals and businesses protect their inventions, brand names, and original content from unauthorized use. With their expertise, they g...', 'Medium',
+    'Micro', 
+    0, '1712 Lincoln Ave', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2902084869, 'Patrick Lin', 'patrick@erights.net', 'None', 
+    'erights.net', 'erights.net', 
+    'None', 
+    'Technology', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2902084867, 'Justin Loza', 'justin.loza@dkomplex.com', '8315664295.0', 
+    'dKomplex IT', 'dkomplex.com', 
+    'https://www.linkedin.com/company/dkomplex', 
+    'Education', 'dKomplex IT specializes in Microsoft Power Platform implementations and re-implementations. We simplify the complex and create solutions that your users understand. We’re all about the ever-present challenge of unlocking and enabling potential, yours, ...', 'Large',
+    'Small', 
+    0, '1421 Hilby Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2901142148, 'Bianca Barros ', 'christine.alonzo@menlo.edu', '16505433722.0', 
+    'Menlo College', 'menlo.edu', 
+    'https://www.linkedin.com/company/menlo-college', 
+    'Education', 'Menlo College is a small, private, non-profit Silicon Valley school that focuses on business education with a strong liberal arts emphasis. Menlo College's size, and its location in one of the world's most entrepreneurial and innovative geographical ar...', 'Large',
+    'Large', 
+    0, '1000 El Camino Real', 
+    'Atherton', 'CA', 
+    '94027', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2900591104, 'Adam Hughes', 'adam@mbsworks.com', '8317581048.0', 
+    'MBS', 'mbsworks.com', 
+    'https://www.linkedin.com/company/mbsbusinesssystems', 
+    'Consumer Goods and Retail', 'MBS Works is a fully managed business solutions provider based in Salinas, CA. With over 30 years of experience, we offer a wide range of office technology equipment and solutions to businesses of all sizes. Our services include document equipment and ...', 'Large',
+    'Small', 
+    0, '325 Victor Street', 
+    'Salinas', 'CA', 
+    '93907', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-28', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2889777558, 'Aron Polson ', 'bryan@plusone.network', '8313138086.0', 
+    'plusone.eth', 'plusone.network', 
+    'https://www.linkedin.com/company/plusone-network', 
+    'Technology', 'Untitled Document ✌️💙+1, all else is secondary! Personal & SMB Clouds: Content Creators, Artists, Producers, Engineers, Streamers, Athletes & so on...😎 #iplusone $ONE “We need a new Contract for the Web, with clear and tough responsibilities for those ...', 'Medium',
+    'Micro', 
+    0, '3040 Owen Ave #4', 
+    'Marina', 'CA', 
+    '93933', 
+    'None', 
+    'None', 
+    '2020-03-30', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2887786114, 'Heidi Daunt', 'hdaunt@treehousemortgage.com', '8316451160.0', 
+    'TreeHouse Mortgage Group', 'treehousemortgage.com', 
+    'https://www.linkedin.com/company/treehouse-mortgage-group', 
+    'Real Estate and Development', 'TreeHouse Mortgage Group is a mortgage company that provides high quality home loans and excellent mortgage rates. They specialize in home purchase loans, home refinance loans, home equity loans, USDA loans, cash out home loans, jumbo home loans, FHA l...', 'Large',
+    'Small', 
+    0, '451 Washington Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2874657569, 'John Fell', 'jcf@advantagepackaging.net', '6102683044.0', 
+    'advantagepackaging.net', 'advantagepackaging.net', 
+    'https://www.linkedin.com/company/patti-group-inc', 
+    'Other', 'We will strive to put our customers first by providing superior customer service. We sell efficiency, industry expertise and peace of mind. We seek challenges', 'Medium',
+    'Micro', 
+    0, '8876 GAP-NEWPORT PIKE', 
+    'Avondale', 'CA', 
+    '19311', 
+    'United States', 
+    'America/New_York', 
+    '2020-01-22', 
+    1925
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2871999204, 'Rene Mendez ', 'citymanager@cityofwatsonville.org', '8317683435.0', 
+    'City of Watsonville', 'cityofwatsonville.org', 
+    'https://www.linkedin.com/company/city-of-watsonville-government', 
+    'Public and Government Services', 'The City of Watsonville is a government administration that provides important city services and programs to the residents and visitors of Watsonville, California. It aims to reach a broader audience, increase citizen engagement, and facilitate communi...', 'Medium',
+    'Medium', 
+    0, '275 Main Street', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2863472026, 'Omar Baddad ', 'jjorvehoos@csusm.edu', '17607504348.0', 
+    'California State University San Marcos', 'csusm.edu', 
+    'https://www.linkedin.com/school/csusm', 
+    'Education', 'California State University San Marcos is a technologically sophisticated university that is fully engaged in the community and pushing the boundaries of innovation. They offer a hands-on, real-world curriculum and applied research to fuel creativity a...', 'Large',
+    'Large', 
+    0, '333 South Twin Oaks Valley Road', 
+    'San Marcos', 'CA', 
+    '92078', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-21', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2863208184, 'Noa Daniels', 'noa.daniels@ampmedia.org', '8313331267.0', 
+    'Access Monterey Peninsula', 'ampmedia.org', 
+    'https://www.linkedin.com/company/access-monterey-peninsula', 
+    'Creative and Media', 'amp is the community media organization for Monterey County.', 'Medium',
+    'Small', 
+    0, '99 Pacific St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-21', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2850261215, 'Kevin Dayton', 'kdayton@daytonpublicpolicy.com', 'None', 
+    'daytonpublicpolicy.com', 'daytonpublicpolicy.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-01-17', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2848457661, 'DK Lawson ', 'navdeep.dadwal@marriott.com', '13013803000.0', 
+    'Marriott International, Inc.', 'marriott.com', 
+    'https://www.linkedin.com/company/marriott-international', 
+    'Hospitality and Travel', 'Marriott International, Inc. is a global leading travel company based in Bethesda, Md., USA, with more than 6,000 properties in over 122 countries. Marriott International is a leading hospitality company with more than 3,900 properties around the world...', 'Large',
+    'Corporate', 
+    1, '10400 Fernwood Road', 
+    'Bethesda', 'MD', 
+    '20817', 
+    'United States', 
+    'America/New_York', 
+    '2020-01-17', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2830791638, 'Di Ann Ferguson', 'diann@ypp.com', '4154952510.0', 
+    'Your People Professionals', 'ypp.com', 
+    'https://www.linkedin.com/company/your-people-professionals', 
+    'Other', 'Your People Professionals (YPP) is a California-based HR consulting and outsourcing firm that has been providing fully scalable human resources solutions to small and mid-sized businesses since 1984. We offer Professional Employer Organization (PEO) se...', 'Medium',
+    'Small', 
+    0, '2605 Miller Street', 
+    'Santa Maria', 'CA', 
+    '93455', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-14', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2830692963, 'Rick Rust', 'rbrust@aeraenergy.com', '6616655000.0', 
+    'Aera Energy LLC', 'aeraenergy.com', 
+    'https://www.linkedin.com/company/aera-energy-llc', 
+    'Other', 'Aera Energy is a California-based company that provides oil and gas products and services. They are committed to producing oil and gas in a safe and environmentally friendly manner, while also investing in innovative solutions to reduce carbon emission...', 'Large',
+    'Enterprise', 
+    0, '10000 Ming Ave', 
+    'Bakersfield', 'CA', 
+    '93311', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-10-18', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2825152705, 'Unknown', 'unknown77@invalid.com', '2122021002.0', 
+    'youngStartup Ventures', 'youngstartup.com', 
+    'https://www.linkedin.com/company/youngstartup-ventures', 
+    'Finance and Legal', 'youngStartup Ventures is dedicated to connecting top innovators, startups, and investors at our exclusive Venture Summits. Get inspired, meet investors, and grow your startup. youngStartup’s Venture Summits connect the most innovative, promising ventur...', 'Medium',
+    'Small', 
+    0, '258 Crafton Ave', 
+    'Staten Island', 'NY', 
+    '10314', 
+    'United States', 
+    'America/New_York', 
+    '2020-01-13', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2816047004, 'Maria ', 'joe@hardenfoundation.org', '8314423005.0', 
+    'Harden Foundation', 'hardenfoundation.org', 
+    'https://www.linkedin.com/company/harden-foundation', 
+    'Other', 'The Harden Foundation is a philanthropic organization founded in 1963 by Eugene and Ercia Harden. They provide funding to a variety of qualified nonprofit organizations in Monterey County. The foundation is committed to building and expanding upon the ...', 'Medium',
+    'Micro', 
+    0, '1636 Ercia Street', 
+    'Salinas', 'CA', 
+    '93906', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-10', 
+    1963
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2816267345, 'Erin Lyman ', 'jacquie.atchison@gmail.com', '18316229060.0', 
+    'Arts Council For Monterey County', 'arts4mc.org', 
+    'https://www.linkedin.com/company/arts-council-for-monterey-county', 
+    'Other', 'The Arts Council for Monterey County is a nonprofit organization that aims to improve the quality of life for everyone in the region through the arts. They provide arts education to thousands of students each year and offer promotional, technical, and ...', 'Large',
+    'Small', 
+    0, '24600 Silver Cloud Court', 
+    'None', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-10', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2811326592, 'Adrian Dolatschko ', 'malina@santacruzworks.org', '14084390012.0', 
+    'Santa Cruz Works', 'santacruzworks.org', 
+    'https://www.linkedin.com/company/santa-cruz-works', 
+    'Other', 'Santa Cruz Works strives to cultivate a vibrant science and tech ecosystem in Santa Cruz County by connecting people and promoting successful companies.', 'Medium',
+    'Micro', 
+    0, '2801 Mission Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-13', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2810510219, 'Dennis Donohue ', 'wduflock@wga.com', '19498631000.0', 
+    'Western Growers', 'wga.com', 
+    'https://www.linkedin.com/company/western-growers', 
+    'Other', 'Western Growers Association is an organization that provides a variety of services and support to local and regional family farmers in California, Arizona, Colorado, and New Mexico. They offer insurance solutions, including crop and equipment insurance...', 'Large',
+    'Large', 
+    0, '15525 Sand Canyon Avenue', 
+    'Irvine', 'CA', 
+    '92618', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-05-09', 
+    1926
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2809576200, 'Eset', 'business@protect-us.eset.com', '16198765401.0', 
+    'ESET, LLC', 'protect-us.eset.com', 
+    'https://www.linkedin.com/company/28967', 
+    'Technology', 'Best IT security solutions for your home and business devices. Try ESET antivirus and internet security solutions for Windows, Android, Mac or Linux OS.', 'Large',
+    'Enterprise', 
+    0, '610 West Ash Street', 
+    'San Diego', 'CA', 
+    '92101', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-09', 
+    1992
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2805635844, 'Tom Moore ', 'paduan@nps.edu', '8316562023.0', 
+    'Naval Postgraduate School', 'nps.edu', 
+    'https://www.linkedin.com/school/nps-monterey', 
+    'Education', 'The Naval Postgraduate School (NPS) is a graduate research university that provides defense-focused graduate education, including classified studies and interdisciplinary research, to advance the operational effectiveness, technological leadership, and...', 'Large',
+    'Large', 
+    0, '1 University Circle', 
+    'Monterey', 'CA', 
+    '93943', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-08', 
+    1909
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2804676660, 'Margaret DArrigo', 'margaret@margaret-inc.com', '18319056471.0', 
+    'margaretinc', 'margaret-inc.com', 
+    'None', 
+    'Other', 'Margaret Inc. is an organization that focuses solely on empowering women so that they have the skills and confidence to realize the greatness that is within them. Every woman knows the impact that they make in our society, communities, companies, and f...', 'Small',
+    'None', 
+    0, '16 West Gabilan Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-08', 
+    1909
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2792711966, 'Michael Carroll', 'michael.carroll@unt.edu', '9405652000.0', 
+    'University of North Texas', 'unt.edu', 
+    'https://www.linkedin.com/school/northtexas', 
+    'Education', 'At the University of North Texas, we fuel our students through knowledge and opportunity. We power the region and the state through education, making UNT the catalyst for discovery and innovation since 1890. As one of the nation’s largest public univer...', 'Large',
+    'Enterprise', 
+    0, '1155 Union Circle', 
+    'Denton', 'TX', 
+    '76203', 
+    'United States', 
+    'America/Chicago', 
+    '2020-01-06', 
+    1890
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2790396182, 'Donald Andrews', 'donald_andrews@subr.edu', '12257714500.0', 
+    'Southern University andA&M College', 'subr.edu', 
+    'https://www.linkedin.com/company/southern-university-system', 
+    'Education', 'Southern University and A&M College is a historically Black, 1890 Land Grant Institution that provides opportunities for a diverse student population to achieve a high quality, global educational experience, engage in scholarly research and creative ac...', 'Large',
+    'Enterprise', 
+    0, 'SOUTHERN BRANCH POST OFFICE', 
+    'Baton Rouge', 'CA', 
+    '70813', 
+    'United States', 
+    'America/Chicago', 
+    '2020-01-05', 
+    1880
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2775856686, 'Jim Wagoner', 'jim@wagonerconsults.com', 'None', 
+    'Jim Wagoner', 'wagonerconsults.com', 
+    'https://www.linkedin.com/company/wagoner-management-consulting-llc', 
+    'Education', 'Wagoner Management Consulting, LLC helps start ups, non profits, and small businesses improve operations, optimize their resources, gain capacity, and manage projects. Jim Wagoner brings the depth of experience and expertise from a Fortune 50 company b...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Monterey', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2766884337, 'Mehul Agarwal', 'mehul@taliun.com', '14088837902.0', 
+    'Taliun', 'taliun.com', 
+    'https://www.linkedin.com/company/taliun', 
+    'Other', 'Taliun is a Modern Day Data & Digital Software Solutions company. We help Technology Companies and Enterprises gain a competitive edge using innovative Data & AI Driven Software Solutions.', 'Small',
+    'Small', 
+    0, '39899 Balentine Drive', 
+    'Newark', 'CA', 
+    '94560', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-12-31', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2731165127, 'Netsync', 'kaley.fisher@netsync.com', '18669745959.0', 
+    'Netsync', 'netsync.com', 
+    'https://www.linkedin.com/company/netsync-network-solutions-mea', 
+    'Other', 'Netsync is a comprehensive technology solutions and services provider with extensive experience integrating next generation IT solutions to digitally transform organizations, including Enterprise, State and Local, Education, Financial, Healthcare, and ...', 'Large',
+    'Large', 
+    0, '2500 West Loop South', 
+    'Dubai', 'None', 
+    '77027', 
+    'United Arab Emirates', 
+    'Asia/Dubai', 
+    '2019-12-17', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2723484479, 'Pete Noto', 'pete@petenoto.com', 'None', 
+    'Pete Noto', 'petenoto.com', 
+    'None', 
+    'Other', 'Pete Noto is a company that offers a wide range of products and services. They specialize in providing high-quality items that float, fly, shoot, feel, smell, and taste good. Additionally, they are dedicated to creating a wonderful experience for their...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2019-12-16', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2703948675, 'Nader Hassavari', 'nader@oceanpowerparks.com', '4791833810.0', 
+    'Minside', 'oceanpowerparks.com', 
+    'https://www.linkedin.com/company/oceanpowerparks', 
+    'Industrial and Manufacturing', 'Minside is a company that specializes in offshore multipurpose platforms for efficient renewable energy production and sustainable mariculture. They utilize offshore wave power and solar energy to generate efficient energy production and integrate othe...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Trondheim', 'CA', 
+    'None', 
+    'United States', 
+    'Europe/Oslo', 
+    '2019-12-11', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2684137672, 'Bob Margevicius', 'bob.margevicius@specialized.com', '4087796229.0', 
+    'Specialized Bicycle Components, Inc.', 'specialized.com', 
+    'https://www.linkedin.com/company/specialized-bicycle-components', 
+    'Consumer Goods and Retail', 'Specialized Bicycle Components is a company that is dedicated to providing high-quality bikes and equipment for riders of all levels. They believe that bikes have the power to change lives and are committed to designing advanced bikes and equipment tha...', 'Large',
+    'Enterprise', 
+    0, '15130 Concord Cir', 
+    'Morgan Hill', 'CA', 
+    '95037', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1974
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2663025069, 'Bill Dunbar', 'bill@ontera.bio', '8312222193.0', 
+    'Ontera', 'ontera.bio', 
+    'https://www.linkedin.com/company/ontera-inc', 
+    'Healthcare', 'Ontera is a biotechnology company that specializes in developing platforms using silicon nanopore chips and proprietary biochemistry. Their technology allows for the accurate detection and differentiation of single molecules, which has applications in ...', 'Large',
+    'Small', 
+    0, '2161 Delaware Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-12-03', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2630208464, 'Tommy Garcia', 't.garcia@esri.com', '19097932853.0', 
+    'Environmental Systems Research Institute, Inc.', 'esri.com', 
+    'https://www.linkedin.com/company/esri', 
+    'Technology', 'Esri is a leading provider of GIS mapping software, location intelligence, and spatial analytics technology. They offer a powerful platform called ArcGIS, which is used for mapping, 3D GIS, imagery, and geospatial app development. Esri's software and a...', 'Large',
+    'Enterprise', 
+    0, '380 New York Street', 
+    'Redlands', 'CA', 
+    '92373', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-26', 
+    1969
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2617435865, 'Silvestre Avena', 'silvestre@k2.com', '4258834200.0', 
+    'K2', 'k2.com', 
+    'https://www.linkedin.com/company/k2', 
+    'Technology', 'K2 is a low-code development platform that allows organizations to rapidly build and deploy scalable, reusable business applications that connect people, data, decisions, and systems.', 'Large',
+    'Large', 
+    0, '5150 Village Park Drive Southeast', 
+    'Bellevue', 'WA', 
+    '98006', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-22', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2616700416, 'Dan Burrola', 'dan.burrola@idaptive.com', 'None', 
+    'Idaptive', 'idaptive.com', 
+    'https://www.linkedin.com/company/cyber-ark-software', 
+    'Technology', 'Get the most complete Identity Security and Access Management Solutions that enable secure access across any device, anywhere, at just the right time.', 'Large',
+    'Medium', 
+    0, '60 Wells Avenue', 
+    'Newton', 'UT', 
+    '02459', 
+    'United States', 
+    'America/Denver', 
+    '2019-11-22', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2616672803, 'Community Relations', 'communityrelations@chrobinson.com', '19529378500.0', 
+    'C.H Robinson Worldwide Inc', 'chrobinson.com', 
+    'https://www.linkedin.com/company/c-h-robinson', 
+    'Other', 'C.H. Robinson is a global logistics company that offers third-party logistics (3PL) and supply chain management services. With their experience, data, and scale, they optimize supply chain management for their clients. They provide freight transportati...', 'Large',
+    'Corporate', 
+    1, '14701 Charlson Rd', 
+    'Eden Prairie', 'MN', 
+    '55347', 
+    'United States', 
+    'America/Chicago', 
+    '2019-11-22', 
+    1905
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2614288529, 'Joe Gonzales ', 'colin@digitalnest.org', '18317226378.0', 
+    'Digital NEST', 'digitalnest.org', 
+    'https://www.linkedin.com/company/digital-nest-inc', 
+    'Education', 'DigitalNEST is a company that creates sustainable and scalable technology learning centers for underserved Latinx youth in California. They provide these youth with the skills, resources, and network to build confidence and launch successful careers. T...', 'Large',
+    'Small', 
+    0, '318 Union Street', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2599055733, 'William Larkin', 'william@startuptree.co', 'None', 
+    'StartupTree', 'startuptree.co', 
+    'https://www.linkedin.com/company/startuptree', 
+    'Other', 'StartupTree is the industry leading and the first Entrepreneur Relationship Management™ (ERM) software for universities, accelerators, and foundations. We provide the easiest way to manage, track, and support your participants in your network. Software...', 'Large',
+    'Small', 
+    0, '30 West Street', 
+    'Annapolis', 'MD', 
+    '21401', 
+    'United States', 
+    'America/New_York', 
+    '2019-11-18', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2596208308, 'Kiwi for Gmail', 'marc@kiwiforgmail.com', '16179557520.0', 
+    'Zive', 'kiwiforgmail.com', 
+    'https://www.linkedin.com/company/zive-inc-', 
+    'Education', 'Zive is an enterprise software company focused on creating productivity applications for the business and professional user. Its first product, Kiwi for Gmail, transforms Google’s Workspace office suite into a suite of desktop applications with enhance...', 'Medium',
+    'Small', 
+    0, '12 East 49th Street', 
+    'New York', 'NY', 
+    '10017', 
+    'United States', 
+    'America/New_York', 
+    '2019-11-17', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2572724829, 'Ingrid Ruiz Ortiz', 'iortiz@sleepquest.com', '16504120126.0', 
+    'SleepQuest Inc', 'sleepquest.com', 
+    'https://www.linkedin.com/company/sleepquest', 
+    'Healthcare', 'SleepQuest is a rapidly expanding National Health Services Company focused on Sleep Related Breathing Disorders. They provide sleep care services for 25+ years with a comprehensive 'continuum of care' that includes diagnostic sleep testing, titrations,...', 'Large',
+    'Medium', 
+    0, '975 Industrial Road', 
+    'San Carlos', 'CA', 
+    '94070', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-11', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2569808352, 'GAIL MORTON', 'gmorton@montereyfamilylaw.com', 'None', 
+    'montereyfamilylaw.com', 'montereyfamilylaw.com', 
+    'None', 
+    'Finance and Legal', 'Monterey Family Law is a law firm specializing in family law matters. Our experienced attorneys provide comprehensive legal services to clients in Monterey and surrounding areas. We handle a wide range of family law cases, including divorce, child cust...', 'Small',
+    'None', 
+    0, '5 Vía Joaquin', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-09', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2554987082, 'Jessica Ford', 'jessica@startupdigest.com', '18664660070.0', 
+    'Startup Digest', 'startupdigest.com', 
+    'https://www.linkedin.com/company/startup-digest', 
+    'Creative and Media', 'Startup Digest Principles Here are the principles that guide how Startup Digest works: Curated – We believe in hand picking the best content for you. Personal – We believe that the best information for you comes from people who are actively buildi...', 'Medium',
+    'Medium', 
+    0, '1050 Walnut Street', 
+    'Boulder', 'CO', 
+    '80302', 
+    'United States', 
+    'America/Denver', 
+    '2019-11-04', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2550172229, 'Kingsley', 'kingsley@apps4org.com', '14258369547.0', 
+    'Apps4Org', 'apps4org.com', 
+    'https://www.linkedin.com/company/apps4org', 
+    'Other', 'Apps4Org is an all-in-one event platform that provides robust solutions for planning and delivering virtual conferences, managing all events in one app, and offering member resources on the go. With innovative technology, Apps4Org allows seamless plann...', 'Large',
+    'Micro', 
+    0, 'PO BOX 287', 
+    'Redmond', 'WA', 
+    '98073', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-01', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2547842916, 'Chris Bley', 'chris@montereybaydart.org', 'None', 
+    'Insight Up Solutions', 'insightupsolutions.com', 
+    'https://www.linkedin.com/company/insight-up-solutions', 
+    'Real Estate and Development', 'Insight Up Solutions is a company that offers a range of services including strategizing, training, equipment sales, and rentals. They specialize in integrating airspaces, technologies, locations, and industries to advance the future of robotics. They ...', 'Medium',
+    'Micro', 
+    0, '450 McQuaide Drive', 
+    'La Selva Beach', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2545793713, 'Sarabeth Doherty ', 'jas@parallelflight.com', '8312524175.0', 
+    'Parallel Flight Technologies', 'parallelflight.com', 
+    'https://www.linkedin.com/company/parallel-flight-technologies', 
+    'Other', 'Parallel Flight Technologies is a company that pioneers sustainable, vertical flight UAV solutions for heavy lift applications. They are developing revolutionary unmanned aircraft and propulsion systems for dangerous and consequential missions. Their p...', 'Large',
+    'Small', 
+    0, '1120 Syliva Way', 
+    'Ben Lomond', 'CA', 
+    '95005', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2539515664, 'Shah Kazemi', 'skazemi@montmush.com', '8317635300.0', 
+    'montmush.com', 'montmush.com', 
+    'https://www.linkedin.com/company/64277', 
+    'Other', 'Monterey Mushrooms, Inc. is a food & beverages company which specializes in Fresh Mushrooms, Mushrooms with Vitamin D, Processed Mushooms, fresh produce.', 'Large',
+    'Enterprise', 
+    0, '260 WESTGATE DR', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-29', 
+    1971
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2536441689, 'Jeffrey Jackman', 'jjackman@prtransport.com', 'None', 
+    'prtransport.com', 'prtransport.com', 
+    'https://www.linkedin.com/company/premier-refrigerated-transport', 
+    'Other', 'nan', 'Large',
+    'Small', 
+    0, '7026 Old Katy Road', 
+    'Houston', 'CA', 
+    '77024', 
+    'United States', 
+    'America/Chicago', 
+    '2019-10-28', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2536048494, 'Jeana Arnold ', 'reva@pge.com', '19252702772.0', 
+    'PG&E Corporation', 'pge.com', 
+    'https://www.linkedin.com/company/pacific-gas-and-electric-company', 
+    'Other', 'Pacific Gas & Electric Company (PG&E) provides natural gas and electric service to residential and business customers in northern and central California.', 'Large',
+    'Corporate', 
+    1, '770000 PO Box', 
+    'San Francisco', 'CA', 
+    '94177', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-28', 
+    1905
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2520509874, 'Philip Bouchard', 'philip@trustedpeer.com', '14152183203.0', 
+    'Trustedpeer', 'trustedpeer.com', 
+    'https://www.linkedin.com/company/trustedpeer', 
+    'Education', 'TrustedPeer brings efficiency, transparency and accountability to Knowledge Management and Knowledge Transfer by enabling corporations and executives to effectively confer with internal and external experts on demand and online. With the TrustedPeer Kn...', 'Large',
+    'Medium', 
+    0, '887 Noe Street', 
+    'San Francisco', 'CA', 
+    '94114', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-22', 
+    2014
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2502611364, 'Shahani Markus ', 'frank@emojot.com', '9167654421.0', 
+    'Emojot', 'emojot.com', 
+    'https://www.linkedin.com/company/emojot-inc-', 
+    'Technology', 'Emojot is a company that revolutionizes customer centricity with AI driven solutions. They provide a range of services including Experience Management (XM), Customer Success Management (CSM), Workflow Management (WFM), Online Reputation Management (ORM...', 'Large',
+    'Small', 
+    0, '130 E. San Fernando Street', 
+    'San Jose', 'CA', 
+    '95112', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-16', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2502568465, 'Travis Scamurra ', 'nwheat@splunk.com', '14158488400.0', 
+    'Splunk Inc.', 'splunk.com', 
+    'https://www.linkedin.com/company/splunk', 
+    'Technology', 'Splunk is a software company that provides a platform for organizations to prevent major issues, absorb shocks, and accelerate digital transformation. They specialize in making machine data accessible, usable, and valuable to everyone. Their software p...', 'Large',
+    'Enterprise', 
+    1, '270 Brannan Street', 
+    'San Francisco', 'CA', 
+    '94107', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-16', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2485294408, 'Unknown', 'unknown78@invalid.com', '4082782294.0', 
+    'Joint Venture Silicon Valley', 'jointventure.org', 
+    'https://www.linkedin.com/company/joint-venture-silicon-valley-network', 
+    'Non-Profit', 'Joint Venture Silicon Valley is an organization established in 1993 that provides analysis and action on issues affecting the region's economy and quality of life. They bring together leaders from various sectors to think outside the box and develop cr...', 'Large',
+    'Small', 
+    0, '100 West San Fernando Street', 
+    'San Jose', 'CA', 
+    '95113', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-29', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2482423641, 'Don Ripke', 'dripke@eauc.org', '18283493638.0', 
+    'ThemePunch', 'eauc.org', 
+    'https://www.linkedin.com/company/educational-association-of-university-centers', 
+    'Education', 'ThemePunch is a top selling author on envato's online marketplace codecanyon and has build a reputation with plugins like 'Slider Revolution Responsive WordPress Plugin'. We always try to deliver a perfect product that is easy to use, highly customizab...', 'Medium',
+    'Micro', 
+    0, '720 Redwood Lane', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-06', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2473149734, 'Kamalesh Rao', 'kamalesh@lifescient.com', '4155050565.0', 
+    'Lifescient', 'lifescient.com', 
+    'https://www.linkedin.com/company/lifescient-inc', 
+    'Healthcare', 'Lifescient is developing long acting injectables for pets. Medicated long acting injectables and implants will replace daily oral dosing to improve the quality of care for pets and provide peace of mind to pet owners. Veterinary pharmaceutical company ...', 'Medium',
+    'Micro', 
+    0, '6717 ROLLING MEADOWS DR APT 1027', 
+    'Sparks', 'NV', 
+    '89436', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-05', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2472238751, 'Gabriel Weisbrich ', 'omar.lopez@my.gavilan.edu', '4088484800.0', 
+    'Gavilan College', 'gavilan.edu', 
+    'https://www.linkedin.com/company/gavilan-systems', 
+    'Education', 'Gavilan College is a college located in Gilroy, California, with remote sites in Morgan Hill and Hollister. They offer a wide range of services, including programs of community education, study in the liberal arts and sciences, and study in the pre-pro...', 'Medium',
+    'Micro', 
+    0, '5055 Santa Teresa Blvd', 
+    'Gilroy', 'CA', 
+    '95020', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-04', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2217260107, 'Kristina Chavez Wyatt', 'kristina@sbcbusinesscouncil.com', '18315240408.0', 
+    'Farmhouse Comm', 'farmhousecommunications.com', 
+    'None', 
+    'Creative and Media', 'Farmhouse Communications is a strategic communications company that focuses on cultivating relationships and promoting community wellness and fiscal sustainability. They work with local businesses and government organizations to develop cutting-edge po...', 'Medium',
+    'Micro', 
+    0, '341 1st Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2214930068, 'Jim Woodell', 'jim@jimwoodell.com', '16175013823.0', 
+    'Jim Woodell, Ph.D.', 'jimwoodell.com', 
+    'https://www.linkedin.com/company/jimwoodell', 
+    'Education', 'Jim Woodell, Ph.D. All about Jim Woodell, Ph.D. and what he's up to. Jim Woodell & Company is now Venn Collaborative. Soon, Jim will add more information here about himself and his current activities. Meanwhile... © Jim Woodell, Ph.D. All rights reserved.', 'Medium',
+    'Micro', 
+    0, '2939 Van Ness Street Northwest', 
+    'Washington', 'DC', 
+    '20008', 
+    'United States', 
+    'America/New_York', 
+    '2019-07-17', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2213143732, 'Stefan Geisenheiner  SHAPEwerk', 'stefan@shapewerk.com', 'None', 
+    'ShapeWerk', 'shapewerk.com', 
+    'https://www.linkedin.com/company/shapewerk', 
+    'Industrial and Manufacturing', 'SHAPEwerk is a company that specializes in custom terrain maps that are 3D printed. They also provide machinery manufacturing services.', 'Medium',
+    'Micro', 
+    0, '16 Windmühlenweg', 
+    'Leipzig', 'CA', 
+    '04159', 
+    'United States', 
+    'Europe/Berlin', 
+    '2019-07-16', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2204285291, 'Mike Kazmierski', 'kazmierski@edawn.org', '7758293700.0', 
+    'Edawn', 'edawn.org', 
+    'https://www.linkedin.com/company/edawn', 
+    'Public and Government Services', 'EDAWN is a private/public partnership committed to adding quality jobs to the Greater Reno Sparks Tahoe region by recruiting new companies, supporting the success of existing companies, and assisting newly forming companies, to diversify the economy an...', 'Large',
+    'Small', 
+    0, '5190 Neil Road', 
+    'Reno', 'NV', 
+    '89502', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-13', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2205345556, 'Alida Wells ', 'kristina@sbcbusinesscouncil.com', '3102633060.0', 
+    'CMTC', 'cmtc.com', 
+    'https://www.linkedin.com/company/cmtc', 
+    'Education', 'California Manufacturing Technology Consulting (CMTC) is a non-profit corporation that provides consulting services to small and medium-sized California manufacturers. CMTC offers manufacturing solutions for growth and profitability for all types and s...', 'Large',
+    'Large', 
+    0, '690 Knox Street', 
+    'Torrance', 'CA', 
+    '90502', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-13', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2202841046, 'Rahi Systems', 'updates@rahisystems.com', '15106512205.0', 
+    'Rahi Systems Inc', 'rahisystems.com', 
+    'https://www.linkedin.com/company/rahi-systems', 
+    'Technology', 'Rahi Systems is a data center solutions provider that offers a full suite of data center infrastructure products covering storage, compute, network, and physical infrastructure. They help organizations evolve from a static data center to a dynamic, wel...', 'Large',
+    'Medium', 
+    0, '48303 Fremont Boulevard', 
+    'Fremont', 'CA', 
+    '94538', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-12', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2190332139, 'Rodney Meeks', 'rodney@e-ccsinc.com', '18314240606.0', 
+    'Credit Consulting Services Inc', 'e-ccsinc.com', 
+    'https://www.linkedin.com/company/credit-consulting-services-inc.', 
+    'Finance and Legal', 'Credit Consulting Services, Inc. is an accounts receivable management firm that provides solutions for reducing bad debt and improving overall cash flow. Established in 1970, CCS has a long rich history of successfully implementing recovery programs fo...', 'Large',
+    'Small', 
+    0, '201 John Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-09', 
+    1970
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2188876341, 'Travis Pedretti', 'travis@dustbowlbrewing.com', '2092502044.0', 
+    'Dustbowlbrewing', 'dustbowlbrewing.com', 
+    'https://www.linkedin.com/company/dustbowlbrewingco', 
+    'Consumer Goods and Retail', 'Dust Bowl Brewing Co. is a regional craft brewery established in 2009. They are known for brewing great beers such as Hops of Wrath, Taco Truck Lager, Therapist, and more. The company has taprooms in Turlock, Monterey, and Elk Grove, California. They o...', 'Large',
+    'Medium', 
+    0, '200 West Main Street', 
+    'Turlock', 'CA', 
+    '95380', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-08', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2182140021, 'Chris Cooley  Evelo Agency', 'chris@eveloagency.com', 'None', 
+    'Evelo Agency', 'eveloagency.com', 
+    'https://www.linkedin.com/company/coworking-consultants', 
+    'Real Estate and Development', 'Evelo Agency's data-driven consulting approach produces measurable results that minimize the risk of implementing a shared workspace concept.', 'Medium',
+    'Micro', 
+    0, '130 Winton Road North', 
+    'Rochester', 'CA', 
+    '14610', 
+    'United States', 
+    'America/New_York', 
+    '2019-07-05', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2145703112, 'Brian Antle ', 'gary@taproduce.com', '8314552950.0', 
+    'Taproduce', 'taproduce.com', 
+    'https://www.linkedin.com/company/tanimura-&-antle', 
+    'Other', 'Tanimura & Antle is an employee owned family farming business that grows premium fresh lettuces and vegetables. They are committed to enhancing the lives of all through employee ownership and customer inspired partnerships. They prioritize health, sust...', 'Large',
+    'Large', 
+    0, '1 Harris Road', 
+    'Salinas', 'CA', 
+    '93908', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-06-24', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2120017498, 'Unknown', 'unknown79@invalid.com', '5593221989.0', 
+    'Richard Shelton Insurance Co', 'shelton-insurance.com', 
+    'https://www.linkedin.com/company/richard-shelton-insurance-co', 
+    'Finance and Legal', 'Shelton Insurance is a business to consumer insurance agency that delivers personal along with web based, insurance information to individuals, families and small and large businesses who are in need. They specialize in benefits for individuals, famili...', 'Medium',
+    'Micro', 
+    0, '719 San Benito Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-06-20', 
+    2002
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2109491179, 'Andy Stoll', 'astoll@kauffman.org', '18169321018.0', 
+    'Kauffman Foundation', 'kauffman.org', 
+    'https://www.linkedin.com/company/kauffman-foundation', 
+    'Non-Profit', 'The Ewing Marion Kauffman Foundation is a private, nonpartisan foundation that aims to foster economic independence by advancing educational achievement and entrepreneurial success. The Foundation focuses on grant making and operations in the fields of...', 'Large',
+    'Medium', 
+    0, '4801 Rockhill Road', 
+    'Kansas City', 'MO', 
+    '64110', 
+    'United States', 
+    'America/Chicago', 
+    '2019-06-17', 
+    1966
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2079295071, 'Michael Handley', 'michael@newwaveprograms.com', '18315408978.0', 
+    'New Wave Programs,', 'newwaveprograms.com', 
+    'https://www.linkedin.com/company/new-wave-programs-llc', 
+    'Education', 'New Wave Programs, LLC Improving lives with Social Emotional Learning Through Chess. Curriculum, Professional Development Workshops, Events. #SEL #STEAM #Chess #Education #Community One small move One BIG difference...     “We help build foundations ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Fresno', 'CA', 
+    'None', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2069158898, 'Rosa Berardi', 'rberardi@colemanfoundation.org', '3129027120.0', 
+    'The Coleman Foundation', 'colemanfoundation.org', 
+    'https://www.linkedin.com/company/the-coleman-foundation', 
+    'Non-Profit', 'The Coleman Foundation is a private grantmaking foundation that invests in ideas and initiatives to improve the lives of those in the Chicago metro area. They support community-based organizations and local institutions to preserve and strengthen the p...', 'Large',
+    'Micro', 
+    0, '1 East Jackson Boulevard', 
+    'Chicago', 'IL', 
+    '60604', 
+    'United States', 
+    'America/Chicago', 
+    '2019-05-30', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2063267508, 'Felipe Aguilar ', 'foodie@montereybayfoodtours.com', '8312042211.0', 
+    'Monterey Bay Food Tours', 'montereybayfoodtours.com', 
+    'None', 
+    'Other', 'Monterey Bay Food Tours is a walking food tour company in Monterey, California. Join us on an Old Monterey Tour today to meet new friends or book your group of up to 8 people. Pricing: $150 per person. Still feeling more comfortable in a private group?...', 'Medium',
+    'Micro', 
+    0, 'PO Box 2552', 
+    'Monterey', 'CA', 
+    '93942', 
+    'None', 
+    'None', 
+    '2019-05-29', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2061253075, 'Craig Kaufman', 'craig@svtvb.org', 'None', 
+    'svtvb.org', 'svtvb.org', 
+    'None', 
+    'Other', 'The Central Coast is the Soul of California What is it about the Central Coast that makes it the Soul of California? First and foremost, it’s where our State began. Monterey holds the distinction of being the birthplace of California, our first ca...', 'Small',
+    'None', 
+    0, '886 Cannery Row', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-28', 
+    1951
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2061209004, 'Paul Bratton', 'paul.bratton@fema.dhs.gov', '2022544100.0', 
+    'Department of Homeland Security', 'fema.dhs.gov', 
+    'https://www.linkedin.com/company/us-department-of-homeland-security', 
+    'Public and Government Services', 'The United States Department of Homeland Security is a cabinet department of the US federal government with responsibilities in public security, roughly comparable to the interior or home ministries of other countries.', 'Large',
+    'Enterprise', 
+    0, 'U.S. Department of Homeland Security', 
+    'Washington', 'DC', 
+    '20528', 
+    'United States', 
+    'America/New_York', 
+    '2019-05-28', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2061223955, 'Camilla Boolootian ', 'jim.burns@redcross.org', '9169937070.0', 
+    'American Red Cross', 'redcross.org', 
+    'https://www.linkedin.com/company/american-red-cross', 
+    'Other', 'The American Red Cross is a humanitarian organization that provides emergency services, disaster services, service to armed forces, international services, and health & safety preparedness. They prevent and alleviate human suffering in the face of emer...', 'Large',
+    'Corporate', 
+    0, '431 18th Street Northwest', 
+    'Washington', 'DC', 
+    '20006', 
+    'United States', 
+    'America/New_York', 
+    '2019-11-21', 
+    1881
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2061149837, 'Marcus Babcock', 'unknown80@invalid.com', '12062990968.0', 
+    'vCita', 'vcita.com', 
+    'https://www.linkedin.com/company/vcita', 
+    'Technology', 'vcita is a small business management software and app that helps service providers manage and grow their business. It offers a range of tools and features, including client engagement, online scheduling, lead capturing, payments, invoicing, and more. T...', 'Large',
+    'Large', 
+    0, '10777 Main Street', 
+    'Bellevue', 'WA', 
+    '98004', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-28', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2044482628, 'Stephen Troy ', 'ltroy@aerofund.com', '4083602898.0', 
+    'AeroFund Financial', 'aerofund.com', 
+    'https://www.linkedin.com/company/aerofund-financial-inc', 
+    'Finance and Legal', 'AeroFund Financial is a direct commercial lender specializing in providing accounts receivable financing and factoring for small to medium-sized businesses nationwide. They offer services such as accounts receivable factoring, cash flow management, gov...', 'Large',
+    'Small', 
+    0, '6910 Santa Teresa Boulevard', 
+    'San Jose', 'CA', 
+    '95119', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-21', 
+    1987
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2043686623, 'Trish Dorsey ', 'efox124@aol.com', '4088699244.0', 
+    'Goodwill of Silicon Valley', 'goodwillsv.org', 
+    'https://www.linkedin.com/company/goodwill-of-silicon-valley', 
+    'Education', 'Goodwill of Silicon Valley is a social service organization dedicated to improving employment opportunities, increasing standards of living, providing economic independence, and restoring our clients' sense of self-worth. They achieve this through work...', 'Large',
+    'Large', 
+    0, '1080 North 7th Street', 
+    'San Jose', 'CA', 
+    '95112', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1926
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2043010428, 'Eric Chasin', 'echasin@innvosolutions.com', '5124135010.0', 
+    'Skywriter Systems, Inc.', 'skywriter.com', 
+    'https://www.linkedin.com/company/skywriter', 
+    'Technology', 'Skywriter Systems is a company that provides hierarchical content management and distribution services. They offer a single dashboard tool that allows users to easily access, share, and distribute content from various internet accessible locations. Wit...', 'Medium',
+    'Micro', 
+    0, '24429 Portola Ave', 
+    'Carmel', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2018
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2037484309, 'Suzanne Hilleary ', 'scottsf2020@gmail.com', '6463616374.0', 
+    'Musician's BASS', 'musiciansbass.com', 
+    'https://www.linkedin.com/company/musiciansbass', 
+    'Other', 'Home Build Your EPK. Fast. Easy. Free. Digital tools to help you rock your music career. Sign up for our beta at Your EPK, or Electronic Press Kit, is an essential tool that presents vital info to industry insiders. Our software provides real time, i...', 'Medium',
+    'Micro', 
+    0, 'P.O. Box 7383', 
+    'Santa Cruz', 'CA', 
+    '95061', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-12-10', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2033333748, 'Unknown', 'unknown81@invalid.com', '18008531438.0', 
+    'Insightly', 'insight.ly', 
+    'https://www.linkedin.com/company/insightly', 
+    'Technology', 'Insight.ly is a powerful customer relationship management platform designed for small businesses. Offering a range of features, including lead tracking, email marketing, and task management, Insight.ly enables businesses to better manage their sales pr...', 'Large',
+    'Medium', 
+    0, '680 Folsom Street', 
+    'San Francisco', 'CA', 
+    '94107', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-16', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2033115401, 'Rachel Reed', 'rreed@graniterock.com', '18317682062.0', 
+    'Graniterock', 'graniterock.com', 
+    'https://www.linkedin.com/company/graniterock', 
+    'Real Estate and Development', 'Graniterock provides quality construction products and services in an atmosphere of uncompromising honesty and integrity. Family owned mining, materials & construction company founded in 1900. Since 1900, Graniterock has provided the California constru...', 'Large',
+    'Large', 
+    0, '50001 PO Box', 
+    'Watsonville', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-16', 
+    1900
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    2005628178, 'Rachel Bailey ', 'dereckglover@gmail.com', '17378671000.0', 
+    'Oracle', 'oracle.com', 
+    'https://www.linkedin.com/company/oracle', 
+    'Technology', 'Oracle offers a comprehensive and fully integrated stack of cloud applications and cloud platform services. The Oracle Cloud offers complete SaaS application suites for ERP, HCM and CX, plus best in class database Platform as a Service (PaaS) and Infra...', 'Large',
+    'Enterprise', 
+    1, '2300 Oracle Way', 
+    'Austin', 'TX', 
+    '78741', 
+    'United States', 
+    'America/Chicago', 
+    '2019-05-13', 
+    1977
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1964484675, 'Adriana Frederick', 'afrederick@entravision.com', '13104473870.0', 
+    'Entravision Communications Corporation', 'entravision.com', 
+    'https://www.linkedin.com/company/entravisioncommunications', 
+    'Technology', 'Entravision Communications is a diversified global media, marketing, and technology company that reaches and engages Latino consumers in the U.S. and other markets primarily including Mexico, Latin America, and Spain. Entravision Communications Corpora...', 'Large',
+    'Large', 
+    1, '420 Lexington Ave', 
+    'None', 'None', 
+    '90404', 
+    'United States', 
+    'America/New_York', 
+    '2019-05-10', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1962893993, 'Implementations Webinar', 'implementations.webinar@ringcentral.com', '16504724100.0', 
+    'RingCentral Inc', 'ringcentral.com', 
+    'https://www.linkedin.com/company/ringcentral', 
+    'Technology', 'RingCentral is a leading provider of business cloud communications and contact center solutions. They offer a secure and reliable cloud-based unified communications solution that combines business phone, conferencing, video meetings, messaging, collabo...', 'Large',
+    'Enterprise', 
+    1, '20 Davis Dr', 
+    'Belmont', 'CA', 
+    '94002', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-15', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1929112386, 'Devon Whalen', 'devon.whalen@whitehatsec.com', '14083438300.0', 
+    'Synopsys, Inc.', 'whitehatsec.com', 
+    'https://www.linkedin.com/company/whitehat-security', 
+    'Technology', 'WhiteHat Security is a company that provides web application security solutions to reduce risk, reduce cost, and accelerate the deployment of secure applications and web sites.', 'Large',
+    'Medium', 
+    0, '3970 Freedom Cir', 
+    'Santa Clara', 'CA', 
+    '95054', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-07', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1894215103, 'Ben Holber', 'ben@yoderm.com', '14085963376.0', 
+    'Apostrophe Pharmacy LLC', 'apostrophe.com', 
+    'https://www.linkedin.com/company/apostrophe', 
+    'Healthcare', 'Apostrophe is a company that provides personalized acne treatments and skincare products. They connect customers with board-certified dermatologists who create custom prescription acne treatments. These treatments are delivered directly to the customer...', 'Large',
+    'Small', 
+    0, '2269 Chestnut Street', 
+    'None', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1886689172, 'Alisa Smith ', 'polnaszek@gmail.com', '8313759712.0', 
+    'Community Foundation for Monterey County', 'cfmco.org', 
+    'https://www.linkedin.com/company/community-foundation-for-monterey-county', 
+    'Public and Government Services', 'The Community Foundation for Monterey County (CFMC) inspires philanthropy and strengthens communities throughout Monterey County, connecting people who care with the causes that matter to them. Our vision is healthy, safe, vibrant communities throughou...', 'Medium',
+    'Small', 
+    0, '2354 Garden Road', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1945
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1873930873, 'Janet Mcadams ', 'jsummers@white-summers.com', '4156908750.0', 
+    'White Summers', 'white-summers.com', 
+    'https://www.linkedin.com/company/white-summers-caffee-&-james-llp', 
+    'Finance and Legal', 'White Summers is a leading Silicon Valley based law firm that serves as both legal advisors and business strategists to entrepreneurial management teams and investors. With offices around the world, they provide a one-stop shop for growing businesses g...', 'Large',
+    'Small', 
+    0, '541 Jefferson Avenue', 
+    'Redwood City', 'CA', 
+    '94063', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1866494803, 'Michelle Leonard ', 'juli@sanbenitocountychamber.com', '8316375315.0', 
+    'San Benito County Chamber of Commerce', 'sanbenitocountychamber.com', 
+    'https://www.linkedin.com/company/san-benito-county-chamber-of-commerce', 
+    'Other', 'The San Benito County Chamber of Commerce has been working with businesses, community leaders, and local government since 1921 to build a brighter future in San Benito County. They offer a range of services and resources for businesses, including econo...', 'Medium',
+    'Micro', 
+    0, '243 6th Street', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-29', 
+    1921
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1859302973, 'Chris Locke', 'chris@lockecpa.com', 'None', 
+    'CAL Accounting', 'lockecpa.com', 
+    'https://www.linkedin.com/company/cal-accounting', 
+    'Education', 'Full service Accounting Firm. Taxes, Payroll, Bookkeeping, CFO', 'Medium',
+    'Micro', 
+    0, '98 Del Monte Avenue', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-26', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1859223002, 'Charles Tung ', 'profshal@stanford.edu', '6507232300.0', 
+    'Stanford University', 'alumni.stanford.edu', 
+    'https://www.linkedin.com/company/stanford-university', 
+    'Education', 'Stanford University, one of the world's leading teaching and research universities, is dedicated to finding solutions to big challenges and to preparing students for leadership in a complex world.', 'Large',
+    'Enterprise', 
+    0, '450 Serra Mall', 
+    'Stanford', 'CA', 
+    '94305', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-31', 
+    1885
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1859204305, 'Ken Walton', 'kwalton@acrisure.com', '16165411260.0', 
+    'Acrisure', 'acrisure.com', 
+    'https://www.linkedin.com/company/acrisure', 
+    'Finance and Legal', 'Acrisure is an insurance brokerage company providing insurance services to medium and large sized commercial companies in the U.S. Midwest. Acrisure is a Fintech leader that operates the world’s fastest growing, top 10 insurance brokerage. The Company ...', 'Large',
+    'Enterprise', 
+    0, '5664 Prairie Creek SE Dr', 
+    'Caledonia', 'MI', 
+    '49316', 
+    'United States', 
+    'America/Detroit', 
+    '2020-03-30', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1859132546, 'Kim Morisaki', 'kim@dobusinessinmontana.com', '4062577711.0', 
+    'Montana West Economic Development', 'dobusinessinmontana.com', 
+    'https://www.linkedin.com/company/montana-west-economic-development-corp-', 
+    'Public and Government Services', 'Montana West Economic Development is a private, non-profit organization that works in conjunction with Flathead County to promote economic diversity, job growth, and healthy businesses in the Flathead Valley/Glacier Park Region in Northwest Montana. Th...', 'Medium',
+    'Micro', 
+    0, '44 2nd Avenue West', 
+    'Kalispell', 'MT', 
+    '59901', 
+    'United States', 
+    'America/Denver', 
+    '2019-04-26', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1842123364, 'Alina from Focuster', 'alina@focuster-85e71deb4b5d.intercom-mail.com', '19167476355.0', 
+    'Intercom, Inc.', 'focuster-85e71deb4b5d.intercom-mail.com', 
+    'https://www.linkedin.com/company/intercom', 
+    'Other', 'We make customer messaging apps for sales, marketing, and support, connected on one platform. Our mission is to make business personal again.', 'Small',
+    'Large', 
+    0, '55 2nd Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-24', 
+    2011
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1841963992, 'Joe Mc Kinney ', 'mburgoyne@nado.org', '2026247806.0', 
+    'National Association of Development Organizations', 'nado.org', 
+    'https://www.linkedin.com/company/national-assocation-of-development-organizations-nado-', 
+    'Non-Profit', 'The National Association of Development Organizations (NADO) is a national association that promotes regional development strategies, partnerships, and initiatives that strengthen economic competitiveness and quality of life within local communities ac...', 'Large',
+    'Small', 
+    0, '400 North Capitol Street Northwest', 
+    'Washington', 'DC', 
+    '20001', 
+    'United States', 
+    'America/New_York', 
+    '2019-10-28', 
+    1967
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1840221118, 'Bradley Carlson', 'bradley_carlson@oxfordcorp.com', '19785381600.0', 
+    'Oxford Global Resources LLC', 'oxfordcorp.com', 
+    'https://www.linkedin.com/company/oxford-global-resources', 
+    'Business Services', 'Oxford Global Resources is a talent driven staffing and consulting company with more than 30 offices across North America and Europe. We provide you with the flexibility to scale your workforce in various ways and build a customized solution to meet yo...', 'Large',
+    'Large', 
+    0, '100 Cummings Center', 
+    'Beverly', 'MA', 
+    '01915', 
+    'United States', 
+    'America/New_York', 
+    '2019-04-24', 
+    1984
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1830821915, 'Chris Miller', 'ctodd@prior.ly', '18314807190.0', 
+    'Launch Brigade', 'launchbrigade.com', 
+    'https://www.linkedin.com/company/launch-brigade', 
+    'Technology', 'Launch Brigade is a Bay Area web design and development firm that builds mobile-friendly websites for Santa Cruz, San Jose, and the Bay Area. They offer affordable and highly professional web design services, including WordPress website design and deve...', 'Large',
+    'Micro', 
+    0, '101 Cooper Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-22', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1823541025, 'Gerard Mattimoe ', 'bobby@glastonburyinc.com', '8315830880.0', 
+    'Glastonbury', 'glastonburyinc.com', 
+    'https://www.linkedin.com/company/glastonbury-inc', 
+    'Hospitality and Travel', 'Audio Visual / AV / Drive-in/ Temperature-Check COVID- 19 safeguards in place. The entire Glastonbury team and its partners value our health, the health of all staff, partners and clients. Glastonbury team members will share their tools of deployment, to help keep you safe. Safe meetings and events involve many areas of treatment, cleansing, safe …', 'Large',
+    'Medium', 
+    0, '495 Elder Avenue', 
+    'Sand City', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-18', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1821879122, 'Jay Kotra', 'jay.kotra@hilton.com', '17038831000.0', 
+    'Hilton Worldwide Holdings Inc.', 'hilton.com', 
+    'https://www.linkedin.com/company/hilton', 
+    'Hospitality and Travel', 'Hilton is a global hospitality company with a portfolio of 19 world class brands comprising more than 7,100 properties and more than 1.1 million rooms, in 123 countries and territories. Hilton is dedicated to fulfilling its founding vision to fill the ...', 'Large',
+    'Corporate', 
+    1, '7930 Jones Branch Drive', 
+    'McLean', 'VA', 
+    '22102', 
+    'United States', 
+    'America/New_York', 
+    '2019-04-18', 
+    1919
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1820484203, 'Bettye Saxon', 'bs3937@att.com', '12108214105.0', 
+    'AT&T Inc.', 'att.com', 
+    'https://www.linkedin.com/company/at&t', 
+    'Technology', 'AT&T Inc. is a provider of communications and digital entertainment services in the United States and the world. The Company operates through four segments: Business Solutions, Entertainment Group, Consumer Mobility and International. The Company offer...', 'Large',
+    'Corporate', 
+    1, '208 South Akard Street', 
+    'Dallas', 'TX', 
+    '75201', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    1876
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1820412637, 'Charles Pooler ', 'tbodem@sandcityca.org', 'None', 
+    'sandcityca.org', 'sandcityca.org', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1876
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1794484842, 'Khadija Hafiz ', 'ktabery@miis.edu', '8316474123.0', 
+    'Middlebury Institute', 'miis.edu', 
+    'https://www.linkedin.com/company/miis', 
+    'Education', 'Bienvenue sur la page officielle de l'Université Paris-Est Marne-la-Vallée / UPEM http://www.u-pem.fr', 'Large',
+    'Small', 
+    0, '5 Boulevard Descartes', 
+    'Champs-sur-Marne', 'None', 
+    '77420', 
+    'France', 
+    'Europe/Paris', 
+    '2019-04-08', 
+    1955
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1791938189, 'Focuster', 'hello@focuster.com', 'None', 
+    'Focuster', 'focuster.com', 
+    'https://www.linkedin.com/company/focuster', 
+    'Technology', 'Focuster is a web app that helps you manage your focus so you can make consistent progress on your most important goals. It automatically schedules your most important work in your calendar and follows up with you until you get it done. Focuster helps ...', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'Bucharest', 'CA', 
+    'None', 
+    'Romania', 
+    'Europe/Bucharest', 
+    '2019-04-06', 
+    1955
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1791689471, 'John Mc Cormack', 'johnmccormackjr@montereybay.com', '8316488111.0', 
+    'Monterey Bay', 'montereybay.com', 
+    'None', 
+    'Consumer Goods and Retail', 'Monterey Bay is a company that specializes in providing high-quality seafood products. We offer a wide range of fresh and frozen seafood, including fish, shellfish, and crustaceans. Our products are sourced from sustainable fisheries and are carefully ...', 'Medium',
+    'Micro', 
+    0, '712 Hawthorne St', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-06', 
+    1929
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1790136472, 'Greg Landry ', 'reports@constantcontact.com', '17814728100.0', 
+    'Constant Contact', 'constantcontact.com', 
+    'https://www.linkedin.com/company/constant-contact', 
+    'Technology', 'Constant Contact, an Endurance International Group company and a leader in email marketing since 1995, provides hundreds of thousands of small businesses around the world with the online marketing tools, resources, and personalized coaching they need t...', 'Large',
+    'Enterprise', 
+    0, '1601 Trapelo Rd', 
+    'Waltham', 'MA', 
+    '02451', 
+    'United States', 
+    'America/New_York', 
+    '2019-04-05', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1784688208, 'Unknown', 'unknown82@invalid.com', 'None', 
+    'gonzales.ca.us', 'ci.gonzales.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    'None', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1781490768, 'M Gagliano', 'datacenterknowledge@enews.datacenterknowledge.com', '15133221738.0', 
+    'Data Center Knowledge', 'enews.datacenterknowledge.com', 
+    'https://www.linkedin.com/company/data-center-knowledge', 
+    'Technology', 'Data Center Knowledge provides online daily news and analysis about the data center industry for business, information technology, operations, and facilities executives who build and manage data centers for companies. It offers daily news coverage of data centers, web hosting, cloud computing, hardware, software, and services. The company also provides daily e-mail updates or RSS feed subscribing services. In addition, it offers advertising solutions, which include banner ads on the website for data center decision makers, sponsorship of the daily newsletter, lead generation programs, and custom marketing solutions. Data Center Knowledge covers areas such as news archives, company news, videos, thought leadership, and resources and continuing education in the United States, the Asia-Pacific, and Europe. The company was founded in 2005 and is based in Lawrenceville, New Jersey. As of May 4, 2012, Data Center Knowledge, LLC operates as a subsidiary of iNET Interactive, LLC.', 'Large',
+    'Micro', 
+    0, '9100 West Chester Towne Centre Road Suite 200', 
+    'West Chester', 'OH', 
+    '45069', 
+    'United States', 
+    'America/New_York', 
+    '2019-04-02', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1776380381, 'John Dicconson', 'jdicconson@gmail.com', '8312367207.0', 
+    'Tech Care Now', 'techcarenow.com', 
+    'https://www.linkedin.com/company/tech-care-now', 
+    'Technology', 'TCN Tech Care Now develops, markets, sells and distributes custom technical support and training services for businesses and consumers. Tech Care Now, Inc. develops, markets, sells and distributes customized technical support and training services for ...', 'Large',
+    'Small', 
+    0, '680 Lighthouse Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-01', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1776297642, 'Jeff Dion ', 'jonny@wefunder.com', '18885460325.0', 
+    'Wefunder Inc', 'wefunder.com', 
+    'https://www.linkedin.com/company/wefunder', 
+    'Finance and Legal', 'Wefunder is a crowd investing platform for startups. We help seed investors purchase stock for as little as $100 in the most promising new businesses around the country. On the other side, we help founders raise funds from their most passionate users w...', 'Large',
+    'Medium', 
+    0, '1 Broadway', 
+    'Cambridge', 'MA', 
+    '02142', 
+    'United States', 
+    'America/New_York', 
+    '2019-04-01', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1770857711, 'Unknown', 'unknown83@invalid.com', '18009410550.0', 
+    'Copper CRM Inc', 'copper.com', 
+    'https://www.linkedin.com/company/copper-inc', 
+    'Technology', 'Copper is a CRM software solutions company that helps businesses build stronger customer relationships. With over 30,000+ companies using Copper, it is the only Google recommended CRM that focuses on building better relationships to drive lasting reven...', 'Large',
+    'Medium', 
+    0, '301 Howard Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    'None', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1762248476, 'Nimble', 'service@nimble.com', '18552364625.0', 
+    'Nimble Inc', 'nimble.com', 
+    'https://www.linkedin.com/company/nimblecrm', 
+    'Technology', 'Nimble is a CRM software that helps small businesses build better relationships in a noisy, multi-channel world. It provides a smart and easy way to track, engage, and nurture contacts, bringing together contacts, calendar, communications, and collabor...', 'Large',
+    'Medium', 
+    0, '2043 Colorado Ave', 
+    'Santa Monica', 'CA', 
+    '90404', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-25', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1760974731, 'Paul Powers', 'paul@powersassociates.us', 'None', 
+    'Powers Associates', 'powersassociates.us', 
+    'https://www.linkedin.com/company/powers-associates', 
+    'Finance and Legal', 'Powers Associates is a consulting firm in Monterey, CA that provides financial services to different businesses. Our team has extensive experience in providing strategic advisory, so you can trust that we will give you solutions to achieve your busines...', 'Small',
+    'Micro', 
+    0, '24600 Silver Cloud Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1760830043, 'Philip Taluban ', 'troy@oceanmist.com', 'None', 
+    'Ocean Mist Farms', 'oceanmist.com', 
+    'https://www.linkedin.com/company/oceanmistfarms', 
+    'Consumer Goods and Retail', 'Ocean Mist Farms is a fourth generation family-owned business and the largest grower of fresh artichokes in North America. They are committed to delivering the highest standards in the industry for food safety, product quality, customer service, innova...', 'Large',
+    'Large', 
+    0, '10855 Ocean Mist Parkway', 
+    'Castroville', 'CA', 
+    '95012', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1924
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1759601437, 'Ann Elise Emerson ', 'demerson@lightandmotion.com', '8316451525.0', 
+    'Light & Motion', 'lightandmotion.com', 
+    'https://www.linkedin.com/company/light-&-motion', 
+    'Other', 'Light & Motion is a company that designs, manufactures, and sells consumer products using cutting edge technology and innovative design. They are committed to building products with integrity and attention to quality. Their LED lights are powerful, lig...', 'Medium',
+    'Medium', 
+    0, '711 Neeson Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1759195038, 'Diane Scalisi ', 'angie.martinez@driscolls.com', '18317682987.0', 
+    'Driscoll's', 'driscolls.com', 
+    'https://www.linkedin.com/company/driscoll's', 
+    'Consumer Goods and Retail', 'Driscoll's is the global leader for fresh strawberries, blueberries, raspberries and blackberries. With more than 100 years of farming heritage.', 'Large',
+    'Enterprise', 
+    0, '345 Westridge Dr', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1904
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1759189736, 'Daniella Russo', 'drusso@thinkbeyondplastic.com', 'None', 
+    'Think Beyond Plastic', 'thinkbeyondplastic.com', 
+    'https://www.linkedin.com/company/think-beyond-plastic', 
+    'Other', 'Think Beyond Plastic is a global multi-disciplinary effort to accelerate the commercialization of research and innovation addressing plastic pollution. The company operates an Innovation Center that brings together industry, innovators, and investors t...', 'Medium',
+    'Micro', 
+    0, '27875 Berwick Drive', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1759158990, 'Joel Gambord', 'jg@jg13.com', 'None', 
+    'Joel13.com', 'joel13.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    'None', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1758591594, 'Craig Vachon', 'craig.vachon@gmail.com', '14085059959.0', 
+    'AnchorFree Inc', 'anchorfree.com', 
+    'https://www.linkedin.com/company/anchorfree', 
+    'Technology', 'AnchorFree is a company that provides online security, privacy, and access through its Hotspot Shield app, which secures internet communication and user identity while providing access to internet content.', 'Large',
+    'Medium', 
+    0, '1800 Seaport Boulevard', 
+    'Menlo Park', 'CA', 
+    '94025', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-23', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1758486129, 'Brad Van Dam', 'bvandam@americancastingco.com', '18316344700.0', 
+    'Marich Confectionery Company', 'marich.com', 
+    'https://www.linkedin.com/company/marich-confectionery', 
+    'Other', 'MARICH® Confectionery is a second generation candy making family that specializes in pancrafted chocolates. They offer a line of delicious snackable, shareable, and giftable chocolates made from premium ingredients. Their chocolates combine modern tast...', 'Large',
+    'Medium', 
+    0, '2101 Bert Dr', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1756441307, 'Jeffrey Sachse', 'sachsej@uwosh.edu', '19204241234.0', 
+    'University of Wisconsin Oshkosh', 'uwosh.edu', 
+    'https://www.linkedin.com/school/university-of-wisconsin-oshkosh', 
+    'Education', 'At the University of Wisconsin Oshkosh, students are at the heart of all we do. We provide high quality, affordable education and are committed to providing students with a broad knowledge base and transferable skills. Our programs focus on developing ...', 'Large',
+    'Enterprise', 
+    0, '800 Algoma Boulevard', 
+    'Oshkosh', 'WI', 
+    '54901', 
+    'United States', 
+    'America/Chicago', 
+    '2019-03-21', 
+    1871
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1756347057, 'Julius Robinson ', 'woodrow.kelley@unionbank.com', '14157652414.0', 
+    'MUFG Bank, Ltd. Primary NY Branch', 'unionbank.com', 
+    'https://www.linkedin.com/company/union-bank', 
+    'Other', 'Union Bank, now officially part of U.S. Bancorp, is a full service financial institution providing a wide array of personal banking and business services designed to meet the needs of our clients.', 'Large',
+    'Corporate', 
+    0, '800 Nicollet Mall', 
+    'San Francisco', 'CA', 
+    '90051', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-21', 
+    1864
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1756260222, 'Future Edtech', 'futureedtech.sogftoihouahxqbgerxi@mail2.knect365.com', 'None', 
+    'Knect365', 'mail2.knect365.com', 
+    'https://www.linkedin.com/company/knect365', 
+    'Other', 'Delivering knowledge and commercial relationships for business communities', 'Small',
+    'Large', 
+    0, '2032 Corte Del Nogal', 
+    'Carlsbad', 'CA', 
+    '92011', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-21', 
+    1864
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1756215457, 'Deirdre Smallwood ', 'l.lentz@bofa.com', '17043868486.0', 
+    'Bank of America Corporation', 'bankofamerica.com', 
+    'https://www.linkedin.com/company/bank-of-america', 
+    'Other', 'Bank of America offers banking, investing, and other financial and risk management services to individuals, SMBs and large corporations.', 'Large',
+    'Corporate', 
+    1, '100 North Tryon Street', 
+    'Charlotte', 'NC', 
+    '28202', 
+    'United States', 
+    'America/New_York', 
+    '2019-03-21', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1752589833, 'Yvette Archuleta ', 'sgreen@csufresno.edu', '5592784240.0', 
+    'Fresno State', 'csufresno.edu', 
+    'https://www.linkedin.com/school/california-state-university-fresno', 
+    'Education', 'California State University, Fresno is a public university that offers undergraduate, post baccalaureate, and doctoral degree programs. The university is located in Fresno, California, and is one of the 23 campuses of the California State University sy...', 'Large',
+    'Enterprise', 
+    0, '5241 S Maple Ave #', 
+    'Fresno', 'CA', 
+    '93740', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-20', 
+    1911
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1749722090, 'Ray Corpuz ', 'estefaniav@ci.salinas.ca.us', 'None', 
+    'salinas.ca.us', 'ci.salinas.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-01-10', 
+    1911
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1748996178, 'Ande Flower ', 'caraker@monterey.org', '8316463799.0', 
+    'City of Monterey', 'monterey.org', 
+    'https://www.linkedin.com/company/cityofmonterey', 
+    'Public and Government Services', 'The City of Monterey is a government administration that provides services to a population of over 70,000. It is home to famous landmarks such as Cannery Row, Old Fisherman's Wharf, and the Naval Postgraduate School. The city is committed to preserving...', 'Medium',
+    'Large', 
+    0, '580 Pacific Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-19', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1747179471, 'Ernest Posey', 'eposey@poseyfoundation.org', 'None', 
+    'Posey Family Foundation', 'poseyfoundation.org', 
+    'None', 
+    'Other', 'The Posey Family Foundation is a non-profit organization dedicated to improving the lives of children and families in need. Through various programs and initiatives, the foundation provides support and resources in the areas of education, healthcare, a...', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1997
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1746001312, 'Bond ', 'jfinkle@iedconline.org', '2022237800.0', 
+    'IEDC', 'iedconline.org', 
+    'https://www.linkedin.com/company/international-economic-development-council', 
+    'Other', 'The International Economic Development Council (IEDC) is a non-profit, non-partisan membership organization serving economic developers. With more than 4,700 members, IEDC is the largest organization of its kind. Economic developers promote economic we...', 'Large',
+    'Small', 
+    0, '1275 K Street Northwest', 
+    'Washington', 'DC', 
+    '20005', 
+    'United States', 
+    'America/New_York', 
+    '2019-03-18', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1743932554, 'Pipedrive Authentication Service', 'auth@pipedrive.com', '16502550037.0', 
+    'Pipedrive', 'pipedrive.com', 
+    'https://www.linkedin.com/company/pipedrive', 
+    'Technology', 'Pipedrive is a sales CRM and pipeline management software. It is the #1 user-rated CRM tool that helps businesses get more qualified leads and grow their sales. Pipedrive is designed by salespeople, for salespeople, and focuses on organizing and managi...', 'Large',
+    'Large', 
+    0, '460 Park Avenue South', 
+    'New York', 'NY', 
+    '10016', 
+    'United States', 
+    'America/New_York', 
+    '2019-03-16', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1743110025, 'Francisco Ramos', 'flramos@silvestrivineyards.com', '18316250111.0', 
+    'Silvestri Vineyards', 'silvestrivineyards.com', 
+    'https://www.linkedin.com/company/silvestri-vineyards', 
+    'Consumer Goods and Retail', 'Silvestri Vineyards is a family-owned estate winery and tasting room located in Carmel Valley, California. They specialize in producing estate-grown and produced wines, including Chardonnay, Pinot Noir, Syrah, Pinot Gris, Pinot Blanc, Rose, and Barbera...', 'Medium',
+    'Micro', 
+    0, '7TH AVE 2 NE OF DOLORES ST', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93923', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-15', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1741050026, 'Unknown', 'unknown84@invalid.com', '12624721449.0', 
+    'U.S. Assn for Small Business & Entrepreneurship', 'usasbe.org', 
+    'https://www.linkedin.com/company/united-states-association-for-small-business-and-entrepreneurship', 
+    'Education', 'The United States Association for Small Business and Entrepreneurship (USASBE) is the largest independent, professional, academic organization in the world dedicated to advancing the discipline of entrepreneurship. With nearly 1000 members from univers...', 'Medium',
+    'Micro', 
+    0, '1206 West Highland Street', 
+    'Whitewater', 'WI', 
+    '53190', 
+    'United States', 
+    'America/Chicago', 
+    '2022-05-12', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1734079207, 'Doug Yount', 'doug.yount@sheahomes.com', '9256849632.0', 
+    'Shea Homes', 'sheahomes.com', 
+    'https://www.linkedin.com/company/shea-homes', 
+    'Industrial and Manufacturing', 'Building new homes in arizona, colorado, california, florida, nevada, washington, north carolina and south carolina. Information for buying and building your new Shea home with detailed information on Shea communities, shea mortgages, home owner services, contacts and community registration.', 'Large',
+    'Large', 
+    0, '8800 North Gainey Center Drive', 
+    'Scottsdale', 'AZ', 
+    '85258', 
+    'United States', 
+    'America/Phoenix', 
+    '2020-03-30', 
+    1881
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1728123902, 'Julie Herd ', 'gdyoutsey@ucanr.edu', '15109870230.0', 
+    'University of California', 'ucop.edu', 
+    'https://www.linkedin.com/company/ucop', 
+    'Education', 'The University of California is the world’s leading public research university system. With 10 campuses, 5 medical centers, 3 national labs and a network of agricultural and natural research centers, the UC system includes more than 257,000 students an...', 'Large',
+    'Enterprise', 
+    0, '1111 Franklin Street', 
+    'Oakland', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-11-29', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1711158579, 'Wai Fong', 'yzfong@usc.edu', '2137402311.0', 
+    'University of Southern California', 'wesrac.usc.edu', 
+    'https://www.linkedin.com/company/university-of-southern-california', 
+    'Education', 'The University of Southern California is an American private research university in Los Angeles, California.', 'Large',
+    'Enterprise', 
+    0, 'UNIVERSITY PARK', 
+    'Los Angeles', 'CA', 
+    '90033', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-31', 
+    1880
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1711157460, 'Rodney Krebs', 'rkrebs@ccim.net', '7172939252.0', 
+    'CCIM Institute', 'ccim.net', 
+    'https://www.linkedin.com/school/ccim-institute', 
+    'Real Estate and Development', 'CCIM Institute is an organization that trains and certifies commercial real estate professionals. They are recognized experts in the disciplines of commercial and investment real estate.', 'Large',
+    'Medium', 
+    0, '430 North Michigan Avenue', 
+    'Chicago', 'IL', 
+    '60611', 
+    'United States', 
+    'America/Chicago', 
+    '2019-03-07', 
+    1967
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1711140288, 'Ryan Sharp ', 'agtinajero@ucdavis.edu', '5307522804.0', 
+    'UC Davis', 'ucdavis.edu', 
+    'https://www.linkedin.com/company/ucdavishealth', 
+    'Education', 'UC Davis is a top public university located in Northern California. With a campus of 33,300 students and an annual research budget of nearly $750 million, UC Davis is known for its teaching, research, and public service. The university is proud of its ...', 'Large',
+    'Enterprise', 
+    0, '1 Shields Avenue', 
+    'Davis', 'CA', 
+    '95616', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-03-07', 
+    1908
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1704874192, 'Seth Kinkade', 'seth@radiclesnacks.com', '8319179525.0', 
+    'Radiclesnacks', 'radiclesnacks.com', 
+    'https://www.linkedin.com/company/radicle-snacks', 
+    'Consumer Goods and Retail', 'Radicle Snacks is a company that sells organic dried fruit and fruit jerky through sustainable organic agriculture practices. Our goal is to leave the earth better than we found it. We offer a range of products that are vegan, kosher, gluten-free, and ...', 'Medium',
+    'Micro', 
+    0, '56 5th Avenue', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1704866612, 'Devin Carlson', 'devin@archercomponents.com', '8313137341.0', 
+    'Archer Components', 'archercomponents.com', 
+    'https://www.linkedin.com/company/archer-components', 
+    'Industrial and Manufacturing', 'Archer Components is a product development company with a focus on bicycle drivetrain. They innovate in the outdoor space to enhance the user experience by taking away distractions. They produce in-house designs for retail and support their strategic p...', 'Medium',
+    'Micro', 
+    0, '142 Reed Way', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1704687134, 'Marco Rolandi ', 'xiaolin@cruzfoam.com', '9259892695.0', 
+    'Cruz Foam', 'cruzfoam.com', 
+    'https://www.linkedin.com/company/cruz-foam', 
+    'Industrial and Manufacturing', 'Cruz Foam is a circular materials company offering certified compostable, protective packaging foam and other sustainable packaging solutions. Cruz Foam is a bio material technology company that produces certified compostable, protective packaging foam...', 'Medium',
+    'Small', 
+    0, '1156 High St', 
+    'Santa Cruz', 'CA', 
+    '95064', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1703036334, 'Jill Adachi ', 'ltehovnik@audiblerx.org', '18312177919.0', 
+    'AudibleRx', 'audiblerx.org', 
+    'https://www.linkedin.com/company/audiblerx', 
+    'Other', 'Consumer Medication Information in audible format as an Accessible Option to the paper leaflets you receive with your prescription.', 'Medium',
+    'Micro', 
+    0, '961 BROMER ST', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2016
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1700475834, 'Steve Wotherspoon ', 'jennifer.kuyper@pinnacle.bank', '18884857050.0', 
+    'Pinnacle Bank', 'pinnacle.bank', 
+    'https://www.linkedin.com/company/pinnaclebank', 
+    'Other', 'Pinnacle Bank is a trusted bank of choice for businesses throughout Santa Clara, San Benito, and Monterey Counties. They offer a range of banking services including business banking, SBA lending, commercial lending, community banking, equipment finance...', 'Large',
+    'Medium', 
+    0, '7597 Monterey Road', 
+    'Gilroy', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-04', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1666631361, 'Laurel OHalloran ', 'citymanager@cityofpacificgrove.org', '8316485716.0', 
+    'City of Pacific Grove', 'cityofpacificgrove.org', 
+    'https://www.linkedin.com/company/city-of-pacific-grove', 
+    'Education', 'Pacific Grove is a coastal city in Monterey County, California in the United States. The city is known for its beautiful Victorian era houses, bed and breakfast inns, and attractions such as the Point Pinos Lighthouse, Pacific Grove Museum of Natural H...', 'Large',
+    'Medium', 
+    0, '300 Forest Avenue', 
+    'Pacific Grove', 'CA', 
+    '93950', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1875
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1665322317, 'Cesario Ruiz ', 'cherrera@elpajarocdc.org', '8317221224.0', 
+    'El Pajaro Community Development', 'elpajarocdc.org', 
+    'https://www.linkedin.com/company/el-pajaro-community-development-corp', 
+    'Non-Profit', 'El Pajaro Community Development is a non-profit organization dedicated to promoting economic development and improving the quality of life for individuals and families in the Pajaro Valley region of California. Through various programs and services, El...', 'Medium',
+    'Micro', 
+    0, '23 E Beach St', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-03', 
+    1979
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1553447883, 'Sam Burkhardt', 'sam@burkhardtconstruction.net', '18312127019.0', 
+    'Burkhardt Construction', 'burkhardtconstruction.net', 
+    'None', 
+    'Industrial and Manufacturing', 'Burkhardt Construction is a Licensed General, Electrical, and Plumbing Contractor serving the greater Santa Cruz area. We provide services in the communities of Santa Cruz, Watsonville, Aptos, Soquel, Capitola, Freedom and Scotts Valley. We have been providing quality carpentry, electrical and plumbing work, kitchen and bathroom remodeling, drywall and general home repairs and handyman services of all kinds since 1994. Burkhardt Construction is a small company and we do nearly all of the work ourselves. We take pride in always doing the best work we can at very reasonable rates. We are honest and conscientious, take pride in our work and never try to sell you work or materials that you don't need. When options are available, we explain them to you and tell you the advantages or disadvantages of each, give you our opinions as to which way we think you should go and explain the differences in price. Create a more modern and energy efficient home with Burkhardt Construction.', 'Small',
+    'None', 
+    0, '120 Seaview Ave.', 
+    'Santa Cruz', 'CA', 
+    '95062', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1982
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1457446312, 'Thomas R Harris', 'harris@unr.edu', '7753487225.0', 
+    'University of Nevada, Reno', 'unr.edu', 
+    'https://www.linkedin.com/school/university-of-nevada-reno', 
+    'Education', 'The University of Nevada, Reno is Nevada's land grant institution that offers academic programs at the undergraduate and graduate levels. It excels in teaching, research, and outreach and is known for its large study abroad program and medical school. ...', 'Large',
+    'Enterprise', 
+    0, '1664 North Virginia Street', 
+    'Reno', 'NV', 
+    '89557', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-22', 
+    1874
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1454283730, 'Mbep Action Center ', 'dsilva@mbep.biz', '18319152806.0', 
+    'Monterey Bay Economic Partnership', 'mbep.biz', 
+    'https://www.linkedin.com/company/monterey-bay-economic-partnership', 
+    'Other', 'Monterey Bay Economic Partnership (MBEP) is a regional nonprofit, membership organization consisting of public, private and civic entities located throughout the counties of Monterey, San Benito and Santa Cruz. Founded in 2015, our mission is to improv...', 'Large',
+    'Micro', 
+    0, '3180 Imjin Road', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-15', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1422571724, 'Michael Lund ', 'lou@startupsandbox.org', 'None', 
+    'Startup Sandbox', 'startupsandbox.org', 
+    'https://www.linkedin.com/company/startup-sandbox', 
+    'Education', 'Startup Sandbox is a startup incubator in Santa Cruz that helps bioscience and technology entrepreneurs launch their companies and productize their research. The company provides entrepreneurs with business training, access to academic excellence, and ...', 'Medium',
+    'Micro', 
+    0, '250 Natural Bridges Drive', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-20', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1416450502, 'Grow with Google Partners ', 'nobody@google.com', '16502530000.0', 
+    'Google', 'google.com', 
+    'https://www.linkedin.com/company/google', 
+    'Technology', 'Google is a multinational corporation that specializes in internet-related services and products. Its mission is to organize the world's information and make it universally accessible and useful.', 'Large',
+    'Enterprise', 
+    1, '1600 Amphitheatre Parkway', 
+    'Mountain View', 'CA', 
+    '94043', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-19', 
+    1998
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1413101303, 'Julia Kalika ', 'mdcahn@ucanr.edu', '15307501221.0', 
+    'Ucanr', 'ucanr.edu', 
+    'https://www.linkedin.com/company/unaids', 
+    'Education', 'Division of Agriculture and Natural Resources UC Division of Agriculture and Natural Resources (ANR) is a statewide network of University of California researchers and educators dedicated to the creation, development and application of knowledge in agr...', 'Large',
+    'Enterprise', 
+    0, '1111 Franklin Street', 
+    'Oakland', 'CA', 
+    '94607', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-05-04', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1412197708, 'Mary Leffel', 'mal@leffelconstruction.com', 'None', 
+    'leffelconstruction.com', 'leffelconstruction.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1868
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1331540964, 'Benjamin Swails ', 'michael.coughlan@freshworks.com', '16505130514.0', 
+    'Freshworks', 'freshworks.com', 
+    'https://www.linkedin.com/company/freshworks-inc', 
+    'Other', 'Freshworks is a leading provider of modern SaaS solutions that solve multiple, complex business problems. Their suite of products includes Freshdesk, Freshservice, Freshsales, and Freshcaller, which are designed to increase collaboration and help teams...', 'Large',
+    'Enterprise', 
+    1, '1250 Bayhill Dr', 
+    'None', 'CA', 
+    '94403', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-15', 
+    2010
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1321748465, 'Pro Quest Pivot', 'pivot-fundingalert-admin@proquest.com', '13019616700.0', 
+    'ProQuest LLC', 'proquest.com', 
+    'https://www.linkedin.com/company/proquest', 
+    'Technology', 'ProQuest is committed to supporting the important work happening in the world’s research and learning communities. The company curates content that matters to the advancement of knowledge, assembling an archive of billions of vetted, indexed documents....', 'Large',
+    'Enterprise', 
+    0, '789 E Eisenhower Pkwy', 
+    'Ann Arbor', 'MI', 
+    '48108', 
+    'United States', 
+    'America/Detroit', 
+    '2019-02-14', 
+    1872
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1256932974, 'Layne Long ', 'cmedinadirksen@cityofmarina.org', '18318841278.0', 
+    'Notices', 'cityofmarina.org', 
+    'https://www.linkedin.com/company/city-of-marina', 
+    'Other', 'The City of Marina is a world-class community, well poised for economic development and known for its diversity, vibrancy and sustainability. In 2012, Marina was named one of the 100 Best Community for Young People by America's Promise Alliance.', 'Large',
+    'Medium', 
+    0, '211 Hillcrest Ave', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1975
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1256832364, 'Chrissy Meyer', 'chrissy@root.vc', 'None', 
+    'Root Ventures', 'root.vc', 
+    'https://www.linkedin.com/company/root-ventures', 
+    'Finance and Legal', 'Root Ventures is an early stage Venture Capital firm based in San Francisco, CA. The firm focuses on three areas of investing: Tools and Infrastructure, Low cost robotics and Hardware, and Data science.', 'Medium',
+    'Micro', 
+    0, 'None', 
+    'San Francisco', 'CA', 
+    '94110', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-11', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1255699990, 'Unknown', 'msikand@umich.edu', '7347641817.0', 
+    'University of Michigan', 'umich.edu', 
+    'https://www.linkedin.com/school/university-of-michigan-college-of-engineering', 
+    'Education', 'A top ranked public university, the University of Michigan has a tradition of excellence in research, learning and teaching, sports and the arts, and more. The University of Michigan is one of the top public universities in the world. Internationally r...', 'Large',
+    'Enterprise', 
+    0, '500 S State St', 
+    'Ann Arbor', 'MI', 
+    '48109', 
+    'United States', 
+    'America/Detroit', 
+    '2019-04-24', 
+    1817
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1254242095, 'Eduardo Contreras', 'eduaconl@gmail.com', '496227747474.0', 
+    'SAP', 'sap.com', 
+    'https://www.linkedin.com/company/sap', 
+    'Technology', 'SAP is the world's leading provider of business software, offering applications and services that enable companies of all sizes across more than 26 industries to become best run businesses. With more than 296,000 customers in over 190 countries, the co...', 'Large',
+    'Enterprise', 
+    1, '16 Dietmar-Hopp-Allee', 
+    'Walldorf', 'None', 
+    '69190', 
+    'Germany', 
+    'Europe/Berlin', 
+    '2019-02-11', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1249206184, 'Erika Mahoney ', 'aburke@kazu.org', '8313758022.0', 
+    'KAZU 90.3', 'kazu.org', 
+    'https://www.linkedin.com/company/90-3-kazu', 
+    'Creative and Media', 'KAZU is the flagship NPR-member radio station for the Monterey Bay Area, licensed in Pacific Grove, California, United States.', 'Large',
+    'Micro', 
+    0, '100 CAMPUS CTR', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-07', 
+    1972
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1243688862, 'Kristin Valente', 'kristin.valente@ey.com', 'None', 
+    'Ernst & Young Nederland LLP', 'ey.com', 
+    'https://www.linkedin.com/company/ernstandyoung', 
+    'Other', 'EY provides consulting, assurance, tax and transaction services that help solve our client’s toughest challenges and build a better working world for all. EY is a global leader in assurance, tax, transaction and advisory services. The insights and qual...', 'Large',
+    'Corporate', 
+    0, '118 N Gadsden St #1400', 
+    'London', 'None', 
+    'None', 
+    'United Kingdom', 
+    'Europe/London', 
+    '2019-02-07', 
+    1989
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1243603921, 'Tajha Chappellet Lanier ', 'erik@mcweekly.com', '8313945656.0', 
+    'Monterey Cnty Weekly', 'mcweekly.com', 
+    'https://www.linkedin.com/company/monterey-county-weekly', 
+    'Other', 'The Monterey County Weekly is the area's largest circulated publication. The award-winning, locally-focused newspaper is published each Thursday and distributed at over 900 locations in Monterey County. Established in 1988, the essential voice of Monterey County has grown exponentially and is available electronically as well as in print. The Weekly also publishes several resource guides that are published annually, including the Food & Drink Guide, Student SMART Guide, Senior Resource Directory, and Best of Monterey Bay Essential Visitor's Guide. Community involvement includes the Monterey County Gives! campaign and voting for the Best of Monterey County.', 'Large',
+    'Small', 
+    0, '668 Williams Avenue', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-23', 
+    1988
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1238808326, 'Leslie Schwabacher ', 'mattkoller@benitolink.com', '8318011356.0', 
+    'BenitoLink.com & BenitoLink.org', 'benitolink.com', 
+    'https://www.linkedin.com/company/benitolink-com', 
+    'Other', 'BenitoLink is a nonprofit news source connecting the residents of San Benito County through local news and information, encouraging public dialogue to foster an engaged community.', 'Medium',
+    'Micro', 
+    0, '829 San Benito St.', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-04-05', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1238247746, 'Rachel Hankerson', 'rachelhankerson@internationalproofsystems.com', '13144526880.0', 
+    'International Proof Systems LLC', 'internationalproofsystems.com', 
+    'https://www.linkedin.com/company/proof-smart-tags', 
+    'Technology', 'International PROOF Systems is a woman owned small business, with a big vision to improve antiquated processes and systems through advanced technology. International PROOF Systems is currently embarking upon the world's first computerized license plate...', 'Medium',
+    'Micro', 
+    0, '911 Wasington', 
+    'St. Louis', 'MO', 
+    '63101', 
+    'United States', 
+    'America/Chicago', 
+    '2020-03-30', 
+    2013
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1233578068, 'Danielle Tremeear ', 'rick@beaconecon.com', '13105713399.0', 
+    'Beacon Economics LLC', 'beaconecon.com', 
+    'https://www.linkedin.com/company/beacon-economics', 
+    'Education', 'Beacon Economics, LLC is an independent economic research and consulting firm that provides objective, top tier research and analytics to help its clients make optimal decisions about investment, growth, revenue, and policy. The firm’s core areas of ex...', 'Large',
+    'Small', 
+    0, '5777 West Century Boulevard', 
+    'Los Angeles', 'CA', 
+    '90045', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-04', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1201907439, 'Martin Bernal ', 'blipscomb@cityofsantacruz.com', '8314205230.0', 
+    'City of Santa Cruz', 'cityofsantacruz.com', 
+    'https://www.linkedin.com/company/city-of-santa-cruz', 
+    'Public and Government Services', 'The City of Santa Cruz is located in one of the most beautiful areas of California, on the sunny, northern side of the Monterey Bay, 75 miles south of San Francisco and 30 miles south of San Jose. Situated between magnificent redwood forested mountains...', 'Medium',
+    'Large', 
+    0, '809 Center Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1866
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1179077007, 'Warren Jensen', 'warren@garybess.com', '5308773426.0', 
+    'My Site', 'garybess.com', 
+    'https://www.linkedin.com/company/gary-bess-associates', 
+    'Non-Profit', 'Founded in 1991, Gary Bess Associates is a consulting company that offers a wide range of services to nonprofit and public sector organizations. With a social work perspective, our consultants provide expertise in grant writing, FQHC applications, prog...', 'Large',
+    'Small', 
+    0, '6931 Skyway', 
+    'Paradise', 'CA', 
+    '95969', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-25', 
+    1991
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1169379829, 'Unknown', 'unknown85@invalid.com', '4123251565.0', 
+    'World-Class Industrial Network', 'winnets.com', 
+    'https://www.linkedin.com/company/world-class-industrial-network', 
+    'Real Estate and Development', 'World Class Industrial Network LLC (WIN) is a project development and management consulting firm that provides a range of services to improve the impact and performance of organizations. They specialize in workforce development, information technology ...', 'Large',
+    'Small', 
+    0, '33 Terminal Way', 
+    'Pittsburgh', 'PA', 
+    '15219', 
+    'United States', 
+    'America/New_York', 
+    '2019-01-21', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1164772802, 'Ed Grabowy ', 'louis.helmonds@newventurevisions.com', 'None', 
+    'newventurevisions.com', 'newventurevisions.com', 
+    'None', 
+    'Finance and Legal', 'New Venture Visions is a company that provides Virtual Family Office services to attract and retain higher and more complex income clients. They specialize in the analysis, acquisition, and alignment of clients' real estate related financing to their f...', 'Small',
+    'Small', 
+    0, '4320 Stevens Creek Boulevard', 
+    'San Jose', 'CA', 
+    '95129', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-17', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1164205953, 'Power of Us Hub', 'community@salesforce.org', '14159017000.0', 
+    'salesforce.com, inc.', 'salesforce.org', 
+    'https://www.linkedin.com/company/salesforce', 
+    'Technology', 'Salesforce.org is a CRM technology company that specializes in providing powerful CRM solutions for nonprofits, educational institutions, and philanthropic organizations. They leverage Salesforce's technology, people, and resources to help improve comm...', 'Large',
+    'Corporate', 
+    0, '50 Fremont Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-17', 
+    2000
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1164609479, 'Stella Garcia ', 'jrivard@portolahotel.com', '8316494511.0', 
+    'Portola Hotel & Spa', 'portolahotel.com', 
+    'https://www.linkedin.com/company/portola-hotel-&-spa', 
+    'Hospitality and Travel', 'Portola Hotel & Spa is a luxury hotel located in Monterey, California. The hotel is known for its environmentally conscious practices and has been granted Silver Leadership in Energy and Environmental Design (LEED®) Certification. Portola Hotel & Spa o...', 'Large',
+    'Medium', 
+    0, '2 Portola Plaza', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-17', 
+    1978
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1161187960, 'Dorian Toy ', 'unknown86@invalid.com', '14159017000.0', 
+    'Salesforce, Inc.', 'salesforce.com', 
+    'https://www.linkedin.com/company/salesforce', 
+    'Technology', 'Salesforce is an enterprise cloud computing company and CRM provider offering business software solutions on a subscription basis. They bring companies and customers together on the world's #1 CRM, providing solutions to modernize businesses, save time...', 'Large',
+    'Corporate', 
+    1, '415 Mission Street', 
+    'San Francisco', 'CA', 
+    '94105', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-17', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1160407905, 'Scott Brandt ', 'pmsalunk@ucsc.edu', '8314590111.0', 
+    'University of California', 'ucsc.edu', 
+    'https://www.linkedin.com/school/ucsc', 
+    'Education', 'UC Santa Cruz is a world-class public research institution that offers a wide range of products and services. The university is comprised of ten residential college communities located in the redwood forests and meadows overlooking central California's...', 'Large',
+    'Enterprise', 
+    0, '1156 High St', 
+    'Santa Cruz', 'CA', 
+    '95064', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-10-22', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1159807880, 'Richard Aiello ', 'david@goalscreen.com', '18314575003.0', 
+    'Santa Cruz County Bank', 'sccountybank.com', 
+    'https://www.linkedin.com/company/santa-cruz-county-bank', 
+    'Other', 'Santa Cruz County Bank is a top-rated, locally owned and operated, full-service community bank headquartered in Santa Cruz, California. The bank offers a range of products and services for businesses and individuals, including checking accounts, saving...', 'Large',
+    'Medium', 
+    0, '720 Front Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-02-25', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1157715757, 'Judy Morris', 'jymorris@trinitycounty.org', '5306232611.0', 
+    'Trinity County DOT', 'trinitycounty.org', 
+    'None', 
+    'Finance and Legal', 'Trinity County DOT is the official county department of transportation in Trinity County, California. They provide information and services related to local roads, transit, and airports. Their responsibilities include managing and maintaining the count...', 'Medium',
+    'Micro', 
+    0, '1613 PO Box', 
+    'Weaverville', 'CA', 
+    '96093', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-14', 
+    1800
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1152291529, 'Debra Lucero', 'debra@debralucero.us', 'None', 
+    'Debra Lucero', 'debralucero.us', 
+    'None', 
+    'Consumer Goods and Retail', 'Debra Lucero is a company that specializes in providing administrative services and support to assist in the rebuild and recovery efforts after natural disasters. With the recent appointment of Debra Lucero as Chief Administrative Officer of Plumas Cou...', 'Small',
+    'None', 
+    0, 'None', 
+    'Chico', 'CA', 
+    '95927', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-10', 
+    1800
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1151935724, 'Unknown', 'maisiesilva@ucmerced.edu', '2092284400.0', 
+    'University of California, Merced', 'ucmerced.edu', 
+    'https://www.linkedin.com/school/university-of-california-merced', 
+    'Education', 'University of California, Merced (UC Merced) is the newest campus in the University of California system and the first American research university built in the 21st century. Located in the agriculturally rich San Joaquin Valley, UC Merced is committed...', 'Large',
+    'Enterprise', 
+    0, '5200 N Lake Rd', 
+    'Merced', 'CA', 
+    '95343', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-10', 
+    2005
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1153447552, 'Brad Finney ', 'lonny.grafman@humboldt.edu', '7078263011.0', 
+    'Cal Poly Humboldt', 'humboldt.edu', 
+    'https://www.linkedin.com/company/cal-poly-humboldt', 
+    'Education', 'Cal Poly Humboldt is a comprehensive university that offers rigorous science and liberal arts programs. It provides hands-on, impactful educational opportunities that lead to meaningful outcomes for individuals, the state, and the world. With nearly 6,...', 'Large',
+    'Large', 
+    0, '1 Harpst Street', 
+    'Arcata', 'CA', 
+    '95521', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-07-23', 
+    1913
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1149635805, 'Unknown', 'unknown87@invalid.com', '5308953882.0', 
+    'simplicatehealth.com', 'simplicatehealth.com', 
+    'https://www.linkedin.com/company/gci-insurance-brokers', 
+    'Finance and Legal', 'Insurance Services', 'Medium',
+    'Small', 
+    0, '227 Swift Street', 
+    'Orland', 'CA', 
+    '95963', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-09', 
+    1958
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1145112630, 'Anastacia Wyatt ', 'huntinggb@co.monterey.ca.us', 'None', 
+    'monterey.ca.us', 'co.monterey.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2019-03-08', 
+    1958
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1144914921, 'Melody Rico', 'melody.rico@atriumhospitality.com', '16785663700.0', 
+    'Atrium Hospitality', 'atriumhospitality.com', 
+    'https://www.linkedin.com/company/atrium-hospitality', 
+    'Hospitality and Travel', 'Atrium Hospitality is a leading hotel and asset management company headquartered in Alpharetta, GA. They oversee a portfolio of 51 full service and select service hotels under various flags such as Hilton, Marriott, Starwood, IHG, Wyndham, Carlson Rezi...', 'Large',
+    'Large', 
+    0, '12735 Morris Road Extension', 
+    'Alpharetta', 'GA', 
+    '30004', 
+    'United States', 
+    'America/New_York', 
+    '2019-01-08', 
+    2015
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1144092765, 'Jason Henderson', 'jahenderson@csumb.edu', 'None', 
+    'Showdeo', 'showdeo.com', 
+    'https://www.linkedin.com/company/showdeoinc', 
+    'Education', 'Showdeo is a company that specializes in making interactive learning materials better and faster. They provide technology solutions for education administration programs, higher education, online learning, and classroom learning.', 'Medium',
+    'Micro', 
+    0, '56B 5th Avenue', 
+    'Carmel-by-the-Sea', 'CA', 
+    '93921', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-01-07', 
+    2019
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1136689891, 'Byron Marlowe ', 'sannidhya.malpani@wsu.edu', '5093353564.0', 
+    'Washington State University', 'wsu.edu', 
+    'https://www.linkedin.com/school/washington-state-university', 
+    'Education', 'Washington State University is a top research university dedicated to improving lives, unlocking possibilities for students, and serving the public good. It has 6 campuses, 11 academic colleges, extension offices in all 39 Washington counties, and 4 re...', 'Large',
+    'Enterprise', 
+    0, 'Po Box 645910', 
+    'Pullman', 'WA', 
+    '99163', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1890
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1134929773, 'Clay Larson ', 'tom.meyer@1stcapitalbank.com', '18312644000.0', 
+    '1st Capital Bank', '1stcapitalbank.com', 
+    'https://www.linkedin.com/company/1st-capital-bank', 
+    'Education', '1st Capital Bank, Monterey, CA | Community Banking Near You', 'Large',
+    'Medium', 
+    0, '5 Harris Court', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2007
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1134591165, 'Archana Ravi ', 'maria.velascovasquez.473@my.csun.edu', '8186771200.0', 
+    'California State University, Northridge', 'csun.edu', 
+    'https://www.linkedin.com/company/csun-university-student-union', 
+    'Other', 'California State University, Northridge (CSUN) is a vibrant and diverse university that offers great value to students. It provides a wide range of programs and services to help students realize their potential and shape the future. CSUN connects its c...', 'Large',
+    'Enterprise', 
+    0, '18111 Nordhoff Street', 
+    'Los Angeles', 'CA', 
+    '91330', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2021-01-31', 
+    1973
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1125508444, 'Kim Guerrero ', 'nicholas.nader@techstars.com', '3034424342.0', 
+    'Techstars, LLC', 'techstars.com', 
+    'https://www.linkedin.com/company/techstars', 
+    'Finance and Legal', 'Techstars is a startup accelerator that provides mentorship driven seed stage investment services for technology oriented companies.', 'Medium',
+    'Enterprise', 
+    0, '1050 Walnut Street', 
+    'Boulder', 'CO', 
+    '80302', 
+    'United States', 
+    'America/Denver', 
+    '2018-12-13', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1120549107, 'Dylan Henry', 'dhenry@inbia.org', '14079655653.0', 
+    'InBIA', 'inbia.org', 
+    'https://www.linkedin.com/company/theinbia', 
+    'Other', 'InBIA is a non-profit organization that provides education, global collaboration, mentorship, and best practices in business incubation. With over 2,000 members across over 60 countries, InBIA is the world's leading organization advancing business incu...', 'Large',
+    'Small', 
+    0, '6555 Sanger Road', 
+    'Orlando', 'FL', 
+    '32827', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-20', 
+    1985
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1119216393, 'Amy Ingram', 'amy@x.ai', '16503429600.0', 
+    'X.AI Corp.', 'x.ai', 
+    'https://www.linkedin.com/company/x-ai', 
+    'Technology', 'x.ai is a technology company founded in 2014 that develops artificial intelligence personal assistants. Their main product is a personal assistant that schedules meetings for users. The company is backed by blue chip investors and is located in New Yor...', 'Large',
+    'Medium', 
+    0, '200 Broadway', 
+    'New York', 'NY', 
+    '10038', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-19', 
+    2023
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1118873707, 'Helen Dunston  ', 'david_dickinson@calcoastal.org', '8314241099.0', 
+    'California Coastal Rural Development Corporation', 'calcoastal.org', 
+    'https://www.linkedin.com/company/california-coastal-rural-development-corporation', 
+    'Other', 'California Coastal Rural Development Corporation (Cal Coastal) is a California chartered nonprofit public benefit corporation servicing the financial needs of small businesses and farmers. Cal Coastal operates 9 loan programs; Farm Loan, SBA 504, SBA M...', 'Large',
+    'Small', 
+    0, '221 Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-02-12', 
+    1981
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1118784382, 'Ed Mauro', 'edm@gopalace.com', '8314763815.0', 
+    'Palace Business Solutions', 'gopalace.com', 
+    'https://www.linkedin.com/company/palace-business-solutions', 
+    'Business Services', 'Palace Business Solutions is a customer-driven company that aims to provide excellent products and services. They offer next day delivery, premium brands, great value, and an unbeatable customer experience with a personal touch. They specialize in prod...', 'Large',
+    'Small', 
+    0, '2606 Chanticleer Avenue', 
+    'Santa Cruz', 'CA', 
+    '95065', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-19', 
+    1949
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1118971921, 'Carlos Palacios ', 'rosemary.anderson@santacruzcounty.us', '18314544100.0', 
+    'Santa Cruz County, California', 'santacruzcounty.us', 
+    'https://www.linkedin.com/company/county-of-santa-cruz', 
+    'Finance and Legal', 'Santa Cruz County is a government organization that provides news, events, developments, and information about the community. They offer county services and can be contacted through phone or online. The county is located on the Pacific coast of Califor...', 'Large',
+    'Enterprise', 
+    0, '701 Ocean Street', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1850
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1118973832, 'Shauna Reyes', 'shauna.reyes@aviands.com', '6516310940.0', 
+    'A’viands', 'aviands.com', 
+    'https://www.linkedin.com/company/a'viands', 
+    'Other', 'A’viands is a national provider of food service management in schools, higher education, healthcare facilities, correctional institutions and business dining.', 'Large',
+    'Large', 
+    0, '1751 County B Road West', 
+    'Roseville', 'MN', 
+    '55113', 
+    'United States', 
+    'America/Chicago', 
+    '2020-01-23', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1117006171, 'Noah Brod', 'noah.brod@sba.gov', '9702477009.0', 
+    'Small Business Administration', 'sba.gov', 
+    'https://www.linkedin.com/company/us-small-business-administration', 
+    'Public and Government Services', 'Small Business Administration We support America's small businesses. The SBA connects entrepreneurs with lenders and funding to help them plan, start and grow their business. The US Small Business Administration is an independent federal agency that wo...', 'Large',
+    'Enterprise', 
+    0, '409 3rd Street Southwest', 
+    'Washington', 'DC', 
+    '20416', 
+    'United States', 
+    'America/New_York', 
+    '2019-07-16', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115076097, 'Al Martin', 'ajm@aljmartin.com', 'None', 
+    'aljmartin.com', 'aljmartin.com', 
+    'None', 
+    'Other', 'This is the default welcome page used to test the correct operation of the Apache2 server after installation on Ubuntu systems. It is based on the equivalent page on Debian, from which the Ubuntu Apache packaging is derived. If you can read this page, it means that the Apache HTTP server installed at this site is working properly. You should replace this file (located at /var/www/html/index.html) before continuing to operate your HTTP server.', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115294148, 'Paul Farmer ', 'jose@mcbc.biz', '8318839443.0', 
+    'Monterey County Business Council', 'mcbc.biz', 
+    'https://www.linkedin.com/company/monterey-county-business-council', 
+    'Other', 'The Monterey County Business Council (MCBC) is a non-profit organization that brings together professionals from business, government, and education to work on countywide issues. Founded in 1995, the MCBC promotes the concept of private-public partners...', 'Large',
+    'Micro', 
+    0, '3180 Imjin Road', 
+    'Marina', 'CA', 
+    '93942', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-02-18', 
+    1995
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115323497, 'Cameo Know ', 'mmaecruz@gmail.com', '4159924480.0', 
+    'Cameo', 'microbiz.org', 
+    'https://www.linkedin.com/company/cameo---california-association-for-micro-enterprise-opportunity', 
+    'Education', 'Our member organizations provide entrepreneurs with small business financing such as loans and credit,business technical assistance and business management training. CAMEO is the voice for Micro Enterprise in California - expanding resources and bui...', 'Medium',
+    'Micro', 
+    0, '1 Hallidie Plaza', 
+    'San Francisco', 'CA', 
+    '94102', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-17', 
+    1993
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115073459, 'Kendra Howell ', 'alaurent@svmh.com', '18317574333.0', 
+    'Salinas Valley Health', 'svmh.com', 
+    'https://www.linkedin.com/company/salinas-valley-memorial-healthcare-system', 
+    'Healthcare', 'Salinas Valley Health is a trusted provider of high quality healthcare for patients of all ages. We're here to help you and your family! Salinas Valley Health’s vision is a community where good health grows through every action, in every place, for eve...', 'Large',
+    'Enterprise', 
+    0, '450 East Romie Lane', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-17', 
+    1953
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115301548, 'Kristen Cleven', 'kristen.cleven@bloomenergy.com', '14085431500.0', 
+    'Bloom Energy', 'bloomenergy.com', 
+    'https://www.linkedin.com/company/bloom-energy', 
+    'Other', 'Bloom Energy is a company that specializes in electricity generation and hydrogen production. They offer on-site power generation systems that utilize an innovative fuel cell technology with roots in NASA's Mars program. By leveraging breakthrough adva...', 'Large',
+    'Enterprise', 
+    1, '4353 N 1st St', 
+    'San Jose', 'CA', 
+    '95134', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115301439, 'Brent Slama ', 'vtencia@gmail.com', '8316783963.0', 
+    'City of Soledad', 'cityofsoledad.com', 
+    'https://www.linkedin.com/company/city-of-soledad', 
+    'Business Services', 'The City of Soledad is a historic city located just off the US101, near Pinnacles National Park. They provide a range of services and amenities to both residents and visitors, including world-class hiking and rock climbing opportunities. The city recen...', 'Large',
+    'Medium', 
+    0, '248 Main Street', 
+    'Soledad', 'CA', 
+    '93960', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-17', 
+    2001
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1115291859, 'Robert Rivas ', 'dalonso@cosb.us', '8316364170.0', 
+    'San Benito County', 'cosb.us', 
+    'https://www.linkedin.com/company/1749923', 
+    'Finance and Legal', 'San Benito County is a government organization that provides various services to the residents of San Benito County, CA. These services include county clerk, recorder, and elections department services, tax collector department services, and assessor d...', 'Large',
+    'Medium', 
+    0, '1131 SAN FELIPE RD', 
+    'Hollister', 'CA', 
+    '95023', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-01-15', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1111551122, 'In BIA Staff', 'customercare@gotowebinar.com', 'None', 
+    'GoToWebinar', 'gotowebinar.com', 
+    'https://www.linkedin.com/company/avanse-financial-services', 
+    'Other', 'Present to hundreds with confidence and attend a webinar from anywhere. See why GoToWebinar is rated #1 in customer satisfaction.', 'Small',
+    'Large', 
+    0, 'None', 
+    'None', 'None', 
+    'None', 
+    'None', 
+    'None', 
+    '2018-12-14', 
+    1983
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1110737399, 'Survey Monkey', 'surveymonkey@t.outbound.surveymonkey.com', '16505438400.0', 
+    'SurveyMonkey', 't.outbound.surveymonkey.com', 
+    'https://www.linkedin.com/company/surveymonkey', 
+    'Technology', 'SurveyMonkey is the world's leading online survey platform, with more than 3 million survey responses every day. SurveyMonkey has revolutionized the way people give and take feedback, making it accessible, easy and affordable for everyone. The company was founded in 1999 with a focus on helping people make better decisions, and has built technology based on over 10 years of experience in survey methodology and web development. Customers include 99% of the Fortune 500, academic institutions, organizations and neighborhood soccer leagues everywhere.', 'Large',
+    'Large', 
+    0, '1 Curiosity Way', 
+    'San Mateo', 'CA', 
+    '94403', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-13', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1108169745, 'Ana Medina ', 'matano@wellsfargo.com', '16126671234.0', 
+    'Wells Fargo', 'wellsfargo.com', 
+    'https://www.linkedin.com/company/wellsfargo', 
+    'Other', 'Wells Fargo is a financial services company that offers a range of banking services, including bank accounts, loans, mortgages, investing, credit cards, and banking services.', 'Large',
+    'Enterprise', 
+    1, '420 Montgomery Street', 
+    'San Francisco', 'CA', 
+    '94103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1852
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1106267942, 'Abigail Holas', 'abigail.holas@gallaudet.edu', '2026515000.0', 
+    'Gallaudet', 'gallaudet.edu', 
+    'https://www.linkedin.com/company/gallaudet-university', 
+    'Education', 'Gallaudet University is the global leader in education for deaf and hard of hearing students. They provide a bilingual way of being, offering liberal education and career development programs. The university conducts research on the history, language, ...', 'Large',
+    'Large', 
+    0, '800 Florida Avenue Northeast', 
+    'Washington', 'DC', 
+    '20002', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-12', 
+    1864
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1106225015, 'Ueda Summit', 'summit@universityeda.org', '15227216200.0', 
+    'University Economic Development Association', 'universityeda.org', 
+    'https://www.linkedin.com/company/university-economic-development-association', 
+    'Healthcare', 'The University Economic Development Association (UEDA) is a membership organization representing higher education, the private sector, and community economic development stakeholders. UEDA works to expand economic opportunity in communities by leveragi...', 'Large',
+    'Small', 
+    0, 'PO BOX 97930', 
+    'Pittsburgh', 'PA', 
+    '15227', 
+    'United States', 
+    'America/New_York', 
+    '2019-12-31', 
+    1976
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1105558227, 'Sonny Inopiquez ', 'unknown88@invalid.com', '8002454157.0', 
+    'Monterey Peninsula College', 'mpc.edu', 
+    'https://www.linkedin.com/school/monterey-peninsula-college', 
+    'Education', 'Monterey Peninsula College is a higher education institution committed to fostering student learning and success. They provide excellence in instructional programs, facilities, and services to support the goals of students pursuing transfer, career, ba...', 'Large',
+    'Large', 
+    0, '980 Fremont Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-19', 
+    1947
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1105028266, 'Ria Ancheta Adrias', 'ria@ncet2.org', '12025808382.0', 
+    'Ncet2', 'ncet2.org', 
+    'https://www.linkedin.com/company/ncet2', 
+    'Other', 'National Council of Entrepreneurial Tech Transfer (NCET2) is a startup development membership organization that connects university startup officers, entrepreneurs, investors, and funders to enhance and bolster the innovation and research commercializa...', 'Small',
+    'Micro', 
+    0, '2020 Pennsylvania Avenue Northwest', 
+    'Washington', 'DC', 
+    '20006', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-11', 
+    2003
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1104911385, 'Marci Keller ', 'todd_livingstone@pvusd.net', '8317862100.0', 
+    'Pajaro Valley Unified School District', 'pvusd.net', 
+    'https://www.linkedin.com/company/6347512', 
+    'Education', 'Pajaro Valley Unified School District (PVUSD) is a public school district located in Watsonville, California. PVUSD provides educational services to students in grades TK-12, serving a diverse population of over 20,000 students. The district operates o...', 'Large',
+    'Enterprise', 
+    0, '294 Green Valley Rd', 
+    'Watsonville', 'CA', 
+    '95076', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1964
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1104266344, 'At The Door ', 'unknown89@invalid.com', '18884145119.0', 
+    'Eventbrite, Inc.', 'eventbrite.com', 
+    'https://www.linkedin.com/company/eventbrite', 
+    'Technology', 'Eventbrite is a global marketplace for live experiences that lets people find and create events. They offer a wide range of events including music, nightlife, performing & visual arts, holidays, health, hobbies, business, food & drink, and more. Eventb...', 'Large',
+    'Large', 
+    1, '155 5th Street', 
+    'San Francisco', 'CA', 
+    '94103', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2022-04-12', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1103323086, 'Fred Cohen', 'fc@manalyt.com', 'None', 
+    'angeltoexit.com', 'angeltoexit.com', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    2006
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1100725526, 'Jody Hansen ', 'jonathan@geisler3.com', '18316485350.0', 
+    'Monterey Peninsula Chamber of Commerce', 'montereychamber.com', 
+    'https://www.linkedin.com/company/monterey-peninsula-chamber-of-commerce', 
+    'Other', 'Monterey Peninsula Chamber of Commerce is the best place to find a member or business in the Monterey CA area.', 'Medium',
+    'Micro', 
+    0, '243 El Dorado Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-07', 
+    1908
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1100834400, 'Avneesh Kumar', 'avneesh@hellodesk.org', 'None', 
+    'Hellodesk', 'hellodesk.org', 
+    'https://www.linkedin.com/company/hellodeskmonterey', 
+    'Other', 'Welcome to our cozy workspace', 'Small',
+    'Micro', 
+    0, '419 Webster Street', 
+    'Monterey', 'CA', 
+    '93940', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    2017
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1100106460, 'Winfred Wakaba ', 'esmith@eda.gov', '2024822900.0', 
+    'U.S. Economic Development Administration', 'eda.gov', 
+    'https://www.linkedin.com/company/us-economic-development-administration', 
+    'Other', 'The U.S. Economic Development Administration (EDA) is a bureau within the U.S. Department of Commerce, with the mission to lead the federal economic development agenda by promoting innovation and competitiveness, preparing American regions for growth a...', 'Large',
+    'Large', 
+    0, '1401 Constitution Avenue Northwest', 
+    'Washington', 'DC', 
+    '20230', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-07', 
+    1965
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1099282703, 'Rhonda Abrams', 'ra@planningshop.com', '6502899120.0', 
+    'Planningshop', 'planningshop.com', 
+    'https://www.linkedin.com/company/planningshop', 
+    'Creative and Media', 'PlanningShop is a company that specializes in books, tools, and resources for entrepreneurship and small business. They have helped over two million entrepreneurs plan, start, and grow their businesses. Their products are practical, hands-on, and based...', 'Medium',
+    'Micro', 
+    0, '555 Bryant Street', 
+    'Palo Alto', 'CA', 
+    '94301', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1999
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1098834512, 'Lyle Wright', 'lyle.wright@state.mn.us', '6516021000.0', 
+    'Minnesota', 'state.mn.us', 
+    'https://www.linkedin.com/company/minnesota-pollution-control-agency', 
+    'Other', 'Minnesota is a state in the upper Midwestern United States. It is known as the 'Land of 10,000 Lakes' for having over 14,000 bodies of fresh water. The state's main political, economic, and cultural hub is the Minneapolis–Saint Paul metropolitan area, ...', 'Large',
+    'Large', 
+    0, '520 Lafayette Road', 
+    'Saint Paul', 'MN', 
+    '55101', 
+    'United States', 
+    'America/Chicago', 
+    '2018-12-06', 
+    1967
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1097549479, 'Unknown', 'julyssalvalencia-solorio@student.hartnell.edu', '8317706146.0', 
+    'Hartnell College', 'hartnell.edu', 
+    'https://www.linkedin.com/company/hartnell-community-college', 
+    'Education', 'The College offers the first and second year of a college program and awards the associate of arts/sciences degrees and certificates of proficiency. The college also provides vocational training, Work Force and Community Development classes, Contract E...', 'Large',
+    'Large', 
+    0, '411 Central Avenue', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2020-03-30', 
+    1920
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1097079756, 'Craig Malin ', 'jdunn@ci.seaside.ca.us', 'None', 
+    'seaside.ca.us', 'ci.seaside.ca.us', 
+    'None', 
+    'Other', 'nan', 'Small',
+    'None', 
+    0, 'None', 
+    'None', 'CA', 
+    'None', 
+    'United States', 
+    'None', 
+    '2020-03-30', 
+    1920
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1097195979, 'Asana Academy ', 'learn@email1.asana.com', '14155253888.0', 
+    'Asana', 'asana.com', 
+    'https://www.linkedin.com/company/asana', 
+    'Technology', 'Manage your team’s work, projects, & tasks online • Asana Work anytime, anywhere with Asana. Keep remote and distributed teams, and your entire organization, focused on their goals, projects, and tasks with Asana. Asana is the easiest way for teams to ...', 'Large',
+    'Enterprise', 
+    1, '633 Folsom Street', 
+    'San Francisco', 'CA', 
+    '12345', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-13', 
+    2008
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1096967400, 'Carolyn Jones ', 'karla.alvarado@jobyaviation.com', '18312016700.0', 
+    'Joby Aero Inc', 'jobyaviation.com', 
+    'https://www.linkedin.com/company/joby-aviation', 
+    'Other', 'Joby Aviation is a venture-backed startup that is building quiet, all-electric aircraft to revolutionize transportation. Their pioneering electric aircraft, powered by six electric motors, takes off and lands vertically, providing flexibility to serve ...', 'Large',
+    'Enterprise', 
+    1, '2155 Delaware Avenue', 
+    'Santa Cruz', 'CA', 
+    '95060', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-05', 
+    2009
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1094717963, 'Hermelinda Flores ', 'josh@montereybaydart.org', '8318833672.0', 
+    'Monterey Bay DART', 'fora.org', 
+    'https://www.linkedin.com/company/fort-ord-reuse-authority', 
+    'Real Estate and Development', 'The Fort Ord Reuse Authority (FORA) is responsible for the oversight of Monterey Bay area economic recovery from the closure and reuse planning of the former Fort Ord military base. FORA implements this mission by overseeing replacement land use, assur...', 'Large',
+    'Small', 
+    0, '920 2nd Avenue', 
+    'Marina', 'CA', 
+    '93933', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-07-16', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1094775841, 'Btv Student ', 'hellep@csufresno.edu', '15592784240.0', 
+    'Fresno State', 'mail.fresnostate.edu', 
+    'https://www.linkedin.com/company/california-state-university-fresno', 
+    'Education', 'California State University, Fresno was founded as Fresno State Normal School in 1911, became a teacher's college in 1921, and has offered advanced degrees since 1949. Our mascot is the Bulldog and our popular name is Fresno State. Fresno State is one of the 23 campuses within the California State University, one of the largest systems of higher education in the world. The university is accredited by the California Board of Education and the Western Association of Schools and Colleges. It has 26 nationally accredited departmental programs, among the highest number within the CSU system.', 'Large',
+    'Enterprise', 
+    0, '5241 N Maple Ave', 
+    'Fresno', 'CA', 
+    '93740', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-04', 
+    1911
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1094492193, 'Scott Hauge', 'shauge@cal-insure.com', '4156616500.0', 
+    'CAL Insurance & Associates', 'cal-insure.com', 
+    'https://www.linkedin.com/company/cal-insurance-&-associates-inc.', 
+    'Education', 'CAL Insurance & Associates, Inc. The one brokerage that makes the client experience extraordinary.', 'Large',
+    'Small', 
+    0, '2311 Taraval Street', 
+    'San Francisco', 'CA', 
+    '94116', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-04', 
+    1927
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1094233047, 'John Finnegan', 'jfinnegan@classactioncapital.com', '18664885896.0', 
+    'Class Action Capital', 'classactioncapital.com', 
+    'https://www.linkedin.com/company/class-action-capital', 
+    'Finance and Legal', 'Class Action Capital is a provider of class action settlement claim management to the global corporate community. They monitor and identify class action settlements, and perform the necessary work to recover your pro rata financial share. They speciali...', 'Medium',
+    'Small', 
+    0, '16 East 40th Street', 
+    'New York', 'NY', 
+    '10016', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-04', 
+    2012
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1093290416, 'Charlotte Radmilovic ', 'jennifer.kuyper@pacificvalleybank.com', '8002645578.0', 
+    'Pacific Valley Bank', 'pacificvalleybank.com', 
+    'https://www.linkedin.com/company/pacific-valley-bank', 
+    'Other', 'Pacific Valley Bank is a local bank that has been committed to serving our members and our community since we opened our doors in 2004. We have a keen understanding of the local business environment and strong community connections. We offer business b...', 'Large',
+    'Medium', 
+    0, '422 Main Street', 
+    'Salinas', 'CA', 
+    '93901', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2023-02-23', 
+    2004
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1092396028, 'Leslie De Rose ', 'abrodrig@cabrillo.edu', '18314796100.0', 
+    'Cabrillo College', 'cabrillo.edu', 
+    'https://www.linkedin.com/company/cabrillo-community-college', 
+    'Education', 'Cabrillo College is a leading California community college serving Santa Cruz County, with locations in Aptos and Watsonville. From its origin in 1959 to the present, Cabrillo College has placed the values of educational excellence at the heart of its ...', 'Large',
+    'Medium', 
+    0, '6500 Soquel Drive', 
+    'Aptos', 'CA', 
+    '95003', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2019-11-21', 
+    1959
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1090068343, 'Amy Thomas ', 'unknown90@invalid.com', 'None', 
+    'California State University Monterey Bay', 'csumb.edu', 
+    'https://www.linkedin.com/company/university-corporation-at-monterey-bay', 
+    'Education', 'California State University Monterey Bay (CSUMB) is a small, residential campus that offers an exceptional education at an affordable price. With a rich history on the former Fort Ord Army Base, CSUMB provides a unique learning environment with remodel...', 'Large',
+    'Large', 
+    0, '100 Campus Ctr', 
+    'Seaside', 'CA', 
+    '93955', 
+    'United States', 
+    'America/Los_Angeles', 
+    '2018-12-01', 
+    1994
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1090067310, 'Sivapathasun Sureshwaran ', 'allen.curry@usda.gov', '12027202791.0', 
+    'USDA', 'osec.usda.gov', 
+    'https://www.linkedin.com/company/usda', 
+    'Public and Government Services', 'The United States Department of Agriculture (USDA), also known as the Agriculture Department, is the U.S. federal executive department responsible for developing and executing federal laws related to farming, agriculture, forestry, and food. It aims to meet the needs of farmers and ranchers, promote agricultural trade and production, work to assure food safety, protect natural resources, foster rural communities and end hunger in the United States and internationally. Approximately 80% of USDA's $140 billion budget goes to the Food and Nutrition Service (FNS) program. The largest component of the FNS budget is the Supplemental Nutrition Assistance Program (formerly known as the Food Stamp program), which is the cornerstone of USDA's nutrition assistance.', 'Large',
+    'Enterprise', 
+    0, '1400 Independence Ave.', 
+    'Washington', 'DC', 
+    '20250', 
+    'United States', 
+    'America/New_York', 
+    '2018-12-01', 
+    1862
+);
+
+
+INSERT INTO CompleteCompanyInfo VALUES (
+    1078373124, 'Brian Halligan  ', 'cmongillo@hubspot.com', '18884827768.0', 
+    'HubSpot', 'hubspot.com', 
+    'https://www.linkedin.com/company/hubspot', 
+    'Technology', 'HubSpot Inc provides a cloud-based inbound marketing and sales platform which features integrated applications to help businesses attract visitors to websites, convert visitors into leads, close leads into customers and delight customers.', 'Large',
+    'Enterprise', 
+    1, '25 First Street', 
+    'None', 'CA', 
+    '02141', 
+    'United States', 
+    'America/New_York', 
+    '2018-11-24', 
+    2006
+);
